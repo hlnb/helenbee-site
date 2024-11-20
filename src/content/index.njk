@@ -47,7 +47,7 @@ So, join me in my digital sanctuary to find solace, unleash creativity, and emba
 <article class="card">
 <h3>Craft</h3>
 <p>Ever since I have learned to knit, sew, and crochet I have made various items of clothing, accessories and toys. Here I will showcase some of my projects, highlighting the ups and downs of the projects.</p>
-</artilce>
+</article>
 <article class="card">
 <h3>A Lived Experience</h3>
 <p>I served my country in the RAAF. I did not leave unscathed from my own mental health issues. I hope that these writngs will help someone else who may have gone through something similar to me.</p>
@@ -58,24 +58,18 @@ So, join me in my digital sanctuary to find solace, unleash creativity, and emba
 </article>
 </div>
 
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+{% if collections.posts %}
+  {% set postsCount = collections.posts | length %}
+  {% set latestPostsCount = [postsCount, numberOfLatestPostsToShow] | min %}
+  {% set postslist = collections.posts | head(latestPostsCount) %}
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
+  <h2>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h2>
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
+  {% include "postslist.njk" %}
+
+  {% set morePosts = postsCount - latestPostsCount %}
+  {% if morePosts > 0 %}
+    <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
+  {% endif %}
 {% endif %}
 
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
