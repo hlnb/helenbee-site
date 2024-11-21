@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title or metadata.title }}</title>
-    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/grid-modular.css' | url }}">
+    <title>Tagged &quot;featured&quot;</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/grid-modular.css">
   </head>
   <body>
     <header class="site-header">
@@ -24,12 +24,12 @@
       </nav>
     </header>
 
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      {{ content | safe }}
+    <main>
+      
     </main>
 
     <footer>
-      <p>&copy; {{ metadata.year }}</p>
+      <p>&copy; </p>
     </footer>
   </body>
 </html>

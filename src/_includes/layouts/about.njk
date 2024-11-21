@@ -1,0 +1,17 @@
+<div data-layout="modular-four-columns" class="modular-berlin">
+    <!-- Main Content -->
+    <section class="module-wide-2">
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+    </section>
+
+    <!-- Skills/Experience -->
+    <aside class="module-tall-2">
+        {% for skill in skills %}
+        <div class="skill-item">
+            <h3>{{ skill.title }}</h3>
+            <p>{{ skill.description }}</p>
+        </div>
+        {% endfor %}
+    </aside>
+</div> 

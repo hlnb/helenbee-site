@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title or metadata.title }}</title>
-    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/grid-modular.css' | url }}">
+    <title>HelenB</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/grid-modular.css">
   </head>
   <body>
     <header class="site-header">
@@ -24,12 +24,33 @@
       </nav>
     </header>
 
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      {{ content | safe }}
+    <main>
+      <h1>Tags</h1>
+
+
+  
+  <a href="/tags/featured/" class="tag">featured</a>
+
+  
+  <a href="/tags/number 2/" class="tag">number 2</a>
+
+  
+  <a href="/tags/post/" class="tag">post</a>
+
+  
+  <a href="/tags/posts/" class="tag">posts</a>
+
+  
+  <a href="/tags/posts with two tags/" class="tag">posts with two tags</a>
+
+  
+  <a href="/tags/second tag/" class="tag">second tag</a>
+
+
     </main>
 
     <footer>
-      <p>&copy; {{ metadata.year }}</p>
+      <p>&copy; </p>
     </footer>
   </body>
 </html>
