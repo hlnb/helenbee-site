@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: Privacy Policy
+permalink: /privacy-policy/
+---
+
+{% set privacyPage = pages | getPageBySlug('privacy-policy') %}
+{% if privacyPage %}
+  <article class="page-container">
+    <h1>{{ privacyPage.title.rendered | safe }}</h1>
+    <div class="content">
+      {{ privacyPage.content.rendered | cleanWpContent | safe }}
+    </div>
+  </article>
+{% endif %} 

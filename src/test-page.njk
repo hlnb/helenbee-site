@@ -1,4 +1,9 @@
 ---
-layout: test
+layout: base.njk
 ---
-<h1>Test Page</h1> 
+<article class="test-layout">
+  <h1>{{ title }}</h1>
+  <div class="content">
+    {{ content | safe }}
+  </div>
+</article> 

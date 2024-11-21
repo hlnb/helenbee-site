@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: Home
+permalink: /
+---
+
+{% set homePage = pages | getPageBySlug('digital-sanctuary-unveiling-a-journey' ) %}
+{% if homePage %}
+  <article class="page-container">
+    <div data-layout="modular-four-columns">
+      <div class="module-square-2">
+        {{ homePage.content.rendered | cleanWpContent | safe }}
+      </div>
+    </div>
+  </article>
+{% endif %}

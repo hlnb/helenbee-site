@@ -1,13 +1,14 @@
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-bundle"));
-    
     const { DateTime } = require("luxon");
 
+    // Plugins
+    eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-bundle"));
+
+    // Date Filters
     eleventyConfig.addFilter("getNewestCollectionItemDate", (collection) => {
         if (!collection || !collection.length) {
             return new Date();
         }
-
         return collection.reduce((acc, curr) => {
             const currDate = curr.date || curr.data.date;
             return currDate > acc ? currDate : acc;
@@ -26,6 +27,7 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toISO();
     });
 
+    // URL Filters
     eleventyConfig.addFilter("htmlBaseUrl", (url, baseUrl) => {
         if(!url) {
             return baseUrl;
@@ -46,32 +48,76 @@ module.exports = function(eleventyConfig) {
         if(!content || !htmlBaseUrl) {
             return content;
         }
-
         return content.replace(/(href|src)="\//g, `$1="${htmlBaseUrl}/`);
     });
 
-    // Only include dev server in development
+    // Development Server Options
     if (process.env.NODE_ENV === "development") {
         eleventyConfig.setServerOptions({
             // your server options
         });
     }
 
-    // Add a posts collection if you don't have one
+    // Collections
     eleventyConfig.addCollection("posts", function(collectionApi) {
-        return collectionApi.getFilteredByGlob("src/posts/**/*.md");
+        return collectionApi.getFilteredByGlob("src/blog/**/*.md");
     });
 
-    // Copy the images directory to _site
+    eleventyConfig.addCollection("wpPages", function(collectionApi) {
+        return collectionApi.getAll().filter(item => item.data.wpPage === true);
+    });
+
+    eleventyConfig.addCollection("wpPosts", function(collectionApi) {
+        return collectionApi.getAll().filter(item => item.data.type === "post");
+    });
+
+    eleventyConfig.addCollection("tagList", function(collection) {
+        let tagSet = new Set();
+        collection.getAll().forEach(item => {
+            if (!item.data.tags) return;
+            let tags = item.data.tags;
+            if (typeof tags === "string") {
+                tags = [tags];
+            }
+            tags.forEach(tag => tagSet.add(tag));
+        });
+        return Array.from(tagSet).sort();
+    });
+
+    // Filters
+    eleventyConfig.addFilter("wpContent", function(content) {
+        return content
+            .replace(/\[.*?\]/g, '') // Remove shortcodes
+            .replace(/<!--.*?-->/g, ''); // Remove comments
+    });
+
+    eleventyConfig.addFilter("currentYear", () => {
+        return new Date().getFullYear();
+    });
+
+    eleventyConfig.addFilter("head", (array, n) => {
+        if(!Array.isArray(array) || array.length === 0) {
+            return [];
+        }
+        if( n < 0 ) {
+            return array.slice(n);
+        }
+        return array.slice(0, n);
+    });
+
+    // Shortcodes
+    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+    // Passthrough Copy
+    eleventyConfig.addPassthroughCopy("src/css");
+    eleventyConfig.addPassthroughCopy("src/fonts");
     eleventyConfig.addPassthroughCopy({
         "src/img": "img",
-        "src/img/*.svg": "img"  // Explicitly include SVG files
+        "src/img/*.svg": "img"
     });
 
-    // Add SVG content type
+    // SVG Handling
     eleventyConfig.addTemplateFormats("svg");
-    
-    // Optional: Add SVG as a valid template format
     eleventyConfig.addExtension("svg", {
         read: false,
         getData: false,
@@ -89,47 +135,73 @@ module.exports = function(eleventyConfig) {
         }
     });
 
-    // Copy the CSS directory to _site
-    eleventyConfig.addPassthroughCopy("src/css");
+    // Add filter to get WordPress page by slug
+    eleventyConfig.addFilter("getPageBySlug", (pages, slug) => {
+        return pages.find(page => page.slug === slug);
+    });
 
-    // Copy the fonts directory
-    eleventyConfig.addPassthroughCopy("src/fonts");
+    // Add this to see all available data during build
+    eleventyConfig.setServerOptions({
+        showAllHosts: true,
+        showVersion: true,
+        debug: true
+    });
 
-    // Get tags from posts
-    eleventyConfig.addCollection("tagList", function(collection) {
-        let tagSet = new Set();
-        collection.getAll().forEach(item => {
-            if (!item.data.tags) return;
-            let tags = item.data.tags;
-            if (typeof tags === "string") {
-                tags = [tags];
-            }
-            tags.forEach(tag => tagSet.add(tag));
+    // Log the data directories being used
+    console.log('Data Directories:', eleventyConfig.dir);
+
+    // Add date filter
+    eleventyConfig.addFilter("date", function(date, format) {
+        return new Date(date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
         });
-        return Array.from(tagSet).sort();
     });
 
-    // Clean the _site directory before building
-    eleventyConfig.addPassthroughCopy("src/css");
-    eleventyConfig.addPassthroughCopy("src/images");
-
-    // Add helper functions
-    eleventyConfig.addFilter("currentYear", () => {
-        return new Date().getFullYear();
+    // Updated filter to handle WordPress image paths
+    eleventyConfig.addFilter("cleanWpContent", (content) => {
+        if (!content) return '';
+        
+        return content
+          // Update WordPress image URLs to local paths
+          .replace(/https?:\/\/[^\/]+\/wp-content\/uploads\//g, '/img/wp-content/')
+          // Preserve image tags and their attributes
+          .replace(/<img[^>]*src="([^"]*)"[^>]*>/g, (match, src) => {
+            const alt = match.match(/alt="([^"]*)"/);
+            return `<img src="${src}" ${alt ? `alt="${alt[1]}"` : 'alt=""'} class="wp-content-image">`;
+          })
+          // Remove other WordPress-specific classes
+          .replace(/class="(?!wp-content|content|wp-content-image).*?"/g, '')
+          // Remove inline styles
+          .replace(/style=".*?"/g, '')
+          // Remove empty paragraphs
+          .replace(/<p>\s*<\/p>/g, '')
+          // Clean up whitespace
+          .replace(/\s+/g, ' ')
+          .trim();
     });
 
-    // Add shortcode for current year
-    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+    // Add redirects
+    eleventyConfig.addPassthroughCopy({
+        "src/_redirects": "_redirects"
+    });
 
-    // Add head filter for arrays
-    eleventyConfig.addFilter("head", (array, n) => {
-        if(!Array.isArray(array) || array.length === 0) {
-            return [];
-        }
-        if( n < 0 ) {
-            return array.slice(n);
-        }
-        return array.slice(0, n);
+    // Pass through images
+    eleventyConfig.addPassthroughCopy("src/img");
+
+    // Add date filter
+    eleventyConfig.addFilter("dateDisplay", function(date) {
+        return new Date(date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    });
+
+    // Add writings collection instead of posts
+    eleventyConfig.addCollection("writings", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("src/writings/*.md");
     });
 
     return {

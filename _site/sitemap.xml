@@ -7,27 +7,27 @@
 	</url>
 	
 	<url>
-		<loc>https://helenburgess.id.au/blog/secondpost/</loc>
+		<loc>https://helenburgess.id.au/writings/secondpost/</loc>
 		<lastmod>2018-07-04</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://helenburgess.id.au/blog/thirdpost/</loc>
+		<loc>https://helenburgess.id.au/writings/thirdpost/</loc>
 		<lastmod>2018-08-24</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://helenburgess.id.au/blog/fourthpost/</loc>
+		<loc>https://helenburgess.id.au/writings/fourthpost/</loc>
 		<lastmod>2018-09-30</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://helenburgess.id.au/blog/fifthpost/</loc>
+		<loc>https://helenburgess.id.au/writings/fifthpost/</loc>
 		<lastmod>2023-01-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://helenburgess.id.au/blog/firstpost/</loc>
+		<loc>https://helenburgess.id.au/writings/firstpost/</loc>
 		<lastmod>2023-01-01</lastmod>
 	</url>
 	
@@ -52,12 +52,17 @@
 	</url>
 	
 	<url>
+		<loc>https://helenburgess.id.au/writings/writing/</loc>
+		<lastmod>2024-01-01</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://helenburgess.id.au/about/</loc>
 		<lastmod>2024-08-08</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://helenburgess.id.au/blog/</loc>
+		<loc>https://helenburgess.id.au/writings/</loc>
 		<lastmod>2024-08-08</lastmod>
 	</url>
 	
@@ -89,5 +94,15 @@
 	<url>
 		<loc>https://helenburgess.id.au/test-page/</loc>
 		<lastmod>2024-11-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://helenburgess.id.au/contact/</loc>
+		<lastmod>2024-11-21</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://helenburgess.id.au/privacy-policy/</loc>
+		<lastmod>2024-11-21</lastmod>
 	</url>
 </urlset>

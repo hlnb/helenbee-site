@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: About
+permalink: /about/
+---
+
+{% set aboutPage = pages | getPageBySlug('about-technology-adventure-empowerment') %}
+{% if aboutPage %}
+  <article class="page-container">
+    <div data-layout="modular-four-columns">
+      <div class="module-square-2">
+        {{ aboutPage.content.rendered | cleanWpContent | safe }}
+      </div>
+    </div>
+  </article>
+{% endif %}

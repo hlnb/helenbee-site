@@ -1,0 +1,47 @@
+---
+layout: base.njk
+title: Writings
+permalink: /writings/
+---
+
+{% set writingsPage = pages | getPageBySlug('writings') %}
+
+<article class="page-container">
+  {# Introduction content from WordPress page #}
+  {% if writingsPage %}
+    <div class="writings-intro">
+      {{ writingsPage.content.rendered | cleanWpContent | safe }}
+    </div>
+  {% endif %}
+
+  {# Display grid of all writings #}
+  <div data-layout="modular-four-columns">
+    {# WordPress Posts #}
+    {% for post in posts %}
+      <div class="module-square-2">
+        <article class="writing-card">
+          <h2>{{ post.title.rendered | safe }}</h2>
+          <div class="writing-excerpt">
+            {{ post.excerpt.rendered | cleanWpContent | safe }}
+          </div>
+          <a href="/writings/{{ post.slug }}/" class="read-more">Read More</a>
+        </article>
+      </div>
+    {% endfor %}
+
+    {# Eleventy Writings #}
+    {% for writing in collections.writings %}
+      <div class="module-square-2">
+        <article class="writing-card">
+          <h2>{{ writing.data.title }}</h2>
+          {% if writing.data.excerpt %}
+            <div class="writing-excerpt">
+              {{ writing.data.excerpt }}
+            </div>
+          {% endif %}
+          <a href="{{ writing.url }}" class="read-more">Read More</a>
+        </article>
+      </div>
+    {% endfor %}
+  </div>
+</article>

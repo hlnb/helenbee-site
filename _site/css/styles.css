@@ -169,19 +169,6 @@ main a:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
-}
-
-body {
-    font-family: var(--font-body);
-}
-
-/* If you want to ensure the brand/logo text stays in Stackyard */
-.navbar-brand .navbar-item {
-    font-family: var(--font-heading);
-}
 
 /* Basic replacements for common Bulma utilities */
 .content-wrapper {
@@ -217,60 +204,7 @@ body {
   color: var(--color-text-default);
 }
 
-/* Navigation */
-.main-nav {
-  padding: 1rem 0;
-}
 
-.main-nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Header and Navigation */
-.site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  margin-bottom: 2rem;
-}
-
-.logo {
-  flex-shrink: 0;
-}
-
-.logo img {
-  width: 150px; /* Adjust based on your logo size */
-  height: auto;
-}
-
-.main-nav {
-  flex-grow: 1;
-  margin-left: 2rem;
-}
-
-.main-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav a {
-  color: var(--color-text-default);
-  text-decoration: none;
-  font-size: var(--font-size-default);
-}
-
-.main-nav a:hover {
-  color: var(--color-text-link);
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -287,5 +221,162 @@ body {
   .main-nav ul {
     justify-content: center;
   }
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar-end {
+    display: flex;
+    gap: 20px; /* Adjust spacing between items */
+}
+
+/* WordPress Content Cleanup */
+.wp-content {
+    /* Inherit your existing content styles */
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Override any remaining WordPress-specific styles */
+.wp-content [class*="wp-block-"] {
+    /* Reset WordPress block styles to use your design system */
+    margin: inherit;
+    padding: inherit;
+}
+
+.wp-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure proper spacing in WordPress content */
+.wp-content > * + * {
+    margin-top: 1rem;
+}
+
+/* WordPress Content within Modular Grid */
+[data-layout*="modular"] .wp-content {
+    /* Inherit your existing modular styles */
+    padding: var(--spacing-default);
+}
+
+/* WordPress images in grid */
+[data-layout*="modular"] img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* WordPress content spacing in modules */
+[data-layout*="modular"] > * > * + * {
+    margin-top: var(--spacing-default);
+}
+
+/* Ensure WordPress blocks work with your grid */
+[data-layout*="modular"] [class*="wp-block-"] {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* WordPress Content Images */
+.wp-content-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* Images within modular grid */
+[data-layout*="modular"] .wp-content-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+/* Image container within grid */
+[data-layout*="modular"] figure {
+    margin: 0;
+    height: 100%;
+}
+
+[data-layout*="modular"] figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Image captions */
+[data-layout*="modular"] figcaption {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    margin-top: 0.5rem;
+}
+
+/* Writing Styles */
+.writing-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-default);
+}
+
+.writing-card h2 {
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  color: var(--primary);
+}
+
+.writing-excerpt {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+}
+
+.read-more {
+  display: inline-block;
+  color: var(--secondary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  color: var(--accent-1);
+  border-bottom-color: var(--accent-1);
+}
+
+/* Writings Intro */
+.writings-intro {
+  margin-bottom: 2rem;
+}
+
+/* Individual Writing Post */
+.writing-post {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.writing-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.writing-content {
+  line-height: 1.6;
+}
+
+.writing-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
 }
   

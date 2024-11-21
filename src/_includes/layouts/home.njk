@@ -1,9 +1,0 @@
----
-layout: base.njk
----
-<div data-layout="modular-four-columns" class="modular-copenhagen">
-    {{ content | safe }}
-
-    {% set postslist = collections.posts | head(-3) %}
-    {% include "postslist.njk" %}
-</div>

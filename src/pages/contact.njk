@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: Contact
+permalink: /contact/
+---
+
+{% set contactPage = pages | getPageBySlug('contact') %}
+{% if contactPage %}
+  <article class="page-container">
+    <div data-layout="modular-four-columns">
+      <div class="module-square-2">
+        {{ contactPage.content.rendered | cleanWpContent | safe }}
+      </div>
+    </div>
+  </article>
+{% endif %} 
