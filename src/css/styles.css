@@ -325,58 +325,219 @@ main a:hover {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: var(--spacing-default);
+  gap: var(--spacing-default);
 }
 
-.writing-card h2 {
+.writing-image-link {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9; /* Maintains consistent image proportions */
+  overflow: hidden;
   margin-bottom: 1rem;
-  font-family: var(--font-heading);
+}
+
+.writing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Add hover effect */
+.writing-image-link:hover .writing-image {
+  transform: scale(1.05);
+}
+
+/* Handle images in the main content */
+.wp-content-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+/* Images within modular grid */
+[data-layout*="modular"] .wp-content-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+/* Writing Card Image Styles */
+.writing-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-default);
+}
+
+.writing-image-link {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9; /* Maintains consistent image proportions */
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.writing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Add hover effect */
+.writing-image-link:hover .writing-image {
+  transform: scale(1.05);
+}
+
+/* Handle images in the main content */
+.wp-content-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+/* Images within modular grid */
+[data-layout*="modular"] .wp-content-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+/* Writings Intro */
+  
+/* Writing Card Styles within Modular Grid */
+[data-layout="modular-four-columns"] .module-square-2 {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image Container */
+.writing-image-link {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+}
+
+.writing-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.writing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.writing-image-link:hover .writing-image {
+  transform: scale(1.05);
+}
+
+/* Card Content */
+.module-square-2 h2 {
+  margin: 1rem 0;
+  font-size: var(--font-size-h3);
+}
+
+.module-square-2 .writing-excerpt {
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.module-square-2 .read-more {
+  margin-top: auto;
   color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.module-square-2 .read-more:hover {
+  text-decoration: underline;
+}
+  
+/* Writing Card Styles */
+.module-square-2 {
+  position: relative;
+  height: 100%;
+}
+
+.writing-card {
+  height: 100%;
+  background: var(--background-light);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.writing-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.writing-image-container {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+}
+
+.writing-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.writing-link:hover .writing-image {
+  transform: scale(1.05);
+}
+
+.writing-card h3 {
+  margin: 1rem;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h3);
+  color: var(--text-dark);
+}
+
+.writing-card time {
+  display: block;
+  margin: 0 1rem;
+  font-size: var(--font-size-small);
+  color: var(--text-light);
 }
 
 .writing-excerpt {
-  flex-grow: 1;
-  margin-bottom: 1rem;
-  font-family: var(--font-body);
+  margin: 1rem;
+  font-size: var(--font-size-base);
   color: var(--text-dark);
+  flex-grow: 1;
 }
 
 .read-more {
   display: inline-block;
-  color: var(--secondary);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s ease;
+  margin: 0 1rem 1rem;
+  color: var(--primary);
+  font-weight: 500;
 }
 
-.read-more:hover {
-  color: var(--accent-1);
-  border-bottom-color: var(--accent-1);
-}
-
-/* Writings Intro */
-.writings-intro {
-  margin-bottom: 2rem;
-}
-
-/* Individual Writing Post */
-.writing-post {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.writing-header {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.writing-content {
-  line-height: 1.6;
-}
-
-.writing-content img {
-  max-width: 100%;
-  height: auto;
-  margin: 2rem 0;
+.writing-link:hover .read-more {
+  text-decoration: underline;
 }
   

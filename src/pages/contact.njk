@@ -4,13 +4,69 @@ title: Contact
 permalink: /contact/
 ---
 
-{% set contactPage = pages | getPageBySlug('contact') %}
-{% if contactPage %}
-  <article class="page-container">
-    <div data-layout="modular-four-columns">
-      <div class="module-square-2">
-        {{ contactPage.content.rendered | cleanWpContent | safe }}
+<div class="page-container">
+  <section class="contact-header">
+    <h1>Contact</h1>
+    <p>I look forward to meeting you on the road less travelled.</p>
+  </section>
+
+  <section class="contact-content">
+    <div class="two-columns">
+      <div class="column">
+        <h2>Get in Touch</h2>
+        <p>You can get in contact with me in various ways outlined below or you can send in a message through the form.</p>
+
+        <div class="contact-methods">
+          <div class="contact-email">
+            <h3>General Enquiries</h3>
+            <p>For general enquiries, please send an email to</p>
+            <p><a href="mailto:hello@helenburgess.id.au">hello@helenburgess.id.au</a></p>
+          </div>
+
+          <div class="contact-social">
+            <h3>Follow me</h3>
+            <p>I sometimes lurk in social media. Check me out there.</p>
+            <div class="social-links">
+              {# Add your social media links here #}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="contact-form">
+          <h3>Message Me</h3>
+          <form name="contact" method="POST" data-netlify="true">
+            <div class="form-group">
+              <label for="name">First Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="E.g. John">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="E.g. john@doe.com">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="E.g. +1 3004005000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" maxlength="180" 
+                        placeholder="Enter your message..."></textarea>
+              <span class="character-count">0 / 180</span>
+            </div>
+
+            <button type="submit" class="submit-button">
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-  </article>
-{% endif %} 
+  </section>
+</div>

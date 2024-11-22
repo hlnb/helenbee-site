@@ -4,44 +4,43 @@ title: Writings
 permalink: /writings/
 ---
 
-{% set writingsPage = pages | getPageBySlug('writings') %}
+<div class="page-container">
+  <div class="writings-header">
+    <h1>Writings</h1>
+  </div>
 
-<article class="page-container">
-  {# Introduction content from WordPress page #}
-  {% if writingsPage %}
-    <div class="writings-intro">
-      {{ writingsPage.content.rendered | cleanWpContent | safe }}
-    </div>
-  {% endif %}
-
-  {# Display grid of all writings #}
   <div data-layout="modular-four-columns">
-    {# WordPress Posts #}
-    {% for post in posts %}
+    {% for post in collections.writings | reverse %}
       <div class="module-square-2">
         <article class="writing-card">
-          <h2>{{ post.title.rendered | safe }}</h2>
-          <div class="writing-excerpt">
-            {{ post.excerpt.rendered | cleanWpContent | safe }}
-          </div>
-          <a href="/writings/{{ post.slug }}/" class="read-more">Read More</a>
-        </article>
-      </div>
-    {% endfor %}
-
-    {# Eleventy Writings #}
-    {% for writing in collections.writings %}
-      <div class="module-square-2">
-        <article class="writing-card">
-          <h2>{{ writing.data.title }}</h2>
-          {% if writing.data.excerpt %}
-            <div class="writing-excerpt">
-              {{ writing.data.excerpt }}
+          <a href="{{ post.url }}" class="writing-link">
+            {% if post.data.image %}
+              <div class="writing-image-container">
+                <img src="{{ post.data.image }}" 
+                     alt="{{ post.data.title }}" 
+                     class="writing-image"
+                     loading="lazy">
+              </div>
+            {% endif %}
+            
+            <div class="writing-content">
+              <h2>{{ post.data.title }}</h2>
+              
+              <time datetime="{{ post.date | dateToISO }}">
+                {{ post.date | dateDisplay }}
+              </time>
+              
+              {% if post.data.excerpt %}
+                <div class="writing-excerpt">
+                  {{ post.data.excerpt }}
+                </div>
+              {% endif %}
+              
+              <span class="read-more">Read more</span>
             </div>
-          {% endif %}
-          <a href="{{ writing.url }}" class="read-more">Read More</a>
+          </a>
         </article>
       </div>
     {% endfor %}
   </div>
-</article>
+</div>
