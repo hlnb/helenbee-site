@@ -1,8 +1,10 @@
 module.exports = function(eleventyConfig) {
     // Add passthrough copy for images and assets
-    eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("assets/images");
+  eleventyConfig.addPassthroughCopy("assets/fonts");
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/js");
+    eleventyConfig.addPassthroughCopy("assets");
 
     // Add writings collection
     eleventyConfig.addCollection("writings", function(collection) {
@@ -43,6 +45,29 @@ module.exports = function(eleventyConfig) {
     } catch(e) {
       return url;
     }
+  });
+
+  // Define the filter
+  eleventyConfig.addFilter("addPathPrefixToFullUrl", function(url, prefix) {
+    // Example implementation: prepend the prefix to the URL
+    return prefix + url;
+  });
+
+  // Define the dateToRfc3339 filter with null check
+  eleventyConfig.addFilter("dateToRfc3339", function(date) {
+    if (!date) {
+        return ''; // Return an empty string or a default date string if preferred
+    }
+    return new Date(date).toISOString();
+  });
+
+  // Define the getNewestCollectionItemDate filter with null check
+  eleventyConfig.addFilter("getNewestCollectionItemDate", function(collection) {
+    if (!collection || collection.length === 0) return null;
+    return collection.reduce((newest, item) => {
+        const itemDate = item.date ? new Date(item.date) : new Date(0);
+        return itemDate > newest ? itemDate : newest;
+    }, new Date(0));
   });
 
   // Make sure your site URL is defined

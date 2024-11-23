@@ -41,12 +41,7 @@ h4, .content h4 { font-size: 1.5rem ; line-height: 1.4; }
 h5, .content h5 { font-size: 1.25rem ; line-height: 1.4; }
 h6, .content h6 { font-size: 1rem ; line-height: 1.4; }
 
-/* Navigation */
-.navbar-item {
-    font-family: var(--font-body) ;
-    color: var(--primary) ;
-    transition: all 0.3s ease;
-}
+
 
 /* Ensure other Bulma elements use your fonts */
 .button,
@@ -84,16 +79,20 @@ h6, .content h6 { font-size: 1rem ; line-height: 1.4; }
     width: auto;
 }
 
-/* Navigation Links */
+/* Navigation */
 .navbar-item {
-    font-family: var(--font-body) ;
-    color: var(--primary) ;
-    transition: all 0.3s ease;
+  font-family: var(--font-body);
+  color: var(--primary);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-item:hover {
     color: var(--secondary) ;
     background-color: transparent ;
+    text-decoration: none;
 }
 
 /* Active/Current Page */
@@ -127,10 +126,12 @@ main a:hover {
     color: var(--text-light);
     border: 2px solid var(--primary);
     transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 6px;
 }
 
 .button:hover {
-    background-color: transparent;
+    background-color: #ffffff;
     color: var(--primary);
     border-color: var(--primary);
 }
@@ -150,13 +151,17 @@ main a:hover {
 /* Accent Button (Call to Action) */
 .button.is-accent {
     background-color: var(--accent-1);
-    border-color: var(--accent-1);
     color: var(--text-light);
+    border: 2px solid var(--accent-1);
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 6px;
 }
 
-.button.is-accent:hover {
-    background-color: transparent;
+.hero .button.is-accent:hover {
+    background-color: #ffffff;
     color: var(--accent-1);
+    border-color: var(--accent-1);
 }
 
 /* Card or Box Hover Effects */
@@ -233,6 +238,9 @@ main a:hover {
 .navbar-end {
     display: flex;
     gap: 20px; /* Adjust spacing between items */
+    list-style: none; /* Remove bullets from list items */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
 /* WordPress Content Cleanup */
@@ -283,22 +291,6 @@ main a:hover {
     margin: 0;
     padding: 0;
     width: 100%;
-}
-
-/* WordPress Content Images */
-.wp-content-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1rem 0;
-}
-
-/* Images within modular grid */
-[data-layout*="modular"] .wp-content-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin: 0;
 }
 
 /* Image container within grid */
@@ -540,4 +532,121 @@ main a:hover {
 .writing-link:hover .read-more {
   text-decoration: underline;
 }
-  
+
+.section-background-overlay {
+    background-color: rgba(var(--primary), 0.6);
+}
+
+.hero {
+    position: relative;
+    background-image: url('/assets/images/DALL·E-2023-10-26-road-less-travelled.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(var(--primary-rgb), 0.5); /* Adjust opacity here */
+    background-blend-mode: overlay; /* Blend mode for overlay effect */
+    width: 100vw; /* Full width */
+    height: 60vh; /* Adjusted height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light); /* Ensure text is visible */
+    text-align: center;
+    padding: 2rem;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    max-width: 800px; /* Optional: limit content width */
+    margin: 0 auto;
+    color: var(--text-light); /* Ensure text is visible */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    background-color: rgba(1, 1, 1, 0.3); /* Semi-transparent background */
+    padding: 1rem; /* Add padding for better spacing */
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.hero-content h1 {
+  color: var(--text-light);  
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Add stronger text shadow for h1 */
+
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Define 8 equal columns */
+    gap: var(--modular-gap); /* Use your grid system's gap */
+    align-items: start; /* Align items to the start */
+}
+
+.about-column {
+    grid-column: span 4; /* Each column spans 4 grid columns */
+    padding: var(--spacing-default); /* Add padding for spacing */
+}
+
+.about-column h2 {
+    margin-top: 0; /* Ensure headings align at the top */
+}
+
+.writings-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: var(--modular-gap); /* Use your grid system's gap */
+}
+
+.writing-card {
+    background: var(--background-light);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.writing-image-link {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+.writing-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.writing-card h3 {
+    margin: 1rem;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h3);
+    color: var(--text-dark);
+}
+
+.writing-card p {
+    margin: 1rem;
+    font-size: var(--font-size-base);
+    color: var(--text-dark);
+    flex-grow: 1;
+}
+
+.writing-card a {
+    display: inline-block;
+    margin: 0 1rem 1rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.writing-card:hover .writing-image {
+    transform: scale(1.05);
+}
+
+.writing-card:hover a {
+    text-decoration: underline;
+}
