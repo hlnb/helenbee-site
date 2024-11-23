@@ -1,12 +1,13 @@
 @import 'variables.css';
 @import 'grid-modular.css';
 
+/* Global Styles */
 html, 
 body,
 .content p,
 .content li,
 .content table {
-    font-family: var(--font-body) ;
+    font-family: var(--font-body);
     color: var(--text-dark);
     line-height: 1.6;
 }
@@ -17,8 +18,8 @@ body,
 h1,
 h2,
 h3 {
-    font-family: var(--font-heading) ;
-    color: var(--primary) ;
+    font-family: var(--font-heading);
+    color: var(--primary);
     margin-bottom: 1rem;
 }
 
@@ -28,34 +29,38 @@ h3 {
 h4,
 h5,
 h6 {
-    font-family: var(--font-body) ;
-    color: var(--primary) ;
+    font-family: var(--font-body);
+    color: var(--primary);
     margin-bottom: 0.75rem;
 }
 
-/* Specific heading sizes with !important */
-h1, .content h1 { font-size: 2.5rem ; line-height: 1.2; }
-h2, .content h2 { font-size: 2rem ; line-height: 1.3; }
-h3, .content h3 { font-size: 1.75rem ; line-height: 1.4; }
-h4, .content h4 { font-size: 1.5rem ; line-height: 1.4; }
-h5, .content h5 { font-size: 1.25rem ; line-height: 1.4; }
-h6, .content h6 { font-size: 1rem ; line-height: 1.4; }
+/* Specific heading sizes */
+h1, .content h1 { font-size: 2.5rem; line-height: 1.2; }
+h2, .content h2 { font-size: 2rem; line-height: 1.3; }
+h3, .content h3 { font-size: 1.75rem; line-height: 1.4; }
+h4, .content h4 { font-size: 1.5rem; line-height: 1.4; }
+h5, .content h5 { font-size: 1.25rem; line-height: 1.4; }
+h6, .content h6 { font-size: 1rem; line-height: 1.4; }
 
-
-
-/* Ensure other Bulma elements use your fonts */
+/* Typography for Bulma elements */
 .button,
 .input,
 .textarea,
 .select select,
 .label {
-    font-family: var(--font-body) ;
+    font-family: var(--font-body);
 }
 
-/* Page Container */
+/* Layout */
 .page-container {
     width: 80%;
     margin: 0 auto;
+}
+
+.content-wrapper {
+    width: 95vw;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* Navbar Styles */
@@ -73,32 +78,44 @@ h6, .content h6 { font-size: 1rem ; line-height: 1.4; }
 }
 
 .navbar-item img {
-    font-family: var(--font-heading);
-    max-height: 70px ;
+    max-height: 70px;
     height: 70px;
     width: auto;
 }
 
-/* Navigation */
 .navbar-item {
-  font-family: var(--font-body);
-  color: var(--primary);
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.5rem 1rem;
+    font-family: var(--font-body);
+    color: var(--primary);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
 }
 
 .navbar-item:hover {
-    color: var(--secondary) ;
-    background-color: transparent ;
+    color: var(--secondary);
+    background-color: transparent;
     text-decoration: none;
 }
 
-/* Active/Current Page */
 .navbar-item.is-active {
-    color: var(--accent-1) ;
-    background-color: transparent ;
+    color: var(--accent-1);
+    background-color: transparent;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar-end {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Main Content */
@@ -107,7 +124,6 @@ main {
     color: var(--text-dark);
 }
 
-/* Regular Links in Content */
 main a {
     color: var(--secondary);
     text-decoration: none;
@@ -136,7 +152,6 @@ main a:hover {
     border-color: var(--primary);
 }
 
-/* Secondary Button */
 .button.is-secondary {
     background-color: var(--secondary);
     border-color: var(--secondary);
@@ -148,7 +163,6 @@ main a:hover {
     color: var(--secondary);
 }
 
-/* Accent Button (Call to Action) */
 .button.is-accent {
     background-color: var(--accent-1);
     color: var(--text-light);
@@ -174,43 +188,6 @@ main a:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Basic replacements for common Bulma utilities */
-.content-wrapper {
-  width: 95vw;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--color-border);
-  background: transparent;
-  color: var(--color-text-default);
-  cursor: pointer;
-}
-
-.form-group {
-  margin-bottom: 1rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid var(--color-border);
-  background: transparent;
-  color: var(--color-text-default);
-}
-
-
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .site-header {
@@ -226,90 +203,6 @@ main a:hover {
   .main-nav ul {
     justify-content: center;
   }
-}
-
-.navbar-menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.navbar-end {
-    display: flex;
-    gap: 20px; /* Adjust spacing between items */
-    list-style: none; /* Remove bullets from list items */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-}
-
-/* WordPress Content Cleanup */
-.wp-content {
-    /* Inherit your existing content styles */
-    font-family: var(--font-body);
-    color: var(--text-dark);
-    line-height: 1.6;
-}
-
-/* Override any remaining WordPress-specific styles */
-.wp-content [class*="wp-block-"] {
-    /* Reset WordPress block styles to use your design system */
-    margin: inherit;
-    padding: inherit;
-}
-
-.wp-content img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Ensure proper spacing in WordPress content */
-.wp-content > * + * {
-    margin-top: 1rem;
-}
-
-/* WordPress Content within Modular Grid */
-[data-layout*="modular"] .wp-content {
-    /* Inherit your existing modular styles */
-    padding: var(--spacing-default);
-}
-
-/* WordPress images in grid */
-[data-layout*="modular"] img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* WordPress content spacing in modules */
-[data-layout*="modular"] > * > * + * {
-    margin-top: var(--spacing-default);
-}
-
-/* Ensure WordPress blocks work with your grid */
-[data-layout*="modular"] [class*="wp-block-"] {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-/* Image container within grid */
-[data-layout*="modular"] figure {
-    margin: 0;
-    height: 100%;
-}
-
-[data-layout*="modular"] figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Image captions */
-[data-layout*="modular"] figcaption {
-    font-size: 0.9rem;
-    color: var(--text-dark);
-    margin-top: 0.5rem;
 }
 
 /* Writing Styles */
@@ -338,66 +231,6 @@ main a:hover {
 /* Optional: Add hover effect */
 .writing-image-link:hover .writing-image {
   transform: scale(1.05);
-}
-
-/* Handle images in the main content */
-.wp-content-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem 0;
-}
-
-/* Images within modular grid */
-[data-layout*="modular"] .wp-content-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin: 0;
-}
-
-/* Writing Card Image Styles */
-.writing-card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-default);
-}
-
-.writing-image-link {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16/9; /* Maintains consistent image proportions */
-  overflow: hidden;
-  margin-bottom: 1rem;
-}
-
-.writing-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images cover the area without distortion */
-  transition: transform 0.3s ease;
-}
-
-/* Optional: Add hover effect */
-.writing-image-link:hover .writing-image {
-  transform: scale(1.05);
-}
-
-/* Handle images in the main content */
-.wp-content-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem 0;
-}
-
-/* Images within modular grid */
-[data-layout*="modular"] .wp-content-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin: 0;
 }
 
 /* Writings Intro */
@@ -537,73 +370,181 @@ main a:hover {
     background-color: rgba(var(--primary), 0.6);
 }
 
-.hero {
+/* About Page Specific Styles */
+.about-hero.hero {
     position: relative;
-    background-image: url('/assets/images/DALL·E-2023-10-26-road-less-travelled.png');
+    background-image: url('/assets/images/aaron-burden-CKlHKtCJZKk-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    background-color: rgba(var(--primary-rgb), 0.5); /* Adjust opacity here */
-    background-blend-mode: overlay; /* Blend mode for overlay effect */
-    width: 100vw; /* Full width */
-    height: 60vh; /* Adjusted height */
+    background-color: rgba(var(--primary-rgb), 0.5);
+    background-blend-mode: overlay;
+    width: 100vw;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-light); /* Ensure text is visible */
+    color: var(--text-light);
     text-align: center;
     padding: 2rem;
-    overflow: hidden; /* Ensure no overflow */
+    overflow: hidden;
+}
+
+/* Keep the original hero styles for the home page */
+.hero {
+    /* Your existing hero styles */
+  position: relative;
+  background-image: url('/assets/images/DALL·E-2023-10-26-road-less-travelled.png');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(var(--primary-rgb), 0.5);
+  background-blend-mode: overlay;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  text-align: center;
+  padding: 2rem;
+  overflow: hidden;
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2; /* Ensure content is above the overlay */
-    max-width: 800px; /* Optional: limit content width */
-    margin: 0 auto;
-    color: var(--text-light); /* Ensure text is visible */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
-    background-color: rgba(1, 1, 1, 0.3); /* Semi-transparent background */
-    padding: 1rem; /* Add padding for better spacing */
-    border-radius: 8px; /* Optional: add rounded corners */
+  width: 100%;
+  max-width: 800px;
+  color: var(--text-dark);
+  background-color: rgba(255,255,255, 0.5);
 }
 
-.hero-content h1 {
-  color: var(--text-light);  
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Add stronger text shadow for h1 */
-
-}
-
-.about-grid {
+/* About Page Grid Layouts */
+.about-intro-grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr); /* Define 8 equal columns */
-    gap: var(--modular-gap); /* Use your grid system's gap */
-    align-items: start; /* Align items to the start */
+    grid-template-columns: repeat(8, 1fr);
+    gap: var(--modular-gap);
+    align-items: start;
+    margin: 2rem 0;
 }
 
-.about-column {
-    grid-column: span 4; /* Each column spans 4 grid columns */
-    padding: var(--spacing-default); /* Add padding for spacing */
+.about-intro-image {
+    grid-column: 1 / span 3;
 }
 
-.about-column h2 {
-    margin-top: 0; /* Ensure headings align at the top */
+.about-intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.writings-grid {
+.about-intro-content {
+    grid-column: 4 / span 5;
+    padding-left: 2rem;
+}
+
+.military-career-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-    gap: var(--modular-gap); /* Use your grid system's gap */
+    grid-template-columns: repeat(8, 1fr);
+    gap: var(--modular-gap);
+    align-items: start;
+    margin: 2rem 0;
+}
+
+.military-career-content {
+    grid-column: 1 / span 5;
+    padding-right: 2rem;
+}
+
+.military-career-image {
+    grid-column: 6 / span 3;
+}
+
+.military-career-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: var(--modular-gap);
+    align-items: start;
+    margin: 2rem 0;
+}
+
+.education-image {
+    grid-column: 1 / span 3;
+}
+
+.education-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.education-content {
+    grid-column: 4 / span 5;
+    padding-left: 2rem;
+}
+
+/* Shared styles for the about page */
+.about-page figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-intro-grid,
+    .military-career-grid,
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-intro-image,
+    .about-intro-content,
+    .military-career-content,
+    .military-career-image,
+    .education-image,
+    .education-content {
+        grid-column: 1 / -1;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Index Page Introduction Section */
+[data-layout="modular-two-columns"] .introduction-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--modular-gap);
+    margin: 2rem 0;
+}
+
+[data-layout="modular-two-columns"] .introduction-content {
+    grid-column: span 1;
+}
+
+/* Writings Section */
+[data-layout="modular-four-columns"] .writings-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--modular-gap);
+    margin: 2rem 0;
 }
 
 .writing-card {
-    background: var(--background-light);
-    border-radius: 8px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     height: 100%;
-    text-decoration: none;
-    color: inherit;
+    background: var(--background-light);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .writing-image-link {
@@ -619,34 +560,32 @@ main a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
 }
 
 .writing-card h3 {
     margin: 1rem;
     font-family: var(--font-heading);
-    font-size: var(--font-size-h3);
     color: var(--text-dark);
 }
 
 .writing-card p {
-    margin: 1rem;
-    font-size: var(--font-size-base);
-    color: var(--text-dark);
+    margin: 0 1rem;
     flex-grow: 1;
 }
 
-.writing-card a {
-    display: inline-block;
-    margin: 0 1rem 1rem;
-    color: var(--primary);
-    font-weight: 500;
+.writing-card .button {
+    margin: 1rem;
 }
 
-.writing-card:hover .writing-image {
-    transform: scale(1.05);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    [data-layout="modular-four-columns"] .writings-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.writing-card:hover a {
-    text-decoration: underline;
+@media (max-width: 480px) {
+    [data-layout="modular-four-columns"] .writings-grid {
+        grid-template-columns: 1fr;
+    }
 }
