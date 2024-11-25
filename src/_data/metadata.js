@@ -7,6 +7,7 @@ module.exports = {
 		name: "Helen Burgess",
 		email: "me@helenburgess.id.au",
 		url: "https://helenburgess.id.au/about-me/",
-		googleAnalytics: "G-SEQK0YEX5Z"
+		googleAnalytics: "G-SEQK0YEX5Z",
+		enableCookieConsent: true
 	}
 }
