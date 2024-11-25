@@ -6,6 +6,7 @@ module.exports = {
 	author: {
 		name: "Helen Burgess",
 		email: "me@helenburgess.id.au",
-		url: "https://helenburgess.id.au/about-me/"
+		url: "https://helenburgess.id.au/about-me/",
+		googleAnalytics: "G-SEQK0YEX5Z"
 	}
 }

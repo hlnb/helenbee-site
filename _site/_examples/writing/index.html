@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="/css/variables.css">
     
     <script src="https://kit.fontawesome.com/49adc57732.js" crossorigin="anonymous"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id='G-SEQK0YEX5Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SEQK0YEX5Z');
+    </script>
   </head>
   <body>
     <header class="navbar">
@@ -35,9 +43,62 @@
 
     </main>
 
-       <footer>
-     <p>&copy;  Helen Burgess
-     </p>
-   </footer>
+    <!-- Rest of your base template -->
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-grid">
+      <!-- About Column -->
+      <div class="footer-column">
+        <h4>About</h4>
+        <p>Exploring the road less travelled in technology, craft, and life. Veteran, Nana, knitter, and web technologist sharing lived experiences.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/writings">Writings</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Connect/Social Links Column -->
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Helen Burgess. Built with <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">11ty</a>.</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js"></script>
+
   </body>
 </html>

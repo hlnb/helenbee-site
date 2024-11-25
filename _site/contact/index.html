@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="/css/variables.css">
     
     <script src="https://kit.fontawesome.com/49adc57732.js" crossorigin="anonymous"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id='G-SEQK0YEX5Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SEQK0YEX5Z');
+    </script>
   </head>
   <body>
     <header class="navbar">
@@ -33,10 +41,14 @@
     <main>
       
 <div class="page-container">
-  <section class="contact-header">
-    <h1>Contact</h1>
-    <p>I look forward to meeting you on the road less travelled.</p>
+  <section class="hero contact-hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Keep in Touch</h1>
+      <p class="hero-subtitle">I look forward to meeting you on the road less travelled.</p>
+    </div>
   </section>
+
+
 
    <section class="contact-content">
     <div class="two-columns">
@@ -73,74 +85,61 @@
         <div class="contact-form">
           <h3>Message Me</h3>
           <form 
-              name="contact" 
-              method="POST" 
-              data-netlify="true" 
-              netlify-honeypot="bot-field" 
-              action="/thank-you/"
-              class="contact-form"
-              novalidate>
-            
+            name="contact" 
+            method="POST" 
+            data-netlify="true" 
+            data-netlify-recaptcha="true" 
+            action="/thank-you/">
             <p class="hidden">
-              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+              <label>Don't fill this out: <input name="bot-field"></label>
             </p>
-            
-            <input type="hidden" name="form-name" value="contact">
 
             <div class="form-group">
-              <label for="name">First Name <span class="required">*</span></label>
+              <label class="label" for="name">First Name</label>
               <input 
-                  type="text" 
-                  id="name" 
-                  name="name" 
-                  required 
-                  minlength="2"
-                  placeholder="E.g. John"
-                  data-error="Please enter your name (minimum 2 characters)">
+                class="input" 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                placeholder="E.g. John">
               <span class="error-message"></span>
             </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">Email Address <span class="required">*</span></label>
+            <div class="form-group">
+              <label class="label" for="email">Email Address</label>
+              <div class="input-group">
+                <i class="icon fas fa-envelope"></i>
                 <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    required 
-                    placeholder="E.g. john@doe.com"
-                    data-error="Please enter a valid email address">
-                <span class="error-message"></span>
-              </div>
-
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input 
-                    type="tel" 
-                    id="phone" 
-                    name="phone" 
-                    placeholder="E.g. +1 3004005000"
-                    pattern="^[\d\s+()-]*$"
-                    data-error="Please enter a valid phone number">
+                  class="input" 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  placeholder="E.g. john@doe.com">
                 <span class="error-message"></span>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="message">Message <span class="required">*</span></label>
+              <label class="label" for="message">Message</label>
               <textarea 
-                  id="message" 
-                  name="message" 
-                  rows="6" 
-                  maxlength="180" 
-                  required
-                  placeholder="Enter your message..."
-                  data-error="Please enter your message"></textarea>
-              <span class="character-count">0 / 180</span>
+                class="textarea" 
+                id="message" 
+                name="message" 
+                required
+                rows="6" 
+                maxlength="180" 
+                placeholder="Enter your message..."></textarea>
               <span class="error-message"></span>
+              <span class="help-text character-count">0 / 180</span>
             </div>
 
-            <button type="submit" class="submit-button">
+            <div class="form-group">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+
+            <button type="submit" class="button">
               <span>Send Message</span>
             </button>
           </form>
@@ -150,89 +149,65 @@
   </section>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.contact-form');
-    const inputs = form.querySelectorAll('input[required], textarea[required]');
-    
-    // Character count for message
-    const messageTextarea = document.getElementById('message');
-    const charCount = document.querySelector('.character-count');
-    
-    if (messageTextarea && charCount) {
-        messageTextarea.addEventListener('input', function() {
-            const remaining = this.value.length;
-            charCount.textContent = `${remaining} / 180`;
-        });
-    }
 
-    // Validate individual field
-    function validateField(field) {
-        const parent = field.closest('.form-group');
-        const errorSpan = parent.querySelector('.error-message');
-        
-        if (!field.validity.valid) {
-            parent.classList.add('error');
-            parent.classList.remove('success');
-            errorSpan.textContent = field.dataset.error;
-            return false;
-        } else {
-            parent.classList.remove('error');
-            parent.classList.add('success');
-            errorSpan.textContent = '';
-            return true;
-        }
-    }
-
-    // Add validation to each required field
-    inputs.forEach(input => {
-        input.addEventListener('blur', () => validateField(input));
-        input.addEventListener('input', () => validateField(input));
-    });
-
-    // Form submission
-    form.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        // Validate all fields
-        let isValid = true;
-        inputs.forEach(input => {
-            if (!validateField(input)) {
-                isValid = false;
-            }
-        });
-
-        if (!isValid) {
-            return;
-        }
-
-        // Show loading state
-        const submitButton = form.querySelector('.submit-button');
-        submitButton.classList.add('loading');
-
-        try {
-            const formData = new FormData(form);
-            await fetch('/', {
-                method: 'POST',
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(formData).toString()
-            });
-            
-            // Redirect to thank you page
-            window.location.href = '/thank-you/';
-        } catch (error) {
-            console.error('Error:', error);
-            alert('Sorry, there was an error submitting your form. Please try again.');
-            submitButton.classList.remove('loading');
-        }
-    });
-});
-</script>
     </main>
 
-       <footer>
-     <p>&copy;  Helen Burgess
-     </p>
-   </footer>
+    <!-- Rest of your base template -->
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-grid">
+      <!-- About Column -->
+      <div class="footer-column">
+        <h4>About</h4>
+        <p>Exploring the road less travelled in technology, craft, and life. Veteran, Nana, knitter, and web technologist sharing lived experiences.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/writings">Writings</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Connect/Social Links Column -->
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Helen Burgess. Built with <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">11ty</a>.</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="/assets/js/main.js"></script>
+
   </body>
 </html>

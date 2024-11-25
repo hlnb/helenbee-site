@@ -2,9 +2,10 @@ module.exports = function(eleventyConfig) {
     // Add passthrough copy for images and assets
   eleventyConfig.addPassthroughCopy("assets/images");
   eleventyConfig.addPassthroughCopy("assets/fonts");
-    eleventyConfig.addPassthroughCopy("src/css");
-    eleventyConfig.addPassthroughCopy("src/js");
-    eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("src/assets/js");
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPassthroughCopy("assets");
 
     // Add writings collection
     eleventyConfig.addCollection("writings", function(collectionApi) {
@@ -98,6 +99,11 @@ module.exports = function(eleventyConfig) {
     }
     
     return categories;
+  });
+
+  // Add year filter
+  eleventyConfig.addFilter("year", () => {
+    return new Date().getFullYear();
   });
 
   return {
