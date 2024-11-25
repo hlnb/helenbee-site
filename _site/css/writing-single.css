@@ -1,0 +1,327 @@
+/* Individual Blog Post Styles */
+.writing-single {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Hero Image Styles */
+.writing-hero {
+    position: relative;
+    width: 80vw;
+    height: 60vh;
+    min-height: 400px;
+    margin: 0 auto 3rem auto;
+    padding-bottom: 2rem;
+    color: var(--text-light);
+    overflow: hidden;
+    background-color: var(--primary);
+}
+
+.hero-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    filter: brightness(0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 2rem 3rem 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hero-content h1 {
+    color: var(--text-light);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.writing-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.writing-meta time {
+    color: var(--text-light);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.writing-meta .category {
+    background: var(--primary);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Post Header */
+.writing-header {
+    margin-bottom: 3rem;
+}
+
+.writing-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.writing-meta {
+    display: flex;
+    gap: 2rem;
+    color: var(--text-light);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+/* Post Content */
+.writing-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.writing-content p {
+    margin-bottom: 1.5rem;
+}
+
+.writing-content h2 {
+    font-size: 1.8rem;
+    margin: 2.5rem 0 1rem;
+}
+
+.writing-content h3 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+}
+
+/* Images within content */
+.writing-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.writing-content figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+/* Blockquotes */
+.writing-content blockquote {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border-left: 4px solid var(--primary);
+    background: var(--background-light);
+    font-style: italic;
+}
+
+/* Code blocks */
+.writing-content pre {
+    background: var(--background-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+.writing-content code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+}
+
+/* Lists */
+.writing-content ul,
+.writing-content ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.writing-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Category and Tags */
+.writing-taxonomy {
+    margin: 3rem 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--support-1);
+}
+
+.writing-taxonomy .category {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    background: var(--primary);
+    color: var(--text-light);
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+.writing-taxonomy .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.writing-taxonomy .tag {
+    padding: 0.2rem 0.8rem;
+    background: var(--background-light);
+    border: 1px solid var(--support-1);
+    border-radius: 16px;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .writing-single {
+        padding: 1rem;
+    }
+
+    .writing-header h1 {
+        font-size: 2rem;
+    }
+
+    .writing-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .writing-hero {
+        width: 95vw;
+        padding-bottom: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .writing-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .hero-content {
+        padding: 2rem 2rem 4rem 2rem;
+    }
+}
+
+/* Image and Caption Styling in Content */
+.writing-content figure {
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.writing-content figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.writing-content figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    opacity: 0.8;
+    font-style: italic;
+    text-align: center;
+}
+
+/* For markdown images with underscore captions */
+.writing-content img + em {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    opacity: 0.8;
+    text-align: center;
+}
+
+/* Image and Caption Styling for Paragraph-wrapped Images */
+.writing-content p {
+    /* Reset paragraph margins when it contains only image and caption */
+    &:has(> img:first-child) {
+        margin: 2rem auto;
+        text-align: center;
+    }
+}
+
+.writing-content p img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.writing-content p img + em {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    opacity: 0.8;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Callout Styles */
+.callout,
+blockquote[class*="[!"] {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid;
+}
+
+/* Abstract styling */
+.callout.abstract,
+blockquote[class*="[!abstract]"] {
+    background-color: var(--background-light);
+    border-left-color: var(--primary);
+}
+
+/* Note styling */
+.callout.note,
+blockquote[class*="[!note]"] {
+    background-color: var(--background-light);
+    border-left-color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+/* Update styling */
+.callout.update,
+blockquote[class*="[!update]"] {
+    background-color: var(--background-light);
+    border-left-color: var(--accent-1);
+}
+
+/* Heading styles within callouts */
+.callout h3,
+blockquote[class*="[!"] h3 {
+    margin-top: 0;
+    color: inherit;
+    font-size: 1.2rem;
+}

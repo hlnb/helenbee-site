@@ -7,8 +7,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
 
     // Add writings collection
-    eleventyConfig.addCollection("writings", function(collection) {
-        return collection.getFilteredByGlob("src/writings/*.md");
+    eleventyConfig.addCollection("writings", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("./src/writings/*.md");
     });
 
     // Add date filters
@@ -75,6 +75,29 @@ module.exports = function(eleventyConfig) {
     url: "https://helenburgess.id.au", // Replace with your site URL
     title: "Helen Burgess",
     description: "Explore Helen Bee's digital garden at helenburgess.id.au, where personal experiences, web technologies, the timeless wisdom of Adler and Stoic philosophy converge. Join a journey of self-discovery and innovation, uncovering insights off the beaten path.",
+  });
+
+  eleventyConfig.addCollection("writingsByCategory", function(collectionApi) {
+    const writings = collectionApi.getFilteredByGlob("./src/writings/*.md");
+    
+    // Group posts by category
+    const categories = {};
+    writings.forEach(post => {
+        const category = post.data.category || 'uncategorized';
+        if (!categories[category]) {
+            categories[category] = [];
+        }
+        categories[category].push(post);
+    });
+    
+    // Sort posts within each category by date
+    for (let category in categories) {
+        categories[category].sort((a, b) => {
+            return b.date - a.date;
+        });
+    }
+    
+    return categories;
   });
 
   return {

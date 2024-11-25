@@ -1,17 +1,21 @@
 ---
+layout: writing.njk
 title: Giving your hands some help
 date: 2019-05-27
-image: /img/wp-content/uploads/2019/05/dequervanImage-1200x350-c-default-1.jpg
+category: lived-experience
+tags: [lived-experience, hands, pain]
+image: /assets/images/dequervanImage-1200x350-c-default.jpg
 excerpt: If you have ever had a sore hand you know the inconvenience it can bring. This article is about how to help your hands be on top of their game from a lived experience.
 ---
 
-## Hand Update
-
-_01 January 2023_
+<div class="callout update">
+Hand Update- 01 January 2023
 
 Since writing this article, I have been diagnosed with arthritis in my hands, with my right thumb having bone-on-bone. Ouchy!!!!
 
 I had surgery to remove a bone from the CMC joint in December 2021 and have been doing rehab since then. I have a few pictures of my hand post-surgery, which I will upload here soon.
+
+</div>
 
 # A bit of background
 
@@ -38,7 +42,7 @@ I also cannot stress enough the importance of proper posture whilst doing any ac
 
 The exercises in the videos are the same ones my physiotherapist gave me. I just think seeing them is better than trying to write them down. For General Hand/Joint/Wrist health they are good to do as well.
 
-![image showing pain spot causes for wrist pain](/img/wp-content/uploads/2019/05/dequervanImage-1200x350-c-default-1.jpg)
+![image showing pain spot causes for wrist pain /assets/images/dequervanImage-1200x350-c-default-1.jpg]
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/7jeEZUGqDNw" title="De Quervain's Syndrome Stretches, aka Blackberry Thumb - Ask Doctor Jo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -48,4 +52,5 @@ I personally think that my thumb pain is a combination of all the hobbies and jo
 I have given myself permission to stop when I need to, when the pain is at its greatest, do my hand exercises each day (using the videos as a reminder) and enjoy the massage of hands and forearms as much as possible.
 I do think that having a doctor check out the pain is a good idea, and that having any sort of cortisone injection is not. What the medical professionals call 'conservative treatment' works for me and it might just work for you.
 
+![brown and black typewriter](/assets/images/pereanu-sebastian-qFH7-yKoxik-unsplash.jpg)
 Photo by [Pereanu Sebastian](https://unsplash.com/@sebastian123) on [Unsplash](https://unsplash.com/photos/brown-and-black-typewriter-qFH7-yKoxik)

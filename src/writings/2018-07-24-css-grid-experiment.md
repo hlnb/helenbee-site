@@ -1,7 +1,10 @@
 ---
+layout: writing.njk
 title: CSS Grid, My first coding experiment
 date: 2018-07-24
-image: /img/wp-content/uploads/2018/07/Screen-Shot-2018-07-24-at-12.39.55-pm-1.png
+category: technology
+tags: [technology, css, grid]
+image: /assets/images/Screen-Shot-2018-07-24-at-12.39.55-pm-1.png
 excerpt: My journey into learning CSS Grid and how it helped me understand web layouts better.
 ---
 

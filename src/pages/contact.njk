@@ -10,7 +10,7 @@ permalink: /contact/
     <p>I look forward to meeting you on the road less travelled.</p>
   </section>
 
-  <section class="contact-content">
+   <section class="contact-content">
     <div class="two-columns">
       <div class="column">
         <h2>Get in Touch</h2>
@@ -27,7 +27,15 @@ permalink: /contact/
             <h3>Follow me</h3>
             <p>I sometimes lurk in social media. Check me out there.</p>
             <div class="social-links">
-              {# Add your social media links here #}
+              <a href="https://github.com/hlnb" aria-label="GitHub Profile">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/helenburgess/" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://twitter.com/hlnbee" aria-label="Twitter Profile">
+                <i class="fab fa-twitter"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -36,29 +44,72 @@ permalink: /contact/
       <div class="column">
         <div class="contact-form">
           <h3>Message Me</h3>
-          <form name="contact" method="POST" data-netlify="true">
+          <form 
+              name="contact" 
+              method="POST" 
+              data-netlify="true" 
+              netlify-honeypot="bot-field" 
+              action="/thank-you/"
+              class="contact-form"
+              novalidate>
+            
+            <p class="hidden">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            
+            <input type="hidden" name="form-name" value="contact">
+
             <div class="form-group">
               <label for="name">First Name <span class="required">*</span></label>
-              <input type="text" id="name" name="name" required placeholder="E.g. John">
+              <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required 
+                  minlength="2"
+                  placeholder="E.g. John"
+                  data-error="Please enter your name (minimum 2 characters)">
+              <span class="error-message"></span>
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label for="email">Email Address <span class="required">*</span></label>
-                <input type="email" id="email" name="email" required placeholder="E.g. john@doe.com">
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    placeholder="E.g. john@doe.com"
+                    data-error="Please enter a valid email address">
+                <span class="error-message"></span>
               </div>
 
               <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="E.g. +1 3004005000">
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    placeholder="E.g. +1 3004005000"
+                    pattern="^[\d\s+()-]*$"
+                    data-error="Please enter a valid phone number">
+                <span class="error-message"></span>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="6" maxlength="180" 
-                        placeholder="Enter your message..."></textarea>
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="6" 
+                  maxlength="180" 
+                  required
+                  placeholder="Enter your message..."
+                  data-error="Please enter your message"></textarea>
               <span class="character-count">0 / 180</span>
+              <span class="error-message"></span>
             </div>
 
             <button type="submit" class="submit-button">
@@ -70,3 +121,82 @@ permalink: /contact/
     </div>
   </section>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.contact-form');
+    const inputs = form.querySelectorAll('input[required], textarea[required]');
+    
+    // Character count for message
+    const messageTextarea = document.getElementById('message');
+    const charCount = document.querySelector('.character-count');
+    
+    if (messageTextarea && charCount) {
+        messageTextarea.addEventListener('input', function() {
+            const remaining = this.value.length;
+            charCount.textContent = `${remaining} / 180`;
+        });
+    }
+
+    // Validate individual field
+    function validateField(field) {
+        const parent = field.closest('.form-group');
+        const errorSpan = parent.querySelector('.error-message');
+        
+        if (!field.validity.valid) {
+            parent.classList.add('error');
+            parent.classList.remove('success');
+            errorSpan.textContent = field.dataset.error;
+            return false;
+        } else {
+            parent.classList.remove('error');
+            parent.classList.add('success');
+            errorSpan.textContent = '';
+            return true;
+        }
+    }
+
+    // Add validation to each required field
+    inputs.forEach(input => {
+        input.addEventListener('blur', () => validateField(input));
+        input.addEventListener('input', () => validateField(input));
+    });
+
+    // Form submission
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        // Validate all fields
+        let isValid = true;
+        inputs.forEach(input => {
+            if (!validateField(input)) {
+                isValid = false;
+            }
+        });
+
+        if (!isValid) {
+            return;
+        }
+
+        // Show loading state
+        const submitButton = form.querySelector('.submit-button');
+        submitButton.classList.add('loading');
+
+        try {
+            const formData = new FormData(form);
+            await fetch('/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+            });
+            
+            // Redirect to thank you page
+            window.location.href = '/thank-you/';
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Sorry, there was an error submitting your form. Please try again.');
+            submitButton.classList.remove('loading');
+        }
+    });
+});
+</script>

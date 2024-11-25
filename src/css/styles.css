@@ -651,3 +651,285 @@ main a:hover {
         padding: 0 1rem;
     }
 }
+
+/* Writings Collection Page Specific Styles */
+.writings-collection .writings-header {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--support-1) 100%);
+    color: var(--text-light);
+    border-radius: 8px;
+}
+
+.writings-collection .writings-header h1 {
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+/* Refined Grid Layout for Writings Collection Page */
+.writings-collection [data-layout="modular-four-columns"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--modular-gap);
+    padding: 2rem 0;
+}
+
+/* Enhanced Writing Card Styles for Collection Page */
+.writings-collection .writing-card {
+    background: var(--background-light);
+    border: 1px solid var(--support-1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.writings-collection .writing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.writings-collection .writing-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.writings-collection .writing-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.writings-collection .writing-content time {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.writings-collection .writing-excerpt {
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.writings-collection .read-more {
+    color: var(--accent-1);
+    font-weight: 500;
+    margin-top: auto;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.writings-collection .writing-card:hover .read-more {
+    color: var(--primary);
+}
+
+/* Responsive Adjustments for Collection Page */
+@media (max-width: 1200px) {
+    .writings-collection [data-layout="modular-four-columns"] {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .writings-collection [data-layout="modular-four-columns"] {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .writings-collection [data-layout="modular-four-columns"] {
+        grid-template-columns: 1fr;
+    }
+    
+    .writings-collection .writings-header {
+        margin: 2rem 0;
+        padding: 1.5rem;
+    }
+}
+
+/* Writings Collection Page Grid Layout */
+.writings-collection .writings-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--modular-gap);
+    margin: 2rem 0;
+}
+
+/* Writing Card Styles */
+.writings-collection .writing-card {
+    background: var(--background-light);
+    border: 1px solid var(--support-1);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 1200px) {
+    .writings-collection .writings-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .writings-collection .writings-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .writings-collection .writings-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.category-section {
+    margin: 4rem 0;
+    scroll-margin-top: 2rem; /* For smooth scrolling to anchors */
+}
+
+.category-section h2 {
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary);
+}
+
+/* Contact Page Layout */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary);
+    color: var(--text-light);
+    transform: translateY(-2px);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Hide honeypot field */
+.hidden {
+    display: none;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+/* Thank you page styling */
+.thank-you {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.thank-you h1 {
+    margin-bottom: 1rem;
+}
+
+.thank-you .button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Form validation styles */
+.form-group {
+    position: relative;
+}
+
+.error-message {
+    display: none;
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.form-group input:invalid:not(:focus),
+.form-group textarea:invalid:not(:focus) {
+    border-color: #e74c3c;
+}
+
+.form-group.error .error-message {
+    display: block;
+}
+
+.form-group.error input,
+.form-group.error textarea {
+    border-color: #e74c3c;
+}
+
+.form-group.success input,
+.form-group.success textarea {
+    border-color: #2ecc71;
+}
+
+/* Loading state for submit button */
+.submit-button.loading {
+    position: relative;
+    cursor: wait;
+    opacity: 0.7;
+}
+
+.submit-button.loading span {
+    visibility: hidden;
+}
+
+.submit-button.loading::after {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
