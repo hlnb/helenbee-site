@@ -8,6 +8,7 @@ module.exports = {
 		email: "me@helenburgess.id.au",
 		url: "https://helenburgess.id.au/about-me/",
 		googleAnalytics: "G-SEQK0YEX5Z",
+		domain: "helenburgess.id.au",
 		enableCookieConsent: true
 	}
 }
