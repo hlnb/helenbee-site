@@ -1157,7 +1157,7 @@ main a:hover {
     margin-bottom: 3rem;
 }
 
-.footer-column:first-child {
+.footer-column{
     grid-column: span 2;
     margin-bottom: 2rem;
 }
