@@ -1,24 +1,67 @@
 [build]
 	publish = "_site"
 	command = "npm run build"
+	node_version = "20.x"
 
-[[plugins]]
+[build.environment]
+	TZ = "Australia/Sydney"
 
-	# Opt-in to the Netlify Lighthouse plugin (choose one):
+# Redirect all 404s to custom 404 page
+[[redirects]]
+	from = "/*"
+	to = "/404.html"
+	status = 404
 
-	# 1. Go to your site on https://app.netlify.com and navigate to the Integrations tab, search for the `Lighthouse` plugin
-	# 2. Or via `npm install -D @netlify/plugin-lighthouse`
+# Asset optimization
+[build.processing]
+	skip_processing = false
+[build.processing.css]
+	bundle = true
+	minify = true
+[build.processing.js]
+	bundle = true
+	minify = true
+[build.processing.images]
+	compress = true
 
-	# Read more: https://github.com/netlify/netlify-plugin-lighthouse
+# Security headers
+[[headers]]
+	for = "/*"
+	[headers.values]
+		X-Frame-Options = "DENY"
+		X-XSS-Protection = "1; mode=block"
+		X-Content-Type-Options = "nosniff"
+		Referrer-Policy = "strict-origin-when-cross-origin"
+		Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+		Content-Security-Policy = """
+			default-src 'self';
+			img-src 'self' data: https:;
+			script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;
+			style-src 'self' 'unsafe-inline';
+			connect-src 'self' https://www.google-analytics.com;
+			font-src 'self';
+			frame-ancestors 'none';
+			form-action 'self';
+			"""
 
-	package = "@netlify/plugin-lighthouse"
+# Cache control for static assets
+[[headers]]
+	for = "/assets/*"
+	[headers.values]
+		Cache-Control = "public, max-age=31536000, immutable"
 
-	# optional, fails build when a category is below a threshold
-	[plugins.inputs.thresholds]
-		performance = 1.0
-		accessibility = 1.0
-		best-practices = 1.0
-		seo = 1.0
+[[headers]]
+	for = "/*.html"
+	[headers.values]
+		Cache-Control = "public, max-age=0, must-revalidate"
 
-	[plugins.inputs]
-		output_path = "reports/lighthouse/index.html"
+# Specific rules for fonts
+[[headers]]
+	for = "/assets/fonts/*"
+	[headers.values]
+		Cache-Control = "public, max-age=31536000, immutable"
+		Access-Control-Allow-Origin = "*"
+
+# Brotli compression
+[build.processing.brotli]
+	enabled = true
