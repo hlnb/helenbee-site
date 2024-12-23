@@ -65,3 +65,16 @@
 # Brotli compression
 [build.processing.brotli]
 	enabled = true
+
+[[redirects]]
+	from = "/admin/*"
+	to = "/admin/index.html"
+	status = 200
+	conditions = {Role = ["admin"]}
+
+[dev]
+	command = "npm run dev"
+	targetPort = 8080
+	port = 8888
+	publish = "_site"
+	jwtRolePath = "app_metadata.authorization.roles"

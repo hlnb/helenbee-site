@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Admin Dashboard
+eleventyNavigation:
+  key: Admin
+  order: 4
+---
+
+<h1>Admin Dashboard</h1>
+
+<div class="dashboard-grid">
+    <div class="dashboard-card">
+        <h2>Content Status</h2>
+        <ul>
+            <li>Planning: {{ collections.planned.length }}</li>
+            <li>Drafts: {{ collections.drafts.length }}</li>
+            <li>Published: {{ collections.published.length }}</li>
+        </ul>
+    </div>
+</div>

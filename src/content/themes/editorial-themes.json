@@ -1,0 +1,102 @@
+{
+  "2024": {
+    "yearly": "Web Development and Personal Projects",
+    "quarters": {
+      "Q1": "Site Rebuild with 11ty",
+      "Q2": "Web Development Deep Dives",
+      "Q3": "Technical Projects",
+      "Q4": "Year in Review"
+    },
+    "months": [
+      {
+        "number": "01",
+        "name": "January",
+        "theme": "11ty Migration",
+        "contentThemes": [
+          "Site Architecture",
+          "Migration Process",
+          "Performance Improvements"
+        ],
+        "keywords": [
+          "11ty",
+          "web development",
+          "migration"
+        ],
+        "recommendedPostCount": 4
+      },
+      {
+        "number": "12",
+        "name": "December",
+        "theme": "Year End Reflections",
+        "contentThemes": [
+          "Holiday Reflections",
+          "Year in Review",
+          "Summer Celebrations",
+          "Christmas in Australia"
+        ],
+        "keywords": [
+          "christmas",
+          "summer",
+          "new year",
+          "reflection",
+          "australia"
+        ],
+        "recommendedPostCount": 4
+      }
+    ]
+  },
+  "2019": {
+    "yearly": "Healthcare and Technology",
+    "months": [
+      {
+        "number": "05",
+        "name": "May",
+        "theme": "Healthcare Systems",
+        "contentThemes": [
+          "Healthcare Technology",
+          "System Design"
+        ],
+        "keywords": [
+          "healthcare",
+          "technology",
+          "systems"
+        ],
+        "recommendedPostCount": 2
+      }
+    ]
+  },
+  "2018": {
+    "yearly": "Technology and Society",
+    "months": [
+      {
+        "number": "06",
+        "name": "June",
+        "theme": "Healthcare and Society",
+        "contentThemes": [
+          "Healthcare Impact",
+          "Social Systems"
+        ],
+        "keywords": [
+          "healthcare",
+          "society",
+          "technology"
+        ],
+        "recommendedPostCount": 2
+      },
+      {
+        "number": "07",
+        "name": "July",
+        "theme": "Web Development",
+        "contentThemes": [
+          "Modern Web",
+          "Development Practices"
+        ],
+        "keywords": [
+          "web development",
+          "technology"
+        ],
+        "recommendedPostCount": 2
+      }
+    ]
+  }
+}

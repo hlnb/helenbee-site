@@ -1,0 +1,74 @@
+---
+layout: layouts/admin.njk
+title: Editorial Calendar
+---
+
+<div class="editorial-dashboard">
+  <h2>Content Overview</h2>
+  {% for status in ['published', 'draft', 'planning', 'idea'] %}
+    <div class="status-group">
+      <h3>{{ status | capitalize }}</h3>
+      {% set statusPosts = collections.editorialCalendar | byStatus(status) %}
+      <p>{{ statusPosts.length }} posts</p>
+    </div>
+  {% endfor %}
+</div>
+
+{% for year, yearData in editorialThemes %}
+  <section class="year-section">
+    <h2>{{ year }} - {{ yearData.yearly }}</h2>
+    
+    {% if yearData.quarters %}
+      <div class="quarters-overview">
+        {% for quarter, theme in yearData.quarters %}
+          <div class="quarter">
+            <h3>{{ quarter }}: {{ theme }}</h3>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% for monthData in yearData.months %}
+      <div class="month-section">
+        <h3>
+          {{ monthData.name }}
+          <span class="theme">{{ monthData.theme }}</span>
+        </h3>
+        
+        {% if monthData.contentThemes %}
+          <div class="content-themes">
+            <h4>Content Themes:</h4>
+            <ul>
+              {% for theme in monthData.contentThemes %}
+                <li>{{ theme }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+        
+        {% set monthPosts = collections.editorialCalendar | byMonth(year + "/" + monthData.number) %}
+        {% for post in monthPosts %}
+          <article class="post-item status-{{ post.data.calendar.status }}">
+            <h4>
+              {{ post.data.title }}
+              {% if post.data.calendar.status === 'published' %}
+                <a href="{{ post.url }}" class="view-link">View →</a>
+              {% endif %}
+            </h4>
+            <div class="metadata">
+              <time>{{ post.data.calendar.proposedDate | formatDate }}</time>
+              <span class="type">{{ post.data.calendar.type }}</span>
+              <span class="status">{{ post.data.calendar.status }}</span>
+            </div>
+          </article>
+        {% endfor %}
+
+        {% if monthPosts.length < monthData.recommendedPostCount %}
+          <p class="recommendation">
+            Consider adding {{ monthData.recommendedPostCount - monthPosts.length }} more posts
+          </p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </section>
+{% endfor %}

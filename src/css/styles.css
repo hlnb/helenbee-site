@@ -1,6 +1,7 @@
-@import 'variables.css';
+
 @import 'grid-modular.css';
 @import 'forms.css';
+@import 'christmas-card.css';
 
 /* Global Styles */
 html, 

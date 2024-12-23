@@ -1,0 +1,25 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Eucalyptus Sprig Pattern -->
+  <g id="eucalyptus-sprig">
+    <!-- Main stem -->
+    <path d="M60 100 Q 60 70 70 50" fill="none" stroke="#2d5a40" stroke-width="2" />
+
+    <!-- Leaves -->
+    <g class="leaves">
+      <!-- Leaf 1 -->
+      <path d="M65 60 Q 75 55 70 45 Q 65 35 55 40 Q 50 45 65 60" fill="#7ba08c" />
+      <!-- Leaf 2 -->
+      <path d="M70 80 Q 85 75 80 65 Q 75 55 65 60 Q 60 65 70 80" fill="#5c8c71" />
+      <!-- Leaf 3 -->
+      <path d="M55 70 Q 45 65 50 55 Q 55 45 65 50 Q 70 55 55 70" fill="#6b9a7e" />
+    </g>
+
+    <!-- Gum nuts -->
+    <circle cx="65" cy="55" r="3" fill="#45674f" />
+    <circle cx="70" cy="70" r="3" fill="#45674f" />
+  </g>
+
+  <!-- Repeat pattern -->
+  <use href="#eucalyptus-sprig" transform="rotate(120 60 60)" />
+  <use href="#eucalyptus-sprig" transform="rotate(240 60 60)" />
+</svg>

@@ -1,0 +1,31 @@
+{
+  "2024": {
+    "yearly": "Web Development and Personal Projects",
+    "quarters": {
+      "Q1": "Site Rebuild with 11ty",
+      "Q2": "Web Development Deep Dives",
+      "Q3": "Technical Projects",
+      "Q4": "Year in Review"
+    },
+    "months": {
+      "01": "11ty Migration",
+      "02": "Component Architecture",
+      "03": "Performance Optimization",
+      "11": "Modern Web Development",
+      "12": "Year End Reflections"
+    }
+  },
+  "2019": {
+    "yearly": "Healthcare and Technology",
+    "months": {
+      "05": "Healthcare Systems"
+    }
+  },
+  "2018": {
+    "yearly": "Technology and Society",
+    "months": {
+      "06": "Healthcare and Society",
+      "07": "Web Development"
+    }
+  }
+}

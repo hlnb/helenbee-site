@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://helenburgess.id.au/writings/2018-06-29-anzac-day/</loc>
+    <loc>https://helenburgess.id.au/writings/2018/06/2018-06-29-anzac-day/</loc>
     <lastmod>2018-06-29T00:00:00.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://helenburgess.id.au/writings/2018-06-29-ehealth-systems/</loc>
+    <loc>https://helenburgess.id.au/writings/2018/06/2018-06-29-ehealth-systems/</loc>
     <lastmod>2018-06-29T00:00:00.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://helenburgess.id.au/writings/2018-07-24-css-grid-experiment/</loc>
+    <loc>https://helenburgess.id.au/writings/2018/07/2018-07-24-css-grid-experiment/</loc>
     <lastmod>2018-07-24T00:00:00.000Z</lastmod>
   </url>
   
   <url>
-    <loc>https://helenburgess.id.au/writings/2019-05-27-giving-your-hads-some-help/</loc>
+    <loc>https://helenburgess.id.au/writings/2019/05/2019-05-27-giving-your-hads-some-help/</loc>
     <lastmod>2019-05-27T00:00:00.000Z</lastmod>
   </url>
   
@@ -27,8 +27,18 @@
   </url>
   
   <url>
-    <loc>https://helenburgess.id.au/writings/2024-11-24-building-modern-personal-site-with-11ty/</loc>
+    <loc>https://helenburgess.id.au/writings/2024/11/2024-11-24-building-modern-personal-site-with-11ty/</loc>
     <lastmod>2024-01-20T00:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://helenburgess.id.au/_examples/post-with-editorial/</loc>
+    <lastmod>2024-02-01T00:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://helenburgess.id.au/writings/2024/06/2024-06-planned-post/</loc>
+    <lastmod>2024-06-15T00:00:00.000Z</lastmod>
   </url>
   
   <url>
@@ -89,5 +99,25 @@
   <url>
     <loc>https://helenburgess.id.au/thank-you/</loc>
     <lastmod>2024-11-25T04:57:41.682Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://helenburgess.id.au/admin/</loc>
+    <lastmod>2024-12-15T01:45:00.325Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://helenburgess.id.au/admin/editorial-calendar/</loc>
+    <lastmod>2024-12-15T01:45:13.473Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://helenburgess.id.au/writings/2024/12/2024-12-christmas-card/</loc>
+    <lastmod>2024-12-25T00:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://helenburgess.id.au/writings/2024/12/2024-12-planned-post/</loc>
+    <lastmod>2024-12-31T00:00:00.000Z</lastmod>
   </url>
 </urlset>
