@@ -7,21 +7,13 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/contact/">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    
+    {% include "partials/header.njk" %}
     <main>
         {{ content | safe }}
     </main>
     <footer>
-       <p>&copy; {{ site.currentYear }} - {{ site.name }}</p>
-<p><a href="{{ site.url }}">{{ site.description }}</a></p>
+    {% include "partials/footer.njk" %}
 
     </footer>
 </body>

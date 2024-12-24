@@ -1,4 +1,4 @@
-
+_site/*
 eleventy-test/
 node_modules/
 package-lock.json
