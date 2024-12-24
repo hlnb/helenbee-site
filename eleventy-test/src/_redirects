@@ -1,0 +1,2 @@
+/writings/* /content/posts/:splat 200
+/admin/* /admin/:splat 200

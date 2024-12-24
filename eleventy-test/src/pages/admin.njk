@@ -1,0 +1,58 @@
+---
+layout: layouts/base.njk
+title: Editorial Calendar
+eleventyNavigation:
+  key: Admin
+  order: 3
+---
+<h1>Editorial Calendar</h1>
+<ul>
+    {% for post in collections.editorialCalendar %}
+    <li>
+        <strong>{{ post.data.title }}</strong> - 
+        Proposed Date: {{ post.data.calendar.proposedDate | dateDisplay }}
+        <br>
+        Status: {{ post.data.calendar.status }}
+        <br>
+        <a href="{{ post.url }}">View Post: {{ post.data.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+<script>
+    function editPost(filePath) {
+        const newContent = prompt('Enter new content for the post:');
+        if (newContent) {
+            fetch('/edit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ filePath, newContent })
+            })
+            .then(response => response.text())
+            .then(data => alert(data))
+            .catch(error => console.error('Error:', error));
+        }
+    }
+
+    function deletePost(filePath) {
+        if (confirm('Are you sure you want to delete this post?')) {
+            fetch('/delete', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ filePath })
+            })
+            .then(response => response.text())
+            .then(data => alert(data))
+            .catch(error => console.error('Error:', error));
+        }
+    }
+</script>
+<script> 
+  if (window.netlifyIdentity) { 
+    window.netlifyIdentity.on("init", user => { if (!user) { 
+      alert("You must be logged in to access this page."); 
+      window.location.href = "/"; } }); } 
+</script>

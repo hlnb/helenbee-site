@@ -1,0 +1,24 @@
+   ---
+   permalink: /rss.xml
+   ---
+   <?xml version="1.0" encoding="UTF-8" ?>
+   <rss version="2.0">
+     <channel>
+       <title>Your Site Title</title>
+       <link>{{ metadata.url }}</link>
+       <description>Your site description</description>
+       <language>en-us</language>
+       <lastBuildDate>{{ collections.allPosts | eleventyRssLastUpdatedDate }}</lastBuildDate>
+       <pubDate>{{ collections.allPosts | eleventyRssLastUpdatedDate }}</pubDate>
+       <ttl>60</ttl>
+       {% for post in collections.allPosts %}
+       <item>
+         <title>{{ post.data.title }}</title>
+         <link>{{ post.url | url }}</link>
+         <description>{{ post.templateContent | safe }}</description>
+         <pubDate>{{ post.date | dateToRfc3339 }}</pubDate>
+         <guid>{{ post.url | url }}</guid>
+       </item>
+       {% endfor %}
+     </channel>
+   </rss>

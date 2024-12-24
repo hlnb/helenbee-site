@@ -1,0 +1,52 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Upcoming Post</title>
+   </head>
+   <body>
+    <header>
+        <nav>
+           <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+
+            
+            <li>
+                <a href="/pages/writings/">Writings</a>
+            </li>
+
+            
+            <li>
+                <a href="/pages/admin/">Admin</a>
+            </li>
+
+            
+           </ul>
+        </nav>
+    </header>
+       <main>
+        <ul>
+            <li>Base URL: /writings/post-1</li>
+    <li>Absolute URL: https://helenburgess.id.au/writings/post-1</li>
+    <li>Add Path Prefix: https://helenburgess.id.au/writings/post-1</li>
+        </ul>   
+           
+       </main>
+       <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+       <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+       </script>
+   </body>
+   </html>

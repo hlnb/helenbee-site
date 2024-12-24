@@ -4,22 +4,48 @@ module.exports = function (eleventyConfig) {
 	// Add passthrough copy for images and assets
 	eleventyConfig.addPassthroughCopy("assets/images");
 	eleventyConfig.addPassthroughCopy("assets/fonts");
-	eleventyConfig.addPassthroughCopy("src/assets/js");
-	eleventyConfig.addPassthroughCopy("src/css");
-	eleventyConfig.addPassthroughCopy("src/js");
-	eleventyConfig.addPassthroughCopy("assets");
+	eleventyConfig.addPassthroughCopy("assets/js");
+	eleventyConfig.addPassthroughCopy("assets/css");
+	eleventyConfig.addPassthroughCopy("public");
+	// Copy _redirects file
+	eleventyConfig.addPassthroughCopy("_redirects");
 
-	// Add writings collection
-	eleventyConfig.addCollection("writings", function (collectionApi) {
-		return collectionApi.getFilteredByGlob("./src/writings/*.md");
+	//add writings collection
+	eleventyConfig.addCollection("allPosts", function (collectionApi) {
+		return collectionApi
+			.getFilteredByGlob(["src/writings/**/*.md", "src/content/posts/**/*.md"])
+			.map((post) => {
+				// Adjust the URL to use "writings" instead of "posts"
+				if (post.inputPath.includes("content/posts")) {
+					post.url = post.url.replace("/content/posts/", "/writings/");
+				}
+				return post;
+			})
+			.sort((a, b) => b.date - a.date);
 	});
 
-	// Add date filters
+	// Consolidated Date Filters
 	eleventyConfig.addFilter("dateToISO", (date) => {
+		if (date === "now") {
+			date = new Date();
+		} else if (typeof date === "string" || !(date instanceof Date)) {
+			date = new Date(date);
+		}
+		if (isNaN(date.getTime())) {
+			return "Invalid Date";
+		}
 		return date.toISOString();
 	});
 
 	eleventyConfig.addFilter("dateDisplay", (date) => {
+		if (date === "now") {
+			date = new Date();
+		} else if (typeof date === "string" || !(date instanceof Date)) {
+			date = new Date(date);
+		}
+		if (isNaN(date.getTime())) {
+			return "Invalid Date";
+		}
 		return date.toLocaleDateString("en-US", {
 			year: "numeric",
 			month: "long",
@@ -27,6 +53,39 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
+	eleventyConfig.addFilter("dateToRfc3339", (date) => {
+		if (date === "now") {
+			date = new Date();
+		} else if (typeof date === "string" || !(date instanceof Date)) {
+			date = new Date(date);
+		}
+
+		if (isNaN(date.getTime())) {
+			return "Invalid Date";
+		}
+		return date.toISOString();
+	});
+
+	eleventyConfig.addFilter("formatDate", (date) => {
+		if (!date) {
+			return "Invalid Date";
+		}
+		if (!(date instanceof Date)) {
+			date = new Date(date);
+		}
+		if (isNaN(date.getTime())) {
+			return "Invalid Date";
+		}
+		return date.toLocaleDateString("en-AU", {
+			year: "numeric",
+			month: "long",
+			day: "numeric",
+		});
+	});
+
+	eleventyConfig.addFilter("year", () => {
+		return new Date().getFullYear();
+	});
 	// Add limit filter for collections
 	eleventyConfig.addFilter("limit", function (array, limit) {
 		return array.slice(0, limit);
@@ -56,14 +115,13 @@ module.exports = function (eleventyConfig) {
 		return prefix + url;
 	});
 
-	// Define the dateToRfc3339 filter with null check
-	eleventyConfig.addFilter("dateToRfc3339", function (date) {
-		if (!date) {
-			return ""; // Return an empty string or a default date string if preferred
-		}
-		return new Date(date).toISOString();
+	// Make sure your site URL is defined
+	eleventyConfig.addGlobalData("metadata", {
+		url: "https://helenburgess.id.au", // Replace with your site URL
+		title: "Helen Burgess",
+		description:
+			"Explore Helen Bee's digital garden at helenburgess.id.au, where personal experiences, web technologies, the timeless wisdom of Adler and Stoic philosophy converge. Join a journey of self-discovery and innovation, uncovering insights off the beaten path.",
 	});
-
 	// Define the getNewestCollectionItemDate filter with null check
 	eleventyConfig.addFilter(
 		"getNewestCollectionItemDate",
@@ -75,14 +133,6 @@ module.exports = function (eleventyConfig) {
 			}, new Date(0));
 		}
 	);
-
-	// Make sure your site URL is defined
-	eleventyConfig.addGlobalData("metadata", {
-		url: "https://helenburgess.id.au", // Replace with your site URL
-		title: "Helen Burgess",
-		description:
-			"Explore Helen Bee's digital garden at helenburgess.id.au, where personal experiences, web technologies, the timeless wisdom of Adler and Stoic philosophy converge. Join a journey of self-discovery and innovation, uncovering insights off the beaten path.",
-	});
 
 	eleventyConfig.addCollection("writingsByCategory", function (collectionApi) {
 		const writings = collectionApi.getFilteredByGlob("./src/writings/*.md");
@@ -105,11 +155,6 @@ module.exports = function (eleventyConfig) {
 		}
 
 		return categories;
-	});
-
-	// Add year filter
-	eleventyConfig.addFilter("year", () => {
-		return new Date().getFullYear();
 	});
 
 	// Editorial Calendar Collections
@@ -332,9 +377,6 @@ module.exports = function (eleventyConfig) {
 			day: "numeric",
 		});
 	});
-
-	// Copy _redirects file
-	eleventyConfig.addPassthroughCopy("src/_redirects");
 
 	// Add authentication check for admin pages
 	eleventyConfig.addCollection("adminPages", function (collectionApi) {
