@@ -1,17 +1,31 @@
-const { DateTime } = require("luxon");
-const markdownItAnchor = require("markdown-it-anchor");
-
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginBundle = require("@11ty/eleventy-plugin-bundle");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
-
-const pluginDrafts = require("./eleventy.config.drafts.js");
-const pluginImages = require("./eleventy.config.images.js");
-
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
-module.exports = function(eleventyConfig) {
+module.exports = async function(eleventyConfig) {
+
+	// add plugins and const variables
+	 // Dynamic imports for Eleventy and plugins
+  const { DateTime } = await import("luxon");
+  const markdownItAnchor = await import("markdown-it-anchor").then((mod) => mod.default);
+
+  const pluginRss = await import("@11ty/eleventy-plugin-rss").then((mod) => mod.default);
+  const pluginSyntaxHighlight = await import("@11ty/eleventy-plugin-syntaxhighlight").then((mod) => mod.default);
+  const pluginBundle = await import("@11ty/eleventy-plugin-bundle").then((mod) => mod.default);
+  const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
+
+  const pluginDrafts = await import("./eleventy.config.drafts.js").then((mod) => mod.default);
+  const pluginImages = await import("./eleventy.config.images.js").then((mod) => mod.default);
+
+  const {pluginNavigation} = await import("@11ty/eleventy-navigation");
+  const {pluginRender} = await import("@11ty/eleventy");
+
+	//add plugins
+	  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  eleventyConfig.addPlugin(pluginBundle);
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+  eleventyConfig.addPlugin(pluginDrafts);
+  eleventyConfig.addPlugin(pluginImages);
+  eleventyConfig.addPlugin(pluginNavigation);
+	eleventyConfig.addPlugin(pluginRender);
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({

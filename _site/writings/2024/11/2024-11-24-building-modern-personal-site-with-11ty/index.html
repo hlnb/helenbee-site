@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Modern Personal Site with 11ty</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+<link rel="stylesheet" href="/css/writing-single.css">
+
+
+<article class="writing-single">
+  
+    <div class="writing-hero">
+      <div class="hero-image-container">
+        <img src="/assets/images/DALL·E-2023-10-26-road-less-travelled.png" alt="Building a Modern Personal Site with 11ty">
+      </div>
+      <div class="hero-content">
+        <h1>Building a Modern Personal Site with 11ty</h1>
+        <div class="writing-meta">
+          <time datetime="2024-01-20T00:00:00.000Z">January 20, 2024</time>
+          
+            <span class="category">technology</span>
+          
+        </div>
+      </div>
+    </div>
+  
+
+  <div class="writing-content">
+    <h2>Project Overview</h2>
+<p>After years of teaching web development and building sites for others, I decided it was time to rebuild my personal site. The goal was to create a digital garden that would serve as both a portfolio and a platform for sharing my journey in technology, crafting, and personal growth.</p>
+<h3>Project Goals</h3>
+<ul>
+<li>Create a responsive, modern website that works across all devices</li>
+<li>Implement a modular design system for easy maintenance and scalability</li>
+<li>Ensure fast loading times and optimal performance</li>
+<li>Build a platform that's easy to update with new content</li>
+<li>Maintain accessibility standards</li>
+<li>Create a space that reflects both my professional and personal interests</li>
+</ul>
+<h3>Technologies Chosen</h3>
+<ul>
+<li>
+<p><strong>Eleventy (11ty)</strong>: A simpler static site generator that allows for rapid development and excellent performance. I chose 11ty for its flexibility, speed, and straightforward approach to content management.</p>
+</li>
+<li>
+<p><strong>CSS Grid &amp; Flexbox</strong>: Modern layout tools that enable responsive design without the overhead of a framework. This approach gives more control over the layout while keeping the codebase lean.</p>
+</li>
+<li>
+<p><strong>Vanilla JavaScript</strong>: For minimal interactivity needs, focusing on performance and avoiding unnecessary dependencies.</p>
+</li>
+<li>
+<p><strong>Markdown</strong>: For content creation, making it easy to write and maintain blog posts and other content.</p>
+</li>
+</ul>
+<h3>Design Decisions</h3>
+<p>The design process focused on creating a clean, readable interface that would showcase content effectively. Key decisions included:</p>
+<ol>
+<li>
+<p><strong>Typography</strong>: Using system fonts for optimal performance while maintaining readability</p>
+<ul>
+<li>Headings: var(--font-heading)</li>
+<li>Body: var(--font-body)</li>
+</ul>
+</li>
+<li>
+<p><strong>Color Scheme</strong>: A carefully selected palette that reflects professionalism while maintaining personality</p>
+<ul>
+<li>Primary: Deep blues for trust and professionalism</li>
+<li>Secondary: Warm accents for personality</li>
+<li>Support colors: Subtle grays for hierarchy</li>
+</ul>
+</li>
+<li>
+<p><strong>Layout Structure</strong>:</p>
+<ul>
+<li>Modular grid system for consistent spacing</li>
+<li>Two-column layouts for content-heavy sections</li>
+<li>Card-based design for writing collections</li>
+<li>Full-width hero sections for impact</li>
+</ul>
+</li>
+<li>
+<p><strong>Mobile-First Approach</strong>:</p>
+<ul>
+<li>Responsive navigation with hamburger menu</li>
+<li>Stacked layouts on smaller screens</li>
+<li>Optimized images and typography for mobile devices</li>
+</ul>
+</li>
+</ol>
+<h3>Initial Setup</h3>
+<p>The project began with a basic 11ty installation, but quickly evolved to include:</p>
+<ul>
+<li>Custom data files for site configuration</li>
+<li>Modular CSS architecture</li>
+<li>Partial templates for reusable components</li>
+<li>Asset optimization pipeline</li>
+</ul>
+<p>In the following sections, I'll dive deeper into the implementation details and share the challenges and solutions encountered along the way.</p>
+<h2>Key Features</h2>
+<h3>Hero Sections</h3>
+<p>One of the most striking elements of the site is the hero section implementation. Each page type has its own hero style, while maintaining consistent design patterns:</p>
+<pre><code class="language-css">/* Hero base styles */
+.hero {
+	position: relative;
+	padding: 4rem 2rem;
+	text-align: center;
+	margin-bottom: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+</code></pre>
+<p>The home page features a dramatic hero image with overlay text, while other pages use either images or gradient backgrounds. This flexibility was achieved through CSS class modifiers:</p>
+<pre><code class="language-css">/* Home hero specific styles */
+.home-hero {
+	background-image: url(&quot;/assets/images/DALL·E-2023-10-26-road-less-travelled.png&quot;);
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+}
+</code></pre>
+<h3>Modular Grid System</h3>
+<p>The site uses a modular grid system that adapts to different content needs. This approach allows for consistent spacing and alignment while maintaining flexibility:</p>
+<pre><code class="language-css">[data-layout=&quot;modular-four-columns&quot;] {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: var(--modular-gap);
+}
+</code></pre>
+<p>This system powers various layouts across the site, from the writings collection to the introduction section.</p>
+<h3>Writing Cards</h3>
+<p>The writing cards component showcases content in an engaging, visual way:</p>
+<pre><code class="language-css">.writing-card {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background: var(--background-light);
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid var(--support-1);
+	transition: transform 0.3s ease;
+}
+</code></pre>
+<p>Each card features:</p>
+<ul>
+<li>Responsive images with aspect ratio maintenance</li>
+<li>Hover effects for better interactivity</li>
+<li>Clear typography hierarchy</li>
+<li>Consistent spacing</li>
+</ul>
+<h3>Responsive Navigation</h3>
+<p>The navigation system adapts seamlessly from desktop to mobile:</p>
+<pre><code class="language-css">/* Desktop Navigation */
+.navbar-menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+	.navbar-menu {
+		display: none;
+	}
+
+	.navbar-menu.is-active {
+		display: block;
+		width: 100%;
+	}
+}
+</code></pre>
+<p>Key features include:</p>
+<ul>
+<li>Hamburger menu for mobile devices</li>
+<li>Smooth transitions between states</li>
+<li>Accessible navigation patterns</li>
+<li>Clear visual hierarchy</li>
+</ul>
+<h3>Two-Column Layout</h3>
+<p>The introduction section uses a two-column layout that gracefully collapses on mobile:</p>
+<pre><code class="language-css">.introduction-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+	.introduction-grid {
+		grid-template-columns: 1fr;
+	}
+}
+</code></pre>
+<h3>Footer Design</h3>
+<p>The footer provides important site-wide information and navigation:</p>
+<pre><code class="language-css">.footer-grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	gap: 3rem;
+	margin-bottom: 3rem;
+}
+</code></pre>
+<p>Features include:</p>
+<ul>
+<li>Social media integration with icons</li>
+<li>Quick links for navigation</li>
+<li>Responsive layout</li>
+<li>Copyright information</li>
+<li>Built with attribution</li>
+</ul>
+<h3>CSS Custom Properties</h3>
+<p>The site uses CSS custom properties for consistent theming:</p>
+<pre><code class="language-css">:root {
+	--font-heading: system-ui, sans-serif;
+	--font-body: system-ui, sans-serif;
+	--primary: #182848;
+	--secondary: #4b6cb7;
+	--accent-1: #6a82fb;
+	--text-light: #ffffff;
+	--text-dark: #333333;
+	--modular-gap: 2rem;
+}
+</code></pre>
+<p>This approach allows for:</p>
+<ul>
+<li>Easy theme modifications</li>
+<li>Consistent color usage</li>
+<li>Maintainable spacing system</li>
+<li>Typography scale management</li>
+</ul>
+<h2>Challenges &amp; Solutions</h2>
+<h3>Grid System Implementation</h3>
+<h4>Challenge</h4>
+<p>Initially, implementing a flexible grid system that could handle different content types while maintaining consistency across the site proved challenging. The main issues were:</p>
+<ul>
+<li>Maintaining consistent spacing</li>
+<li>Handling different content lengths</li>
+<li>Ensuring responsive behavior</li>
+<li>Avoiding layout shifts</li>
+</ul>
+<h4>Solution</h4>
+<p>We implemented a data-attribute based approach combined with CSS Grid:</p>
+<pre><code class="language-css">[data-layout=&quot;modular-four-columns&quot;] {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: var(--modular-gap);
+}
+</code></pre>
+<p>This solution:</p>
+<ul>
+<li>Provides flexibility through data attributes</li>
+<li>Automatically adjusts columns based on viewport width</li>
+<li>Maintains consistent spacing through CSS variables</li>
+<li>Allows for easy modifications and extensions</li>
+</ul>
+<h3>Mobile Navigation</h3>
+<h4>Challenge</h4>
+<p>The navigation menu presented several challenges:</p>
+<ul>
+<li>Initial implementation had the home link cut off on mobile</li>
+<li>Menu items stacked poorly on smaller screens</li>
+<li>Transition animations were jerky</li>
+<li>Layout shifts occurred when toggling the menu</li>
+</ul>
+<h4>Solution</h4>
+<p>We implemented a hamburger menu with careful attention to layout and transitions:</p>
+<pre><code class="language-css">/* Hamburger button visibility */
+.hamburger {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.hamburger {
+		display: block;
+	}
+
+	.navbar-menu {
+		display: none;
+		width: 100%;
+	}
+
+	.navbar-menu.is-active {
+		display: block;
+	}
+}
+</code></pre>
+<p>Combined with JavaScript for smooth transitions:</p>
+<pre><code class="language-javascript">document.addEventListener(&quot;DOMContentLoaded&quot;, () =&gt; {
+	const hamburger = document.querySelector(&quot;.hamburger&quot;);
+	const navMenu = document.querySelector(&quot;.navbar-menu&quot;);
+
+	if (hamburger &amp;&amp; navMenu) {
+		hamburger.addEventListener(&quot;click&quot;, () =&gt; {
+			hamburger.classList.toggle(&quot;is-active&quot;);
+			navMenu.classList.toggle(&quot;is-active&quot;);
+		});
+	}
+});
+</code></pre>
+<h3>Hero Image Handling</h3>
+<h4>Challenge</h4>
+<p>Hero images presented several issues:</p>
+<ul>
+<li>Inconsistent heights across different pages</li>
+<li>Text readability over images</li>
+<li>Mobile responsiveness</li>
+<li>Loading performance</li>
+</ul>
+<h4>Solution</h4>
+<p>We implemented a flexible hero system with consistent overlays:</p>
+<pre><code class="language-css">.hero {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60vh;
+}
+
+.hero-content {
+	position: relative;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 8px;
+	padding: 2rem;
+}
+</code></pre>
+<p>This approach:</p>
+<ul>
+<li>Maintains consistent height ratios</li>
+<li>Ensures text readability through semi-transparent overlays</li>
+<li>Scales appropriately on mobile devices</li>
+<li>Allows for different background types (images or gradients)</li>
+</ul>
+<h3>Two-Column Content Flow</h3>
+<h4>Challenge</h4>
+<p>The introduction section needed to:</p>
+<ul>
+<li>Display content in two columns on desktop</li>
+<li>Flow naturally on mobile</li>
+<li>Maintain proper spacing</li>
+<li>Keep related content together</li>
+</ul>
+<h4>Solution</h4>
+<p>We used a combination of CSS Grid and careful content structuring:</p>
+<pre><code class="language-css">.introduction-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+.introduction-content {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+	.introduction-grid {
+		grid-template-columns: 1fr;
+	}
+}
+</code></pre>
+<p>This solution:</p>
+<ul>
+<li>Maintains content relationships</li>
+<li>Provides clean breakpoints</li>
+<li>Ensures consistent spacing</li>
+<li>Allows for future content additions</li>
+</ul>
+<h3>Footer Social Icons</h3>
+<h4>Challenge</h4>
+<p>The footer social icons presented issues with:</p>
+<ul>
+<li>Icon alignment</li>
+<li>Spacing consistency</li>
+<li>Mobile responsiveness</li>
+<li>Visual integration</li>
+</ul>
+<h4>Solution</h4>
+<p>We implemented Font Awesome icons with careful spacing and alignment:</p>
+<pre><code class="language-css">.social-links {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.social-links a {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.social-links i {
+	font-size: 1.2rem;
+	width: 20px;
+}
+</code></pre>
+<p>This approach:</p>
+<ul>
+<li>Ensures consistent icon sizing</li>
+<li>Maintains proper alignment</li>
+<li>Provides clear visual hierarchy</li>
+<li>Works responsively across devices</li>
+</ul>
+<h2>Lessons Learned</h2>
+<h3>What Worked Well</h3>
+<h4>1. Modular Approach</h4>
+<p>Taking a modular approach to both the CSS and HTML structure proved invaluable:</p>
+<ul>
+<li>Components are easily reusable across pages</li>
+<li>Maintenance is simplified</li>
+<li>Changes can be made without affecting other parts of the site</li>
+<li>New features can be added with minimal friction</li>
+</ul>
+<h4>2. CSS Custom Properties</h4>
+<p>Using CSS variables for our design system was a game-changer:</p>
+<pre><code class="language-css">:root {
+	--primary: #182848;
+	--secondary: #4b6cb7;
+	--accent-1: #6a82fb;
+	--modular-gap: 2rem;
+}
+</code></pre>
+<p>This made it easy to:</p>
+<ul>
+<li>Maintain consistent spacing</li>
+<li>Update colors site-wide</li>
+<li>Experiment with different values</li>
+<li>Keep the codebase DRY (Don't Repeat Yourself)</li>
+</ul>
+<h4>3. Mobile-First Development</h4>
+<p>Starting with mobile layouts and scaling up to desktop helped:</p>
+<ul>
+<li>Identify potential issues early</li>
+<li>Ensure content priority</li>
+<li>Create cleaner breakpoints</li>
+<li>Reduce CSS complexity</li>
+</ul>
+<h4>4. 11ty as a Static Site Generator</h4>
+<p>Eleventy proved to be an excellent choice because:</p>
+<ul>
+<li>Fast build times</li>
+<li>Simple templating system</li>
+<li>Flexible content management</li>
+<li>Great documentation and community support</li>
+</ul>
+<h3>What Could Be Improved</h3>
+<h4>1. Image Optimization</h4>
+<p>Future improvements could include:</p>
+<ul>
+<li>Implementing a more robust image optimization pipeline</li>
+<li>Adding WebP format support</li>
+<li>Better handling of responsive images</li>
+<li>Lazy loading optimization</li>
+</ul>
+<h4>2. Performance Optimization</h4>
+<p>While the site performs well, there's room for improvement:</p>
+<ul>
+<li>Reducing CSS file size through better organization</li>
+<li>Implementing critical CSS</li>
+<li>Further optimizing JavaScript</li>
+<li>Adding service workers for offline support</li>
+</ul>
+<h4>3. Content Management</h4>
+<p>Some areas that could be enhanced:</p>
+<ul>
+<li>Creating a better tagging system for blog posts</li>
+<li>Implementing a search functionality</li>
+<li>Adding filtering options for the writings section</li>
+<li>Improving the content creation workflow</li>
+</ul>
+<h4>4. Accessibility</h4>
+<p>While basic accessibility was considered, we could:</p>
+<ul>
+<li>Add more ARIA labels</li>
+<li>Improve keyboard navigation</li>
+<li>Enhance focus states</li>
+<li>Add skip links</li>
+<li>Implement better screen reader support</li>
+</ul>
+<h3>Future Enhancements</h3>
+<h4>1. Technical Additions</h4>
+<p>Planning to add:</p>
+<ul>
+<li>Dark mode support</li>
+<li>RSS feed</li>
+<li>Search functionality</li>
+<li>Comments system</li>
+<li>Newsletter integration</li>
+</ul>
+<h4>2. Content Features</h4>
+<p>Future content improvements:</p>
+<ul>
+<li>Category pages for better organization</li>
+<li>Related posts suggestions</li>
+<li>Reading time estimates</li>
+<li>Progress indicators for long posts</li>
+</ul>
+<h4>3. User Experience</h4>
+<p>Potential UX improvements:</p>
+<ul>
+<li>Smoother page transitions</li>
+<li>Better loading states</li>
+<li>Enhanced navigation for mobile</li>
+<li>Improved social sharing options</li>
+</ul>
+<h3>Key Takeaways</h3>
+<ol>
+<li>
+<p><strong>Start Simple, Iterate Often</strong></p>
+<ul>
+<li>Begin with basic functionality</li>
+<li>Add features incrementally</li>
+<li>Test thoroughly at each step</li>
+<li>Refactor when needed</li>
+</ul>
+</li>
+<li>
+<p><strong>Documentation is Crucial</strong></p>
+<ul>
+<li>Keep notes during development</li>
+<li>Document design decisions</li>
+<li>Maintain a changelog</li>
+<li>Comment complex code sections</li>
+</ul>
+</li>
+<li>
+<p><strong>Community Matters</strong></p>
+<ul>
+<li>Eleventy's community provided valuable resources</li>
+<li>Stack Overflow helped solve specific issues</li>
+<li>GitHub discussions offered insights</li>
+<li>Documentation feedback improved the process</li>
+</ul>
+</li>
+<li>
+<p><strong>Performance First</strong></p>
+<ul>
+<li>Focus on core functionality</li>
+<li>Minimize dependencies</li>
+<li>Optimize assets</li>
+<li>Monitor performance metrics</li>
+</ul>
+</li>
+</ol>
+<p>This project has been a valuable learning experience, combining modern web development practices with practical solutions. The modular approach and focus on maintainability will make future updates and improvements easier to implement.</p>
+<h2>Conclusion</h2>
+<p>Building this personal site with 11ty has been more than just a technical exercise—it's been a journey of combining years of web development experience with modern tools and practices. The project successfully achieved its main goals of creating a responsive, maintainable, and performant platform that serves as both a portfolio and a digital garden.</p>
+<h3>Project Success Metrics</h3>
+<ul>
+<li><strong>Performance</strong>: Achieving 90+ scores on Google Lighthouse</li>
+<li><strong>Responsive Design</strong>: Seamless experience across all devices</li>
+<li><strong>Maintainability</strong>: Modular components and clear documentation</li>
+<li><strong>Content Management</strong>: Easy-to-update Markdown-based system</li>
+</ul>
+<h3>Personal Growth</h3>
+<p>This project reinforced several important principles:</p>
+<ol>
+<li>The value of planning and systematic approach to development</li>
+<li>The importance of progressive enhancement</li>
+<li>The benefits of choosing the right tools for the job</li>
+<li>The power of simplicity in both design and code</li>
+</ol>
+<h3>Technical Achievements</h3>
+<p>The site demonstrates several modern web development best practices:</p>
+<ul>
+<li>CSS Grid and Flexbox for robust layouts</li>
+<li>Mobile-first responsive design</li>
+<li>Modular component architecture</li>
+<li>Performance optimization</li>
+<li>Accessibility considerations</li>
+</ul>
+<h3>Moving Forward</h3>
+<p>While the site is now live and functioning well, it's viewed as a living project that will continue to evolve. Future updates will focus on:</p>
+<ul>
+<li>Enhanced user experience features</li>
+<li>Improved accessibility</li>
+<li>Additional content types</li>
+<li>Performance optimizations</li>
+<li>Community engagement features</li>
+</ul>
+<p>The journey of building this site has reinforced that good web development isn't just about writing code—it's about creating an experience that serves its purpose while being maintainable, accessible, and performant. As web technologies continue to evolve, this foundation will allow for easy adaptation and growth.</p>
+<p>Remember, as Robert Frost wrote, &quot;Two roads diverged in a wood, and I— I took the one less traveled by, And that has made all the difference.&quot; Sometimes, choosing the simpler, more maintainable path over the trendy or complex one can lead to better long-term results.</p>
+
+  </div>
+
+  <footer class="writing-taxonomy">
+    
+      <div class="tags">
+        
+          <span class="tag">technology</span>
+        
+          <span class="tag">web development</span>
+        
+          <span class="tag">11ty</span>
+        
+      </div>
+    
+  </footer>
+</article>
+
+    </main>
+    <footer>
+       <p>&copy; 2024 - Helen Burgess</p>
+<p><a href="https://helenburgess.id.au">Helen Burgess&#39;s personal website</a></p>
+
+    </footer>
+</body>
+</html>

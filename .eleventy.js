@@ -1,6 +1,5 @@
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-
 module.exports = function (eleventyConfig) {
+
 	// Add passthrough copy for images and assets
 	eleventyConfig.addPassthroughCopy("assets/images");
 	eleventyConfig.addPassthroughCopy("assets/fonts");
@@ -83,9 +82,8 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
-	eleventyConfig.addFilter("year", () => {
-		return new Date().getFullYear();
-	});
+	 eleventyConfig.addFilter("currentYear", () => new Date().getFullYear());
+
 	// Add limit filter for collections
 	eleventyConfig.addFilter("limit", function (array, limit) {
 		return array.slice(0, limit);
@@ -230,7 +228,6 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
-	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
 	// Add status-based collections
 	eleventyConfig.addCollection("published", function (collectionApi) {
@@ -324,20 +321,7 @@ module.exports = function (eleventyConfig) {
 		return months;
 	});
 
-	// Handle both old and new post locations with "writings" URL structure
-	eleventyConfig.addCollection("allPosts", function (collectionApi) {
-		return collectionApi
-			.getFilteredByGlob(["src/writings/**/*.md", "src/content/posts/**/*.md"])
-			.map((post) => {
-				// For new posts in content/posts, modify the URL to use "writings"
-				if (post.inputPath.includes("content/posts")) {
-					post.url = post.url.replace("/posts/", "/writings/");
-				}
-				return post;
-			})
-			.sort((a, b) => b.date - a.date);
-	});
-
+	
 	// Editorial calendar collection
 	eleventyConfig.addCollection("editorialCalendar", function (collectionApi) {
 		return collectionApi

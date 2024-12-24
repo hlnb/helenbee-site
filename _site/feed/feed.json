@@ -1,0 +1,14 @@
+{
+	"version": "https://jsonfeed.org/version/1.1",
+	"title": "Helen Burgess",
+	"language": "en",
+	"home_page_url": "undefinedhttps://helenburgess.id.au",
+	"feed_url": "/feed/feed.json",
+	"description": "Explore Helen Bee&#39;s digital garden at helenburgess.id.au, where personal experiences, web technologies, the timeless wisdom of Adler and Stoic philosophy converge. Join a journey of self-discovery and innovation, uncovering insights off the beaten path.",
+	"author": {
+		"name": "Helen Burgess",
+		"url": "https://helenburgess.id.au/about-me/"
+	},
+	"items": [
+	]
+}

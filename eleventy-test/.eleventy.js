@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets/fonts");
 	eleventyConfig.addPassthroughCopy("assets/js");
 	eleventyConfig.addPassthroughCopy("assets/css");
+	eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("public");
 
 	eleventyConfig.addCollection("allPosts", function (collectionApi) {

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+<div class="page-container">
+  <section class="hero contact-hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Keep in Touch</h1>
+      <p class="hero-subtitle">I look forward to meeting you on the road less travelled.</p>
+    </div>
+  </section>
+
+
+
+   <section class="contact-content">
+    <div class="two-columns">
+      <div class="column">
+        <h2>Get in Touch</h2>
+        <p>You can get in contact with me in various ways outlined below or you can send in a message through the form.</p>
+
+        <div class="contact-methods">
+          <div class="contact-email">
+            <h3>General Enquiries</h3>
+            <p>For general enquiries, please send an email to</p>
+            <p><a href="mailto:hello@helenburgess.id.au">hello@helenburgess.id.au</a></p>
+          </div>
+
+          <div class="contact-social">
+            <h3>Follow me</h3>
+            <p>I sometimes lurk in social media. Check me out there.</p>
+            <div class="social-links">
+              <a href="https://github.com/hlnb" aria-label="GitHub Profile">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/helenburgess/" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://twitter.com/hlnbee" aria-label="Twitter Profile">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="contact-form">
+          <h3>Message Me</h3>
+          <form 
+            name="contact" 
+            method="POST" 
+            data-netlify="true" 
+            data-netlify-recaptcha="true" 
+            action="/thank-you/">
+            <p class="hidden">
+              <label>Don't fill this out: <input name="bot-field"></label>
+            </p>
+
+            <div class="form-group">
+              <label class="label" for="name">First Name</label>
+              <input 
+                class="input" 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                placeholder="E.g. John">
+              <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="label" for="email">Email Address</label>
+              <div class="input-group">
+                <i class="icon fas fa-envelope"></i>
+                <input 
+                  class="input" 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  placeholder="E.g. john@doe.com">
+                <span class="error-message"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="label" for="message">Message</label>
+              <textarea 
+                class="textarea" 
+                id="message" 
+                name="message" 
+                required
+                rows="6" 
+                maxlength="180" 
+                placeholder="Enter your message..."></textarea>
+              <span class="error-message"></span>
+              <span class="help-text character-count">0 / 180</span>
+            </div>
+
+            <div class="form-group">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+
+            <button type="submit" class="button">
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+    </main>
+    <footer>
+       <p>&copy; 2024 - Helen Burgess</p>
+<p><a href="https://helenburgess.id.au">Helen Burgess&#39;s personal website</a></p>
+
+    </footer>
+</body>
+</html>

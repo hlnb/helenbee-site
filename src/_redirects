@@ -1,5 +1,5 @@
-/about-technology-adventure-empowerment    /about    301
-/digital-sanctuary-unveiling-a-journey     /    301 
+/writings/* /content/posts/:splat 200
+/admin/* /admin/:splat 200
 # Protect admin routes
 /admin/*    200!    Role=admin
 /admin/*    /login    401!

@@ -20,7 +20,9 @@
         {{ content | safe }}
     </main>
     <footer>
-        <p>&copy; {{ new Date().getFullYear() }}</p>
+       <p>&copy; {{ site.currentYear }} - {{ site.name }}</p>
+<p><a href="{{ site.url }}">{{ site.description }}</a></p>
+
     </footer>
 </body>
 </html>
