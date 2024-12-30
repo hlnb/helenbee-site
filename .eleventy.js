@@ -6,6 +6,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets/images/other");
 	eleventyConfig.addPassthroughCopy("assets/images/favicons");
 	eleventyConfig.addPassthroughCopy("assets/fonts");
+	eleventyConfig.addPassthroughCopy("assets/fonts/stackyard");
+	eleventyConfig.addPassthroughCopy("assets/fonts/typewriter");
 	eleventyConfig.addPassthroughCopy("assets/js");
 	eleventyConfig.addPassthroughCopy("assets/css");
 	eleventyConfig.addPassthroughCopy("assets/svg");
@@ -145,6 +147,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection("writingsByCategory", function (collectionApi) {
 		const writings = collectionApi.getFilteredByGlob("./src/writings/**/*.md"); // Match all subdirectories
 
+    // Filter only articles with the status of 'published'
+		const filteredWritings = writings.filter(item => item.data.status === "published");
+		
 		// Group posts by category
 		const categories = {};
 		writings.forEach((post) => {

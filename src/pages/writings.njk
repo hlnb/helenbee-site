@@ -4,21 +4,41 @@ title: Writings
 permalink: /writings/
 ---
 
-<div class="page-container writings-collection">
-  <div class="writings-header">
-    <h1>Writings</h1>
+<!-- Hero Section -->
+<section class="hero is-medium is-primary is-bold" style="background-image: url('/assets/images/other/library.jpg'); background-size: cover; background-position: center;">
+  <div class="hero-body">
+    <div class="container has-text-centered" style="background-color: rgba(51, 46, 99, 0.33);">
+      <h1 class="title has-text-white">Writings</h1>
+      <p class="subtitle has-text-white">A collection of articles and insights from technology to life experiences.</p>
+    </div>
   </div>
-  <div class="writings-intro">
-    <p>This is a collection of my writings over the years. I have written about a range of topics from my experiences as a veteran to my thoughts on technology and the future.</p>
-  </div>
+</section>
 
-{% for category, articles in collections.writingsByCategory %}
-  <h2>{{ category | capitalize }}</h2>
-  <ul>
-    {% for article in articles %}
-      <li>
-        <a href="{{ article.url }}">{{ article.data.title }}</a> - {{ article.date | dateDisplay }}
-      </li>
-    {% endfor %}
-  </ul>
+<!-- Content Section -->
+<div class="container">
+ {% for category, articles in collections.writingsByCategory %}
+  <section class="section">
+    <h2 class="title is-4">{{ category | capitalize }}</h2>
+    <div class="columns is-multiline">
+      {% for article in articles %}
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-5">
+                <a href="{{ article.url }}">{{ article.data.title }}</a>
+              </p>
+              <p class="subtitle is-6">
+                <span class="icon is-small is-primary">
+                  <i class="fas fa-calendar"></i>
+                </span>
+                {{ article.date | dateDisplay }}
+              </p>
+              <p>{{ article.data.description }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
 {% endfor %}
+</div>
