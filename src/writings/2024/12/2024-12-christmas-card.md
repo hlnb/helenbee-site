@@ -1,51 +1,32 @@
 ---
-title: Season's Greetings 2024
+layout: layouts/writing.njk
+title: Austrlaian Season's Greetings 2024
 date: 2024-12-25
+description: A Christmas Wish for all
 calendar:
-  status: planned
+  status: published
   proposedDate: "2024-12-25"
   theme: "Season's Greetings 2024"
   keywords: [christmas, holiday, card]
   type: "article"
+category: "end-of-year"
 tags:
   - christmas
   - holiday
   - card
 cssClass: christmas-card
 editorial:
-  notes: "Annual Christmas card post - plan festive imagery and warm message"
+  notes: "Photo by Annie Spratt on Unsplash"
+image: /assets/images/other/annie-spratt-VDXtVYJVj7A-unsplash.jpg
 ---
 
-<div class="eucalyptus-decoration">
-  {% include "svg/eucalyptus.svg" %}
-</div>
-
-# Australian Season's Greetings 2024
-
-<div class="decorations">
-    🎄 ❄️ 🎁 ⭐ 🕯️
-</div>
-
 <div class="message">
-Dear Friends and Readers,
-
 As we wrap up another wonderful year of sharing stories and adventures, I wanted to take a moment to wish you all a very Merry Christmas and a joyous New Year.
 
 May your holidays be filled with joy, warmth, and wonderful memories.
 
-</div>
+Warmest wishes,
 
-<div class="decorations">
-    🎅 ⛄ 🦌 🔔 🎁
-</div>
-
-<div class="signature">
-Warmest wishes,<br>
 Helen
+
 </div>
-
-🎅 ❄️ 🎁 ⭐ 🕯️
-
----
-
-_This is a planned holiday post - final content and design to be updated closer to the date_

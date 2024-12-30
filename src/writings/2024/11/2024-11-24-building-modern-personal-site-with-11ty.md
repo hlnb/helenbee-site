@@ -14,8 +14,8 @@ tags:
   - technology
   - web development
   - 11ty
-image: /assets/images/DALL·E-2023-10-26-road-less-travelled.png
-excerpt: A deep dive into creating a responsive, modular website using Eleventy, CSS Grid, and modern web practices.
+image: /assets/images/other/DALL·E-2023-10-26-road-less-travelled.png
+
 ---
 
 ## Project Overview

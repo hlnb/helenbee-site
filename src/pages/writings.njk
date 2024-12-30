@@ -7,7 +7,7 @@ permalink: /writings/
 <!-- Hero Section -->
 <section class="hero is-medium is-primary is-bold" style="background-image: url('/assets/images/other/library.jpg'); background-size: cover; background-position: center;">
   <div class="hero-body">
-    <div class="container has-text-centered" style="background-color: rgba(51, 46, 99, 0.33);">
+    <div class="container has-text-centered p-6" style="background-color: rgba(51, 46, 99, 0.33);">
       <h1 class="title has-text-white">Writings</h1>
       <p class="subtitle has-text-white">A collection of articles and insights from technology to life experiences.</p>
     </div>
@@ -22,7 +22,7 @@ permalink: /writings/
     <div class="columns is-multiline">
       {% for article in articles %}
         <div class="column is-one-third">
-          <div class="card">
+          <div class="card is-flex is-flex-direction-column">>   
             <div class="card-content">
               <p class="title is-5">
                 <a href="{{ article.url }}">{{ article.data.title }}</a>
