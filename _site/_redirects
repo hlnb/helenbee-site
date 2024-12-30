@@ -1,6 +1,0 @@
-/about-technology-adventure-empowerment    /about    301
-/digital-sanctuary-unveiling-a-journey     /    301 
-# Protect admin routes
-/admin/*    200!    Role=admin
-/admin/*    /login    401!
-/admin/*    /logout    301!

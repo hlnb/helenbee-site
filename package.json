@@ -36,5 +36,9 @@
 		"gray-matter": "^4.0.3",
 		"luxon": "^3.5.0",
 		"markdown-it-anchor": "^8.6.7"
+	},
+	"dependencies": {
+		"bulma": "^1.0.3",
+		"eleventy-plugin-svg-contents": "^0.7.0"
 	}
 }

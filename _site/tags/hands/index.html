@@ -4,83 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tagged &quot;hands&quot;</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/bulma.min.css">
+    <link rel="stylesheet" href="/assets/css/variables.css">
+    <link rel="stylesheet" href="/assets/css/editorial-calendar.css">
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <link rel="stylesheet" href="/assets/css/forms.css">
+    <link rel="stylesheet" href="/assets/css/grid-four-six.css">
+    <link rel="stylesheet" href="/assets/css/grid-layouts.css">
+    <link rel="stylesheet" href="/assets/css/grid-modular.css">
+    <link rel="stylesheet" href="/assets/css/writing-single.css">
+    <script src="https://kit.fontawesome.com/49adc57732.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
-    <header class="navbar">
-  <div class="navbar-brand">
-    <a href="/" class="navbar-item">
-      <img src="/assets/images/other/logo.svg" alt="Link to Home">
-    </a>
-  </div>
-  <nav class="navbar-menu">
-    <ul class="navbar-end">
-      <li><a href="/" class="navbar-item">Home</a></li>
-      <li><a href="/about/" class="navbar-item">About</a></li>
-      <li><a href="/writings/" class="navbar-item">Writings</a></li>
-      <li><a href="/contact/" class="navbar-item">Contact</a></li>
-    </ul>
+    <header>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a href="/" class="navbar-item">
+        <img src="/assets/images/other/Logo.png" alt="Link to Home">
+      </a>
+      <!-- Optional hamburger menu for mobile view -->
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="/" class="navbar-item">Home</a>
+        <a href="/about/" class="navbar-item">About</a>
+        <a href="/writings/" class="navbar-item">Writings</a>
+        <a href="/contact/" class="navbar-item">Contact</a>
+      </div>
+    </div>
   </nav>
-</header> 
+</header>
 
     <main>
         
     </main>
-    <footer>
     <!-- Rest of your base template -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
 
-<footer class="site-footer">
-  <div class="footer-content">
-    <div class="footer-grid">
       <!-- About Column -->
-      <div class="footer-column">
-        <h4>About</h4>
-        <p>Exploring the road less travelled in technology, craft, and life. Veteran, Nana, knitter, and web technologist sharing lived experiences.</p>
-      
+      <div class="column">
+        <h4 class="title is-4">About</h4>
+        <p>
+          Exploring the road less travelled in technology, craft, and life. Veteran, Nana, knitter, and web technologist sharing lived experiences.
+        </p>
       </div>
 
-      <!-- Quick Links -->
-      <div class="footer-column">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/writings">Writings</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/privacy-policy">Privacy Policy</a></li>
-          <li><a href="/admin">Admin Dashboard</a></li>
-        </ul>
+      <!-- Quick Links Column -->
+      <div class="column">
+        <h4 class="title is-4">Quick Links</h4>
+        <nav class="footer-nav">
+          <ul class="menu-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/writings">Writings</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/admin">Admin Dashboard</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <!-- Connect/Social Links Column -->
-      <div class="footer-column">
-        <h4>Connect</h4>
-        <ul class="social-links">
-          <li>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+      <!-- Social Media Column -->
+      <div class="column">
+        <h4 class="title is-4">Connect</h4>
+        <div class="buttons are-small">
+          <a class="button is-link is-outlined" href="https://github.com/hlnb" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
               <i class="fab fa-github"></i>
-              <span>GitHub</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            </span>
+            <span>GitHub</span>
+          </a>
+          <a class="button is-link is-outlined" href="https://linkedin.com/in/helenburgess/" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
               <i class="fab fa-linkedin"></i>
-              <span>LinkedIn</span>
-            </a>
-          </li>
-        </ul>
+            </span>
+            <span>LinkedIn</span>
+          </a>
+        </div>
       </div>
+
     </div>
 
-    <div class="footer-bottom">
-        <p>&copy; 2015 -  2024 - 
-       Built with <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">11ty</a>.</p>
+    <!-- Footer Bottom -->
+    <div class="content has-text-centered">
+      <p>
+        &copy; 2015 - 2024 - . Built with 
+        <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">11ty</a>.
+      </p>
     </div>
   </div>
 </footer>
 
 
-    </footer>
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".navbar-burger");
+  const menu = document.querySelector("#navbarMenu");
+
+  if (burger && menu) {
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("is-active");
+      menu.classList.toggle("is-active");
+    });
+  }
+});
+</script>
 </body>
 </html>

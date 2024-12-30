@@ -4,157 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/bulma.min.css">
+    <link rel="stylesheet" href="/assets/css/variables.css">
+    <link rel="stylesheet" href="/assets/css/editorial-calendar.css">
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <link rel="stylesheet" href="/assets/css/forms.css">
+    <link rel="stylesheet" href="/assets/css/grid-four-six.css">
+    <link rel="stylesheet" href="/assets/css/grid-layouts.css">
+    <link rel="stylesheet" href="/assets/css/grid-modular.css">
+    <link rel="stylesheet" href="/assets/css/writing-single.css">
+    <script src="https://kit.fontawesome.com/49adc57732.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
-    <header class="navbar">
-  <div class="navbar-brand">
-    <a href="/" class="navbar-item">
-      <img src="/assets/images/other/logo.svg" alt="Link to Home">
-    </a>
-  </div>
-  <nav class="navbar-menu">
-    <ul class="navbar-end">
-      <li><a href="/" class="navbar-item">Home</a></li>
-      <li><a href="/about/" class="navbar-item">About</a></li>
-      <li><a href="/writings/" class="navbar-item">Writings</a></li>
-      <li><a href="/contact/" class="navbar-item">Contact</a></li>
-    </ul>
+    <header>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a href="/" class="navbar-item">
+        <img src="/assets/images/other/Logo.png" alt="Link to Home">
+      </a>
+      <!-- Optional hamburger menu for mobile view -->
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="/" class="navbar-item">Home</a>
+        <a href="/about/" class="navbar-item">About</a>
+        <a href="/writings/" class="navbar-item">Writings</a>
+        <a href="/contact/" class="navbar-item">Contact</a>
+      </div>
+    </div>
   </nav>
-</header> 
+</header>
 
     <main>
         
-<div class="page-container about-page">
   <!-- Hero Section -->
-  <section class="hero about-hero">
-    <div class="hero-content">
-      <h1>About Helen B: A Tapestry of Technology and Resilience</h1>
-      <p>Discover the journey and experiences that have shaped my path in technology, creativity, and life.</p>
+  <section class="hero is-large is-primary is-bold" style="background-image: url('/assets/images/other/aaron-burden-unsplash.jpg'); background-size: cover; background-position: center;">
+    <div class="hero-body">
+      <div class="container has-text-centered p-6" style="background-color: rgba(51, 46, 99, 0.33);">
+        <h1 class="title has-text-white">About Helen B: A Tapestry of Technology and Resilience</h1>
+        <p class="subtitle has-text-white">Discover the journey and experiences that have shaped my path in technology, creativity, and life.</p>
+      </div>
     </div>
   </section>
 
   <!-- About Intro Section -->
-  <section class="about-intro">
-    <div class="about-intro-grid">
-      <div class="about-intro-image">
-        <img src="/assets/images/Helen-Burgess.jpg" alt="Helen B" loading="lazy">
-        <figcaption>Helen B</figcaption>
+  <section class="section">
+    <div class="columns">
+      <div class="column is-one-third">
+        <figure class="image">
+          <img src="/assets/images/other/Helen-Burgess.jpg" alt="Helen B" loading="lazy">
+          <figcaption class="has-text-centered">Helen B</figcaption>
+        </figure>
       </div>
-      
-      <div class="about-intro-content">
-        <h2>Welcome to My Unique Journey</h2>
+      <div class="column is-one-third">
+        <h2 class="title">Welcome to My Unique Journey</h2>
         <p>Welcome to the world of Helen B, where the threads of technology, resilience, and lifelong learning intertwine to create a vibrant tapestry. From the sun-kissed shores of Perth, Western Australia, Helen's journey is one of courage, innovation, and the relentless pursuit of knowledge.</p>
-        
-        <h3>Early Inspirations: Dreams of the Moon and Machines</h3>
+        <h3 class="title pt-6">Early Inspirations: Dreams of the Moon and Machines</h3>
         <p>Helen's story begins with a childhood filled with wonder and curiosity. Inspired by a father who turned washing machine parts, as well as other odds and ends, into a rocket, her imagination soared as high as her dreams to reach the moon. This early fascination with technology and the unknown laid the foundation for a life driven by exploration and discovery.</p>
       </div>
     </div>
   </section>
 
   <!-- Military Career Section -->
-  <section class="military-career">
-    <div class="military-career-grid">
-      <div class="military-career-content">
-        <h3>A Calling in the Skies: The RAAF Chapter</h3>
+  <section class="section">
+    <div class="columns">
+      <div class="column is-one-third">
+        <h3 class="title">A Calling in the Skies: The RAAF Chapter</h3>
         <p>After high school, Helen's path took a bold turn as she enlisted in the Royal Australian Air Force (RAAF). In the disciplined and challenging environment of the military, she not only honed her skills in technology but also developed a resilience that would become a hallmark of her character. Her time in the RAAF was a period of profound growth, shaping her into a leader and a problem-solver.</p>
-        
-        <h3>Transition to Technology: The Educational Odyssey</h3>
+        <h3 class="title pt-6">Transition to Technology: The Educational Odyssey</h3>
         <p>Leaving the RAAF marked the beginning of a new chapter in Helen's life. She transitioned into the realm of education, where she shared her passion for technology with eager minds at the Central Institute of Technology in Perth. As a mentor and educator, Helen guided countless students through the intricacies of web design and development, leaving an indelible mark on the next generation of tech enthusiasts.</p>
       </div>
-      
-      <div class="military-career-image">
-        <img src="/assets/images/raaf-mother.png" alt="A representation of a Working Mother in the RAAF" loading="lazy">
-        <figcaption>A representation of a Working Mother in the RAAF. Generated by DALL-E 3 from prompt by Helen Burgess</figcaption>
+      <div class="column is-one-third">
+        <figure class="image">
+          <img src="/assets/images/other/raaf-mother.png" alt="A representation of a Working Mother in the RAAF" loading="lazy">
+          <figcaption class="has-text-centered">A representation of a Working Mother in the RAAF. Generated by DALL-E 3 from prompt by Helen Burgess</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
   <!-- Education Section -->
-  <section class="education">
-    <div class="education-grid">
-      <div class="education-image">
-        <img src="/assets/images/graduation-2007.jpg" alt="Graduating with a Master's Degree 2007" loading="lazy">
-        <figcaption>Graduating with a Master's Degree 2007</figcaption>
+  <section class="section">
+    <div class="columns">
+      <div class="column is-one-third">
+        <figure class="image">
+          <img src="/assets/images/other/graduation-2007.jpg" alt="Graduating with a Master's Degree 2007" loading="lazy">
+          <figcaption class="has-text-centered">Graduating with a Master's Degree 2007</figcaption>
+        </figure>
       </div>
-      
-      <div class="education-content">
-        <h2>Graphite Edge: A Venture into the Digital Frontier</h2>
+      <div class="column is-one-third">
+        <h2 class="title">Graphite Edge: A Venture into the Digital Frontier</h2>
         <p>Helen's journey then led her to establish Graphite Edge, a beacon for small to medium businesses navigating the digital landscape. Here, she combines her military discipline, educational expertise, and technological acumen to offer bespoke solutions in web development and digital strategy.</p>
-        
-        <h3>A Personal Odyssey: Healing and Growth</h3>
+        <h3 class="title pt-6">A Personal Odyssey: Healing and Growth</h3>
         <p>Beyond her professional achievements, Helen's story is also one of personal resilience. Her journey through the challenges of military life and the demands of the tech world is a testament to her strength and adaptability. It's a journey marked by continuous learning, self-discovery, and an unwavering commitment to personal growth.</p>
       </div>
     </div>
   </section>
 
   <!-- Join Section -->
-  <section class="join">
-    <div class="join-grid">
-      <div class="join-content">
-        <h2>Join Helen's Journey</h2>
+  <section class="section has-background-light">
+    <div class="columns is-centered">
+      <div class="column is-half has-text-centered">
+        <h2 class="title">Join Helen's Journey</h2>
         <p>Today, Helen B stands as a symbol of innovation, resilience, and the transformative power of technology. Her life is a narrative of taking the road less traveled, constantly seeking new horizons in the digital realm and beyond. Join her as she continues to explore, inspire, and empower.</p>
       </div>
     </div>
   </section>
-</div>
+
 
     </main>
-    <footer>
     <!-- Rest of your base template -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
 
-<footer class="site-footer">
-  <div class="footer-content">
-    <div class="footer-grid">
       <!-- About Column -->
-      <div class="footer-column">
-        <h4>About</h4>
-        <p>Exploring the road less travelled in technology, craft, and life. Veteran, Nana, knitter, and web technologist sharing lived experiences.</p>
-      
+      <div class="column">
+        <h4 class="title is-4">About</h4>
+        <p>
+          Exploring the road less travelled in technology, craft, and life. Veteran, Nana, knitter, and web technologist sharing lived experiences.
+        </p>
       </div>
 
-      <!-- Quick Links -->
-      <div class="footer-column">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/writings">Writings</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/privacy-policy">Privacy Policy</a></li>
-          <li><a href="/admin">Admin Dashboard</a></li>
-        </ul>
+      <!-- Quick Links Column -->
+      <div class="column">
+        <h4 class="title is-4">Quick Links</h4>
+        <nav class="footer-nav">
+          <ul class="menu-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/writings">Writings</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/admin">Admin Dashboard</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <!-- Connect/Social Links Column -->
-      <div class="footer-column">
-        <h4>Connect</h4>
-        <ul class="social-links">
-          <li>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+      <!-- Social Media Column -->
+      <div class="column">
+        <h4 class="title is-4">Connect</h4>
+        <div class="buttons are-small">
+          <a class="button is-link is-outlined" href="https://github.com/hlnb" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
               <i class="fab fa-github"></i>
-              <span>GitHub</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            </span>
+            <span>GitHub</span>
+          </a>
+          <a class="button is-link is-outlined" href="https://linkedin.com/in/helenburgess/" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
               <i class="fab fa-linkedin"></i>
-              <span>LinkedIn</span>
-            </a>
-          </li>
-        </ul>
+            </span>
+            <span>LinkedIn</span>
+          </a>
+        </div>
       </div>
+
     </div>
 
-    <div class="footer-bottom">
-        <p>&copy; 2015 -  2024 - 
-       Built with <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">11ty</a>.</p>
+    <!-- Footer Bottom -->
+    <div class="content has-text-centered">
+      <p>
+        &copy; 2015 - 2024 - . Built with 
+        <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">11ty</a>.
+      </p>
     </div>
   </div>
 </footer>
 
 
-    </footer>
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".navbar-burger");
+  const menu = document.querySelector("#navbarMenu");
+
+  if (burger && menu) {
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("is-active");
+      menu.classList.toggle("is-active");
+    });
+  }
+});
+</script>
 </body>
 </html>

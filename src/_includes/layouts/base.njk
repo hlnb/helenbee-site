@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/bulma.min.css">
+    <link rel="stylesheet" href="/assets/css/variables.css">
+    <link rel="stylesheet" href="/assets/css/editorial-calendar.css">
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <link rel="stylesheet" href="/assets/css/forms.css">
+    <link rel="stylesheet" href="/assets/css/grid-four-six.css">
+    <link rel="stylesheet" href="/assets/css/grid-layouts.css">
+    <link rel="stylesheet" href="/assets/css/grid-modular.css">
+    <link rel="stylesheet" href="/assets/css/writing-single.css">
+    <script src="https://kit.fontawesome.com/49adc57732.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
@@ -12,9 +22,19 @@
     <main>
         {{ content | safe }}
     </main>
-    <footer>
     {% include "partials/footer.njk" %}
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".navbar-burger");
+  const menu = document.querySelector("#navbarMenu");
 
-    </footer>
+  if (burger && menu) {
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("is-active");
+      menu.classList.toggle("is-active");
+    });
+  }
+});
+</script>
 </body>
 </html>

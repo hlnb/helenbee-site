@@ -1,0 +1,49 @@
+/* Font Face Declarations */
+@font-face {
+    font-family: 'Stackyard';
+    src: url('/assets/fonts/stackyard/stackyard.woff2') format('woff2'),
+         url('/assets/fonts/stackyard/stackyard.woff') format('woff'),
+         url('/assets/fonts/stackyard/stackyard.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Typewriter';
+    src: url('/assets/fonts/typewriter/veteran_typewriter.woff2') format('woff2'),
+            url('/assets/fonts/typewriter/veteran_typewriter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* Primary Colors */
+    --primary: #332E63;    /* Deep purple */
+    --secondary: #38A3CD;  /* Bright blue */
+    
+    /* Accent Colors */
+    --accent-1: #F5934E;   /* Orange */
+    --accent-2: #CD80B4;   /* Pink */
+    
+    /* Supporting Colors */
+    --support-1: #A586BC;  /* Light purple */
+    --support-2: #873A7D;  /* Deep pink */
+    --support-3: #913073;  /* Another deep pink */
+    
+    /* Text Colors */
+    --text-dark: #332E63;
+    --text-light: #ffffff;
+    
+    /* Font Family Variables */
+    --font-heading: 'Stackyard', serif;
+    --font-body: 'Typewriter', monospace;
+    
+    /* Grid System Variables */
+    --border-width-thin: 1px;
+    --grid-4-5: [a1] 6fr [a2] 1fr [b2] 4fr [a3] 3fr [b3] 3fr [a4] 4fr [b4] 1fr [a5] 6fr [a6];
+    --grid-column-gap: 2vw;
+    --grid-row-gap: 5vh;
+    --max-width: 92rem;
+} 

@@ -19,3 +19,18 @@ title: Login
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 </style>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      } else {
+        // Redirect if already logged in
+        document.location.href = "/admin/";
+      }
+    });
+  }
+</script>

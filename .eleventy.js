@@ -1,10 +1,17 @@
+const svgContents = require("eleventy-plugin-svg-contents");
 module.exports = function (eleventyConfig) {
-
+	eleventyConfig.addPlugin(svgContents);
 	// Add passthrough copy for images and assets
 	eleventyConfig.addPassthroughCopy("assets/images");
+	eleventyConfig.addPassthroughCopy("assets/images/other");
+	eleventyConfig.addPassthroughCopy("assets/images/favicons");
 	eleventyConfig.addPassthroughCopy("assets/fonts");
 	eleventyConfig.addPassthroughCopy("assets/js");
 	eleventyConfig.addPassthroughCopy("assets/css");
+	eleventyConfig.addPassthroughCopy("assets/svg");
+	eleventyConfig.addPassthroughCopy("assets/icons");
+	eleventyConfig.addPassthroughCopy("assets/favicon");
+	eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("public");
 	// Copy _redirects file
 	eleventyConfig.addPassthroughCopy("_redirects");
@@ -12,7 +19,10 @@ module.exports = function (eleventyConfig) {
 	//add writings collection
 	eleventyConfig.addCollection("allPosts", function (collectionApi) {
 		return collectionApi
-			.getFilteredByGlob(["src/writings/**/*.md", "src/content/posts/**/*.md"])
+			.getFilteredByGlob([
+				"src/writings/**/**/*.md",
+				"src/content/posts/**/**/*.md",
+			])
 			.map((post) => {
 				// Adjust the URL to use "writings" instead of "posts"
 				if (post.inputPath.includes("content/posts")) {
@@ -82,7 +92,7 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
-	 eleventyConfig.addFilter("currentYear", () => new Date().getFullYear());
+	eleventyConfig.addFilter("currentYear", () => new Date().getFullYear());
 
 	// Add limit filter for collections
 	eleventyConfig.addFilter("limit", function (array, limit) {
@@ -133,7 +143,7 @@ module.exports = function (eleventyConfig) {
 	);
 
 	eleventyConfig.addCollection("writingsByCategory", function (collectionApi) {
-		const writings = collectionApi.getFilteredByGlob("./src/writings/*.md");
+		const writings = collectionApi.getFilteredByGlob("./src/writings/**/*.md"); // Match all subdirectories
 
 		// Group posts by category
 		const categories = {};
@@ -147,14 +157,11 @@ module.exports = function (eleventyConfig) {
 
 		// Sort posts within each category by date
 		for (let category in categories) {
-			categories[category].sort((a, b) => {
-				return b.date - a.date;
-			});
+			categories[category].sort((a, b) => b.date - a.date);
 		}
 
 		return categories;
 	});
-
 	// Editorial Calendar Collections
 	eleventyConfig.addCollection("editorial", function (collectionApi) {
 		return collectionApi.getFilteredByGlob("./src/writings/*.md");
@@ -227,7 +234,6 @@ module.exports = function (eleventyConfig) {
 			day: "numeric",
 		});
 	});
-
 
 	// Add status-based collections
 	eleventyConfig.addCollection("published", function (collectionApi) {
@@ -321,7 +327,6 @@ module.exports = function (eleventyConfig) {
 		return months;
 	});
 
-	
 	// Editorial calendar collection
 	eleventyConfig.addCollection("editorialCalendar", function (collectionApi) {
 		return collectionApi
@@ -365,6 +370,18 @@ module.exports = function (eleventyConfig) {
 	// Add authentication check for admin pages
 	eleventyConfig.addCollection("adminPages", function (collectionApi) {
 		return collectionApi.getFilteredByGlob("src/admin/**/*.njk");
+	});
+
+	// Add a collection for all articles
+	eleventyConfig.addCollection("allArticles", function (collectionApi) {
+		// Get all articles from both directories
+		const posts = collectionApi.getFilteredByGlob("content/posts/**/*.md");
+		const writings = collectionApi.getFilteredByGlob("writings/**/*.md");
+
+		// Merge and sort by date
+		return [...posts, ...writings].sort((a, b) => {
+			return a.date - b.date;
+		});
 	});
 
 	return {
