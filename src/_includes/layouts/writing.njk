@@ -1,49 +1,24 @@
 ---
 layout: layouts/base.njk
 ---
-{% block head %}
-<link rel="stylesheet" href="/css/writing-single.css">
-{% endblock %}
 
 <article class="writing-single">
-  {% if image %}
-    <div class="writing-hero">
-      <div class="hero-image-container">
+  <div class="writing-hero">
+    <div class="hero-image-container">
+      {% if image %}
         <img src="{{ image }}" alt="{{ title }}">
-      </div>
-      <div class="hero-content">
-        <h1>{{ title }}</h1>
-        <div class="writing-meta">
-          <time datetime="{{ date | dateToISO }}">{{ date | dateDisplay }}</time>
-          {% if category %}
-            <span class="category">{{ category }}</span>
-          {% endif %}
-        </div>
-      </div>
+      {% endif %}
     </div>
-  {% else %}
-    <header class="writing-header">
+    <div class="hero-content">
       <h1>{{ title }}</h1>
       <div class="writing-meta">
-        <time datetime="{{ date | dateToISO }}">{{ date | dateDisplay }}</time>
+        <time datetime="{{ date | formatDate }}">{{ date | readableDate }}</time>
         {% if category %}
           <span class="category">{{ category }}</span>
         {% endif %}
       </div>
-    </header>
-  {% endif %}
-
-  <div class="writing-content">
-    {{ content | safe }}
+    </div>
   </div>
 
-  <footer class="writing-taxonomy">
-    {% if tags %}
-      <div class="tags">
-        {% for tag in tags %}
-          <span class="tag">{{ tag }}</span>
-        {% endfor %}
-      </div>
-    {% endif %}
-  </footer>
+  {{ content | safe }}
 </article>

@@ -1,4 +1,6 @@
 const svgContents = require("eleventy-plugin-svg-contents");
+const { DateTime } = require("luxon");
+
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(svgContents);
 	// Add passthrough copy for images and assets
@@ -147,9 +149,11 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection("writingsByCategory", function (collectionApi) {
 		const writings = collectionApi.getFilteredByGlob("./src/writings/**/*.md"); // Match all subdirectories
 
-    // Filter only articles with the status of 'published'
-		const filteredWritings = writings.filter(item => item.data.status === "published");
-		
+		// Filter only articles with the status of 'published'
+		const filteredWritings = writings.filter(
+			(item) => item.data.status === "published"
+		);
+
 		// Group posts by category
 		const categories = {};
 		writings.forEach((post) => {
@@ -387,6 +391,28 @@ module.exports = function (eleventyConfig) {
 		return [...posts, ...writings].sort((a, b) => {
 			return a.date - b.date;
 		});
+	});
+
+	eleventyConfig.addLiquidFilter("htmlDateString", function (value) {
+		return value.toISOString().split("T")[0];
+	});
+
+	eleventyConfig.addLiquidFilter("readableDate", function (value) {
+		return value.toLocaleDateString("en-US", {
+			year: "numeric",
+			month: "long",
+			day: "numeric",
+		});
+	});
+
+	// Format for the datetime attribute
+	eleventyConfig.addFilter("formatDate", function (date) {
+		return DateTime.fromJSDate(date).toFormat("yyyy-MM-dd");
+	});
+
+	// Format for display
+	eleventyConfig.addFilter("readableDate", function (date) {
+		return DateTime.fromJSDate(date).toFormat("MMMM d, yyyy");
 	});
 
 	return {
