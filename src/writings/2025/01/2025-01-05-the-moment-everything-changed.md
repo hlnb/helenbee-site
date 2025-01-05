@@ -1,7 +1,7 @@
 ---
 title: "The Moment Everything Changed: My Journey with PTSD After Military Service"
 date: 2025-01-05
-description: "A personal account of dealing with PTSD and mental health challenges after 16 years of service in the Royal Australian Air Force, and breaking the silence around non-combat trauma."
+description: "'Not all wounds are visible.' My journey with PTSD, anxiety, and depression led me to give evidence at the Royal Commission into Defence and Veteran Suicide. In this post, I share my story, challenge the stigma around PTSD beyond combat, and explain my mission to support fellow veterans."
 calendar:
   status: published
   proposedDate: "2025-01-05 "
