@@ -10,7 +10,7 @@ calendar:
   type: "article"
 category: technology
 tags: [technology, ehealth, m2m, internet of things, security]
-image: /assets/images/iotbasedhealthcare.png
+image: /assets/images/other/iotbasedhealthcare.png
 excerpt: This is an essay in regards to innovation in the M2M communication and Internet of Things. Security has been a hot topic for a few years now in the various sectors of business. This essay looks at the implementations of IoT in the e-health sector and what it may mean going forward.
 ---
 
@@ -61,7 +61,7 @@ This bears investigation in light of the rise of Cyber-Physical Systems (CPS) be
 
 Riazul Islam, Kwak, Kabir Houssain and Kwak provide a conceptual model of ubiquitous healthcare solution in their paper and this is shown below in Figure 1. This is a high level view of the elements required in this model. This model describes a heterogeneous computing environment where data is collected on such items as blood pressure, body temperature, electrocardiograms and even oxygen saturation via sensors and vital signs. This collected data can end up being an enormous amount to store. This model is based on Grid computing and transforms the static and mobile devices such as laptops, tablets and smartphones, into a hybrid of type.
 
-![IoT-based healthcare solution](/img/wp-content/uploads/2018/06/iotbasedhealthcare.png)
+![IoT-based healthcare solution](/assets/images/other/iotbasedhealthcare.png)
 _Figure 1: A conceptual diagram of IoT-based ubiquitous healthcare solution (Riazul Islam, Kwak, Houssain, Kwak, & Kabir, 2015)_
 
 Cyber-Physical System(CPS) is defined as where the virtual world intersects with the physical world. It is a System that integrates physical devices, such as sensors, with cyber components so that have an inbuilt analytical system which is able to respond intelligently to dynamic changes. Research into the CPS area was determined to be a key area in 2008 by the US National Science Foundation as well as being listed as a number one research priority by the US President’s Council of Advisors on Science and Technology (Wang, Adid, Lee, Shu, & Xia, 2011) Until now, CPS research and development has predominately been in the Smart Grid, automotive and traffic management domains in the IoT. Now this research is moving into the realm of eHealth due to advances made in the last five years in wireless sensor networks (WSNs), medical sensors and cloud computing. This makes CPS one of the major candidates for healthcare application solutions specifically in in-hospital and in-home patient care according to Milenkovic, Otto, and Jovanov. (Milenkovic, Otto, & Jovanov, 2006).
@@ -77,7 +77,7 @@ Sawand, Djahel, Zhang and Naït-Abesselam, proposed a CPS framework for eHealth 
 
 They also asserted that “the quality of eHealth care service relies on the seamless integration of the above essential components” (Ajmal, Djahel, Zhang, & Naït-Abdesselam, 2014). “energy efficiency and patient privacy are always among the top concerns of eHealth care services”. (Ajmal, Djahel, Zhang, & Naït-Abdesselam, 2014) is also of importance in the development of eHealth CPS. Figure 2 is a diagram of the proposed CPS Architecture for eHealth Monitoring proposed in their paper.
 
-![CPS Architecture](https://res.cloudinary.com/hlnbee/image/upload/h_79,w_300/v1550127500/cpsArchitecture_ivpwxp.png)
+![CPS Architecture](/assets/images/other/cpsArchitecture_ivpwxp.png)
 _Figure 2: CPS Architecture for eHealth Monitoring_
 
 Security and privacy have also been highlighted in the existing literature, although Ajmal, Djahel, Zhang, and Naït-Abesselam have gone deeper and identified that security and privacy requirements for this technology space “must be taken into account from scratch of data collection, avoiding any post-processing with the purpose of enhancing security or privacy.” (Ajmal, Djahel, Zhang, & Naït-Abdesselam, 2014) This paper details some novel ways of protecting eHealth data by the use of Biometric cryptography in WBAN interconnection, as well as advance signal and image processing “to achieve privacy-aware cloud-assisted healthcare monitoring system. … significantly benefit … improving secure and efficient eHealth monitoring system.” (Ajmal, Djahel, Zhang, & Naït-Abdesselam, 2014)
@@ -98,7 +98,7 @@ This project will compare various M2M architectural networks that have been prop
 
 As you can see from the image below this is the project timeline, tasks and resources.
 
-![Project Timeline](https://res.cloudinary.com/hlnbee/image/upload/v1550127505/Project-Chart-ITC571_g5t1kb.png)
+![Project Timeline](/assets/images/other/Project-Chart-ITC571_g5t1kb.png)
 
 ### References
 

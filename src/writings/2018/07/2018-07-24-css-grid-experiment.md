@@ -10,7 +10,7 @@ calendar:
   type: "article"
 category: technology
 tags: [technology, css, grid]
-image: /assets/images/Screen-Shot-2018-07-24-at-12.39.55-pm-1.png
+image: /assets/images/other/Screen-Shot-2018-07-24-at-12.39.55-pm-1.png
 excerpt: My journey into learning CSS Grid and how it helped me understand web layouts better.
 ---
 

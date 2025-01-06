@@ -58,5 +58,5 @@ I personally think that my thumb pain is a combination of all the hobbies and jo
 I have given myself permission to stop when I need to, when the pain is at its greatest, do my hand exercises each day (using the videos as a reminder) and enjoy the massage of hands and forearms as much as possible.
 I do think that having a doctor check out the pain is a good idea, and that having any sort of cortisone injection is not. What the medical professionals call 'conservative treatment' works for me and it might just work for you.
 
-![brown and black typewriter](/assets/images/pereanu-sebastian-qFH7-yKoxik-unsplash.jpg)
+![brown and black typewriter](/assets/images/other/pereanu-sebastian-qFH7-yKoxik-unsplash.jpg)
 Photo by [Pereanu Sebastian](https://unsplash.com/@sebastian123) on [Unsplash](https://unsplash.com/photos/brown-and-black-typewriter-qFH7-yKoxik)

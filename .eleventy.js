@@ -4,9 +4,8 @@ const { DateTime } = require("luxon");
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(svgContents);
 	// Add passthrough copy for images and assets
-	eleventyConfig.addPassthroughCopy("assets/images");
+	eleventyConfig.addPassthroughCopy({ assets: "assets" });
 	eleventyConfig.addPassthroughCopy("assets/images/other");
-	eleventyConfig.addPassthroughCopy("assets/images/favicons");
 	eleventyConfig.addPassthroughCopy("assets/fonts");
 	eleventyConfig.addPassthroughCopy("assets/fonts/stackyard");
 	eleventyConfig.addPassthroughCopy("assets/fonts/typewriter");
