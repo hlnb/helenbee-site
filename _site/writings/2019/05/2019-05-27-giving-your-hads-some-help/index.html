@@ -31,6 +31,26 @@
 
     <meta name="theme-color" content="#332E63">
 
+    <!-- General Open Graph -->
+    <meta property="og:title" content="Giving your hands some help - ">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://helenburgess.id.au/assets/images/other/dequervanImage-1200x350-c-default.jpg">
+    <meta property="og:url" content="https://helenburgess.id.au/writings/2019/05/2019-05-27-giving-your-hads-some-help/">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Giving your hands some help">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://helenburgess.id.au/assets/images/other/dequervanImage-1200x350-c-default.jpg">
+    
+
+    <!-- Mastodon -->
+    <meta name="mastodon:card" content="summary_large_image">
+    <meta name="mastodon:title" content="Giving your hands some help">
+    <meta name="mastodon:description" content="">
+    
+
 </head>
 <body>
     
@@ -108,6 +128,83 @@ I do think that having a doctor check out the pain is a good idea, and that havi
 <p><img src="/assets/images/pereanu-sebastian-qFH7-yKoxik-unsplash.jpg" alt="brown and black typewriter">
 Photo by <a href="https://unsplash.com/@sebastian123">Pereanu Sebastian</a> on <a href="https://unsplash.com/photos/brown-and-black-typewriter-qFH7-yKoxik">Unsplash</a></p>
 
+
+  <div class="share-section">
+    <h3 class="title is-4 mb-4">Share this article</h3>
+    <div class="columns is-mobile is-multiline">
+      <!-- Twitter/X Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://twitter.com/intent/tweet?text=Giving%20your%20hands%20some%20help&url=https://helenburgess.id.au%2Fwritings%2F2019%2F05%2F2019-05-27-giving-your-hads-some-help%2F"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-twitter">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+          <span>Twitter</span>
+        </a>
+      </div>
+
+      <!-- Facebook Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://helenburgess.id.au%2Fwritings%2F2019%2F05%2F2019-05-27-giving-your-hads-some-help%2F"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-facebook">
+          <span class="icon">
+            <i class="fab fa-facebook"></i>
+          </span>
+          <span>Facebook</span>
+        </a>
+      </div>
+
+      <!-- LinkedIn Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://helenburgess.id.au%2Fwritings%2F2019%2F05%2F2019-05-27-giving-your-hads-some-help%2F&title=Giving%20your%20hands%20some%20help&summary="
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-linkedin">
+          <span class="icon">
+            <i class="fab fa-linkedin"></i>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <!-- Instagram (Copy Link) -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('https://helenburgess.id.au/writings/2019/05/2019-05-27-giving-your-hads-some-help/')"
+                class="button is-fullwidth is-instagram">
+          <span class="icon">
+            <i class="fab fa-instagram"></i>
+          </span>
+          <span class="copy-text">Instagram</span>
+        </button>
+      </div>
+
+      <!-- Mastodon Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('https://helenburgess.id.au/writings/2019/05/2019-05-27-giving-your-hads-some-help/')"
+                class="button is-fullwidth is-mastodon">
+          <span class="icon">
+            <i class="fab fa-mastodon"></i>
+          </span>
+          <span class="copy-text">Mastodon</span>
+        </button>
+      </div>
+
+      <!-- Bluesky (Copy Link) -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('https://helenburgess.id.au/writings/2019/05/2019-05-27-giving-your-hads-some-help/')"
+                class="button is-fullwidth is-bluesky">
+          <span class="icon">
+            <i class="fas fa-cloud"></i>
+          </span>
+          <span class="copy-text">Bluesky</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </article>
 
     </main>
@@ -183,6 +280,29 @@ Photo by <a href="https://unsplash.com/@sebastian123">Pereanu Sebastian</a> on <
     });
   }
 });
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    // Find all copy-text spans
+    const copyTexts = document.querySelectorAll('.copy-text');
+    const originalTexts = new Map();
+
+    // Store original text and update to "Copied!"
+    copyTexts.forEach(span => {
+      originalTexts.set(span, span.textContent);
+      span.textContent = 'Copied!';
+    });
+
+    // Reset after 2 seconds
+    setTimeout(() => {
+      copyTexts.forEach(span => {
+        span.textContent = originalTexts.get(span);
+      });
+    }, 2000);
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
+}
 </script>
 </body>
 </html>

@@ -31,6 +31,26 @@
 
     <meta name="theme-color" content="#332E63">
 
+    <!-- General Open Graph -->
+    <meta property="og:title" content="Tagged &quot;planned&quot; - ">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://helenburgess.id.au">
+    <meta property="og:url" content="https://helenburgess.id.au/tags/planned/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tagged &quot;planned&quot;">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://helenburgess.id.au">
+    
+
+    <!-- Mastodon -->
+    <meta name="mastodon:card" content="summary_large_image">
+    <meta name="mastodon:title" content="Tagged &quot;planned&quot;">
+    <meta name="mastodon:description" content="">
+    
+
 </head>
 <body>
     
@@ -134,6 +154,29 @@
     });
   }
 });
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    // Find all copy-text spans
+    const copyTexts = document.querySelectorAll('.copy-text');
+    const originalTexts = new Map();
+
+    // Store original text and update to "Copied!"
+    copyTexts.forEach(span => {
+      originalTexts.set(span, span.textContent);
+      span.textContent = 'Copied!';
+    });
+
+    // Reset after 2 seconds
+    setTimeout(() => {
+      copyTexts.forEach(span => {
+        span.textContent = originalTexts.get(span);
+      });
+    }, 2000);
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
+}
 </script>
 </body>
 </html>

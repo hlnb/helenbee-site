@@ -31,6 +31,26 @@
 
     <meta name="theme-color" content="#332E63">
 
+    <!-- General Open Graph -->
+    <meta property="og:title" content="Austrlaian Season&#39;s Greetings 2024 - ">
+    <meta property="og:description" content="A Christmas Wish for all">
+    <meta property="og:image" content="https://helenburgess.id.au/assets/images/other/annie-spratt-VDXtVYJVj7A-unsplash.jpg">
+    <meta property="og:url" content="https://helenburgess.id.au/writings/2024/12/2024-12-christmas-card/">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Austrlaian Season&#39;s Greetings 2024">
+    <meta name="twitter:description" content="A Christmas Wish for all">
+    <meta name="twitter:image" content="https://helenburgess.id.au/assets/images/other/annie-spratt-VDXtVYJVj7A-unsplash.jpg">
+    
+
+    <!-- Mastodon -->
+    <meta name="mastodon:card" content="summary_large_image">
+    <meta name="mastodon:title" content="Austrlaian Season&#39;s Greetings 2024">
+    <meta name="mastodon:description" content="">
+    
+
 </head>
 <body>
     
@@ -86,6 +106,83 @@ As we wrap up another wonderful year of sharing stories and adventures, I wanted
 <p>Helen</p>
 </div>
 
+
+  <div class="share-section">
+    <h3 class="title is-4 mb-4">Share this article</h3>
+    <div class="columns is-mobile is-multiline">
+      <!-- Twitter/X Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://twitter.com/intent/tweet?text=Austrlaian%20Season&#39;s%20Greetings%202024&url=https://helenburgess.id.au%2Fwritings%2F2024%2F12%2F2024-12-christmas-card%2F"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-twitter">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+          <span>Twitter</span>
+        </a>
+      </div>
+
+      <!-- Facebook Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://helenburgess.id.au%2Fwritings%2F2024%2F12%2F2024-12-christmas-card%2F"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-facebook">
+          <span class="icon">
+            <i class="fab fa-facebook"></i>
+          </span>
+          <span>Facebook</span>
+        </a>
+      </div>
+
+      <!-- LinkedIn Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://helenburgess.id.au%2Fwritings%2F2024%2F12%2F2024-12-christmas-card%2F&title=Austrlaian%20Season&#39;s%20Greetings%202024&summary=A%20Christmas%20Wish%20for%20all"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-linkedin">
+          <span class="icon">
+            <i class="fab fa-linkedin"></i>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <!-- Instagram (Copy Link) -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('https://helenburgess.id.au/writings/2024/12/2024-12-christmas-card/')"
+                class="button is-fullwidth is-instagram">
+          <span class="icon">
+            <i class="fab fa-instagram"></i>
+          </span>
+          <span class="copy-text">Instagram</span>
+        </button>
+      </div>
+
+      <!-- Mastodon Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('https://helenburgess.id.au/writings/2024/12/2024-12-christmas-card/')"
+                class="button is-fullwidth is-mastodon">
+          <span class="icon">
+            <i class="fab fa-mastodon"></i>
+          </span>
+          <span class="copy-text">Mastodon</span>
+        </button>
+      </div>
+
+      <!-- Bluesky (Copy Link) -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('https://helenburgess.id.au/writings/2024/12/2024-12-christmas-card/')"
+                class="button is-fullwidth is-bluesky">
+          <span class="icon">
+            <i class="fas fa-cloud"></i>
+          </span>
+          <span class="copy-text">Bluesky</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </article>
 
     </main>
@@ -161,6 +258,29 @@ As we wrap up another wonderful year of sharing stories and adventures, I wanted
     });
   }
 });
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    // Find all copy-text spans
+    const copyTexts = document.querySelectorAll('.copy-text');
+    const originalTexts = new Map();
+
+    // Store original text and update to "Copied!"
+    copyTexts.forEach(span => {
+      originalTexts.set(span, span.textContent);
+      span.textContent = 'Copied!';
+    });
+
+    // Reset after 2 seconds
+    setTimeout(() => {
+      copyTexts.forEach(span => {
+        span.textContent = originalTexts.get(span);
+      });
+    }, 2000);
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
+}
 </script>
 </body>
 </html>

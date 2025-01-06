@@ -31,6 +31,26 @@
 
     <meta name="theme-color" content="#332E63">
 
+    <!-- General Open Graph -->
+    <meta property="og:title" content="eHealth Systems, M2M Communication &amp; Security - ">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://helenburgess.id.au/assets/images/iotbasedhealthcare.png">
+    <meta property="og:url" content="https://helenburgess.id.au/writings/2018/06/2018-06-29-ehealth-systems/">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="eHealth Systems, M2M Communication &amp; Security">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://helenburgess.id.au/assets/images/iotbasedhealthcare.png">
+    
+
+    <!-- Mastodon -->
+    <meta name="mastodon:card" content="summary_large_image">
+    <meta name="mastodon:title" content="eHealth Systems, M2M Communication &amp; Security">
+    <meta name="mastodon:description" content="">
+    
+
 </head>
 <body>
     
@@ -157,6 +177,83 @@ Charles Sturt University
 <p>Sebestyen, G., Hangan, A., Ongia, S., &amp; Gál, Z. (2014). eHealth solutions in the context of Internet of Things. Automation, Quality and Testing, Robotics, 2014 IEEE International Conference on (pp. 1-6). Cluj-Napoca: IEEE.</p>
 <p>Wang, J., Adid, H., Lee, S., Shu, L., &amp; Xia, F. (2011). A secured health care application architecture for cyber-physical systems. Control Engineering and Applied Informatics, 13(3), 101-108.</p>
 
+
+  <div class="share-section">
+    <h3 class="title is-4 mb-4">Share this article</h3>
+    <div class="columns is-mobile is-multiline">
+      <!-- Twitter/X Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://twitter.com/intent/tweet?text=eHealth%20Systems%2C%20M2M%20Communication%20%26%20Security&url=https://helenburgess.id.au%2Fwritings%2F2018%2F06%2F2018-06-29-ehealth-systems%2F"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-twitter">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+          <span>Twitter</span>
+        </a>
+      </div>
+
+      <!-- Facebook Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://helenburgess.id.au%2Fwritings%2F2018%2F06%2F2018-06-29-ehealth-systems%2F"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-facebook">
+          <span class="icon">
+            <i class="fab fa-facebook"></i>
+          </span>
+          <span>Facebook</span>
+        </a>
+      </div>
+
+      <!-- LinkedIn Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://helenburgess.id.au%2Fwritings%2F2018%2F06%2F2018-06-29-ehealth-systems%2F&title=eHealth%20Systems%2C%20M2M%20Communication%20%26%20Security&summary="
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-linkedin">
+          <span class="icon">
+            <i class="fab fa-linkedin"></i>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <!-- Instagram (Copy Link) -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('https://helenburgess.id.au/writings/2018/06/2018-06-29-ehealth-systems/')"
+                class="button is-fullwidth is-instagram">
+          <span class="icon">
+            <i class="fab fa-instagram"></i>
+          </span>
+          <span class="copy-text">Instagram</span>
+        </button>
+      </div>
+
+      <!-- Mastodon Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('https://helenburgess.id.au/writings/2018/06/2018-06-29-ehealth-systems/')"
+                class="button is-fullwidth is-mastodon">
+          <span class="icon">
+            <i class="fab fa-mastodon"></i>
+          </span>
+          <span class="copy-text">Mastodon</span>
+        </button>
+      </div>
+
+      <!-- Bluesky (Copy Link) -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('https://helenburgess.id.au/writings/2018/06/2018-06-29-ehealth-systems/')"
+                class="button is-fullwidth is-bluesky">
+          <span class="icon">
+            <i class="fas fa-cloud"></i>
+          </span>
+          <span class="copy-text">Bluesky</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </article>
 
     </main>
@@ -232,6 +329,29 @@ Charles Sturt University
     });
   }
 });
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    // Find all copy-text spans
+    const copyTexts = document.querySelectorAll('.copy-text');
+    const originalTexts = new Map();
+
+    // Store original text and update to "Copied!"
+    copyTexts.forEach(span => {
+      originalTexts.set(span, span.textContent);
+      span.textContent = 'Copied!';
+    });
+
+    // Reset after 2 seconds
+    setTimeout(() => {
+      copyTexts.forEach(span => {
+        span.textContent = originalTexts.get(span);
+      });
+    }, 2000);
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
+}
 </script>
 </body>
 </html>

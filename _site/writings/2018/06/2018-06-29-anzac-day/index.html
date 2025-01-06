@@ -31,6 +31,26 @@
 
     <meta name="theme-color" content="#332E63">
 
+    <!-- General Open Graph -->
+    <meta property="og:title" content="ANZAC Day and being a Peace-Time Veteran - ">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://helenburgess.id.au/assets/images/1_LKDWlBW3k2urxj8OaM0qyA.jpeg">
+    <meta property="og:url" content="https://helenburgess.id.au/writings/2018/06/2018-06-29-anzac-day/">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ANZAC Day and being a Peace-Time Veteran">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://helenburgess.id.au/assets/images/1_LKDWlBW3k2urxj8OaM0qyA.jpeg">
+    
+
+    <!-- Mastodon -->
+    <meta name="mastodon:card" content="summary_large_image">
+    <meta name="mastodon:title" content="ANZAC Day and being a Peace-Time Veteran">
+    <meta name="mastodon:description" content="">
+    
+
 </head>
 <body>
     
@@ -119,6 +139,83 @@ There was a lot of tired men and women as the requirements for support went up, 
 <p>ANZAC Day is not a day for me to be thanked for my service. It is for me about remembering how much I love Australia as a country, whose freedoms allow us to do what we do everyday, that I served to protect that for everyone. ANZAC Day is about remembering those who have gone before whether in a conflict or not, who are willing to do the same.</p>
 <p>This is what ANZAC day means to me — a veteran who has served during a time of relative peace for the World and Australia.</p>
 
+
+  <div class="share-section">
+    <h3 class="title is-4 mb-4">Share this article</h3>
+    <div class="columns is-mobile is-multiline">
+      <!-- Twitter/X Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://twitter.com/intent/tweet?text=ANZAC%20Day%20and%20being%20a%20Peace-Time%20Veteran&url=https://helenburgess.id.au%2Fwritings%2F2018%2F06%2F2018-06-29-anzac-day%2F"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-twitter">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+          <span>Twitter</span>
+        </a>
+      </div>
+
+      <!-- Facebook Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://helenburgess.id.au%2Fwritings%2F2018%2F06%2F2018-06-29-anzac-day%2F"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-facebook">
+          <span class="icon">
+            <i class="fab fa-facebook"></i>
+          </span>
+          <span>Facebook</span>
+        </a>
+      </div>
+
+      <!-- LinkedIn Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://helenburgess.id.au%2Fwritings%2F2018%2F06%2F2018-06-29-anzac-day%2F&title=ANZAC%20Day%20and%20being%20a%20Peace-Time%20Veteran&summary="
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-linkedin">
+          <span class="icon">
+            <i class="fab fa-linkedin"></i>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <!-- Instagram (Copy Link) -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('https://helenburgess.id.au/writings/2018/06/2018-06-29-anzac-day/')"
+                class="button is-fullwidth is-instagram">
+          <span class="icon">
+            <i class="fab fa-instagram"></i>
+          </span>
+          <span class="copy-text">Instagram</span>
+        </button>
+      </div>
+
+      <!-- Mastodon Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('https://helenburgess.id.au/writings/2018/06/2018-06-29-anzac-day/')"
+                class="button is-fullwidth is-mastodon">
+          <span class="icon">
+            <i class="fab fa-mastodon"></i>
+          </span>
+          <span class="copy-text">Mastodon</span>
+        </button>
+      </div>
+
+      <!-- Bluesky (Copy Link) -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('https://helenburgess.id.au/writings/2018/06/2018-06-29-anzac-day/')"
+                class="button is-fullwidth is-bluesky">
+          <span class="icon">
+            <i class="fas fa-cloud"></i>
+          </span>
+          <span class="copy-text">Bluesky</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </article>
 
     </main>
@@ -194,6 +291,29 @@ There was a lot of tired men and women as the requirements for support went up, 
     });
   }
 });
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    // Find all copy-text spans
+    const copyTexts = document.querySelectorAll('.copy-text');
+    const originalTexts = new Map();
+
+    // Store original text and update to "Copied!"
+    copyTexts.forEach(span => {
+      originalTexts.set(span, span.textContent);
+      span.textContent = 'Copied!';
+    });
+
+    // Reset after 2 seconds
+    setTimeout(() => {
+      copyTexts.forEach(span => {
+        span.textContent = originalTexts.get(span);
+      });
+    }, 2000);
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
+}
 </script>
 </body>
 </html>

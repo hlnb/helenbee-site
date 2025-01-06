@@ -1,5 +1,6 @@
 ---
 title: "The Moment Everything Changed: My Journey with PTSD After Military Service"
+shortTitle: "The Moment Everything Changed"
 date: 2025-01-05
 description: "'Not all wounds are visible.' My journey with PTSD, anxiety, and depression led me to give evidence at the Royal Commission into Defence and Veteran Suicide. In this post, I share my story, challenge the stigma around PTSD beyond combat, and explain my mission to support fellow veterans."
 calendar:
@@ -17,6 +18,13 @@ tags:
 layout: layouts/writing.njk
 category: lived-experience
 image: /assets/images/other/davide-pietralunga-unsplash.jpg
+author:
+  name: "Helen Burgess"
+  twitter: "https://x.com/helenbee"
+  mastodon: "https://mastodon.au/@hlnbee"
+siteUrl: "https://helenburgess.id.au"
+twitter_description: "Giving evidence at the Royal Commission was one of the hardest things I've done. In this post, I reflect on PTSD and my mission to support veterans."
+mastodon_description: "PTSD doesn't only come from combat. I share my Royal Commission experience and my mission to support veterans."
 ---
 
 <article class="post">

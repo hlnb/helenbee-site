@@ -415,6 +415,9 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(date).toFormat("MMMM d, yyyy");
 	});
 
+	// Add as global data
+	eleventyConfig.addGlobalData("siteUrl", "https://helenburgess.id.au");
+
 	return {
 		dir: {
 			input: "src",

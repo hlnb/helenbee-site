@@ -21,4 +21,81 @@ layout: layouts/base.njk
   </div>
 
   {{ content | safe }}
+
+  <div class="share-section">
+    <h3 class="title is-4 mb-4">Share this article</h3>
+    <div class="columns is-mobile is-multiline">
+      <!-- Twitter/X Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ siteUrl }}{{ page.url | urlencode }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-twitter">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+          <span>Twitter</span>
+        </a>
+      </div>
+
+      <!-- Facebook Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ siteUrl }}{{ page.url | urlencode }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-facebook">
+          <span class="icon">
+            <i class="fab fa-facebook"></i>
+          </span>
+          <span>Facebook</span>
+        </a>
+      </div>
+
+      <!-- LinkedIn Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ siteUrl }}{{ page.url | urlencode }}&title={{ title | urlencode }}&summary={{ description | urlencode }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="button is-fullwidth is-linkedin">
+          <span class="icon">
+            <i class="fab fa-linkedin"></i>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <!-- Instagram (Copy Link) -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('{{ siteUrl }}{{ page.url }}')"
+                class="button is-fullwidth is-instagram">
+          <span class="icon">
+            <i class="fab fa-instagram"></i>
+          </span>
+          <span class="copy-text">Instagram</span>
+        </button>
+      </div>
+
+      <!-- Mastodon Share -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('{{ siteUrl }}{{ page.url }}')"
+                class="button is-fullwidth is-mastodon">
+          <span class="icon">
+            <i class="fab fa-mastodon"></i>
+          </span>
+          <span class="copy-text">Mastodon</span>
+        </button>
+      </div>
+
+      <!-- Bluesky (Copy Link) -->
+      <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <button onclick="copyToClipboard('{{ siteUrl }}{{ page.url }}')"
+                class="button is-fullwidth is-bluesky">
+          <span class="icon">
+            <i class="fas fa-cloud"></i>
+          </span>
+          <span class="copy-text">Bluesky</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </article>
