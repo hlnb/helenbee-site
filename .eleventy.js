@@ -418,6 +418,13 @@ module.exports = function (eleventyConfig) {
 	// Add as global data
 	eleventyConfig.addGlobalData("siteUrl", "https://helenburgess.id.au");
 
+	eleventyConfig.addGlobalData("site", {
+		name: "Helen Burgess",
+		description: "Personal website and blog of Helen Burgess",
+		defaultImage:
+			"/assets/images/other/pereanu-sebastian-qFH7-yKoxik-unsplash.jpg",
+	});
+
 	return {
 		dir: {
 			input: "src",

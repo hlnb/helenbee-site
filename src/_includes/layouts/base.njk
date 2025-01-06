@@ -32,17 +32,17 @@
     <meta name="theme-color" content="#332E63">
 
     <!-- General Open Graph -->
-    <meta property="og:title" content="{{ title }} - {{ author.name }}">
-    <meta property="og:description" content="{{ description }}">
-    <meta property="og:image" content="{{ siteUrl }}{{ image }}">
+    <meta property="og:title" content="{{ title or site.name }}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:image" content="{{ image or site.defaultImage }}">
     <meta property="og:url" content="{{ siteUrl }}{{ page.url }}">
     <meta property="og:type" content="{% if layout == 'layouts/writing.njk' %}article{% else %}website{% endif %}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ shortTitle or title }}">
-    <meta name="twitter:description" content="{{ twitter_description or socialDescription or description }}">
-    <meta name="twitter:image" content="{{ siteUrl }}{{ image }}">
+    <meta name="twitter:title" content="{{ title or site.name }}">
+    <meta name="twitter:description" content="{{ description or site.description }}">
+    <meta name="twitter:image" content="{{ image or site.defaultImage }}">
     {% if author.twitter %}
     <meta name="twitter:site" content="{{ author.twitter }}">
     <meta name="twitter:creator" content="{{ author.twitter }}">
