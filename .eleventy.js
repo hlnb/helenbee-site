@@ -16,6 +16,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets/favicon");
 	eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("public");
+	// Add passthrough for webp images
+    eleventyConfig.addPassthroughCopy("assets/images/other/*.webp");
 	// Copy _redirects file
 	eleventyConfig.addPassthroughCopy("_redirects");
 

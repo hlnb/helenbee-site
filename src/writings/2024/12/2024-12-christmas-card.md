@@ -1,6 +1,6 @@
 ---
 layout: layouts/writing.njk
-title: Austrlaian Season's Greetings 2024
+title: Australian Season's Greetings 2024
 date: 2024-12-25
 description: A Christmas Wish for all
 calendar:
