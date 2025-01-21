@@ -405,6 +405,12 @@ module.exports = function (eleventyConfig) {
 		description: "Personal website and blog of Helen Burgess",
 		defaultImage:
 			"/assets/images/other/pereanu-sebastian-qFH7-yKoxik-unsplash.jpg",
+		currentYear: new Date().getFullYear(),
+		author: {
+			name: "Helen Burgess",
+			email: "helen@helenburgess.id.au",
+			url: "https://helenburgess.id.au",
+		},
 	});
 
 	eleventyConfig.addFilter("scheduled", function (collection) {
