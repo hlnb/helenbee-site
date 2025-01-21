@@ -23,22 +23,9 @@ layout: layouts/base.njk
   {{ content | safe }}
 
   <div class="share-section">
-    <h3 class="title is-4 mb-4">Share this article</h3>
+    <h3 class="title is-3 mb-4">Share this article</h3>
     <div class="columns is-mobile is-multiline">
-      <!-- Twitter/X Share -->
-      <div class="column is-2-desktop is-4-tablet is-6-mobile">
-        <a href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ siteUrl }}{{ page.url | urlencode }}"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="button is-fullwidth is-twitter">
-          <span class="icon">
-            <i class="fab fa-twitter"></i>
-          </span>
-          <span>Twitter</span>
-        </a>
-      </div>
-
-      <!-- Facebook Share -->
+            <!-- Facebook Share -->
       <div class="column is-2-desktop is-4-tablet is-6-mobile">
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ siteUrl }}{{ page.url | urlencode }}"
            target="_blank"

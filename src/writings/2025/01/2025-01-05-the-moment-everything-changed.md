@@ -3,12 +3,10 @@ title: "The Moment Everything Changed: My Journey with PTSD After Military Servi
 shortTitle: "The Moment Everything Changed"
 date: 2025-01-05
 description: "'Not all wounds are visible.' My journey with PTSD, anxiety, and depression led me to give evidence at the Royal Commission into Defence and Veteran Suicide. In this post, I share my story, challenge the stigma around PTSD beyond combat, and explain my mission to support fellow veterans."
-calendar:
-  status: published
-  proposedDate: "2025-01-05 "
-  theme: "Personal Growth"
-  keywords: [personal growth, veterans, mental health, PTSD]
-  type: "article"
+publishedDate: "2025-01-05"
+theme: "Personal Growth"
+keywords: [personal growth, veterans, mental health, PTSD]
+type: "article"
 tags:
   - veterans
   - mental-health

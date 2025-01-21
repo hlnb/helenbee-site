@@ -1,19 +1,28 @@
 ---
-title: "My Journey: Recognizing the Invisible Wounds of PTSD"
+title: "My Journey"
 date: "2025-01-16"
 description: "A personal account of living with PTSD and the path to healing."
+publishedDate: "2025-01-16"
+theme: "Personal Growth"
+keywords: [PTSD, mental health, personal journey, healing]
+type: "article"
 tags: [PTSD, mental health, personal journey, healing]
 layout: layouts/writing.njk
 category: lived-experience
 image: /assets/images/other/DALL-E-2025-01-16-journal.webp
 author:
   name: "Helen Burgess"
-  twitter: "https://x.com/helenbee"
+socials:
+  bluesky: "https://bsky.app/profile/hlnbee"
   mastodon: "https://mastodon.au/@hlnbee"
+  facebook: "https://www.facebook.com/hlnbee"
 siteUrl: "https://helenburgess.id.au"
-twitter_description: "How do you explain a wound no one can see? My journey with PTSD taught me the power of breaking the silence. If you’re struggling, know you’re not alone. Let’s heal together. 💙 Read more: [Link] #PTSD #MentalHealth #HealingJourney"
-mastodon_description: "My story of living with PTSD is one of resilience, reaching out, and healing. Invisible wounds don’t make the pain any less real. If this resonates with you, let’s break the silence together. Read here: [Link] #PTSD #MentalHealth #TraumaRecovery"
-facebook_description: "For years, I lived with invisible wounds—pretending everything was fine while struggling with PTSD. It wasn’t until I reached out for help that everything changed. This is my story, my healing journey, and my message to anyone battling in silence: You are not alone. 💙 Let’s break the silence together. Read here: [Link] #PTSD #MentalHealthAwareness #HealingJourney"
+bluesky_description: >-
+  "How do you explain a wound no one can see?
+mastodon_description: >-
+  "My story of living with PTSD is one of resilience, reaching out, and healing. Invisible wounds don’t make the pain any less real. If this resonates with you, let’s break the silence together. Read here: [Link] #PTSD #MentalHealth #TraumaRecovery"
+facebook_description: >-
+  "For years, I lived with invisible wounds—pretending everything was fine while struggling with PTSD. It wasn’t until I reached out for help that everything changed. This is my story, my healing journey, and my message to anyone battling in silence: You are not alone. 💙 Let’s break the silence together. Read here: [Link] #PTSD #MentalHealthAwareness #HealingJourney"
 ---
 
 <article>

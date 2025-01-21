@@ -1,0 +1,42 @@
+.social-links {
+	list-style: none;
+	padding: 0;
+	margin: 1rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center; /* Center the icons horizontally */
+	gap: 2rem; /* Increased space between icons */
+}
+
+.social-links ul,
+.social-links a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+}
+
+.social-links .icon {
+	width: 24px;
+	height: 24px;
+	display: inline-flex;
+}
+
+/* Hide the text labels */
+.social-links .label {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+/* Optional: hover effects */
+.social-links a:hover {
+	opacity: 0.8;
+	transform: translateY(-2px);
+	transition: all 0.2s ease;
+}

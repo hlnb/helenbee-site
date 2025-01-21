@@ -3,19 +3,16 @@ layout: layouts/writing.njk
 title: Building a Modern Personal Site with 11ty
 description: A deep dive into creating a responsive, modular website using Eleventy, CSS Grid, and modern web practices.
 date: 2024-01-20
-calendar:
-  status: published
-  proposedDate: "2024-01-20"
-  theme: "Technology and Personal Growth"
-  keywords: [technology, personal growth, web development, 11ty]
-  type: "article"
+publishedDate: "2024-01-20"
+theme: "Technology and Personal Growth"
+keywords: [technology, personal growth, web development, 11ty]
+type: "article"
 category: technology
 tags:
   - technology
   - web development
   - 11ty
-image: /assets/images/other/DALL·E-2023-10-26-road-less-travelled.png
-
+image: /assets/images/other/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg
 ---
 
 ## Project Overview

@@ -2,12 +2,10 @@
 layout: layouts/writing.njk
 title: CSS Grid, My first coding experiment
 date: 2018-07-24
-calendar:
-  status: published
-  proposedDate: "2018-07-24"
-  theme: "Technology and Society"
-  keywords: [technology, css, grid]
-  type: "article"
+publishedDate: "2018-07-24"
+theme: "Technology and Society"
+keywords: [technology, css, grid]
+type: "article"
 category: technology
 tags: [technology, css, grid]
 image: /assets/images/other/Screen-Shot-2018-07-24-at-12.39.55-pm-1.png

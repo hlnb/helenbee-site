@@ -2,12 +2,10 @@
 layout: layouts/writing.njk
 title: Giving your hands some help
 date: 2019-05-27
-calendar:
-  status: published
-  proposedDate: "2019-05-27"
-  theme: "Healthcare and Technology"
-  keywords: [healthcare, technology, hands, pain]
-  type: "article"
+publishedDate: "2019-05-27"
+theme: "Healthcare and Technology"
+keywords: [healthcare, technology, hands, pain]
+type: "article"
 category: lived-experience
 tags: [lived-experience, hands, pain]
 image: /assets/images/other/dequervanImage-1200x350-c-default.jpg

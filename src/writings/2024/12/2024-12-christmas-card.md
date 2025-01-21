@@ -3,12 +3,10 @@ layout: layouts/writing.njk
 title: Australian Season's Greetings 2024
 date: 2024-12-25
 description: A Christmas Wish for all
-calendar:
-  status: published
-  proposedDate: "2024-12-25"
-  theme: "Season's Greetings 2024"
-  keywords: [christmas, holiday, card]
-  type: "article"
+publishedDate: "2024-12-25"
+theme: "Season's Greetings 2024"
+keywords: [christmas, holiday, card]
+type: "article"
 category: "end-of-year"
 tags:
   - christmas

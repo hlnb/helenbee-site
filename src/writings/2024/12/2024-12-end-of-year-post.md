@@ -3,12 +3,10 @@ layout: layouts/writing.njk
 title: End of 2024 Post
 date: 2024-12-31
 description: As 2024 draws to a close, I reflect on a year of creativity, growth, and meaningful connections. From completing cherished knitting projects to rebuilding my personal website and deepening my mindfulness practice, this year has been one of resilience and discovery. Join me as I look back on the lessons learned and set my sights on new horizons for 2025.
-calendar:
-  status: published
-  proposedDate: "2024-12-30"
-  theme: "Year in Review"
-  keywords: [year, review, reflection]
-  type: "article"
+publishedDate: "2024-12-30"
+theme: "Year in Review"
+keywords: [year, review, reflection]
+type: "article"
 category: "end-of-year"
 image: /assets/images/other/ian-schneider-PAykYb-8Er8-unsplash.jpg
 ---

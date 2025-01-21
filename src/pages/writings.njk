@@ -2,6 +2,7 @@
 layout: layouts/base.njk
 title: Writings
 permalink: /writings/
+
 ---
 
 <!-- Hero Section -->
@@ -21,8 +22,17 @@ permalink: /writings/
     <h2 class="title is-4">{{ category | capitalize }}</h2>
     <div class="columns is-multiline">
       {% for article in articles %}
-        <div class="column is-one-third">
-          <div class="card is-flex is-flex-direction-column">>   
+        {% set formattedPublishDate = article.data.publishedDate | formatDate %}
+        {% if (not article.data.publishedDate) or (formattedPublishDate <= currentDate) %}
+        <div class="column is-one-quarter">
+          <div class="card is-flex is-flex-direction-column">
+            {% if article.data.image %}
+            <div class="card-image">
+              <figure class="image">
+                <img src="{{ article.data.image }}" alt="{{ article.data.title }}" loading="lazy" style="object-fit: cover; height: 200px;">
+              </figure>
+            </div>
+            {% endif %}
             <div class="card-content">
               <p class="title is-5">
                 <a href="{{ article.url }}">{{ article.data.title }}</a>
@@ -33,12 +43,76 @@ permalink: /writings/
                 </span>
                 {{ article.date | dateDisplay }}
               </p>
-              <p>{{ article.data.description }}</p>
+              <p class="content-preview">{{ article.data.description }}</p>
+              {% if article.data.tags %}
+              <div class="tags mt-auto">
+                {% for tag in article.data.tags %}
+                  <span class="tag is-primary is-light">{{ tag }}</span>
+                {% endfor %}
+              </div>
+              {% endif %}
             </div>
           </div>
         </div>
+        {% endif %}
       {% endfor %}
     </div>
   </section>
 {% endfor %}
 </div>
+
+<style>
+  .card {
+    height: 100%;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-image figure {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-preview {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .title.is-5 a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .title.is-5 a:hover {
+    color: var(--primary);
+  }
+  
+  .tags {
+    margin-top: auto;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+  
+  .tag {
+    margin-bottom: 0.25rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .column.is-one-quarter {
+      width: 100%;
+    }
+  }
+</style>

@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="/assets/css/bulma.min.css">
     <link rel="stylesheet" href="/assets/css/variables.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/editorial-calendar.css">
-    <link rel="stylesheet" href="/assets/css/admin.css">
     <link rel="stylesheet" href="/assets/css/forms.css">
     <link rel="stylesheet" href="/assets/css/grid-four-six.css">
     <link rel="stylesheet" href="/assets/css/grid-layouts.css">
@@ -31,30 +29,17 @@
 
     <meta name="theme-color" content="#332E63">
 
-    <!-- General Open Graph -->
-    <meta property="og:title" content="{{ title or site.name }}">
-    <meta property="og:description" content="{{ description or site.description }}">
-    <meta property="og:image" content="{{ image or site.defaultImage }}">
+    <!-- Open Graph tags (used by Facebook, Mastodon, and others) -->
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:image" content="{{ image }}">
     <meta property="og:url" content="{{ siteUrl }}{{ page.url }}">
-    <meta property="og:type" content="{% if layout == 'layouts/writing.njk' %}article{% else %}website{% endif %}">
+    <meta property="og:type" content="article">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ title or site.name }}">
-    <meta name="twitter:description" content="{{ description or site.description }}">
-    <meta name="twitter:image" content="{{ image or site.defaultImage }}">
-    {% if author.twitter %}
-    <meta name="twitter:site" content="{{ author.twitter }}">
-    <meta name="twitter:creator" content="{{ author.twitter }}">
-    {% endif %}
+    <!-- Mastodon verification -->
+    <link rel="me" href="https://mastodon.au/@hlnbee">
 
-    <!-- Mastodon -->
-    <meta name="mastodon:card" content="summary_large_image">
-    <meta name="mastodon:title" content="{{ shortTitle or title }}">
-    <meta name="mastodon:description" content="{{ mastodon_description }}">
-    {% if author.mastodon %}
-    <meta name="mastodon:creator" content="{{ author.mastodon }}">
-    {% endif %}
+    <!-- Bluesky doesn't currently have specific meta tags, it uses Open Graph -->
 
 </head>
 <body>

@@ -2,12 +2,10 @@
 layout: layouts/writing.njk
 title: eHealth Systems, M2M Communication & Security
 date: 2018-06-29
-calendar:
-  status: published
-  proposedDate: "2018-06-29"
-  theme: "Technology and Society"
-  keywords: [technology, ehealth, m2m, internet of things, security]
-  type: "article"
+publishedDate: "2018-06-29"
+theme: "Technology and Society"
+keywords: [technology, ehealth, m2m, internet of things, security]
+type: "article"
 category: technology
 tags: [technology, ehealth, m2m, internet of things, security]
 image: /assets/images/other/iotbasedhealthcare.png

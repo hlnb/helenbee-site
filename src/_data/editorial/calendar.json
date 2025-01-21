@@ -1,6 +1,0 @@
-{
-  "defaultPublishTime": "09:00",
-  "publishDays": ["Monday", "Wednesday", "Friday"],
-  "excludeDates": ["2024-12-25", "2024-12-26"],
-  "targetPostsPerMonth": 4
-}

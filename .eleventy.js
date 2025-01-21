@@ -17,9 +17,11 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("public");
 	// Add passthrough for webp images
-    eleventyConfig.addPassthroughCopy("assets/images/other/*.webp");
+	eleventyConfig.addPassthroughCopy("assets/images/other/*.webp");
 	// Copy _redirects file
 	eleventyConfig.addPassthroughCopy("_redirects");
+	// Add this line
+	eleventyConfig.addPassthroughCopy("src/site.webmanifest");
 
 	//add writings collection
 	eleventyConfig.addCollection("allPosts", function (collectionApi) {
@@ -171,10 +173,6 @@ module.exports = function (eleventyConfig) {
 		}
 
 		return categories;
-	});
-	// Editorial Calendar Collections
-	eleventyConfig.addCollection("editorial", function (collectionApi) {
-		return collectionApi.getFilteredByGlob("./src/writings/*.md");
 	});
 
 	eleventyConfig.addCollection("byYear", function (collectionApi) {
@@ -337,18 +335,6 @@ module.exports = function (eleventyConfig) {
 		return months;
 	});
 
-	// Editorial calendar collection
-	eleventyConfig.addCollection("editorialCalendar", function (collectionApi) {
-		return collectionApi
-			.getFilteredByGlob(["src/writings/**/*.md", "src/content/posts/**/*.md"])
-			.filter((item) => item.data.calendar)
-			.sort((a, b) => {
-				const dateA = new Date(a.data.calendar?.proposedDate || a.date);
-				const dateB = new Date(b.data.calendar?.proposedDate || b.date);
-				return dateA - dateB;
-			});
-	});
-
 	// Status filter
 	eleventyConfig.addFilter("byStatus", function (collection, status) {
 		return collection.filter(
@@ -375,11 +361,6 @@ module.exports = function (eleventyConfig) {
 			month: "long",
 			day: "numeric",
 		});
-	});
-
-	// Add authentication check for admin pages
-	eleventyConfig.addCollection("adminPages", function (collectionApi) {
-		return collectionApi.getFilteredByGlob("src/admin/**/*.njk");
 	});
 
 	// Add a collection for all articles
@@ -424,6 +405,74 @@ module.exports = function (eleventyConfig) {
 		description: "Personal website and blog of Helen Burgess",
 		defaultImage:
 			"/assets/images/other/pereanu-sebastian-qFH7-yKoxik-unsplash.jpg",
+	});
+
+	eleventyConfig.addFilter("scheduled", function (collection) {
+		console.log("\n\n=== SCHEDULER DEBUG ===");
+
+		const now = new Date();
+		now.setHours(0, 0, 0, 0);
+
+		const filtered = collection.filter((post) => {
+			if (!post.data.publishedDate) {
+				console.log("Post with no publishedDate:", post.data.title);
+				return true;
+			}
+
+			const postDate = new Date(post.data.publishedDate);
+			postDate.setHours(0, 0, 0, 0);
+
+			const shouldShow = postDate <= now;
+
+			console.log({
+				title: post.data.title,
+				publishedDate: post.data.publishedDate,
+				shouldShow: shouldShow,
+			});
+
+			return shouldShow;
+		});
+
+		console.log("Total posts:", collection.length);
+		console.log("Filtered posts:", filtered.length);
+		console.log("=== END SCHEDULER DEBUG ===\n\n");
+
+		return filtered;
+	});
+
+	// Add this filter to provide current date to templates
+	eleventyConfig.addShortcode("now", () => {
+		return new Date().toISOString().slice(0, 10); // Returns YYYY-MM-DD
+	});
+
+	// Format date for comparison
+	eleventyConfig.addFilter("formatDate", function (date) {
+		if (!date) return "";
+
+		try {
+			// Handle string dates
+			const cleanDate = typeof date === "string" ? date.trim() : date;
+			const parsedDate = new Date(cleanDate);
+
+			// Check if date is valid
+			if (isNaN(parsedDate.getTime())) {
+				console.log("Invalid date:", date);
+				return "";
+			}
+
+			return parsedDate.toISOString().slice(0, 10);
+		} catch (e) {
+			console.log("Error parsing date:", date, e);
+			return "";
+		}
+	});
+
+	// Current date that returns the actual current date
+	eleventyConfig.addGlobalData("currentDate", () => {
+		const today = new Date();
+		// Set to current date at midnight UTC
+		today.setUTCHours(0, 0, 0, 0);
+		return today.toISOString().slice(0, 10);
 	});
 
 	return {
