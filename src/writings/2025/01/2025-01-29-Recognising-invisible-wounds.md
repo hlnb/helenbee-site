@@ -18,48 +18,129 @@ socials:
   facebook: "https://www.facebook.com/hlnbee"
 siteUrl: "https://helenburgess.id.au"
 bluesky_description: >-
-  How do you explain a wound no one can see?
+  You look fine to me. These five words haunt countless veterans living with PTSD, highlighting a fundamental misunderstanding about trauma.
 mastodon_description: >-
-  My story of living with PTSD and finding healing
+  You look fine to me. These five words haunt countless veterans living with PTSD, highlighting a fundamental misunderstanding about trauma.
 facebook_description: >-
-  For years, I lived with invisible wounds...
+  You look fine to me. These five words haunt countless veterans living with PTSD, highlighting a fundamental misunderstanding about trauma.
 ---
 
 <article>
-<p>When people think of wounds, they often envision scars, bandages, or casts — visible signs of injury that signal a need for care and healing. Yet, for many, the most profound wounds are not visible. As someone who has lived with complex PTSD, I understand the silent struggles that accompany this condition. This post explores the invisible nature of PTSD, shedding light on its impact and backed by research and expert insights to help others better understand.</p>
+<p>'You look fine to me.' These five words haunt countless veterans living with PTSD, highlighting a fundamental misunderstanding about trauma. While physical wounds command immediate attention and sympathy, the psychological impacts of trauma often go unrecognised, especially in military communities where stoicism is prised above vulnerability.</p>
 
-<h2>What is PTSD?</h2>
-<p>Post-Traumatic Stress Disorder (PTSD) is defined by the American Psychological Association (APA) as a psychiatric disorder that may occur in people who have experienced or witnessed a traumatic event such as a natural disaster, a serious accident, a terrorist act, war/combat, rape, or other violent personal assault. However, it is important to note that what constitutes a traumatic event can vary significantly from person to person. For some, it might be a single, acute incident, while for others, it may involve prolonged exposure to distressing circumstances. These differences highlight the deeply personal and subjective nature of trauma, making it all the more vital to approach PTSD with empathy and understanding.</p>
+<p>As someone who has lived with complex PTSD, I've learned that the most damaging aspect isn't the condition itself—it's the constant pressure to prove its existence. This piece isn't just another overview of PTSD symptoms. Instead, I want to challenge how we think about trauma, particularly in military contexts where our current approaches may be doing more harm than good.</p>
 
-<p>It is also essential to differentiate between PTSD and Complex PTSD (C-PTSD). While both conditions share symptoms such as flashbacks and hypervigilance, C-PTSD is often the result of prolonged or repeated trauma, such as ongoing military combat or childhood abuse. Recognised by the World Health Organisation and the British health system, C-PTSD includes additional symptoms like emotional dysregulation, difficulty maintaining relationships, and a persistent negative self-concept. For veterans, these distinctions can be crucial in receiving appropriate care tailored to their experiences.</p>
+<h2>The Many Faces of Trauma: Beyond the Textbook Definition</h2>
 
-<h2>The Challenges of Invisible Wounds</h2>
-<p>PTSD's invisibility can lead to misunderstandings, stigma, and isolation. People might dismiss your struggles simply because they cannot see them. For me, this has meant learning to advocate for my mental health and seeking the right support despite societal misconceptions.</p>
+<p>Picture this: A veteran flinches at a car backfiring in a shopping centre. A colleague notices but says nothing. Later that day, the same veteran calmly leads a team meeting, appears 'perfectly normal', and even jokes with coworkers. This isn't a contradiction—it's the complex reality of living with PTSD.</p>
 
-<p>In the military community, this challenge is amplified by a culture that often prioritises resilience and stoicism. Admitting to mental health struggles can feel like a sign of weakness, discouraging many from seeking help. However, acknowledging these wounds is a profound act of courage that paves the way for healing.</p>
+<p>While medical definitions matter—yes, PTSD is a psychiatric disorder that can occur after traumatic events—these clinical descriptions often fail to capture the day-to-day reality. The American Psychological Association's official criteria don't tell you about the exhaustion of maintaining a 'normal' façade at work, or the guilt of cancelling social plans because your hypervigilance is particularly bad that day.</p>
 
-<h2>What Does Research Say?</h2>
-<p>A growing body of research highlights the pervasive effects of PTSD on individuals and society. For instance, a study published in the <em>Journal of Psychiatric Research</em> reveals that untreated PTSD significantly impacts quality of life, increasing the risk of co-occurring conditions like depression, anxiety, and even physical health problems such as cardiovascular disease. Another report by the <em>National Centre for PTSD</em> emphasises that societal stigma and lack of awareness often lead to underreporting and undertreatment. These factors can perpetuate a cycle of suffering and isolation for those affected.</p>
+<h2>The Military Paradox: When Strength Becomes a Barrier</h2>
 
-<p>In Australia, research conducted by the <em>Australian Institute of Health and Welfare</em> underscores the importance of early intervention. For instance, PTSD affects approximately 8% of currently serving Australian Defence Force (ADF) members and rises to 17.7% among ex-serving members (<em>Department of Veterans' Affairs</em>). The need for accessible, timely care is especially pressing for veterans, many of whom face unique challenges related to combat and military culture.</p>
+<p>The military teaches us to be resilient, to push through pain, to put the mission first. These values save lives in combat. But they can become deadly when applied to mental health. Consider these statistics:</p>
 
-<p>The RESTORE trial, Australia's largest treatment trial for PTSD in veterans, demonstrated that intensive exposure therapy delivered over two weeks can be as effective as traditional approaches while reducing the treatment duration (<em>Phoenix Australia</em>). Such findings offer hope for innovations in PTSD care.</p>
-
-<p>For military veterans, specific studies have explored the unique triggers and experiences of combat-related PTSD. A 2020 review in <em>Military Medicine</em> highlights how exposure to prolonged stressors, such as life-threatening situations and the loss of comrades, creates a distinct pattern of symptoms. Tailored therapies that consider these nuances can improve recovery rates.</p>
-
-<h2>Why Recognising PTSD Matters</h2>
-<p>Recognising the invisible wounds of PTSD is crucial, not just for those affected but for society at large. Awareness fosters empathy, reduces stigma, and encourages individuals to seek treatment. This recognition also validates the experiences of those living with PTSD, reminding them that their struggles are real and deserving of support.</p>
-
-<p>On a broader level, understanding PTSD helps build a more inclusive and compassionate community. It equips workplaces, schools, and healthcare systems to better accommodate individuals with PTSD, creating environments where they can thrive. For example, simple measures like flexible working arrangements, trauma-informed care practices, or peer support groups can make a significant difference.</p>
-
-<p>For veterans, recognising PTSD is especially vital in addressing the systemic barriers to mental health care within military and veteran services. Programs that integrate peer support, trauma-informed practices, and holistic therapies, such as mindfulness and physical rehabilitation, have shown promising results. Studies like the <em>RESTORE trial</em> further underline the importance of adapting treatments to fit veterans' unique circumstances.</p>
-
-<p>For me, recognising my PTSD meant embracing mindfulness practices, connecting with supportive communities, and working with professionals who understood the complexities of trauma. This journey has reinforced my belief in the power of education and empathy to break down barriers and drive meaningful change.</p>
-<div class="two-columns">
-<div class="box content">
-<h2>A Call to Action</h2>
-<p>If you or someone you know lives with PTSD, remember this: your wounds are valid, even if invisible. Let's work together to destigmatise mental health challenges, foster understanding, and build a community where everyone feels supported.</p>
+<div class="notification is-primary is-light">
+  <ul>
+    <li>8% of currently serving Australian Defence Force members have PTSD</li>
+    <li>This number jumps to 17.7% among ex-serving members</li>
+    <li>Yet, studies show that less than half seek help within the first year of experiencing symptoms</li>
+  </ul>
 </div>
+
+<p>Why? Because in military culture, admitting to PTSD often feels like admitting defeat. This stigma isn't just uncomfortable—it's lethal.</p>
+
+<h2>Beyond Basic PTSD: The Complex Reality of Military Trauma</h2>
+
+<p>The traditional PTSD model doesn't fully capture the military experience. Complex PTSD (C-PTSD), recognised by the World Health Organisation but still underacknowledged in many military settings, better describes the impact of prolonged exposure to trauma.</p>
+
+<p>It's crucial to understand that PTSD in military members isn't exclusively combat-related. While combat exposure is one pathway to trauma, military service itself—whether in peacetime or war—can create conditions for PTSD. What makes military trauma unique is its multifaceted nature:</p>
+
+<div class="box">
+  <ul>
+    <li>Repeated exposure to life-threatening situations (in combat and training)</li>
+    <li>Moral injury from difficult decisions (both in combat and non-combat roles)</li>
+    <li>Witnessing or handling aftermath of accidents, deaths, or disasters</li>
+    <li>Sexual trauma and harassment within service</li>
+    <li>The weight of constant responsibility for others' lives</li>
+    <li>Loss of unit cohesion after service or posting changes</li>
+    <li>The jarring transition from military to civilian life, regardless of role</li>
+  </ul>
+</div>
+
+<p>This broader understanding of military trauma is essential because it validates the experiences of all service members—from combat veterans to peacekeeping forces, from support staff to medical personnel. Each role carries its own potential for trauma, and each deserves recognition and support.</p>
+
+<h2>The Hidden Cost of Invisibility</h2>
+
+<p>The 'invisible wound' metaphor, while well-intentioned, might actually contribute to the problem. It suggests that PTSD is something that can't be seen or understood by others. But the signs are there—we're just looking in the wrong places:</p>
+
+<div class="box">
+  <ul>
+    <li>The high-performing veteran who never takes holidays because routine feels safer</li>
+    <li>The ex-service member who excels at crisis management but struggles with intimate relationships</li>
+    <li>The former soldier who maintains a spotless home but can't sleep without checking the locks multiple times</li>
+  </ul>
+</div>
+
+<p>These aren't invisible wounds—they're visible adaptations to trauma that we've failed to recognise.</p>
+
+<h2>Breaking the Silence: What Actually Works</h2>
+
+<p>Recent research challenges traditional approaches to PTSD treatment in military populations. The RESTORE trial in Australia demonstrated that intensive exposure therapy over two weeks can be as effective as months of traditional treatment. This matters because:</p>
+
+<div class="notification is-info is-light">
+  <ul>
+    <li>It fits better with military mindsets (clear objective, defined timeframe)</li>
+    <li>It reduces the burden of long-term treatment commitments</li>
+    <li>It acknowledges that traditional civilian-focused approaches might not suit veterans</li>
+  </ul>
+</div>
+
+<h2>A Call for System Change</h2>
+
+<p>Instead of asking veterans to prove their wounds are real, we need to:</p>
+
+<div class="box">
+  <ul>
+    <li>Reform military mental health screening to account for C-PTSD</li>
+    <li>Create trauma-informed workplaces that recognise PTSD adaptations as strengths</li>
+    <li>Develop peer support programmes that leverage, rather than fight against, military culture</li>
+    <li>Challenge the notion that seeking help compromises operational readiness</li>
+  </ul>
+</div>
+
+<h2>Moving Forward: Practical Steps</h2>
+
+<div class="columns">
+  <div class="column">
+    <div class="box">
+      <h3>If you're struggling with PTSD:</h3>
+      <ul>
+        <li>Document your experiences—not to prove them to others, but to validate them for yourself</li>
+        <li>Connect with peers who understand military culture AND mental health</li>
+        <li>Consider intensive treatment programmes designed specifically for veterans</li>
+        <li>Remember: Seeking help is a tactical decision, not a surrender</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="box">
+      <h3>If you're supporting someone with PTSD:</h3>
+      <ul>
+        <li>Don't say 'you look fine'—ask 'how can I support you?'</li>
+        <li>Learn about military-specific trauma responses</li>
+        <li>Advocate for better workplace accommodations</li>
+        <li>Understand that recovery isn't linear</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h2>A Final Note</h2>
+
+<p>The next time someone says 'you look fine,' remember: PTSD isn't about looking unwell. It's about learning to live with experiences that changed you fundamentally. The goal isn't to become who you were before—it's to build a life that honours both who you were and who you've become.</p>
+
 <div class="notification is-warning">
 <h2>Disclaimer</h2>
 <p>I am not a health professional, and this post is based on personal experiences and research. For personalised advice or support, please consult a qualified health professional.</p>
