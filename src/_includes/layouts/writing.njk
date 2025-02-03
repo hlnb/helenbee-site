@@ -12,9 +12,16 @@ layout: layouts/base.njk
     <div class="hero-content">
       <h1>{{ title }}</h1>
       <div class="writing-meta">
-        <time datetime="{{ date | formatDate }}">{{ date | readableDate }}</time>
+        <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
         {% if category %}
           <span class="category">{{ category }}</span>
+        {% endif %}
+        {% if tags %}
+          {% for tag in tags %}
+            {% if tag != "post" %}
+              <span class="tag">#{{ tag }}</span>
+            {% endif %}
+          {% endfor %}
         {% endif %}
       </div>
     </div>

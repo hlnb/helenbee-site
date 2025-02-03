@@ -13,14 +13,18 @@ body,
 	color: var(--text-dark);
 	line-height: 1.6;
 }
+h1,
+.content h1 {
+	font-family: var(--font-heading);
+}
 
-.content h1,
+h2,
+h3,
 .content h2,
 .content h3,
-h1,
-h2,
-h3 {
-	font-family: var(--font-heading);
+.title,
+.subtitle {
+	font-family: var(--font-heading-alt);
 	color: var(--primary);
 	margin-bottom: 1rem;
 }

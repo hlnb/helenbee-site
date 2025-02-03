@@ -7,7 +7,7 @@
 .writing-hero {
 	position: relative;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 90vw;
 	height: 600px;
 	margin: 0 auto 2rem auto;
 	padding: 0 1rem;
@@ -37,7 +37,6 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
 }
 
 .hero-content h1 {
@@ -48,10 +47,18 @@
 
 .writing-meta {
 	display: flex;
-	gap: 1rem;
+	gap: 0.5 rem;
 	align-items: center;
 }
+.writing-meta .tag {
+	margin-left: 0.5rem;
+	font-size: 0.9em;
+	color: #4a4a4a;
+}
 
+.writing-meta .category {
+	margin-left: 0.5rem;
+}
 .writing-meta time {
 	font-size: 0.9rem;
 }
@@ -59,7 +66,6 @@
 .category {
 	text-transform: capitalize;
 	padding: 0.25rem 0.75rem;
-	border-radius: 4px;
 	background: rgba(255, 255, 255, 0.2);
 	font-size: 0.9rem;
 }

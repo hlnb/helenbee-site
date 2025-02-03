@@ -481,6 +481,18 @@ module.exports = function (eleventyConfig) {
 		return today.toISOString().slice(0, 10);
 	});
 
+	// Readable date filter (e.g., "13 December 2023")
+	eleventyConfig.addFilter("readableDate", (dateObj) => {
+		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+			"dd LLLL yyyy"
+		);
+	});
+
+	// HTML date string filter (e.g., "2023-12-13")
+	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+	});
+
 	return {
 		dir: {
 			input: "src",
