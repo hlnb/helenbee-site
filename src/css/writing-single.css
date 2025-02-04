@@ -32,7 +32,7 @@
 	position: relative;
 	z-index: 2;
 	padding: 2rem;
-	color: white;
+	color: var(--text-light);
 	background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
 	height: 100%;
 	display: flex;
@@ -49,25 +49,17 @@
 	display: flex;
 	gap: 0.5 rem;
 	align-items: center;
+	font-size: 0.9rem;
 }
 .writing-meta .tag {
 	margin-left: 0.5rem;
-	font-size: 0.9em;
-	color: #4a4a4a;
 }
 
 .writing-meta .category {
 	margin-left: 0.5rem;
-}
-.writing-meta time {
-	font-size: 0.9rem;
-}
-
-.category {
 	text-transform: capitalize;
-	padding: 0.25rem 0.75rem;
-	background: rgba(255, 255, 255, 0.2);
-	font-size: 0.9rem;
+	background: var(--support-1);
+	color: var(--text-light);
 }
 
 /* Content area */

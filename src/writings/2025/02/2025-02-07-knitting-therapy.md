@@ -2,7 +2,7 @@
 title: "Knitting as PTSD Therapy: How Crafting Aids Mental Health Recovery"
 date: "2025-02-07"
 description: "Discover how knitting serves as a powerful therapeutic tool for PTSD management, combining mindfulness, creativity, and healing through craft. Personal insights and scientific research on craft therapy."
-publishedDate: "2025-02-03"
+publishedDate: "2025-02-07"
 theme: "Personal Growth"
 keywords: [knitting therapy, PTSD management, craft therapy]
 type: "article"
