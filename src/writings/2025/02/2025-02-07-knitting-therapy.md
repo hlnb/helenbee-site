@@ -61,12 +61,21 @@ facebook_description: "Did you know knitting can be a powerful form of therapy? 
         
         <h4 class="title is-6">Learning Communities</h4>
         <ul>
-          <li>Ravelry - The largest online knitting community with patterns, forums, and support groups</li>
-          <li>[Add your preferred Ravelry groups]</li>
-        </ul>
+          <li><a href="https://www.ravelry.com/" target="_blank">Ravelry</a> - The largest online knitting community with patterns, forums, and support groups</li>
+          <li><a href="https://www.moderndailyknitting.com/" target="_blank"  >Modern Daily Knitting</a> - A blog with daily knitting patterns and tutorials</li>
+          <li><a href="https://www.thesprucecrafts.com/" target="_blank">The Spruce Crafts</a> - A website with articles and tutorials about knitting</li>
+          <li><a href="https://www.knittingparadise.com/" target="_blank">Knitting Paradise</a> - A website with patterns, tutorials, and a forum</li>
+         </ul>
 
-        <h4 class="title is-6">YouTube Channels for Knitting Instruction</h4>
-        <p>[Add your recommended YouTubers]</p>
+        <h4 class="title is-6">YouTube Channels for Knitting Instruction and Inspiration</h4>
+        <p><a href="https://www.youtube.com/@SweetGeorgia" target="_blank">@SweetGeorgia</a></p>
+        <p><a href="https://www.youtube.com/@CarolFeller" target="_blank">@CarolFeller</a></p>
+        <p><a href="https://www.youtube.com/@knittingpatterns1" target="_blank">@knittingpatterns1</a></p>
+        <p><a href="https://www.youtube.com/@NimbleNeedles" target="_blank">@NimbleNeedles</a></p>
+        <p><a href="https://www.youtube.com/@nimbleneedlestwo" target="_blank">@nimbleneedlestwo</a></p>
+        <p><a href="https://www.youtube.com/@PurlTogether" target="_blank">@PurlTogether</a></p>
+        <p><a href="https://www.youtube.com/@sorceress-crafts" target="_blank">@sorceress-crafts</a></p>
+        <p><a href="https://www.youtube.com/@yarnistco" target="_blank">@yarnistco</a> </p>
 
         <h4 class="title is-6">Local Resources</h4>
         <ul>
