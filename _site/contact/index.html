@@ -90,12 +90,60 @@
     <main>
         
 <div class="page-container">
-  <section class="hero contact-hero">
-    <div class="hero-content">
-      <h1 class="hero-title">Keep in Touch</h1>
-      <p class="hero-subtitle">I look forward to meeting you on the road less travelled.</p>
-    </div>
-  </section>
+ <div class="contact-hero">
+  <div class="contact-hero__content">
+    <h1 class="contact-hero__title">Get in Touch</h1>
+    <p class="contact-hero__subtitle">Have a question or want to work together? I'd love to hear from you.</p>
+  </div>
+</div>
+
+<style>
+  .contact-hero {
+          background-image: url("/assets/images/other/patrick-fore-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .contact-hero__content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .contact-hero__title {
+    font-family: 'Stackyard', serif;
+    color: white;
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+    font-weight: normal;
+  }
+
+  .contact-hero__subtitle {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 768px) {
+    .contact-hero {
+      padding: 3rem 1rem;
+    }
+
+    .contact-hero__title {
+      font-size: 2.5rem;
+    }
+
+    .contact-hero__subtitle {
+      font-size: 1.1rem;
+    }
+  }
+</style> 
 
 
 
@@ -198,7 +246,161 @@
   </section>
 </div>
 
+  <style>
+  .newsletter-cta {
+    background: linear-gradient(135deg, var(--support-1) 0%, var(--primary) 100%);
+    padding: 2rem;
+    margin: 2rem 0;
+  }
 
+  .newsletter-cta .formkit-form {
+    max-width: 100%;
+    box-shadow: none;
+    background: none;
+  }
+
+  .newsletter-cta .formkit-column {
+    padding: 1rem;
+    background: none;
+  }
+
+  .newsletter-cta .formkit-header h2 {
+    color: white;
+    margin-top: 0;
+    font-family: 'Stackyard', serif;
+    font-weight: normal;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  .newsletter-cta .formkit-subheader {
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  .newsletter-cta .formkit-fields {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+  }
+
+  .newsletter-cta .formkit-field {
+    flex: 1;
+    margin: 0;
+  }
+
+  .newsletter-cta .formkit-input {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var(--surface-3);
+    border-radius: 4px;
+    margin-bottom: 0;
+    color: var(--text-1);
+    width: 100%;
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .newsletter-cta .formkit-submit {
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    height: 45px;
+    min-width: 120px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .newsletter-cta .formkit-submit:hover {
+    opacity: 0.9;
+  }
+
+  .newsletter-cta .formkit-guarantee {
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  @media (min-width: 600px) {
+    .newsletter-cta [data-style="full"] {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .newsletter-cta .formkit-column {
+      padding: 0.5rem;
+    }
+  }
+
+  @media (max-width: 599px) {
+    .newsletter-cta .formkit-fields {
+      flex-direction: column;
+    }
+    
+    .newsletter-cta .formkit-submit {
+      width: 100%;
+    }
+  }
+</style>
+
+<section class="newsletter-cta">
+  <script src="https://f.convertkit.com/ckjs/ck.5.js" 
+          async 
+          defer
+          data-uid="2e145b68de"
+          data-cookies-policy="reject"></script>
+  <form action="https://app.kit.com/forms/7697780/subscriptions?cookie_free=true" 
+        class="seva-form formkit-form" 
+        method="post" 
+        data-sv-form="7697780" 
+        data-uid="2e145b68de" 
+        data-format="inline" 
+        data-version="5"
+        data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://convertkit.com?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'>
+    <div data-style="full">
+      <div data-element="column" class="formkit-column">
+        <div class="formkit-header" data-element="header">
+          <h2>Join the Newsletter</h2>
+        </div>
+        <div class="formkit-subheader" data-element="subheader">
+          Subscribe to get our latest content by email.
+        </div>
+      </div>
+      <div data-element="column" class="formkit-column">
+        <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+        <div data-element="fields" class="formkit-fields">
+          <div class="formkit-field">
+            <input 
+              class="formkit-input"
+              name="email_address"
+              aria-label="Email Address"
+              placeholder="Email Address"
+              required
+              type="email"
+            >
+          </div>
+          <button data-element="submit" class="formkit-submit">
+            <div class="formkit-spinner">
+              <div></div><div></div><div></div>
+            </div>
+            <span>Subscribe</span>
+          </button>
+        </div>
+        <div class="formkit-guarantee" data-element="guarantee">
+          We respect your privacy. Unsubscribe at any time.
+        </div>
+      </div>
+    </div>
+  </form>
+</section> 
     </main>
     <!-- Rest of your base template -->
 <footer class="footer">
@@ -342,5 +544,160 @@ function copyToClipboard(text) {
   });
 }
 </script>
+  <div id="cookie-notice" class="cookie-notice" style="display: none;">
+  <div class="cookie-content">
+    <div class="cookie-text">
+      <h3>Cookie Notice</h3>
+      <p>This website uses cookies and similar technologies to enhance your browsing experience. We use:</p>
+      <ul>
+        <li>Essential cookies for site functionality</li>
+        <li>Analytics cookies to understand site usage</li>
+        <li>Newsletter cookies for subscription management</li>
+      </ul>
+      <p>By clicking "Accept", you consent to the use of all cookies. By clicking "Reject", only essential cookies will be used. For more information, please read our <a href="/privacy-policy/">Privacy Policy</a>.</p>
+    </div>
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="cookie-button accept">Accept</button>
+      <button id="reject-cookies" class="cookie-button reject">Reject</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .cookie-notice {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    background: var(--primary);
+    padding: 1.5rem;
+    z-index: 1000;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .cookie-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .cookie-text h3 {
+    font-family: 'Stackyard', serif;
+    color: white;
+    margin: 0 0 0.5rem 0;
+    font-weight: normal;
+  }
+
+  .cookie-text p {
+    margin: 0 0 0.5rem 0;
+    color: white;
+    line-height: 1.5;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  .cookie-text ul {
+    color: white;
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .cookie-text li {
+    margin-bottom: 0.25rem;
+  }
+
+  .cookie-text a {
+    color: white;
+    text-decoration: underline;
+    transition: opacity 0.2s ease;
+  }
+
+  .cookie-text a:hover {
+    opacity: 0.8;
+  }
+
+  .cookie-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-shrink: 0;
+  }
+
+  .cookie-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+  }
+
+  .cookie-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .cookie-button.accept {
+    background-color: var(--secondary);
+    color: white;
+  }
+
+  .cookie-button.reject {
+    background-color: white;
+    color: var(--text-1);
+  }
+
+  @media (max-width: 768px) {
+    .cookie-notice {
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      padding: 1rem;
+    }
+
+    .cookie-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .cookie-text ul {
+      text-align: left;
+      display: inline-block;
+    }
+
+    .cookie-buttons {
+      width: 100%;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const cookieNotice = document.getElementById('cookie-notice');
+    const acceptButton = document.getElementById('accept-cookies');
+    const rejectButton = document.getElementById('reject-cookies');
+
+    // Check if user has already made a choice
+    if (!localStorage.getItem('cookieConsent')) {
+      cookieNotice.style.display = 'block';
+    }
+
+    acceptButton.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      cookieNotice.style.display = 'none';
+    });
+
+    rejectButton.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'rejected');
+      cookieNotice.style.display = 'none';
+    });
+  });
+</script> 
 </body>
 </html>
