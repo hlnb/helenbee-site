@@ -1,6 +1,5 @@
 @import "forms.css";
 @import "christmas-card.css";
-@import "footer.css";
 @import "writing-single.css";
 
 /* Global Styles */
@@ -1440,4 +1439,75 @@ li code {
 		width: 100%;
 		justify-content: center;
 	}
+}
+
+/* Bookshelf Styles */
+.bookshelf {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.year-section {
+	margin-bottom: 4rem;
+}
+
+.book-count {
+	color: #666;
+	font-style: italic;
+}
+
+.books-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.book-card {
+	padding: 1.5rem;
+	border: 1px solid #eee;
+	border-radius: 4px;
+}
+
+.book-author {
+	color: #666;
+	margin-bottom: 1rem;
+}
+
+.book-rating {
+	color: #ffd700;
+	margin-bottom: 1rem;
+}
+
+.book-review {
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+/* Navigation Styles */
+nav ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	gap: 2rem; /* Adds space between menu items */
+}
+
+nav li {
+	margin: 0; /* Reset any default margins */
+}
+
+nav a {
+	text-decoration: none;
+	/* Add any other link styles you want */
+}
+
+nav a:hover {
+	/* Add your hover styles */
+}
+
+/* Optional: Style for active page */
+nav .active a {
+	/* Add styles for the current page */
 }

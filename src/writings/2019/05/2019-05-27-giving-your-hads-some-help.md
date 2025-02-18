@@ -8,7 +8,7 @@ keywords: [healthcare, technology, hands, pain]
 type: "article"
 category: lived-experience
 tags: [lived-experience, hands, pain]
-image: /assets/images/other/dequervanImage-1200x350-c-default.jpg
+image: /assets/images/other/dequervanImage.webp
 excerpt: If you have ever had a sore hand you know the inconvenience it can bring. This article is about how to help your hands be on top of their game from a lived experience.
 ---
 

@@ -14,10 +14,16 @@
 
     <div id="navbarMenu" class="navbar-menu">
       <div class="navbar-end">
-        <a href="/" class="navbar-item">Home</a>
-        <a href="/about/" class="navbar-item">About</a>
-        <a href="/writings/" class="navbar-item">Writings</a>
-        <a href="/contact/" class="navbar-item">Contact</a>
+        <nav>
+          {% set navPages = collections.all | eleventyNavigation %}
+          <ul>
+          {%- for entry in navPages %}
+            <li{% if entry.url == page.url %} class="active"{% endif %}>
+              <a href="{{ entry.url }}">{{ entry.key }}</a>
+            </li>
+          {%- endfor %}
+          </ul>
+        </nav>
       </div>
     </div>
   </nav>

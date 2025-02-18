@@ -1,0 +1,50 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="hero reading-hero">
+  <div class="hero-content">
+    <h1>{{ title }}</h1>
+    {% if description %}
+      <p class="hero-description">{{ description }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<main class="reading">
+  <section class="reading-intro">
+    <h2>Why I Read These Books</h2>
+    <p>Reading has always been a fundamental part of my learning journey. These books have shaped my thinking, challenged my perspectives, and helped me grow both personally and professionally. I often return to them for inspiration and new insights.</p>
+    
+    <p>Some of these books I've read multiple times, finding new meaning with each reading. They serve as both reference materials and sources of continuous learning.</p>
+  </section>
+
+  <div class="books-grid">
+    {% for book in collections.books %}
+      <article class="book-card">
+        {% if book.data.coverImage %}
+          <img 
+            src="{{ book.data.coverImage }}" 
+            alt="Cover of {{ book.data.title }}"
+            class="book-cover"
+            loading="lazy"
+          >
+        {% endif %}
+        <div class="book-details">
+          <h3>{{ book.data.title }}</h3>
+          <p class="book-author">{{ book.data.author }}</p>
+          
+          {% if book.data.rating %}
+            <div class="book-rating">
+              {% for star in range(0, book.data.rating) %}★{% endfor %}
+            </div>
+          {% endif %}
+
+          {% if book.data.review %}
+            <p class="book-review">{{ book.data.review }}</p>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</main> 

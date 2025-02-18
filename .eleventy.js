@@ -1,8 +1,10 @@
 const svgContents = require("eleventy-plugin-svg-contents");
 const { DateTime } = require("luxon");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(svgContents);
+	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	// Add passthrough copy for images and assets
 	eleventyConfig.addPassthroughCopy({ assets: "assets" });
 	eleventyConfig.addPassthroughCopy("assets/images/other");
@@ -22,6 +24,12 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("_redirects");
 	// Add this line
 	eleventyConfig.addPassthroughCopy("src/site.webmanifest");
+
+	// Add this to properly serve static assets
+	eleventyConfig.addPassthroughCopy("assets");
+
+	// If you're using other static assets, make sure they're included too
+	eleventyConfig.addPassthroughCopy("src/assets");
 
 	//add writings collection
 	eleventyConfig.addCollection("allPosts", function (collectionApi) {
@@ -493,12 +501,31 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
 	});
 
+	eleventyConfig.addFilter("readingTime", (text) => {
+		const wordsPerMinute = 200;
+		const words = text.split(" ").length;
+		return Math.ceil(words / wordsPerMinute);
+	});
+
+	// Update the books collection name if you want
+	eleventyConfig.addCollection("reading", function (collectionApi) {
+		return collectionApi.getFilteredByGlob("src/books/**/*.md");
+	});
+
+	// Be explicit about CSS files
+	eleventyConfig.addPassthroughCopy({
+		"assets/css": "assets/css",
+	});
+
 	return {
 		dir: {
 			input: "src",
 			output: "_site",
 			includes: "_includes",
-			data: "_data",
 		},
+		templateFormats: ["md", "njk", "html"],
+		markdownTemplateEngine: "njk",
+		htmlTemplateEngine: "njk",
+		dataTemplateEngine: "njk",
 	};
 };
