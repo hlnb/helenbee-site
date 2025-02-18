@@ -125,6 +125,158 @@
   <p>Post content goes here.</p>
 
 
+  <style>
+  .newsletter-cta {
+    background: linear-gradient(135deg, var(--support-1) 0%, var(--primary) 100%);
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+
+  .newsletter-cta .formkit-form {
+    max-width: 100%;
+    box-shadow: none;
+    background: none;
+  }
+
+  .newsletter-cta .formkit-column {
+    padding: 1rem;
+    background: none;
+  }
+
+  .newsletter-cta .formkit-header h2 {
+    color: white;
+    margin-top: 0;
+    font-family: 'Stackyard', serif;
+    font-weight: normal;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  .newsletter-cta .formkit-subheader {
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  .newsletter-cta .formkit-fields {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+  }
+
+  .newsletter-cta .formkit-field {
+    flex: 1;
+    margin: 0;
+  }
+
+  .newsletter-cta .formkit-input {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var(--surface-3);
+    border-radius: 4px;
+    margin-bottom: 0;
+    color: var(--text-1);
+    width: 100%;
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .newsletter-cta .formkit-submit {
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    height: 45px;
+    min-width: 120px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .newsletter-cta .formkit-submit:hover {
+    opacity: 0.9;
+  }
+
+  .newsletter-cta .formkit-guarantee {
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+
+  @media (min-width: 600px) {
+    .newsletter-cta [data-style="full"] {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .newsletter-cta .formkit-column {
+      padding: 0.5rem;
+    }
+  }
+
+  @media (max-width: 599px) {
+    .newsletter-cta .formkit-fields {
+      flex-direction: column;
+    }
+    
+    .newsletter-cta .formkit-submit {
+      width: 100%;
+    }
+  }
+</style>
+
+<section class="newsletter-cta">
+  <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+  <form action="https://app.kit.com/forms/7697780/subscriptions" 
+        class="seva-form formkit-form" 
+        method="post" 
+        data-sv-form="7697780" 
+        data-uid="2e145b68de" 
+        data-format="inline" 
+        data-version="5"
+        data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://convertkit.com?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'>
+    <div data-style="full">
+      <div data-element="column" class="formkit-column">
+        <div class="formkit-header" data-element="header">
+          <h2>Join the Newsletter</h2>
+        </div>
+        <div class="formkit-subheader" data-element="subheader">
+          Subscribe to get our latest content by email.
+        </div>
+      </div>
+      <div data-element="column" class="formkit-column">
+        <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+        <div data-element="fields" class="formkit-fields">
+          <div class="formkit-field">
+            <input 
+              class="formkit-input"
+              name="email_address"
+              aria-label="Email Address"
+              placeholder="Email Address"
+              required
+              type="email"
+            >
+          </div>
+          <button data-element="submit" class="formkit-submit">
+            <div class="formkit-spinner">
+              <div></div><div></div><div></div>
+            </div>
+            <span>Subscribe</span>
+          </button>
+        </div>
+        <div class="formkit-guarantee" data-element="guarantee">
+          We respect your privacy. Unsubscribe at any time.
+        </div>
+      </div>
+    </div>
+  </form>
+</section> 
+
   <div class="share-section">
     <h3 class="title is-3 mb-4">Share this article</h3>
     <div class="columns is-mobile is-multiline">
@@ -189,6 +341,8 @@
     </div>
   </div>
 </article>
+
+
 
     </main>
     <!-- Rest of your base template -->

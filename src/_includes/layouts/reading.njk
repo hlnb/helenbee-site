@@ -19,6 +19,12 @@ layout: layouts/base.njk
     <p>Some of these books I've read multiple times, finding new meaning with each reading. They serve as both reference materials and sources of continuous learning.</p>
   </section>
 
+  {% if collections.books %}
+    <p>Found {{ collections.books.length }} books</p>
+  {% else %}
+    <p>No books found in collection</p>
+  {% endif %}
+
   <div class="books-grid">
     {% for book in collections.books %}
       <article class="book-card">
@@ -47,4 +53,5 @@ layout: layouts/base.njk
       </article>
     {% endfor %}
   </div>
+  {% include "partials/newsletter-cta.njk" %}
 </main> 

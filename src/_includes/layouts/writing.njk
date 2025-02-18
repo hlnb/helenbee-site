@@ -29,6 +29,8 @@ layout: layouts/base.njk
 
   {{ content | safe }}
 
+  {% include "partials/newsletter-cta.njk" %}
+
   <div class="share-section">
     <h3 class="title is-3 mb-4">Share this article</h3>
     <div class="columns is-mobile is-multiline">
@@ -93,3 +95,5 @@ layout: layouts/base.njk
     </div>
   </div>
 </article>
+
+

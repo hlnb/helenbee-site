@@ -1564,3 +1564,30 @@ nav .active a {
 	line-height: 1.6;
 	margin-bottom: 1rem;
 }
+
+/* Newsletter CTA Styles */
+.newsletter-cta {
+	padding: 3rem 2rem;
+	margin: 4rem 0;
+	text-align: center;
+}
+
+.newsletter-content {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+/* Kit Form Styles */
+.formkit-form {
+	box-shadow: none !important;
+}
+
+.formkit-form[data-style="minimal"] {
+	max-width: 100% !important;
+}
+
+.formkit-submit {
+	margin-top: 1rem !important;
+}
+
+/* You might need to adjust these based on Kit's actual classes */
