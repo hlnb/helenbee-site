@@ -79,3 +79,8 @@
 	port = 8888
 	publish = "_site"
 	jwtRolePath = "app_metadata.authorization.roles"
+
+[[headers]]
+	for = "/assets/images/*"
+	[headers.values]
+		Cache-Control = "public, max-age=31536000, must-revalidate"
