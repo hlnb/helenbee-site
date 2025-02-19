@@ -839,10 +839,7 @@ main a:hover {
 /* Specific background images */
 .writings-hero {
 	background-image: url("/assets/images/other/pereanu-sebastian-unsplash.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
+
 
 /* Hero Content */
 .hero-content {
