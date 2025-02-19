@@ -88,7 +88,7 @@ h6,
 .navbar {
 	min-height: 80px;
 	padding: 0.5rem 1rem;
-	background-color: transparent;
+	background-color: transparent !important;
 	border-bottom: 1px solid var(--support-1);
 	margin-bottom: 2rem;
 	display: flex;
@@ -110,38 +110,51 @@ h6,
 }
 
 .navbar-item {
-	font-family: var(--font-body);
-	color: var(--primary);
+	font-family: var(--font-body) !important;
+	color: var(--primary) !important;
 	transition: all 0.3s ease;
 	text-decoration: none;
 	display: inline-block;
 	padding: 0.5rem 1rem;
+	background-color: transparent !important;
 }
 
 .navbar-item:hover {
-	color: var(--secondary);
-	background-color: transparent;
+	color: var(--secondary) !important;
+	background-color: transparent !important;
 	text-decoration: none;
 }
 
 .navbar-item.is-active {
-	color: var(--accent-1);
-	background-color: transparent;
+	color: var(--accent-1) !important;
+	background-color: transparent !important;
 }
 
 .navbar-menu {
-	display: flex;
+	display: flex !important;
 	justify-content: flex-end;
 	align-items: center;
 	flex-grow: 1;
+	background-color: transparent !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 .navbar-end {
-	display: flex;
+	display: flex !important;
+	flex-direction: row !important;
 	gap: 20px;
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	background-color: transparent !important;
+}
+
+/* Add this to ensure proper alignment */
+.navbar-end li {
+	display: flex;
+	align-items: center;
 }
 
 /* Main Content */
