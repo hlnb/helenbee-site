@@ -88,7 +88,7 @@ h6,
 .navbar {
 	min-height: 80px;
 	padding: 0.5rem 1rem;
-	background-color: transparent !important;
+	background-color: transparent;
 	border-bottom: 1px solid var(--support-1);
 	margin-bottom: 2rem;
 	display: flex;
@@ -110,51 +110,72 @@ h6,
 }
 
 .navbar-item {
-	font-family: var(--font-body) !important;
-	color: var(--primary) !important;
+	font-family: var(--font-body);
+	color: var(--primary);
 	transition: all 0.3s ease;
 	text-decoration: none;
 	display: inline-block;
 	padding: 0.5rem 1rem;
-	background-color: transparent !important;
 }
 
 .navbar-item:hover {
-	color: var(--secondary) !important;
-	background-color: transparent !important;
+	color: var(--secondary);
+	background-color: transparent;
 	text-decoration: none;
 }
 
 .navbar-item.is-active {
-	color: var(--accent-1) !important;
-	background-color: transparent !important;
+	color: var(--accent-1);
+	background-color: transparent;
 }
 
 .navbar-menu {
-	display: flex !important;
+	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	flex-grow: 1;
-	background-color: transparent !important;
-	box-shadow: none !important;
-	padding: 0 !important;
-	margin: 0 !important;
 }
 
 .navbar-end {
-	display: flex !important;
-	flex-direction: row !important;
+	display: flex;
 	gap: 20px;
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	background-color: transparent !important;
 }
 
-/* Add this to ensure proper alignment */
-.navbar-end li {
+/* New styles to target the nested nav and ul */
+.navbar-end nav {
+	width: 100%;
+}
+
+.navbar-end nav ul {
 	display: flex;
-	align-items: center;
+	flex-direction: row;
+	gap: 20px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar-end nav ul li a {
+	font-family: var(--font-body);
+	color: var(--primary);
+	transition: all 0.3s ease;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	display: inline-block;
+}
+
+.navbar-end nav ul li a:hover {
+	color: var(--secondary);
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.navbar-end nav ul li.active a {
+	color: var(--accent-1);
+	background-color: transparent;
 }
 
 /* Main Content */
@@ -852,7 +873,7 @@ main a:hover {
 /* Specific background images */
 .writings-hero {
 	background-image: url("/assets/images/other/pereanu-sebastian-unsplash.jpg");
-
+}
 
 /* Hero Content */
 .hero-content {
