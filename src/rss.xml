@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Your Site Title</title>
+    <link>{{ metadata.url }}</link>
+    <description>Your site description</description>
+    <language>en-us</language>
+    <lastBuildDate>{{ collections.published | last | dateToRfc3339 }}</lastBuildDate>
+    <pubDate>{{ collections.published | last | dateToRfc3339 }}</pubDate>
+    <ttl>1800</ttl>
+
+    {% for post in collections.published %}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>{{ post.url | url }}</link>
+      <description>{{ post.templateContent | safe }}</description>
+      <pubDate>{{ post.date | dateToRfc3339 }}</pubDate>
+      <guid>{{ post.url | url }}</guid>
+    </item>
+    {% endfor %}
