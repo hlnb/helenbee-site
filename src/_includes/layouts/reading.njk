@@ -26,19 +26,21 @@ layout: layouts/base.njk
   {% endif %}
 
   <div class="books-grid">
-    {% for book in collections.books %}
+    {% for book in collections.books | sort(attribute="data.author") %}
       <article class="book-card">
-        {% if book.data.coverImage %}
-          <img 
-            src="{{ book.data.coverImage }}" 
-            alt="Cover of {{ book.data.title }}"
-            class="book-cover"
-            loading="lazy"
-          >
-        {% endif %}
+        <div class="book-cover-wrapper">
+          {% if book.data.coverImage %}
+            <img 
+              src="{{ book.data.coverImage }}" 
+              alt="Cover of {{ book.data.title }}"
+              class="book-cover"
+              loading="lazy"
+            >
+          {% endif %}
+        </div>
         <div class="book-details">
-          <h3>{{ book.data.title }}</h3>
-          <p class="book-author">{{ book.data.author }}</p>
+          <h3 class="book-title">{{ book.data.title }}</h3>
+          <p class="book-author">by {{ book.data.author }}</p>
           
           {% if book.data.rating %}
             <div class="book-rating">
@@ -48,6 +50,13 @@ layout: layouts/base.njk
 
           {% if book.data.review %}
             <p class="book-review">{{ book.data.review }}</p>
+          {% endif %}
+
+          {% if book.data.comments %}
+            <div class="book-comments">
+              <h4>My Notes</h4>
+              <p>{{ book.data.comments }}</p>
+            </div>
           {% endif %}
         </div>
       </article>

@@ -132,19 +132,81 @@ module.exports = async function (eleventyConfig) {
 	eleventyConfig.addCollection("books", function (collectionApi) {
 		const bookItems = collectionApi.getFilteredByTag("books");
 
-		console.log("Books found:", bookItems.length);
-		bookItems.forEach((book) => {
-			console.log("Book:", {
-				path: book.inputPath,
-				title: book.data.title,
-				author: book.data.author,
-				dateRead: book.data.dateRead,
+		// First, group books by author
+		const booksByAuthor = bookItems.reduce((groups, book) => {
+			const author = book.data.author;
+			if (!groups[author]) {
+				groups[author] = [];
+			}
+			groups[author].push(book);
+			return groups;
+		}, {});
+
+		// Sort each author's books by date
+		Object.values(booksByAuthor).forEach(authorBooks => {
+			authorBooks.sort((a, b) => {
+				const dateA = new Date(a.data.dateRead);
+				const dateB = new Date(b.data.dateRead);
+				return dateB - dateA; // Most recent first
 			});
 		});
 
-		return bookItems.sort((a, b) => {
-			return new Date(b.data.dateRead) - new Date(a.data.dateRead);
+		// Sort authors by last name
+		const getLastName = (author) => {
+			const nameParts = author.split(" ");
+			return nameParts[nameParts.length - 1];
+		};
+
+		const sortedAuthors = Object.keys(booksByAuthor).sort((a, b) => {
+			return getLastName(a).localeCompare(getLastName(b));
 		});
+
+		// Create the final sorted array
+		const sortedBooks = sortedAuthors.reduce((allBooks, author) => {
+			return [...allBooks, ...booksByAuthor[author]];
+		}, []);
+
+		return sortedBooks;
+	});
+
+	// Add posts collection
+	eleventyConfig.addCollection("posts", function(collectionApi) {
+		// Get all markdown files
+		const allFiles = collectionApi.getAll();
+		console.log("Total files found:", allFiles.length);
+		
+		// Filter for markdown files in the writings directory
+		const posts = allFiles.filter(item => {
+			const isInWritings = item.inputPath.includes("/writings/");
+			const isMarkdown = item.inputPath.endsWith(".md");
+			return isInWritings && isMarkdown;
+		});
+		
+		console.log("Found posts:", posts.length);
+		console.log("Posts collection details:");
+		posts.forEach(post => {
+			console.log("Post details:", {
+				path: post.inputPath,
+				title: post.data.title,
+				date: post.date,
+				publishedDate: post.data.publishedDate,
+				url: post.url,
+				layout: post.data.layout,
+				tags: post.data.tags,
+				outputPath: post.outputPath
+			});
+		});
+
+		// Sort posts by date
+		const sortedPosts = posts.sort((a, b) => {
+			// Use publishedDate if available, otherwise use date
+			const dateA = a.data.publishedDate ? new Date(a.data.publishedDate) : a.date;
+			const dateB = b.data.publishedDate ? new Date(b.data.publishedDate) : b.date;
+			return dateB - dateA;
+		});
+
+		console.log("Sorted posts count:", sortedPosts.length);
+		return sortedPosts;
 	});
 
 	return {
