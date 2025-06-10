@@ -65,8 +65,10 @@ eleventyConfig.addCollection("latestPosts", function (collectionApi) {
     .sort((a, b) => b.date - a.date)
     .slice(0, 3);
 });
-
-
+	// newletter posts collection
+eleventyConfig.addCollection("newsletterPosts", function (collectionApi) {
+  return collectionApi.getFilteredByTag("allPosts").filter(post => post.data.newsletter === true);
+});
 	// Consolidated Date Filters
 	eleventyConfig.addFilter("dateToISO", (date) => {
 		if (date === "now") {
