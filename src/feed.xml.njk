@@ -1,0 +1,26 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Helen Burgess Newsletter Feed</title>
+    <link>{{ site.url }}</link>
+    <description>Reflections on PTSD, Stoicism, and creative living</description>
+    <language>en</language>
+    <lastBuildDate>{{ collections.allPosts[0].date | dateToRfc822 }}</lastBuildDate>
+
+    {% for post in collections.allPosts %}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <guid>{{ site.url }}{{ post.url }}</guid>
+      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+      <description><![CDATA[
+        {{ post.templateContent | truncate(300, true, "…") | safe }}
+      ]]></description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

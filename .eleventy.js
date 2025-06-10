@@ -1,8 +1,12 @@
 const svgContents = require("eleventy-plugin-svg-contents");
 const { DateTime } = require("luxon");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginRSS = require("@11ty/eleventy-plugin-rss");
 
-module.exports = function (eleventyConfig) {
+module.exports = function (eleventyConfig)
+{
+	eleventyConfig.addPlugin(pluginRSS);
+
 	eleventyConfig.addPlugin(svgContents);
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	// Add passthrough copy for images and assets
