@@ -20,6 +20,7 @@ siteUrl: "https://helenburgess.id.au"
 bluesky_description: "Example Bluesky description for your post"
 mastodon_description: "Example Mastodon description for your post"
 facebook_description: "Example Facebook description for your post"
+newsletter: true
 ---
 
 <div class="content">
@@ -78,6 +79,7 @@ facebook_description: "Example Facebook description for your post"
         <p>Author, B. (Year). Another title. Another Publisher.</p>
       </div>
     </div>
+
   </div>
 
   <div class="notification is-info is-light">

@@ -11,7 +11,7 @@ eleventyExcludeFromCollections: true
     <language>en</language>
     <lastBuildDate>{{ collections.allPosts[0].date | dateToRfc822 }}</lastBuildDate>
 
-    {% for post in collections.allPosts %}
+  {% for post in collections.allPosts | filter(attribute='data.newsletter', value=true) %}
     <item>
       <title>{{ post.data.title }}</title>
       <link>{{ site.url }}{{ post.url }}</link>

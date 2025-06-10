@@ -23,13 +23,14 @@ image: /assets/images/other/rebecca-grant-unsplash.jpg
 author:
   name: "Helen Burgess"
 socials:
-  bluesky: "https://bsky.app/profile/yourhandle"
-  mastodon: "https://mastodon.social/@yourhandle"
-  facebook: "https://www.facebook.com/yourhandle"
+  bluesky: "https://bsky.app/profile/@hlnbee.bsky.social"
+  mastodon: "https://mastodon.social/@helenbee"
+  facebook: "https://www.facebook.com/"
 siteUrl: "https://helenburgess.id.au"
 bluesky_description: "Exploring the history and technique of Continental, Norwegian, and English Lever knitting styles."
 mastodon_description: "A deep dive into different knitting styles and what they offer for comfort, speed, and tradition."
 facebook_description: "Discover the differences between English, Continental, Norwegian, and Combination knitting styles."
+newsletter: true
 ---
 
 <div class="content">

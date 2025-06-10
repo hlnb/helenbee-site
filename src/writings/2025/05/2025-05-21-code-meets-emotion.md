@@ -4,7 +4,15 @@ date: "2025-05-21"
 description: "Discover how AI art generation can become a powerful tool for emotional expression and self-discovery."
 publishedDate: "2025-05-21"
 theme: "Technology & Creativity"
-keywords: [AI art, emotional expression, NightCafe, creativity, lived-experience, technology]
+keywords:
+  [
+    AI art,
+    emotional expression,
+    NightCafe,
+    creativity,
+    lived-experience,
+    technology,
+  ]
 type: "article"
 tags: [AI, art, creativity, lived-experience, technology]
 layout: layouts/writing.njk
@@ -15,11 +23,12 @@ author:
 socials:
   bluesky: "https://bsky.app/profile/helenbee"
   mastodon: "https://mastodon.social/@helenbee"
-  facebook: "https://www.facebook.com/helenbee"
+  facebook: "https://www.facebook.com/profile.php?id=61572267654772"
 siteUrl: "https://helenburgess.id.au"
 bluesky_description: "Exploring how AI art can help us express and understand our emotions."
 mastodon_description: "Discover the intersection of technology and emotional expression through AI art."
 facebook_description: "Learn how AI art generation can become a powerful tool for self-expression and emotional processing."
+newsletter: true
 ---
 
 <div class="content">
