@@ -78,68 +78,36 @@ eleventyNavigation:
   </div>
 </section>
 
-<!-- Writings Section -->
-<section class="section">
-  <div class="container">
-    <h2 class="title">Collection of Writings</h2>
-    <div class="columns is-multiline">
-      <div class="column is-one-quarter">
+
+<section class="section latest-posts">
+  <h2 class="title is-3"><i class="fa-solid fa-clock"></i> Latest Articles in Writings</h2>
+  <div class="columns is-multiline">
+    {% for post in collections.latestPosts %}
+      <div class="column is-one-third">
         <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="/assets/images/other/engima-code-breaker.jpg" alt="Technology writings">
-            </figure>
-          </div>
+          {% if post.data.image %}
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+              </figure>
+            </div>
+          {% endif %}
           <div class="card-content">
-            <h3 class="title is-5">Technology</h3>
-            <p>Exploring technology from web development to eHealth systems and security.</p>
-            <a class="button is-link" href="/writings/#technology" target="_self">Learn More</a>
+            <h3 class="title is-5">
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h3>
+            <p class="is-size-7 has-text-grey">
+              {{ post.date | readableDate }}
+            </p>
+            {% if post.data.description %}
+              <p>{{ post.data.description }}</p>
+            {% endif %}
+            <a class="button is-link mt-2" href="{{ post.url }}">Read More</a>
           </div>
         </div>
       </div>
-      <div class="column is-one-quarter">
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="/assets/images/other/med8_n290_crest2.jpg" alt="Lived Experience writings">
-            </figure>
-          </div>
-          <div class="card-content">
-            <h3 class="title is-5">A Lived Experience</h3>
-            <p>Sharing personal stories and insights from military service to health journeys.</p>
-            <a class="button is-link" href="/writings/#lived-experience" target="_self">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="column is-one-quarter">
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="/assets/images/other/knitted-heirloom-shawl.png" alt="Craft writings">
-            </figure>
-          </div>
-          <div class="card-content">
-            <h3 class="title is-5">Craft</h3>
-            <p>Exploring handmade creations through knitting, crochet, and other crafts.</p>
-            <a class="button is-link" href="/writings/#craft" target="_self">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="column is-one-quarter">
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="/assets/images/other/momento-mori.png" alt="Digital Art writings">
-            </figure>
-          </div>
-          <div class="card-content">
-            <h3 class="title is-5">Digital Art</h3>
-            <p>Exploring digital creativity and AI-generated artwork.</p>
-            <a class="button is-link" href="/writings/#digital-art" target="_self">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </section>
+
   {% include "partials/newsletter-cta.njk" %}

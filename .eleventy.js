@@ -48,6 +48,21 @@ module.exports = function (eleventyConfig) {
 			.sort((a, b) => b.date - a.date);
 	});
 
+
+
+// Add a collection for the latest 3 published posts
+eleventyConfig.addCollection("latestPosts", function (collectionApi) {
+  return collectionApi
+    .getFilteredByGlob([
+      "src/writings/**/**/*.md",
+      "src/content/posts/**/**/*.md",
+    ])
+    .filter(post => post.data.status === "published" || !post.data.status) // Only published or no status
+    .sort((a, b) => b.date - a.date)
+    .slice(0, 3);
+});
+
+
 	// Consolidated Date Filters
 	eleventyConfig.addFilter("dateToISO", (date) => {
 		if (date === "now") {
