@@ -7,7 +7,7 @@ publishedDate: "2024-12-25"
 theme: "Season's Greetings 2024"
 keywords: [christmas, holiday, card]
 type: "article"
-category: "end-of-year"
+category: Reflection
 tags:
   - christmas
   - holiday
