@@ -57,6 +57,8 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+		justify-content: flex-start;
+		flex-wrap: wrap;
 }
 
 .writing-meta time {
@@ -65,9 +67,9 @@
 }
 
 .writing-meta .category {
-    background: var(--primary);
+    background: var(--accent-2);
     padding: 0.3rem 1rem;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 0.9rem;
 }
 
@@ -170,8 +172,8 @@
 .writing-taxonomy .category {
     display: inline-block;
     padding: 0.3rem 1rem;
-    background: var(--primary);
-    color: var(--text-light);
+    background: var(--accent-2);
+    color: var(--text-dark);
     border-radius: 20px;
     margin-right: 1rem;
 }
