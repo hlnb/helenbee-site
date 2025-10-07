@@ -11,7 +11,7 @@ tags:
   [freemasonry, stoicism, philosophy, resilience, trauma, healing, character]
 layout: layouts/writing.njk
 category: philosophy
-image: /assets/images/other/freemasonry-stoicism.jpg
+image: /assets/images/other/freemasonry-stoicism.svg
 author:
   name: "Elizabeth Burgess"
 socials:
