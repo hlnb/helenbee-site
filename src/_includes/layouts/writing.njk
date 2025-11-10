@@ -2,31 +2,10 @@
 layout: layouts/base.njk
 ---
 
-<article class="writing-single">
-  <div class="writing-hero">
-    <div class="hero-image-container">
-      {% if image %}
-        <img src="{{ image }}" alt="{{ title }}">
-      {% endif %}
-    </div>
-    <div class="hero-content">
-      <h1>{{ title }}</h1>
-      <div class="writing-meta">
-        <time  datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-        {% if category %}
-          <span class="category tag">{{ category }}</span>
-        {% endif %}
-        {% if tags %}
-          {% for tag in tags %}
-            {% if tag != "post" %}
-              <span class="tag">#{{ tag }}</span>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-      </div>
-    </div>
-  </div>
 
+{% include "partials/hero.njk" %}
+
+<article class="writing-single">
   {{ content | safe }}
 
   {% include "partials/newsletter-cta.njk" %}

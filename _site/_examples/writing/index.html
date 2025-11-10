@@ -42,10 +42,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+
     
 
     <!-- Font Awesome - moved to end of head -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- WebAwesome kit (project-specific) -->
+    <script src="https://kit.webawesome.com/051539821f5a4054.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -95,39 +100,52 @@
 
     <main>
         
-<article class="writing-single">
-  <div class="writing-hero">
-    <div class="hero-image-container">
+
+
+<div class="wa-hero" style="color: var(--wa-color-surface-foreground); position: relative; overflow: hidden; background-image: url('/assets/images/example.jpg'); background-size: cover; background-position: center;">
+
+  
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none; background: radial-gradient(circle at center, rgba(255,255,255,0.30), rgba(255,255,255,0.12)); mix-blend-mode: screen;"></div>
+
+  <div style="position:relative; z-index:1; text-align:left; max-width:var(--container-width, 70ch); margin:0 auto; color: #ffffff;">
+    
+      <h1 class="title is-2" style="color:inherit; margin-bottom:0.4rem; text-shadow: 0 2px 6px rgba(0,0,0,0.6);">Example Writing Post</h1>
+    
+
+    
+
+    
+
+  <div class="writing-meta" style="color:rgba(255,255,255,0.85); font-size:0.95rem; margin-top:0.5rem; text-shadow: 0 1px 3px rgba(0,0,0,0.45);">
       
-        <img src="/assets/images/example.jpg" alt="Example Writing Post">
+        <time datetime="Invalid DateTime">Invalid DateTime</time>
       
-    </div>
-    <div class="hero-content">
-      <h1>Example Writing Post</h1>
-      <div class="writing-meta">
-        <time  datetime="2025-01-01">01 January 2025</time>
-        
-          <span class="category tag">example</span>
-        
+
+      
+        <span class="category tag" style="margin-left:0.75rem;">example</span>
+      
+
+      
         
           
-            
-              <span class="tag">#example</span>
-            
-          
-            
-              <span class="tag">#writing</span>
-            
-          
-            
-              <span class="tag">#formatting</span>
-            
+            <span class="tag" style="margin-left:0.5rem;">#example</span>
           
         
-      </div>
+          
+            <span class="tag" style="margin-left:0.5rem;">#writing</span>
+          
+        
+          
+            <span class="tag" style="margin-left:0.5rem;">#formatting</span>
+          
+        
+      
     </div>
   </div>
+</div>
 
+
+<article class="writing-single">
   <div class="content">
   <p class="is-size-5 has-text-weight-medium">This is an example of how to format your writing posts.</p>
   <p>This is a regular paragraph of text. You can write your content here, and it will be properly formatted with the site's styling.</p>
@@ -931,176 +949,16 @@
       }
     </style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div id="mlb2-27031384" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-27031384">
       <div class="ml-form-align-center ">
         <div class="ml-form-embedWrapper embedForm">
-
-
-
 
           <div class="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
 
             <div class="ml-form-embedContent" style=" ">
 
-                <h4>Subscribe for Monthly Reflections</h4>
-                <p><br></p>
+                <h4>Subscribe for monthly reflections</h4>
+                <p>Gentle essays, journal prompts, and creative notes—delivered once a month. No noise, just nourishment.</p>
 
             </div>
 
@@ -1113,16 +971,11 @@
 
 
                       <div style="width: 50%;" class="horizontal-fields">
-
-
-
-
-
-
                         <div class="ml-field-group ml-field-name">
 
-                          <!-- input -->
-                      <input type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Name" autocomplete="given-name">
+                         <!-- input -->
+                      <label class="sr-only" for="ml-name">Name</label>
+                      <input id="ml-name" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Name" autocomplete="given-name" aria-label="Name">
                       <!-- /input -->
                         </div>
 
@@ -1138,16 +991,14 @@
                         <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
 
                           <!-- input -->
-                      <input type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
+                      <label class="sr-only" for="ml-email">Email address</label>
+                      <input id="ml-email" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email" aria-label="Email address" required>
                       <!-- /input -->
                         </div>
-
-
 
                       </div>
 
                   </div>
-
 
                   <div class="ml-button-horizontal primary ">
 
@@ -1164,26 +1015,15 @@
               <!-- Privacy policy -->
               <div class="ml-form-embedPermissions" style="">
                 <div class="ml-form-embedPermissionsContent horizontal privacy-policy">
-
-
-
-                  <p><span style="color: rgb(255, 255, 255);">You can unsubscribe anytime. For more details, review our Privacy Policy.</span></p>
+                 <p><span style="color: rgb(255, 255, 255);">You can unsubscribe anytime. For more details, review our Privacy Policy.</span></p>
 
 
                 </div>
               </div>
               <!-- /Privacy policy -->
 
-
-
-
-
-
-
-
-
 <div class="ml-form-recaptcha ml-validate-required" style="float: left;">
-                <style type="text/css">
+ <style type="text/css">
   .ml-form-recaptcha {
     margin-bottom: 20px;
   }
@@ -1223,6 +1063,12 @@
               </div>
               <input type="hidden" name="anticsrf" value="true">
             </form>
+
+            <noscript>
+              <div class="ml-noscript-fallback" style="padding:1rem; background:#fff; border-radius:4px; text-align:left;">
+                <p>JavaScript is required to submit the embedded form. You can subscribe using our hosted form: <a href="https://groot.mailerlite.com/forms/156779820974343311" target="_blank" rel="noopener">Subscribe here</a>.</p>
+              </div>
+            </noscript>
           </div>
 
           <div class="ml-form-successBody row-success" style="display: none">
@@ -1240,9 +1086,6 @@
         </div>
       </div>
     </div>
-
-
-
 
 
   <script>
@@ -1337,7 +1180,8 @@
       <div class="column">
         <h4 class="title is-4">About</h4>
         <p>
-          Exploring the road less travelled in technology, craft, and life. Veteran, Nana, knitter, and web technologist sharing lived experiences.
+          Sharing reflections from the crossroads of technology, creativity, and healing.
+A digital sanctuary for veterans, makers, and mindful souls learning to live gently again.
         </p>
       </div>
 

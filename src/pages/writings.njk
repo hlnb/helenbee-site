@@ -8,15 +8,9 @@ eleventyNavigation:
 
 ---
 
-<!-- Hero Section -->
-<section class="hero writings-hero">
-  <div class="hero-body">
-    <div class="container has-text-centered p-6" style="background-color: rgba(51, 46, 99, 0.33);">
-      <h1 class="title has-text-white">Writings</h1>
-      <p class="subtitle has-text-white">A collection of articles and insights from technology to life experiences.</p>
-    </div>
-  </div>
-</section>
+{% set image = '/assets/images/other/patrick-fore-unsplash.jpg' %}
+{% set subtitle = 'A collection of articles and insights from technology to life experiences.' %}
+{% include "partials/hero.njk" %}
 
 <!-- Introductory Paragraphs -->
 <div class="container">
@@ -38,34 +32,32 @@ eleventyNavigation:
           {% set formattedPublishDate = article.data.publishedDate | formatDate %}
           {% if (not article.data.publishedDate) or (formattedPublishDate <= currentDate) %}
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               {% if article.data.image %}
-              <div class="card-image">
-                <figure class="image">
-                  <img src="{{ article.data.image }}" alt="{{ article.data.title }}" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
-              </div>
+                <img slot="media" src="{{ article.data.image }}" alt="{{ article.data.title }}" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
               {% endif %}
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="{{ article.url }}">{{ article.data.title }}</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  {{ article.date | dateDisplay }}
-                </p>
-                <p class="content-preview">{{ article.data.description }}</p>
-                {% if article.data.tags %}
-                <div class="tags mt-auto">
-                  {% for tag in article.data.tags %}
-                    <span class="tag is-primary is-light">{{ tag }}</span>
-                  {% endfor %}
-                </div>
-                {% endif %}
+
+              <div slot="header">
+                <p class="title is-5"><a href="{{ article.url }}">{{ article.data.title }}</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> {{ article.date | dateDisplay }}</p>
               </div>
-            </div>
+
+              <div>
+                <p class="content-preview">{{ article.data.description }}</p>
+              </div>
+
+              <div slot="footer">
+                {% if article.data.tags %}
+                  <div class="tags mt-auto">
+                    {% for tag in article.data.tags %}
+                      <span class="tag is-primary is-light">{{ tag }}</span>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+                <a class="button is-link mt-2" href="{{ article.url }}">Read More</a>
+              </div>
+            </wa-card>
           </div>
           {% endif %}
         {% endfor %}
@@ -129,4 +121,23 @@ eleventyNavigation:
       width: 100%;
     }
   }
+</style>
+
+<style>
+/* Ensure wa-card acts like a full-height column card in writings grid */
+.columns.is-multiline .column {
+  display: flex;
+}
+.columns.is-multiline .column > wa-card.wa-post-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
+}
+wa-card.wa-post-card::part(body) {
+  flex: 1 1 auto;
+}
+wa-card.wa-post-card::part(footer) {
+  margin-top: auto;
+}
 </style>

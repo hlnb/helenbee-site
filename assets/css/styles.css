@@ -398,6 +398,65 @@ main a:hover {
 .about-intro-content {
 	grid-column: 4 / span 5;
 	padding-left: 2rem;
+
+/* Equal-height cards for latest posts (keep scoped to homepage section) */
+.latest-posts .columns {
+	align-items: stretch;
+}
+.latest-posts .columns .column {
+	display: flex;
+}
+.latest-posts .columns .column > .card,
+.latest-posts .columns .column > wa-card {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	height: 100%;
+}
+.latest-posts .columns .column > .card .card-content {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+}
+/* WebAwesome card parts: make body grow and footer stick to bottom */
+wa-card.wa-post-card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+wa-card.wa-post-card::part(body) {
+	flex: 1 1 auto;
+}
+wa-card.wa-post-card::part(footer) {
+	margin-top: auto;
+}
+
+/* Remove dividing lines and borders on cards (wa-card and Bulma .card) */
+wa-card.wa-post-card,
+wa-card.wa-post-card::part(header),
+wa-card.wa-post-card::part(body),
+wa-card.wa-post-card::part(footer),
+.wa-post-card,
+.wa-post-card::part(header),
+.wa-post-card::part(body),
+.wa-post-card::part(footer) {
+	border: none !important;
+	box-shadow: none !important;
+	background: transparent !important;
+}
+
+wa-card.wa-post-card::part(header),
+wa-card.wa-post-card::part(footer) {
+	border-top: none !important;
+	border-bottom: none !important;
+}
+
+/* hide any <hr> inside cards */
+wa-card.wa-post-card hr,
+.wa-post-card hr,
+.card hr {
+	display: none !important;
+}
 }
 
 .military-career-grid {

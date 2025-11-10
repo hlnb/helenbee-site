@@ -7,15 +7,10 @@ eleventyNavigation:
   order: 20
 ---
 
-  <!-- Hero Section -->
-  <section class="hero is-medium is-primary is-bold" style="background-image: url('/assets/images/other/aaron-burden-unsplash.jpg'); background-size: cover; background-position: center;">
-    <div class="hero-body">
-      <div class="container has-text-centered p-6" style="background-color: rgba(51, 46, 99, 0.33);">
-        <h1 class="title has-text-white">About Helen B: A Tapestry of Technology and Resilience</h1>
-        <p class="subtitle has-text-white">Discover the journey and experiences that have shaped my path in technology, creativity, and life.</p>
-      </div>
-    </div>
-  </section>
+  {% set image = '/assets/images/other/aaron-burden-unsplash.jpg' %}
+  {% set subtitle = 'Discover the journey and experiences that have shaped my path in technology, creativity, and life.' %}
+  {% set hero_overlay = 'dark' %}
+  {% include "partials/hero.njk" %}
 
   <!-- About Intro Section -->
   <section class="section ml-6 mr-6">
@@ -79,7 +74,7 @@ eleventyNavigation:
         <p>Today, Helen B stands as a symbol of innovation, resilience, and the transformative power of technology. Her life is a narrative of taking the road less traveled, constantly seeking new horizons in the digital realm and beyond. Join her as she continues to explore, inspire, and empower.</p>
       </div>
 
-</main> 
+</main>
         {% include "partials/newsletter-cta.njk" %}
     </div>
   </section>

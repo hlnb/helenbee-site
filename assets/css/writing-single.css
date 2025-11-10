@@ -5,6 +5,14 @@
     padding: 2rem 1rem;
 }
 
+/* Make the hero partial full-bleed when used on post pages */
+.wa-hero {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 8rem var(--wa-space-4xl);
+}
+
 /* Hero Image Styles */
 .writing-hero {
     position: relative;
@@ -211,6 +219,11 @@
     .writing-hero {
         width: 95vw;
         padding-bottom: 3rem;
+    }
+
+    /* Reduce hero vertical padding on small screens */
+    .wa-hero {
+        padding: 4rem var(--wa-space-3xl);
     }
 
     .hero-content h1 {

@@ -1,0 +1,55 @@
+{#
+  Reusable WebAwesome-style hero partial
+  Usage examples:
+    {% include "partials/hero.njk" with { title: "Writings", subtitle: "A collection..." } %}
+    {% include "partials/hero.njk" with { title: title, image: image, date: page.date, category: category, tags: tags } %}
+#}
+<div class="wa-hero" style="color: var(--wa-color-surface-foreground); position: relative; overflow: hidden; {% if image %}background-image: url('{{ image }}'); background-size: cover; background-position: center;{% else %}background: radial-gradient(circle at center, var(--wa-color-brand-fill-quiet), var(--wa-color-brand-fill-normal));{% endif %}">
+
+  {# Gradient overlay that blends with the background image. Supports light (screen) or dark (multiply) modes via `hero_overlay` variable. #}
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none; {% if image %}{% if hero_overlay == 'dark' %}background: radial-gradient(circle at center, rgba(51,46,99,0.65), rgba(51,46,99,0.45)); mix-blend-mode: multiply;{% else %}background: radial-gradient(circle at center, rgba(255,255,255,0.30), rgba(255,255,255,0.12)); mix-blend-mode: screen;{% endif %}{% else %}/* no overlay needed when gradient is already the background */{% endif %}"></div>
+
+  <div style="position:relative; z-index:1; text-align:left; max-width:var(--container-width, 70ch); margin:0 auto; color: #ffffff;">
+    {% if not hero_hide_title %}
+      <h1 class="title is-2" style="color:inherit; margin-bottom:0.4rem; text-shadow: 0 2px 6px rgba(0,0,0,0.6);">{{ title or page.title }}</h1>
+    {% endif %}
+
+    {% if subtitle %}
+      <p class="subtitle" style="color:rgba(255,255,255,0.92); margin-top:0.25rem; text-shadow: 0 1px 4px rgba(0,0,0,0.55);">{{ subtitle }}</p>
+    {% endif %}
+
+    {% if hero_extra %}
+      <div class="hero-extra" style="margin-top:0.75rem; color:inherit;">
+        {{ hero_extra | safe }}
+      </div>
+    {% endif %}
+
+  <div class="writing-meta" style="color:rgba(255,255,255,0.85); font-size:0.95rem; margin-top:0.5rem; text-shadow: 0 1px 3px rgba(0,0,0,0.45);">
+      {% if date %}
+        <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+      {% elif page.date %}
+        <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+      {% endif %}
+
+      {% if category %}
+        <span class="category tag" style="margin-left:0.75rem;">{{ category }}</span>
+      {% elif page.data and page.data.category %}
+        <span class="category tag" style="margin-left:0.75rem;">{{ page.data.category }}</span>
+      {% endif %}
+
+      {% if tags %}
+        {% for tag in tags %}
+          {% if tag != "post" %}
+            <span class="tag" style="margin-left:0.5rem;">#{{ tag }}</span>
+          {% endif %}
+        {% endfor %}
+      {% elif page.tags %}
+        {% for tag in page.tags %}
+          {% if tag != "post" %}
+            <span class="tag" style="margin-left:0.5rem;">#{{ tag }}</span>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</div>

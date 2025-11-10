@@ -756,169 +756,9 @@
       }
     </style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div id="mlb2-27031384" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-27031384">
       <div class="ml-form-align-center ">
         <div class="ml-form-embedWrapper embedForm">
-
-
-
 
           <div class="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
 
@@ -938,16 +778,11 @@
 
 
                       <div style="width: 50%;" class="horizontal-fields">
-
-
-
-
-
-
                         <div class="ml-field-group ml-field-name">
 
-                          <!-- input -->
-                      <input type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Name" autocomplete="given-name">
+                         <!-- input -->
+                      <label class="sr-only" for="ml-name">Name</label>
+                      <input id="ml-name" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Name" autocomplete="given-name" aria-label="Name">
                       <!-- /input -->
                         </div>
 
@@ -963,16 +798,14 @@
                         <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
 
                           <!-- input -->
-                      <input type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
+                      <label class="sr-only" for="ml-email">Email address</label>
+                      <input id="ml-email" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email" aria-label="Email address" required>
                       <!-- /input -->
                         </div>
-
-
 
                       </div>
 
                   </div>
-
 
                   <div class="ml-button-horizontal primary ">
 
@@ -989,26 +822,15 @@
               <!-- Privacy policy -->
               <div class="ml-form-embedPermissions" style="">
                 <div class="ml-form-embedPermissionsContent horizontal privacy-policy">
-
-
-
-                  <p><span style="color: rgb(255, 255, 255);">You can unsubscribe anytime. For more details, review our Privacy Policy.</span></p>
+                 <p><span style="color: rgb(255, 255, 255);">You can unsubscribe anytime. For more details, review our Privacy Policy.</span></p>
 
 
                 </div>
               </div>
               <!-- /Privacy policy -->
 
-
-
-
-
-
-
-
-
 <div class="ml-form-recaptcha ml-validate-required" style="float: left;">
-                <style type="text/css">
+ <style type="text/css">
   .ml-form-recaptcha {
     margin-bottom: 20px;
   }
@@ -1048,6 +870,12 @@
               </div>
               <input type="hidden" name="anticsrf" value="true">
             </form>
+
+            <noscript>
+              <div class="ml-noscript-fallback" style="padding:1rem; background:#fff; border-radius:4px; text-align:left;">
+                <p>JavaScript is required to submit the embedded form. You can subscribe using our hosted form: <a href="https://groot.mailerlite.com/forms/156779820974343311" target="_blank" rel="noopener">Subscribe here</a>.</p>
+              </div>
+            </noscript>
           </div>
 
           <div class="ml-form-successBody row-success" style="display: none">
@@ -1065,9 +893,6 @@
         </div>
       </div>
     </div>
-
-
-
 
 
   <script>

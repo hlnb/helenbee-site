@@ -42,10 +42,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+
     
 
     <!-- Font Awesome - moved to end of head -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- WebAwesome kit (project-specific) -->
+    <script src="https://kit.webawesome.com/051539821f5a4054.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -95,15 +100,37 @@
 
     <main>
         
-<!-- Hero Section -->
-<section class="hero writings-hero">
-  <div class="hero-body">
-    <div class="container has-text-centered p-6" style="background-color: rgba(51, 46, 99, 0.33);">
-      <h1 class="title has-text-white">Writings</h1>
-      <p class="subtitle has-text-white">A collection of articles and insights from technology to life experiences.</p>
+
+
+
+<div class="wa-hero" style="color: var(--wa-color-surface-foreground); position: relative; overflow: hidden; background-image: url('/assets/images/other/patrick-fore-unsplash.jpg'); background-size: cover; background-position: center;">
+
+  
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none; background: radial-gradient(circle at center, rgba(255,255,255,0.30), rgba(255,255,255,0.12)); mix-blend-mode: screen;"></div>
+
+  <div style="position:relative; z-index:1; text-align:left; max-width:var(--container-width, 70ch); margin:0 auto; color: #ffffff;">
+    
+      <h1 class="title is-2" style="color:inherit; margin-bottom:0.4rem; text-shadow: 0 2px 6px rgba(0,0,0,0.6);">Writings</h1>
+    
+
+    
+      <p class="subtitle" style="color:rgba(255,255,255,0.92); margin-top:0.25rem; text-shadow: 0 1px 4px rgba(0,0,0,0.55);">A collection of articles and insights from technology to life experiences.</p>
+    
+
+    
+
+  <div class="writing-meta" style="color:rgba(255,255,255,0.85); font-size:0.95rem; margin-top:0.5rem; text-shadow: 0 1px 3px rgba(0,0,0,0.45);">
+      
+        <time datetime="2024-12-23">23 December 2024</time>
+      
+
+      
+
+      
     </div>
   </div>
-</section>
+</div>
+
 
 <!-- Introductory Paragraphs -->
 <div class="container">
@@ -125,46 +152,44 @@
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/rebecca-grant-unsplash.jpg" alt="Beyond the Needles: Exploring Continental, Norwegian, and English Lever Knitting" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/rebecca-grant-unsplash.jpg" alt="Beyond the Needles: Exploring Continental, Norwegian, and English Lever Knitting" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/06/07062025-knitting-styles/">Beyond the Needles: Exploring Continental, Norwegian, and English Lever Knitting</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> June 7, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/06/07062025-knitting-styles/">Beyond the Needles: Exploring Continental, Norwegian, and English Lever Knitting</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  June 7, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">A personal journey through different knitting styles: English Lever, Continental, Norwegian, and Combination. Learn what each offers and how to find the style that fits you best.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">knitting</span>
-                  
-                    <span class="tag is-primary is-light">technique</span>
-                  
-                    <span class="tag is-primary is-light">styles</span>
-                  
-                    <span class="tag is-primary is-light">continental</span>
-                  
-                    <span class="tag is-primary is-light">norwegian</span>
-                  
-                    <span class="tag is-primary is-light">english lever</span>
-                  
-                    <span class="tag is-primary is-light">combination</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">knitting</span>
+                    
+                      <span class="tag is-primary is-light">technique</span>
+                    
+                      <span class="tag is-primary is-light">styles</span>
+                    
+                      <span class="tag is-primary is-light">continental</span>
+                    
+                      <span class="tag is-primary is-light">norwegian</span>
+                    
+                      <span class="tag is-primary is-light">english lever</span>
+                    
+                      <span class="tag is-primary is-light">combination</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/06/07062025-knitting-styles/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
@@ -179,526 +204,500 @@
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/let-go-guilt-2.png" alt="Catching My Breath: Learning to Let Go of Guilt" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/let-go-guilt-2.png" alt="Catching My Breath: Learning to Let Go of Guilt" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/09/07092025-letting-go-guilt/">Catching My Breath: Learning to Let Go of Guilt</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> September 7, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/09/07092025-letting-go-guilt/">Catching My Breath: Learning to Let Go of Guilt</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  September 7, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">A reflection on recovery, self-compassion, and practical tools for letting go of guilt after a setback.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">mental health</span>
-                  
-                    <span class="tag is-primary is-light">recovery</span>
-                  
-                    <span class="tag is-primary is-light">self-compassion</span>
-                  
-                    <span class="tag is-primary is-light">healing</span>
-                  
-                    <span class="tag is-primary is-light">resilience</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">mental health</span>
+                    
+                      <span class="tag is-primary is-light">recovery</span>
+                    
+                      <span class="tag is-primary is-light">self-compassion</span>
+                    
+                      <span class="tag is-primary is-light">healing</span>
+                    
+                      <span class="tag is-primary is-light">resilience</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/09/07092025-letting-go-guilt/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/marina-ermakova-NVB16ic4tec-unsplash.jpg" alt="My Journey Through Different Therapeutic Approaches: Finding Help and Hope" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/marina-ermakova-NVB16ic4tec-unsplash.jpg" alt="My Journey Through Different Therapeutic Approaches: Finding Help and Hope" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/05/2025-05-07-therapy-journey/">My Journey Through Different Therapeutic Approaches: Finding Help and Hope</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> May 7, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/05/2025-05-07-therapy-journey/">My Journey Through Different Therapeutic Approaches: Finding Help and Hope</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  May 7, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">A veteran&#39;s exploration of various therapeutic approaches, from talk therapy to TMS, and the importance of integrated lived-experience care.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">therapy</span>
-                  
-                    <span class="tag is-primary is-light">lived-experience</span>
-                  
-                    <span class="tag is-primary is-light">veterans</span>
-                  
-                    <span class="tag is-primary is-light">PTSD</span>
-                  
-                    <span class="tag is-primary is-light">healing</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">therapy</span>
+                    
+                      <span class="tag is-primary is-light">lived-experience</span>
+                    
+                      <span class="tag is-primary is-light">veterans</span>
+                    
+                      <span class="tag is-primary is-light">PTSD</span>
+                    
+                      <span class="tag is-primary is-light">healing</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/05/2025-05-07-therapy-journey/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/elena-mozhvilo-7l6inLyD2NQ-unsplash.jpg" alt="Natural Healing: How Outdoor Activities Transformed My Well-being" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/elena-mozhvilo-7l6inLyD2NQ-unsplash.jpg" alt="Natural Healing: How Outdoor Activities Transformed My Well-being" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/04/2025-04-21-nature-healing/">Natural Healing: How Outdoor Activities Transformed My Well-being</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> April 21, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/04/2025-04-21-nature-healing/">Natural Healing: How Outdoor Activities Transformed My Well-being</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  April 21, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">A veteran&#39;s journey from military service to finding peace in nature, exploring the science and personal experience of nature&#39;s healing power.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">nature</span>
-                  
-                    <span class="tag is-primary is-light">healing</span>
-                  
-                    <span class="tag is-primary is-light">veterans</span>
-                  
-                    <span class="tag is-primary is-light">lived-experience</span>
-                  
-                    <span class="tag is-primary is-light">wellness</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">nature</span>
+                    
+                      <span class="tag is-primary is-light">healing</span>
+                    
+                      <span class="tag is-primary is-light">veterans</span>
+                    
+                      <span class="tag is-primary is-light">lived-experience</span>
+                    
+                      <span class="tag is-primary is-light">wellness</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/04/2025-04-21-nature-healing/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/mindfulness-journey-header.jpg" alt="The Power of Meditation: How It&#39;s Helped Me Manage My Lived Experience" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/mindfulness-journey-header.jpg" alt="The Power of Meditation: How It&#39;s Helped Me Manage My Lived Experience" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/04/2025-04-07-meditation-practice/">The Power of Meditation: How It&#39;s Helped Me Manage My Lived Experience</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> April 7, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/04/2025-04-07-meditation-practice/">The Power of Meditation: How It&#39;s Helped Me Manage My Lived Experience</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  April 7, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">A veteran&#39;s journey with meditation, from military precision to mindful healing.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">meditation</span>
-                  
-                    <span class="tag is-primary is-light">mindfulness</span>
-                  
-                    <span class="tag is-primary is-light">lived-experience</span>
-                  
-                    <span class="tag is-primary is-light">PTSD</span>
-                  
-                    <span class="tag is-primary is-light">veterans</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">meditation</span>
+                    
+                      <span class="tag is-primary is-light">mindfulness</span>
+                    
+                      <span class="tag is-primary is-light">lived-experience</span>
+                    
+                      <span class="tag is-primary is-light">PTSD</span>
+                    
+                      <span class="tag is-primary is-light">veterans</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/04/2025-04-07-meditation-practice/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/pexels-shkrabaanthony-4348401.jpg" alt="Digital Art as Medicine: My Journey from Veteran to Digital Creator" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/pexels-shkrabaanthony-4348401.jpg" alt="Digital Art as Medicine: My Journey from Veteran to Digital Creator" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/03/2025-03-21-digital-art/">Digital Art as Medicine: My Journey from Veteran to Digital Creator</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> March 21, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/03/2025-03-21-digital-art/">Digital Art as Medicine: My Journey from Veteran to Digital Creator</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  March 21, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">A personal exploration of how digital art tools became therapeutic instruments in my journey from military service to creative expression and healing.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">digital art</span>
-                  
-                    <span class="tag is-primary is-light">veterans</span>
-                  
-                    <span class="tag is-primary is-light">mental health</span>
-                  
-                    <span class="tag is-primary is-light">creativity</span>
-                  
-                    <span class="tag is-primary is-light">AI</span>
-                  
-                    <span class="tag is-primary is-light">personal journey</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">digital art</span>
+                    
+                      <span class="tag is-primary is-light">veterans</span>
+                    
+                      <span class="tag is-primary is-light">mental health</span>
+                    
+                      <span class="tag is-primary is-light">creativity</span>
+                    
+                      <span class="tag is-primary is-light">AI</span>
+                    
+                      <span class="tag is-primary is-light">personal journey</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/03/2025-03-21-digital-art/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/veteran-life-1.jpg" alt="Veteran Life: Personal Perspectives and Support Resources" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/veteran-life-1.jpg" alt="Veteran Life: Personal Perspectives and Support Resources" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/03/2025-03-07-veteran-life/">Veteran Life: Personal Perspectives and Support Resources</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> March 7, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/03/2025-03-07-veteran-life/">Veteran Life: Personal Perspectives and Support Resources</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  March 7, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">A personal reflection on veteran experiences, mental health, and transition challenges, backed by research and available support services.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">veterans</span>
-                  
-                    <span class="tag is-primary is-light">mental health</span>
-                  
-                    <span class="tag is-primary is-light">personal experience</span>
-                  
-                    <span class="tag is-primary is-light">support resources</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">veterans</span>
+                    
+                      <span class="tag is-primary is-light">mental health</span>
+                    
+                      <span class="tag is-primary is-light">personal experience</span>
+                    
+                      <span class="tag is-primary is-light">support resources</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/03/2025-03-07-veteran-life/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/elena-mozhvilo-7l6inLyD2NQ-unsplash.jpg" alt="Lessons from Stoic Philosophy for Everyday Resilience" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/elena-mozhvilo-7l6inLyD2NQ-unsplash.jpg" alt="Lessons from Stoic Philosophy for Everyday Resilience" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/02/2025-02-21-stoic-lessons/">Lessons from Stoic Philosophy for Everyday Resilience</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> February 21, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/02/2025-02-21-stoic-lessons/">Lessons from Stoic Philosophy for Everyday Resilience</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  February 21, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">Discover how ancient Stoic philosophy can help you navigate everyday challenges, offering practical strategies for resilience and mental health.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">Stoic philosophy</span>
-                  
-                    <span class="tag is-primary is-light">everyday resilience</span>
-                  
-                    <span class="tag is-primary is-light">mental health</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">Stoic philosophy</span>
+                    
+                      <span class="tag is-primary is-light">everyday resilience</span>
+                    
+                      <span class="tag is-primary is-light">mental health</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/02/2025-02-21-stoic-lessons/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/ursula-castillo-aLfHUE8o5Xc-unsplash.jpg" alt="Knitting as PTSD Therapy: How Crafting Aids Mental Health Recovery" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/ursula-castillo-aLfHUE8o5Xc-unsplash.jpg" alt="Knitting as PTSD Therapy: How Crafting Aids Mental Health Recovery" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/02/2025-02-07-knitting-therapy/">Knitting as PTSD Therapy: How Crafting Aids Mental Health Recovery</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> February 7, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/02/2025-02-07-knitting-therapy/">Knitting as PTSD Therapy: How Crafting Aids Mental Health Recovery</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  February 7, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">Discover how knitting serves as a powerful therapeutic tool for PTSD management, combining mindfulness, creativity, and healing through craft. Personal insights and scientific research on craft therapy.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">knitting therapy</span>
-                  
-                    <span class="tag is-primary is-light">PTSD management</span>
-                  
-                    <span class="tag is-primary is-light">craft therapy</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">knitting therapy</span>
+                    
+                      <span class="tag is-primary is-light">PTSD management</span>
+                    
+                      <span class="tag is-primary is-light">craft therapy</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/02/2025-02-07-knitting-therapy/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/DALL-E-2025-01-16-journal.webp" alt="Recognizing the Invisible Wounds of PTSD" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/DALL-E-2025-01-16-journal.webp" alt="Recognizing the Invisible Wounds of PTSD" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/01/2025-01-29-Recognising-invisible-wounds/">Recognizing the Invisible Wounds of PTSD</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> January 29, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/01/2025-01-29-Recognising-invisible-wounds/">Recognizing the Invisible Wounds of PTSD</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  January 29, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">A personal account of living with PTSD and the path to healing.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">PTSD</span>
-                  
-                    <span class="tag is-primary is-light">mental health</span>
-                  
-                    <span class="tag is-primary is-light">personal journey</span>
-                  
-                    <span class="tag is-primary is-light">healing</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">PTSD</span>
+                    
+                      <span class="tag is-primary is-light">mental health</span>
+                    
+                      <span class="tag is-primary is-light">personal journey</span>
+                    
+                      <span class="tag is-primary is-light">healing</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/01/2025-01-29-Recognising-invisible-wounds/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/DALL-E-2025-01-16-journal.webp" alt="My Journey" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/DALL-E-2025-01-16-journal.webp" alt="My Journey" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/01/2025-01-16-my-journey/">My Journey</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> January 16, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/01/2025-01-16-my-journey/">My Journey</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  January 16, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">A personal account of living with PTSD and the path to healing.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">PTSD</span>
-                  
-                    <span class="tag is-primary is-light">mental health</span>
-                  
-                    <span class="tag is-primary is-light">personal journey</span>
-                  
-                    <span class="tag is-primary is-light">healing</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">PTSD</span>
+                    
+                      <span class="tag is-primary is-light">mental health</span>
+                    
+                      <span class="tag is-primary is-light">personal journey</span>
+                    
+                      <span class="tag is-primary is-light">healing</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/01/2025-01-16-my-journey/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/davide-pietralunga-unsplash.jpg" alt="The Moment Everything Changed: My Journey with PTSD After Military Service" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/davide-pietralunga-unsplash.jpg" alt="The Moment Everything Changed: My Journey with PTSD After Military Service" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/01/2025-01-05-the-moment-everything-changed/">The Moment Everything Changed: My Journey with PTSD After Military Service</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> January 5, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/01/2025-01-05-the-moment-everything-changed/">The Moment Everything Changed: My Journey with PTSD After Military Service</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  January 5, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">&#39;Not all wounds are visible.&#39; My journey with PTSD, anxiety, and depression led me to give evidence at the Royal Commission into Defence and Veteran Suicide. In this post, I share my story, challenge the stigma around PTSD beyond combat, and explain my mission to support fellow veterans.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">veterans</span>
-                  
-                    <span class="tag is-primary is-light">mental-health</span>
-                  
-                    <span class="tag is-primary is-light">ptsd</span>
-                  
-                    <span class="tag is-primary is-light">military</span>
-                  
-                    <span class="tag is-primary is-light">personal</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">veterans</span>
+                    
+                      <span class="tag is-primary is-light">mental-health</span>
+                    
+                      <span class="tag is-primary is-light">ptsd</span>
+                    
+                      <span class="tag is-primary is-light">military</span>
+                    
+                      <span class="tag is-primary is-light">personal</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/01/2025-01-05-the-moment-everything-changed/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/dequervanImage.webp" alt="Giving your hands some help" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/dequervanImage.webp" alt="Giving your hands some help" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2019/05/2019-05-27-giving-your-hads-some-help/">Giving your hands some help</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> May 27, 2019</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2019/05/2019-05-27-giving-your-hads-some-help/">Giving your hands some help</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  May 27, 2019
-                </p>
+
+              <div>
                 <p class="content-preview"></p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">lived-experience</span>
-                  
-                    <span class="tag is-primary is-light">hands</span>
-                  
-                    <span class="tag is-primary is-light">pain</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">lived-experience</span>
+                    
+                      <span class="tag is-primary is-light">hands</span>
+                    
+                      <span class="tag is-primary is-light">pain</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2019/05/2019-05-27-giving-your-hads-some-help/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/1_LKDWlBW3k2urxj8OaM0qyA.jpeg" alt="ANZAC Day and being a Peace-Time Veteran" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/1_LKDWlBW3k2urxj8OaM0qyA.jpeg" alt="ANZAC Day and being a Peace-Time Veteran" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2018/06/2018-06-29-anzac-day/">ANZAC Day and being a Peace-Time Veteran</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> June 29, 2018</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2018/06/2018-06-29-anzac-day/">ANZAC Day and being a Peace-Time Veteran</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  June 29, 2018
-                </p>
+
+              <div>
                 <p class="content-preview"></p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">lived-experience</span>
-                  
-                    <span class="tag is-primary is-light">anzac</span>
-                  
-                    <span class="tag is-primary is-light">veterans</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">lived-experience</span>
+                    
+                      <span class="tag is-primary is-light">anzac</span>
+                    
+                      <span class="tag is-primary is-light">veterans</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2018/06/2018-06-29-anzac-day/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
@@ -713,46 +712,44 @@
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/stocism-freemasonry.jpg" alt="Walking the Line: How Freemasonry and Stoicism Shaped My Moral Compass" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/stocism-freemasonry.jpg" alt="Walking the Line: How Freemasonry and Stoicism Shaped My Moral Compass" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/10/2025-10-07-stocism-freemansonry/">Walking the Line: How Freemasonry and Stoicism Shaped My Moral Compass</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> October 7, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/10/2025-10-07-stocism-freemansonry/">Walking the Line: How Freemasonry and Stoicism Shaped My Moral Compass</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  October 7, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">A personal reflection on how the principles of Freemasonry and Stoic philosophy have shaped my character, resilience, and approach to life&#39;s challenges.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">freemasonry</span>
-                  
-                    <span class="tag is-primary is-light">stoicism</span>
-                  
-                    <span class="tag is-primary is-light">philosophy</span>
-                  
-                    <span class="tag is-primary is-light">resilience</span>
-                  
-                    <span class="tag is-primary is-light">trauma</span>
-                  
-                    <span class="tag is-primary is-light">healing</span>
-                  
-                    <span class="tag is-primary is-light">character</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">freemasonry</span>
+                    
+                      <span class="tag is-primary is-light">stoicism</span>
+                    
+                      <span class="tag is-primary is-light">philosophy</span>
+                    
+                      <span class="tag is-primary is-light">resilience</span>
+                    
+                      <span class="tag is-primary is-light">trauma</span>
+                    
+                      <span class="tag is-primary is-light">healing</span>
+                    
+                      <span class="tag is-primary is-light">character</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/10/2025-10-07-stocism-freemansonry/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
@@ -767,112 +764,106 @@
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/aaron-burden-peaceful-unsplash.jpg" alt="What I Wish I’d Started Sooner: Learning to Be on My Own Side" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/aaron-burden-peaceful-unsplash.jpg" alt="What I Wish I’d Started Sooner: Learning to Be on My Own Side" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/07/28072025-whatwishIknew/">What I Wish I’d Started Sooner: Learning to Be on My Own Side</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> July 28, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/07/28072025-whatwishIknew/">What I Wish I’d Started Sooner: Learning to Be on My Own Side</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  July 28, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">Reflections on self-compassion, boundaries, and the practices I wish I&#39;d started sooner.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">personal</span>
-                  
-                    <span class="tag is-primary is-light">growth</span>
-                  
-                    <span class="tag is-primary is-light">mindfulness</span>
-                  
-                    <span class="tag is-primary is-light">knitting</span>
-                  
-                    <span class="tag is-primary is-light">writing</span>
-                  
-                    <span class="tag is-primary is-light">trauma</span>
-                  
-                    <span class="tag is-primary is-light">healing</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">personal</span>
+                    
+                      <span class="tag is-primary is-light">growth</span>
+                    
+                      <span class="tag is-primary is-light">mindfulness</span>
+                    
+                      <span class="tag is-primary is-light">knitting</span>
+                    
+                      <span class="tag is-primary is-light">writing</span>
+                    
+                      <span class="tag is-primary is-light">trauma</span>
+                    
+                      <span class="tag is-primary is-light">healing</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/07/28072025-whatwishIknew/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/ian-schneider-PAykYb-8Er8-unsplash.jpg" alt="End of 2024 Post" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/ian-schneider-PAykYb-8Er8-unsplash.jpg" alt="End of 2024 Post" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2024/12/2024-12-end-of-year-post/">End of 2024 Post</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> December 31, 2024</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2024/12/2024-12-end-of-year-post/">End of 2024 Post</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  December 31, 2024
-                </p>
+
+              <div>
                 <p class="content-preview">As 2024 draws to a close, I reflect on a year of creativity, growth, and meaningful connections. From completing cherished knitting projects to rebuilding my personal website and deepening my mindfulness practice, this year has been one of resilience and discovery. Join me as I look back on the lessons learned and set my sights on new horizons for 2025.</p>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                <a class="button is-link mt-2" href="/writings/2024/12/2024-12-end-of-year-post/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/annie-spratt-VDXtVYJVj7A-unsplash.jpg" alt="Australian Season&#39;s Greetings 2024" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/annie-spratt-VDXtVYJVj7A-unsplash.jpg" alt="Australian Season&#39;s Greetings 2024" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2024/12/2024-12-christmas-card/">Australian Season&#39;s Greetings 2024</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> December 25, 2024</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2024/12/2024-12-christmas-card/">Australian Season&#39;s Greetings 2024</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  December 25, 2024
-                </p>
+
+              <div>
                 <p class="content-preview">A Christmas Wish for all</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">christmas</span>
-                  
-                    <span class="tag is-primary is-light">holiday</span>
-                  
-                    <span class="tag is-primary is-light">card</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">christmas</span>
+                    
+                      <span class="tag is-primary is-light">holiday</span>
+                    
+                      <span class="tag is-primary is-light">card</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2024/12/2024-12-christmas-card/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
@@ -887,160 +878,152 @@
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/DALL·E-2023-11-02-15.02.41-Photo-of-three-generic-stylized-icons-that-represent-AI-driven-image-generation-tools.-Each-icon-is-placed-side-by-side-on-a-light-gradient-backgroun.png" alt="When Code Meets Emotion: Exploring AI Art as a Tool for Self-Expression" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/DALL·E-2023-11-02-15.02.41-Photo-of-three-generic-stylized-icons-that-represent-AI-driven-image-generation-tools.-Each-icon-is-placed-side-by-side-on-a-light-gradient-backgroun.png" alt="When Code Meets Emotion: Exploring AI Art as a Tool for Self-Expression" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2025/05/2025-05-21-code-meets-emotion/">When Code Meets Emotion: Exploring AI Art as a Tool for Self-Expression</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> May 21, 2025</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2025/05/2025-05-21-code-meets-emotion/">When Code Meets Emotion: Exploring AI Art as a Tool for Self-Expression</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  May 21, 2025
-                </p>
+
+              <div>
                 <p class="content-preview">Discover how AI art generation can become a powerful tool for emotional expression and self-discovery.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">AI</span>
-                  
-                    <span class="tag is-primary is-light">art</span>
-                  
-                    <span class="tag is-primary is-light">creativity</span>
-                  
-                    <span class="tag is-primary is-light">lived-experience</span>
-                  
-                    <span class="tag is-primary is-light">technology</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">AI</span>
+                    
+                      <span class="tag is-primary is-light">art</span>
+                    
+                      <span class="tag is-primary is-light">creativity</span>
+                    
+                      <span class="tag is-primary is-light">lived-experience</span>
+                    
+                      <span class="tag is-primary is-light">technology</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2025/05/2025-05-21-code-meets-emotion/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="Building a Modern Personal Site with 11ty" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="Building a Modern Personal Site with 11ty" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2024/11/2024-11-24-building-modern-personal-site-with-11ty/">Building a Modern Personal Site with 11ty</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> January 20, 2024</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2024/11/2024-11-24-building-modern-personal-site-with-11ty/">Building a Modern Personal Site with 11ty</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  January 20, 2024
-                </p>
+
+              <div>
                 <p class="content-preview">A deep dive into creating a responsive, modular website using Eleventy, CSS Grid, and modern web practices.</p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">technology</span>
-                  
-                    <span class="tag is-primary is-light">web development</span>
-                  
-                    <span class="tag is-primary is-light">11ty</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">technology</span>
+                    
+                      <span class="tag is-primary is-light">web development</span>
+                    
+                      <span class="tag is-primary is-light">11ty</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2024/11/2024-11-24-building-modern-personal-site-with-11ty/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/Screen-Shot-2018-07-24-at-12.39.55-pm-1.png" alt="CSS Grid, My first coding experiment" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/Screen-Shot-2018-07-24-at-12.39.55-pm-1.png" alt="CSS Grid, My first coding experiment" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2018/07/2018-07-24-css-grid-experiment/">CSS Grid, My first coding experiment</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> July 24, 2018</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2018/07/2018-07-24-css-grid-experiment/">CSS Grid, My first coding experiment</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  July 24, 2018
-                </p>
+
+              <div>
                 <p class="content-preview"></p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">technology</span>
-                  
-                    <span class="tag is-primary is-light">css</span>
-                  
-                    <span class="tag is-primary is-light">grid</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">technology</span>
+                    
+                      <span class="tag is-primary is-light">css</span>
+                    
+                      <span class="tag is-primary is-light">grid</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2018/07/2018-07-24-css-grid-experiment/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
           
           
           <div class="column is-one-quarter">
-            <div class="card is-flex is-flex-direction-column">
+            <!-- WebAwesome SSR-friendly card -->
+            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
               
-              <div class="card-image">
-                <figure class="image">
-                  <img src="/assets/images/other/iotbasedhealthcare.png" alt="eHealth Systems, M2M Communication &amp; Security" loading="lazy" style="object-fit: cover; height: 200px;">
-                </figure>
+                <img slot="media" src="/assets/images/other/iotbasedhealthcare.png" alt="eHealth Systems, M2M Communication &amp; Security" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+              
+
+              <div slot="header">
+                <p class="title is-5"><a href="/writings/2018/06/2018-06-29-ehealth-systems/">eHealth Systems, M2M Communication &amp; Security</a></p>
+                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> June 29, 2018</p>
               </div>
-              
-              <div class="card-content">
-                <p class="title is-5">
-                  <a href="/writings/2018/06/2018-06-29-ehealth-systems/">eHealth Systems, M2M Communication &amp; Security</a>
-                </p>
-                <p class="subtitle is-6">
-                  <span class="icon is-small is-primary">
-                    <i class="fas fa-calendar"></i>
-                  </span>
-                  June 29, 2018
-                </p>
+
+              <div>
                 <p class="content-preview"></p>
-                
-                <div class="tags mt-auto">
-                  
-                    <span class="tag is-primary is-light">technology</span>
-                  
-                    <span class="tag is-primary is-light">ehealth</span>
-                  
-                    <span class="tag is-primary is-light">m2m</span>
-                  
-                    <span class="tag is-primary is-light">internet of things</span>
-                  
-                    <span class="tag is-primary is-light">security</span>
-                  
-                </div>
-                
               </div>
-            </div>
+
+              <div slot="footer">
+                
+                  <div class="tags mt-auto">
+                    
+                      <span class="tag is-primary is-light">technology</span>
+                    
+                      <span class="tag is-primary is-light">ehealth</span>
+                    
+                      <span class="tag is-primary is-light">m2m</span>
+                    
+                      <span class="tag is-primary is-light">internet of things</span>
+                    
+                      <span class="tag is-primary is-light">security</span>
+                    
+                  </div>
+                
+                <a class="button is-link mt-2" href="/writings/2018/06/2018-06-29-ehealth-systems/">Read More</a>
+              </div>
+            </wa-card>
           </div>
           
         
@@ -1806,176 +1789,16 @@
       }
     </style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div id="mlb2-27031384" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-27031384">
       <div class="ml-form-align-center ">
         <div class="ml-form-embedWrapper embedForm">
-
-
-
 
           <div class="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
 
             <div class="ml-form-embedContent" style=" ">
 
-                <h4>Subscribe for Monthly Reflections</h4>
-                <p><br></p>
+                <h4>Subscribe for monthly reflections</h4>
+                <p>Gentle essays, journal prompts, and creative notes—delivered once a month. No noise, just nourishment.</p>
 
             </div>
 
@@ -1988,16 +1811,11 @@
 
 
                       <div style="width: 50%;" class="horizontal-fields">
-
-
-
-
-
-
                         <div class="ml-field-group ml-field-name">
 
-                          <!-- input -->
-                      <input type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Name" autocomplete="given-name">
+                         <!-- input -->
+                      <label class="sr-only" for="ml-name">Name</label>
+                      <input id="ml-name" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Name" autocomplete="given-name" aria-label="Name">
                       <!-- /input -->
                         </div>
 
@@ -2013,16 +1831,14 @@
                         <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
 
                           <!-- input -->
-                      <input type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
+                      <label class="sr-only" for="ml-email">Email address</label>
+                      <input id="ml-email" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email" aria-label="Email address" required>
                       <!-- /input -->
                         </div>
-
-
 
                       </div>
 
                   </div>
-
 
                   <div class="ml-button-horizontal primary ">
 
@@ -2039,26 +1855,15 @@
               <!-- Privacy policy -->
               <div class="ml-form-embedPermissions" style="">
                 <div class="ml-form-embedPermissionsContent horizontal privacy-policy">
-
-
-
-                  <p><span style="color: rgb(255, 255, 255);">You can unsubscribe anytime. For more details, review our Privacy Policy.</span></p>
+                 <p><span style="color: rgb(255, 255, 255);">You can unsubscribe anytime. For more details, review our Privacy Policy.</span></p>
 
 
                 </div>
               </div>
               <!-- /Privacy policy -->
 
-
-
-
-
-
-
-
-
 <div class="ml-form-recaptcha ml-validate-required" style="float: left;">
-                <style type="text/css">
+ <style type="text/css">
   .ml-form-recaptcha {
     margin-bottom: 20px;
   }
@@ -2098,6 +1903,12 @@
               </div>
               <input type="hidden" name="anticsrf" value="true">
             </form>
+
+            <noscript>
+              <div class="ml-noscript-fallback" style="padding:1rem; background:#fff; border-radius:4px; text-align:left;">
+                <p>JavaScript is required to submit the embedded form. You can subscribe using our hosted form: <a href="https://groot.mailerlite.com/forms/156779820974343311" target="_blank" rel="noopener">Subscribe here</a>.</p>
+              </div>
+            </noscript>
           </div>
 
           <div class="ml-form-successBody row-success" style="display: none">
@@ -2115,9 +1926,6 @@
         </div>
       </div>
     </div>
-
-
-
 
 
   <script>
@@ -2191,6 +1999,25 @@
   }
 </style>
 
+<style>
+/* Ensure wa-card acts like a full-height column card in writings grid */
+.columns.is-multiline .column {
+  display: flex;
+}
+.columns.is-multiline .column > wa-card.wa-post-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
+}
+wa-card.wa-post-card::part(body) {
+  flex: 1 1 auto;
+}
+wa-card.wa-post-card::part(footer) {
+  margin-top: auto;
+}
+</style>
+
     </main>
     <!-- Rest of your base template -->
 <footer class="footer">
@@ -2201,7 +2028,8 @@
       <div class="column">
         <h4 class="title is-4">About</h4>
         <p>
-          Exploring the road less travelled in technology, craft, and life. Veteran, Nana, knitter, and web technologist sharing lived experiences.
+          Sharing reflections from the crossroads of technology, creativity, and healing.
+A digital sanctuary for veterans, makers, and mindful souls learning to live gently again.
         </p>
       </div>
 

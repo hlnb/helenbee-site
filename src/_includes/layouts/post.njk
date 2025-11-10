@@ -1,34 +1,35 @@
 ---
 layout: layouts/base.njk
 ---
+{% include "partials/hero.njk" %}
+
 <article class="post {% if cssClass %}{{ cssClass }}{% endif %}">
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
+  {{ content | safe }}
 </article>
 
 <div class="share-buttons">
   <!-- Remove the Twitter/X button -->
-  
+
   <!-- Keep or modify existing Mastodon button -->
-  <a href="https://mastodon.au/share?text={{ mastodon_description | urlencode }}&url={{ siteUrl }}{{ page.url }}" 
-     target="_blank" 
-     rel="noopener noreferrer" 
+  <a href="https://mastodon.au/share?text={{ mastodon_description | urlencode }}&url={{ siteUrl }}{{ page.url }}"
+     target="_blank"
+     rel="noopener noreferrer"
      class="share-button mastodon">
     Share on Mastodon
   </a>
 
   <!-- Add Bluesky button -->
-  <a href="https://bsky.app/intent/compose?text={{ bluesky_description | urlencode }}%20{{ siteUrl }}{{ page.url }}" 
-     target="_blank" 
-     rel="noopener noreferrer" 
+  <a href="https://bsky.app/intent/compose?text={{ bluesky_description | urlencode }}%20{{ siteUrl }}{{ page.url }}"
+     target="_blank"
+     rel="noopener noreferrer"
      class="share-button bluesky">
     Share on Bluesky
   </a>
 
   <!-- Add Facebook button -->
-  <a href="https://www.facebook.com/sharer/sharer.php?u={{ siteUrl }}{{ page.url }}" 
-     target="_blank" 
-     rel="noopener noreferrer" 
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ siteUrl }}{{ page.url }}"
+     target="_blank"
+     rel="noopener noreferrer"
      class="share-button facebook">
     Share on Facebook
   </a>

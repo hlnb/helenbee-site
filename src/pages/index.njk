@@ -7,22 +7,16 @@ eleventyNavigation:
   order: 10
 ---
 
-<!-- Hero Section -->
-<section class="hero is-medium is-primary" style="background-image: url('/assets/images/other/road-less-travelled.png'); background-size: cover; background-position: center;">
-      <div class="container has-text-centered p-6" style="background-color: rgba(51, 46, 99, 0.33);">
-      <h1 class="title has-text-white has-text-centered"> Exploring the Roads Between Healing and Creation</h1>
-      <p class="subtitle has-text-white has-text-centered">
-        I write about the spaces between service and self, technology and tenderness — where healing, creativity, and purpose meet..
-				</p>
-				<p class="has-text-white has-text-centered mb-2"><em>Veteran, writer, and maker sharing reflections on rebuilding identity and living with meaning.</em></p>
-      <div class="buttons is-centered">
-        <a class="button is-accent" href="/writings" target="_self">
-          Unleash the power of knowledge. Read now!
-        </a>
-      </div>
-    </div>
+{% set image = '/assets/images/other/road-less-travelled.png' %}
+{% set subtitle = "I write about the spaces between service and self, technology and tenderness — where healing, creativity, and purpose meet.." %}
+{% set hero_extra %}
+  <p class="has-text-white has-text-centered mb-2"><em>Veteran, writer, and maker sharing reflections on rebuilding identity and living with meaning.</em></p>
+  <div class="buttons is-centered">
+    <a class="button is-accent" href="/writings" target="_self">Unleash the power of knowledge. Read now!</a>
   </div>
-</section>
+{% endset %}
+{% set hero_hide_title = true %}
+{% include "partials/hero.njk" %}
 
 <!-- Introduction Section -->
 <section class="section">
@@ -71,31 +65,33 @@ eleventyNavigation:
   <h2 class="title is-3"><i class="fa-solid fa-clock"></i> Latest Writings</h2>
   <div class="columns is-multiline">
     {% for post in collections.latestPosts %}
-      <div class="column is-one-third">
-        <div class="card">
-          {% if post.data.image %}
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
-              </figure>
-            </div>
-          {% endif %}
-          <div class="card-content">
-            <h3 class="title is-5">
-              <a href="{{ post.url }}">{{ post.data.title }}</a>
-            </h3>
-            <p class="is-size-7 has-text-grey">
-              {{ post.date | readableDate }}
-            </p>
-            {% if post.data.description %}
-              <p>{{ post.data.description }}</p>
-            {% endif %}
-            <a class="button is-link mt-2" href="{{ post.url }}">Read More</a>
-          </div>
-        </div>
-      </div>
+			<div class="column is-one-third">
+                <!-- WebAwesome wa-card (SSR-friendly) -->
+                <wa-card with-header with-media with-footer appearance="outlined" class="wa-post-card">
+                  {% if post.data.image %}
+                    <img slot="media" src="{{ post.data.image }}" alt="{{ post.data.title }}">
+                  {% endif %}
+
+                  <div slot="header">
+                    <h3 class="wa-heading-s"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                    <div class="wa-subtle">{{ post.date | readableDate }}</div>
+                  </div>
+
+                  {# main/default slot: body content #}
+                  <div>
+                    {% if post.data.description %}
+                      <p>{{ post.data.description }}</p>
+                    {% endif %}
+                  </div>
+
+                  <div slot="footer">
+                    <a class="wa-button" href="{{ post.url }}">Read More</a>
+                  </div>
+                </wa-card>
+
+                <!-- WebAwesome enhancement removed: using server-rendered Bulma card for now -->
+			</div>
     {% endfor %}
   </div>
 </section>
-
   {% include "partials/newsletter-cta.njk" %}
