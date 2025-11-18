@@ -27,13 +27,12 @@ eleventyNavigation:
   {% set articles = collections.writingsByCategory[category] %}
     <section class="section">
       <h2 class="title is-4">{{ category | capitalize }}</h2>
-      <div class="columns is-multiline">
+      <wa-grid class="books-grid" data-category="{{ category | lower | replace(' ', '-') }}">
         {% for article in articles %}
           {% set formattedPublishDate = article.data.publishedDate | formatDate %}
           {% if (not article.data.publishedDate) or (formattedPublishDate <= currentDate) %}
-          <div class="column is-one-quarter">
-            <!-- WebAwesome SSR-friendly card -->
-            <wa-card class="wa-post-card" with-header with-media with-footer appearance="outlined">
+            {% set is_lived = (category | lower | replace(' ', '-')) == 'lived-experience' %}
+            <wa-card class="book-card wa-post-card{% if is_lived %} paginated-item{% endif %}" data-index="{{ loop.index0 }}" appearance="outlined" with-header with-media with-footer>
               {% if article.data.image %}
                 <img slot="media" src="{{ article.data.image }}" alt="{{ article.data.title }}" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
               {% endif %}
@@ -58,10 +57,12 @@ eleventyNavigation:
                 <a class="button is-link mt-2" href="{{ article.url }}">Read More</a>
               </div>
             </wa-card>
-          </div>
           {% endif %}
         {% endfor %}
-      </div>
+        </wa-grid>
+        {% if (category | lower) == 'lived-experience' %}
+          <div class="pagination-controls" aria-label="Lived experience pagination" data-category="lived-experience"></div>
+        {% endif %}
     </section>
   {% endfor %}
 </div>
@@ -123,21 +124,80 @@ eleventyNavigation:
   }
 </style>
 
+<script>
+// Client-side pagination for Lived Experience category
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    const categoryKey = 'lived-experience';
+    const perPage = 6;
+    const grid = document.querySelector(`.books-grid[data-category="${categoryKey}"]`);
+    if (!grid) return;
+    const items = Array.from(grid.querySelectorAll('.paginated-item'));
+    if (items.length <= perPage) return; // no pagination needed
+
+    const totalPages = Math.ceil(items.length / perPage);
+    const controls = document.querySelector(`.pagination-controls[data-category="${categoryKey}"]`);
+
+    function showPage(page) {
+      const start = (page - 1) * perPage;
+      const end = start + perPage;
+      items.forEach((item, i) => {
+        if (i >= start && i < end) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+      // update controls active state
+      if (controls) {
+        const buttons = controls.querySelectorAll('button[data-page]');
+        buttons.forEach(btn => btn.classList.toggle('is-active', Number(btn.dataset.page) === page));
+      }
+    }
+
+    // Build controls
+    if (controls) {
+      for (let p = 1; p <= totalPages; p++) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'pagination-button';
+        btn.dataset.page = p;
+        btn.setAttribute('aria-label', `Go to page ${p}`);
+        btn.textContent = p;
+        btn.addEventListener('click', () => showPage(p));
+        controls.appendChild(btn);
+      }
+    }
+
+    // Initially show first page
+    showPage(1);
+  } catch (e) {
+    console.error('Pagination error:', e);
+  }
+});
+</script>
+
 <style>
-/* Ensure wa-card acts like a full-height column card in writings grid */
-.columns.is-multiline .column {
-  display: flex;
+  .pagination-controls { display:flex; gap:0.5rem; margin-top:1rem; justify-content:center; }
+  .pagination-button { background:#fff; border:1px solid #ddd; padding:0.4rem 0.6rem; border-radius:4px; cursor:pointer; }
+  .pagination-button.is-active { background:var(--primary,#332E63); color:#fff; border-color:transparent; }
+</style>
+
+<style>
+/* Ensure wa-card acts like a full-height grid card in writings grids */
+.books-grid {
+  align-items: stretch;
 }
-.columns.is-multiline .column > wa-card.wa-post-card {
+.books-grid > wa-card.book-card {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   height: 100%;
 }
-wa-card.wa-post-card::part(body) {
+wa-card.book-card::part(body) {
   flex: 1 1 auto;
 }
-wa-card.wa-post-card::part(footer) {
+wa-card.book-card::part(footer) {
   margin-top: auto;
 }
 </style>

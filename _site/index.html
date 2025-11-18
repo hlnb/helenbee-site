@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
 		<link rel="stylesheet" href="/assets/css/writing-single.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
 
     <!-- Basic favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
@@ -104,11 +105,12 @@
 
 
 
+ 
 
 <div class="wa-hero" style="color: var(--wa-color-surface-foreground); position: relative; overflow: hidden; background-image: url('/assets/images/other/road-less-travelled.png'); background-size: cover; background-position: center;">
 
   
-  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none; background: radial-gradient(circle at center, rgba(255,255,255,0.30), rgba(255,255,255,0.12)); mix-blend-mode: screen;"></div>
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none; background: radial-gradient(circle at center, rgba(51,46,99,0.65), rgba(51,46,99,0.45)); mix-blend-mode: multiply;"></div>
 
   <div style="position:relative; z-index:1; text-align:left; max-width:var(--container-width, 70ch); margin:0 auto; color: #ffffff;">
     
@@ -186,92 +188,91 @@
 
 <section class="section latest-posts">
   <h2 class="title is-3"><i class="fa-solid fa-clock"></i> Latest Writings</h2>
-  <div class="columns is-multiline">
+  <wa-grid class="books-grid">
     
-			<div class="column is-one-third">
-                <!-- WebAwesome wa-card (SSR-friendly) -->
-                <wa-card with-header with-media with-footer appearance="outlined" class="wa-post-card">
-                  
-                    <img slot="media" src="/assets/images/other/stocism-freemasonry.jpg" alt="Walking the Line: How Freemasonry and Stoicism Shaped My Moral Compass">
-                  
+      <wa-card class="book-card wa-post-card" appearance="outlined" with-header with-media with-footer>
+        
+          <img slot="media" src="/assets/images/other/stocism-freemasonry.jpg" alt="Walking the Line: How Freemasonry and Stoicism Shaped My Moral Compass">
+        
 
-                  <div slot="header">
-                    <h3 class="wa-heading-s"><a href="/writings/2025/10/2025-10-07-stocism-freemansonry/">Walking the Line: How Freemasonry and Stoicism Shaped My Moral Compass</a></h3>
-                    <div class="wa-subtle">07 October 2025</div>
-                  </div>
+        <div slot="header">
+          <h3 class="book-title"><a href="/writings/2025/10/2025-10-07-stocism-freemansonry/">Walking the Line: How Freemasonry and Stoicism Shaped My Moral Compass</a></h3>
+          <div class="book-author">07 October 2025</div>
+        </div>
 
-                  
-                  <div>
-                    
-                      <p>A personal reflection on how the principles of Freemasonry and Stoic philosophy have shaped my character, resilience, and approach to life&#39;s challenges.</p>
-                    
-                  </div>
+        <div>
+          
+            <p>A personal reflection on how the principles of Freemasonry and Stoic philosophy have shaped my character, resilience, and approach to life&#39;s challenges.</p>
+          
+        </div>
 
-                  <div slot="footer">
-                    <a class="wa-button" href="/writings/2025/10/2025-10-07-stocism-freemansonry/">Read More</a>
-                  </div>
-                </wa-card>
-
-                <!-- WebAwesome enhancement removed: using server-rendered Bulma card for now -->
-			</div>
+        <div slot="footer">
+          <a class="wa-button" href="/writings/2025/10/2025-10-07-stocism-freemansonry/">Read More</a>
+        </div>
+      </wa-card>
     
-			<div class="column is-one-third">
-                <!-- WebAwesome wa-card (SSR-friendly) -->
-                <wa-card with-header with-media with-footer appearance="outlined" class="wa-post-card">
-                  
-                    <img slot="media" src="/assets/images/other/let-go-guilt-2.png" alt="Catching My Breath: Learning to Let Go of Guilt">
-                  
+      <wa-card class="book-card wa-post-card" appearance="outlined" with-header with-media with-footer>
+        
+          <img slot="media" src="/assets/images/other/let-go-guilt-2.png" alt="Catching My Breath: Learning to Let Go of Guilt">
+        
 
-                  <div slot="header">
-                    <h3 class="wa-heading-s"><a href="/writings/2025/09/07092025-letting-go-guilt/">Catching My Breath: Learning to Let Go of Guilt</a></h3>
-                    <div class="wa-subtle">07 September 2025</div>
-                  </div>
+        <div slot="header">
+          <h3 class="book-title"><a href="/writings/2025/09/07092025-letting-go-guilt/">Catching My Breath: Learning to Let Go of Guilt</a></h3>
+          <div class="book-author">07 September 2025</div>
+        </div>
 
-                  
-                  <div>
-                    
-                      <p>A reflection on recovery, self-compassion, and practical tools for letting go of guilt after a setback.</p>
-                    
-                  </div>
+        <div>
+          
+            <p>A reflection on recovery, self-compassion, and practical tools for letting go of guilt after a setback.</p>
+          
+        </div>
 
-                  <div slot="footer">
-                    <a class="wa-button" href="/writings/2025/09/07092025-letting-go-guilt/">Read More</a>
-                  </div>
-                </wa-card>
-
-                <!-- WebAwesome enhancement removed: using server-rendered Bulma card for now -->
-			</div>
+        <div slot="footer">
+          <a class="wa-button" href="/writings/2025/09/07092025-letting-go-guilt/">Read More</a>
+        </div>
+      </wa-card>
     
-			<div class="column is-one-third">
-                <!-- WebAwesome wa-card (SSR-friendly) -->
-                <wa-card with-header with-media with-footer appearance="outlined" class="wa-post-card">
-                  
-                    <img slot="media" src="/assets/images/other/aaron-burden-peaceful-unsplash.jpg" alt="What I Wish I’d Started Sooner: Learning to Be on My Own Side">
-                  
+      <wa-card class="book-card wa-post-card" appearance="outlined" with-header with-media with-footer>
+        
+          <img slot="media" src="/assets/images/other/aaron-burden-peaceful-unsplash.jpg" alt="What I Wish I’d Started Sooner: Learning to Be on My Own Side">
+        
 
-                  <div slot="header">
-                    <h3 class="wa-heading-s"><a href="/writings/2025/07/28072025-whatwishIknew/">What I Wish I’d Started Sooner: Learning to Be on My Own Side</a></h3>
-                    <div class="wa-subtle">28 July 2025</div>
-                  </div>
+        <div slot="header">
+          <h3 class="book-title"><a href="/writings/2025/07/28072025-whatwishIknew/">What I Wish I’d Started Sooner: Learning to Be on My Own Side</a></h3>
+          <div class="book-author">28 July 2025</div>
+        </div>
 
-                  
-                  <div>
-                    
-                      <p>Reflections on self-compassion, boundaries, and the practices I wish I&#39;d started sooner.</p>
-                    
-                  </div>
+        <div>
+          
+            <p>Reflections on self-compassion, boundaries, and the practices I wish I&#39;d started sooner.</p>
+          
+        </div>
 
-                  <div slot="footer">
-                    <a class="wa-button" href="/writings/2025/07/28072025-whatwishIknew/">Read More</a>
-                  </div>
-                </wa-card>
-
-                <!-- WebAwesome enhancement removed: using server-rendered Bulma card for now -->
-			</div>
+        <div slot="footer">
+          <a class="wa-button" href="/writings/2025/07/28072025-whatwishIknew/">Read More</a>
+        </div>
+      </wa-card>
     
-  </div>
+  </wa-grid>
 </section>
   <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1749122");</style>
+
+<!-- Narrow/center the newsletter embed on wide screens, full width on small screens -->
+<style type="text/css">
+  .site-newsletter-cta { display: flex; justify-content: center; }
+  .site-newsletter-cta .ml-form-embedContainer {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+		background-color: #913073;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		border-width: 0px;
+  }
+  @media (max-width: 800px) {
+    .site-newsletter-cta .ml-form-embedContainer { width: 100% !important; max-width: 100% !important; }
+  }
+</style>
     <style type="text/css">
     /* LOADER */
     .ml-form-embedSubmitLoad {
@@ -1029,7 +1030,8 @@
       }
     </style>
 
-    <div id="mlb2-27031384" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-27031384">
+  <div class="site-newsletter-cta">
+  <div id="mlb2-27031384" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-27031384">
       <div class="ml-form-align-center ">
         <div class="ml-form-embedWrapper embedForm">
 
@@ -1166,7 +1168,7 @@
         </div>
       </div>
     </div>
-
+    </div>
 
   <script>
     function ml_webform_success_27031384() {

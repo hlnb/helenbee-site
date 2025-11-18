@@ -16,6 +16,7 @@ eleventyNavigation:
   </div>
 {% endset %}
 {% set hero_hide_title = true %}
+ {% set hero_overlay = 'dark' %}
 {% include "partials/hero.njk" %}
 
 <!-- Introduction Section -->
@@ -63,35 +64,29 @@ eleventyNavigation:
 
 <section class="section latest-posts">
   <h2 class="title is-3"><i class="fa-solid fa-clock"></i> Latest Writings</h2>
-  <div class="columns is-multiline">
+  <wa-grid class="books-grid">
     {% for post in collections.latestPosts %}
-			<div class="column is-one-third">
-                <!-- WebAwesome wa-card (SSR-friendly) -->
-                <wa-card with-header with-media with-footer appearance="outlined" class="wa-post-card">
-                  {% if post.data.image %}
-                    <img slot="media" src="{{ post.data.image }}" alt="{{ post.data.title }}">
-                  {% endif %}
+      <wa-card class="book-card wa-post-card" appearance="outlined" with-header with-media with-footer>
+        {% if post.data.image %}
+          <img slot="media" src="{{ post.data.image }}" alt="{{ post.data.title }}">
+        {% endif %}
 
-                  <div slot="header">
-                    <h3 class="wa-heading-s"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-                    <div class="wa-subtle">{{ post.date | readableDate }}</div>
-                  </div>
+        <div slot="header">
+          <h3 class="book-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+          <div class="book-author">{{ post.date | readableDate }}</div>
+        </div>
 
-                  {# main/default slot: body content #}
-                  <div>
-                    {% if post.data.description %}
-                      <p>{{ post.data.description }}</p>
-                    {% endif %}
-                  </div>
+        <div>
+          {% if post.data.description %}
+            <p>{{ post.data.description }}</p>
+          {% endif %}
+        </div>
 
-                  <div slot="footer">
-                    <a class="wa-button" href="{{ post.url }}">Read More</a>
-                  </div>
-                </wa-card>
-
-                <!-- WebAwesome enhancement removed: using server-rendered Bulma card for now -->
-			</div>
+        <div slot="footer">
+          <a class="wa-button" href="{{ post.url }}">Read More</a>
+        </div>
+      </wa-card>
     {% endfor %}
-  </div>
+  </wa-grid>
 </section>
   {% include "partials/newsletter-cta.njk" %}

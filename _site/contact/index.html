@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
 		<link rel="stylesheet" href="/assets/css/writing-single.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
 
     <!-- Basic favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
@@ -258,6 +259,23 @@
 </div>
 
   <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1749122");</style>
+
+<!-- Narrow/center the newsletter embed on wide screens, full width on small screens -->
+<style type="text/css">
+  .site-newsletter-cta { display: flex; justify-content: center; }
+  .site-newsletter-cta .ml-form-embedContainer {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+		background-color: #913073;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		border-width: 0px;
+  }
+  @media (max-width: 800px) {
+    .site-newsletter-cta .ml-form-embedContainer { width: 100% !important; max-width: 100% !important; }
+  }
+</style>
     <style type="text/css">
     /* LOADER */
     .ml-form-embedSubmitLoad {
@@ -1015,7 +1033,8 @@
       }
     </style>
 
-    <div id="mlb2-27031384" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-27031384">
+  <div class="site-newsletter-cta">
+  <div id="mlb2-27031384" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-27031384">
       <div class="ml-form-align-center ">
         <div class="ml-form-embedWrapper embedForm">
 
@@ -1152,7 +1171,7 @@
         </div>
       </div>
     </div>
-
+    </div>
 
   <script>
     function ml_webform_success_27031384() {
