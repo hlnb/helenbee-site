@@ -5,6 +5,10 @@ paths:
 
 timezone: Australia/Perth
 
+# Media uploads configuration
+media:
+  upload_path: assets/images/uploads
+
 # Headless mode - content editing only, no visual editor
 source_editor:
   tab_size: 2
@@ -21,7 +25,7 @@ collections_config:
   writings:
     path: src/writings
     name: Writings
-    icon: edit
+    icon: menu_book
     description: Blog posts and articles
     singular_name: Writing
     singular_key: writing
@@ -35,7 +39,12 @@ collections_config:
     schemas:
       default:
         path: .cloudcannon/schemas/writing.md
-        name: Writing Post
+        name: New Writing
+    # Auto-generate folder structure and filename
+    create:
+      extra_data:
+        filename: '{date|year}-{date|month}-{date|day}-{title}'
+      path: '[relative_base_path]/{date|year}/{date|month}/{filename|slugify}.md'
 
 # Input configurations for front matter fields
 _inputs:
