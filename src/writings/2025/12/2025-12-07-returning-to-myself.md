@@ -1,4 +1,0 @@
----
-permalink: /writings/2025/12/2025-12-07-test-post.njk
----
-
