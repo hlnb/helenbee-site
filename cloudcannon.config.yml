@@ -1,24 +1,113 @@
-# CloudCannon Configuration for Eleventy Site
+# CloudCannon Configuration for Eleventy Site (Headless Mode)
 paths:
   static: ''
   uploads: assets/images/uploads
 
 timezone: Australia/Perth
 
+# Headless mode - content editing only, no visual editor
+source_editor:
+  tab_size: 2
+  theme: monokai
+  show_gutter: true
+
 markdown:
   engine: commonmark
   options:
     html: true
+
+# Collection Configuration for Headless CMS
 collections_config:
-  pages:
-    path: ''
-    icon: wysiwyg
-  docs:
-    path: docs
-    icon: docs
-  src:
-    path: src
-    icon: abc
-  src_writings:
+  writings:
     path: src/writings
-    icon: hr_resting
+    name: Writings
+    icon: edit
+    description: Blog posts and articles
+    singular_name: Writing
+    singular_key: writing
+    output: true
+    # Disable visual editor for headless mode
+    disable_add_folder: true
+    disable_file_actions: false
+    _enabled_editors:
+      - content
+    # Schema for new writings
+    schemas:
+      default:
+        path: .cloudcannon/schemas/writing.md
+        name: Writing Post
+
+# Input configurations for front matter fields
+_inputs:
+  title:
+    type: text
+    label: Title
+    comment: The title of your writing
+  date:
+    type: datetime
+    label: Publish Date
+    comment: When this writing was published
+  excerpt:
+    type: textarea
+    label: Excerpt
+    comment: A short summary of this writing
+  description:
+    type: textarea
+    label: Description
+    comment: SEO description (similar to excerpt)
+  tags:
+    type: multiselect
+    label: Tags
+    comment: Select or add tags for categorization
+    options:
+      allow_create: true
+      values:
+        - lived-experience
+        - veterans
+        - mental-health
+        - ptsd
+        - technology
+        - web development
+        - 11ty
+        - personal journey
+        - healing
+        - creativity
+        - digital art
+        - AI
+        - knitting
+        - meditation
+        - stoicism
+        - freemasonry
+  category:
+    type: select
+    label: Category
+    comment: Primary category for this writing
+    options:
+      values:
+        - lived-experience
+        - technology
+        - reflection
+        - creative
+  image:
+    type: image
+    label: Featured Image
+    comment: Main image for this writing
+  layout:
+    type: text
+    label: Layout
+    comment: Template layout
+    default: layouts/writing.njk
+    hidden: true
+  publishedDate:
+    type: datetime
+    label: Published Date
+    comment: Original publication date
+    hidden: false
+  theme:
+    type: text
+    label: Theme
+    comment: Thematic category
+  keywords:
+    type: array
+    label: Keywords
+    comment: SEO keywords
