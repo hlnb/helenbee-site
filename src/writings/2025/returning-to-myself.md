@@ -7,7 +7,7 @@ description: >-
  A reflective December essay on healing, identity, and quiet daily rituals that
  help rebuild inner steadiness. An honest look at lived experience and gentle
  growth.
-date:
+date: 2025-12-07T09:00:00+08:00
 tags:
  - lived-experience
  - mental-health
