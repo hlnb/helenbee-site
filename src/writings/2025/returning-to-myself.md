@@ -20,18 +20,6 @@ image_alt: >-
  way to make space for it this month.
 draft: true
 ---
-# Returning to Myself
-
-Here’s a refined version of your December post — keeping everything true to your voice while weaving in the specificity, texture, and lived-experience depth the feedback asked for.
-
-I’ve integrated the new material you drafted, tightened the flow, sharpened the imagery, and shaped it so the entire piece reads as one coherent, grounded reflection.
-
-&nbsp;
-
-Nothing poetic-for-poetry’s-sake — just honest, textured, distinctly-you writing that carries emotional weight without drifting into cliché.
-
-&nbsp;
-
 # **Returning to Myself**
 
 December always feels like a threshold — part closing chapter, part quiet reckoning. Not the shiny “new year, new me” kind. More the gentle sorting of what stayed true, what slipped away, and what I’m finally ready to release.
