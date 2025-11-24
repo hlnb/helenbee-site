@@ -11,7 +11,7 @@ date: 2025-12-07T09:00:00+08:00
 publishedDate: 2025-12-07T09:00:00+08:00
 theme: lived-experience
 keywords: []
-type: article
+type: reflection
 tags:
   - lived-experience
   - mental-health
@@ -33,7 +33,6 @@ siteUrl: https://helenburgess.id.au
 newsletter: true
 draft: true
 ---
-
 December always feels like a threshold — part closing chapter, part quiet reckoning. Not the shiny "new year, new me" kind. More the gentle sorting of what stayed true, what slipped away, and what I'm finally ready to release.
 
 This year, healing has been less about breakthroughs and more about returning to my own rhythm. I'm realising that identity isn't something I rebuild once; it's something I keep meeting, layer by layer, as the noise settles.
