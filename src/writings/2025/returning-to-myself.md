@@ -56,3 +56,7 @@ December is a chance to acknowledge the quiet courage it takes to keep healing â
 Maybe this month can be an invitation to come home to ourselves:
 
 to breathe, to reflect, and to recognise how far weâ€™ve already come.
+
+**Journal Prompt:**
+
+What is one small daily practice that helps you return to yourself? Name it, describe how it feels in your body, and choose one gentle way to make space for it this month.
