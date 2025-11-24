@@ -2,6 +2,7 @@
 layout: layouts/writing.njk
 title: Building a Modern Personal Site with 11ty
 description: A deep dive into creating a responsive, modular website using Eleventy, CSS Grid, and modern web practices.
+excerpt: After years of teaching web development and building sites for others, I decided it was time to rebuild my personal site as a digital garden that serves as both a portfolio and a platform for sharing my journey.
 date: 2024-01-20
 publishedDate: "2024-01-20"
 theme: "Technology and Personal Growth"

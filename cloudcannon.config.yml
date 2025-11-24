@@ -1,8 +1,110 @@
+# CloudCannon Configuration for Eleventy Site
 paths:
   static: ''
   uploads: assets/images/uploads
+
 timezone: Australia/Perth
+
 markdown:
   engine: commonmark
   options:
     html: true
+
+# Collection Configuration
+collections_config:
+  writings:
+    path: src/writings
+    name: Writings
+    icon: edit
+    description: Blog posts and articles
+    singular_name: Writing
+    singular_key: writing
+    output: true
+    url: /writings/[slug]/
+    _enabled_editors:
+      - content
+      - visual
+    add_options:
+      - name: Add New Writing
+        icon: post_add
+        schema: default
+    schemas:
+      default:
+        path: .cloudcannon/schemas/writing.md
+        name: Writing Post
+        new_preview_url: /
+
+# Input configurations for front matter fields
+_inputs:
+  title:
+    type: text
+    label: Title
+    comment: The title of your writing
+  date:
+    type: datetime
+    label: Publish Date
+    comment: When this writing was published
+  excerpt:
+    type: textarea
+    label: Excerpt
+    comment: A short summary of this writing (optional)
+  tags:
+    type: multiselect
+    label: Tags
+    comment: Select or add tags for categorization
+    options:
+      allow_create: true
+      values:
+        - lived-experience
+        - veterans
+        - mental-health
+        - ptsd
+        - technology
+        - web development
+        - 11ty
+        - personal journey
+        - healing
+        - creativity
+        - digital art
+        - AI
+        - knitting
+        - meditation
+        - stoicism
+        - freemasonry
+        - christmas
+        - card
+  category:
+    type: select
+    label: Category
+    comment: Primary category for this writing
+    options:
+      values:
+        - lived-experience
+        - technology
+        - reflection
+        - creative
+  image:
+    type: image
+    label: Featured Image
+    comment: Main image for this writing
+  description:
+    type: textarea
+    label: Description
+    comment: SEO description for this writing
+  layout:
+    type: text
+    label: Layout
+    comment: Template layout (usually layouts/writing.njk)
+    default: layouts/writing.njk
+    hidden: true
+
+# Define which files CloudCannon should show in collections
+collection_groups:
+  - heading: Content
+    collections:
+      - writings
+
+# Source editor configuration
+source_editor:
+  tab_size: 2
+  theme: monokai
