@@ -1,0 +1,56 @@
+backend:
+  name: github
+  repo: hlnb/helenbee-site
+  branch: main
+  base_url: "https://helenburgess.id.au"
+  auth_endpoint: "api/auth"
+
+site_url: "https://helenburgess.id.au"
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "writings"
+    label: "Writings"
+    label_singular: "Writing"
+    create: true
+
+    # Root folder that contains the year folders: 2018, 2019, 2024, 2025, etc.
+    folder: "src/writings"
+
+    # Year / month nested directories
+    nested:
+      depth: 2
+      summary: "{{title}} — {{year}}/{{month}}"
+
+    # New files go to: src/writings/YYYY/MM/YYYY-MM-DD-slug.md
+    path: "{{year}}/{{month}}/{{year}}-{{month}}-{{day}}-{{slug}}"
+
+    extension: "md"
+    format: "frontmatter"
+
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        required: false
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: ["writings"]
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
