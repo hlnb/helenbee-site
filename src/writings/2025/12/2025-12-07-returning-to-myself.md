@@ -8,6 +8,10 @@ description: >-
   help rebuild inner steadiness. An honest look at lived experience and gentle
   growth.
 date: 2025-12-07T09:00:00+08:00
+publishedDate: 2025-12-07T09:00:00+08:00
+theme: lived-experience
+keywords: []
+type: article
 tags:
   - lived-experience
   - mental-health
@@ -19,9 +23,16 @@ image_alt: >-
   Journal Prompt: What is one small daily practice that helps you return to
   yourself? Name it, describe how it feels in your body, and choose one gentle
   way to make space for it this month.
+author:
+  name: Helen Burgess
+socials:
+  bluesky: https://bsky.app/profile/@hlnbee.bsky.social
+  mastodon: https://mastodon.social/@helenbee
+  facebook: https://www.facebook.com/
+siteUrl: https://helenburgess.id.au
+newsletter: true
 draft: true
 ---
-
 <div class="content">
   <p class="is-size-5 has-text-weight-medium">December always feels like a threshold — part closing chapter, part quiet reckoning. Not the shiny "new year, new me" kind. More the gentle sorting of what stayed true, what slipped away, and what I'm finally ready to release.</p>
 
