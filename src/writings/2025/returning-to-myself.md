@@ -1,7 +1,7 @@
 ---
 _schema: default
 layout: layouts/writing.njk
-title: Returning to Myself
+title: 2025-12-07Returning to Myself
 subtitle:
 description: >-
  A reflective December essay on healing, identity, and quiet daily rituals that
