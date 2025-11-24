@@ -35,8 +35,6 @@ module.exports = function (eleventyConfig)
 	// If you're using other static assets, make sure they're included too
 	eleventyConfig.addPassthroughCopy("src/assets");
 
-	// Add passthrough copy for Decap CMS admin
-	eleventyConfig.addPassthroughCopy("admin");
 
 	//add writings collection
 	eleventyConfig.addCollection("allPosts", function (collectionApi) {
@@ -55,11 +53,6 @@ module.exports = function (eleventyConfig)
 			.sort((a, b) => b.date - a.date);
 	});
 
-	// Add a dedicated writings collection for Decap CMS compatibility
-	eleventyConfig.addCollection("writings", function (collectionApi) {
-		return collectionApi.getFilteredByGlob("src/writings/**/*.md")
-			.sort((a, b) => b.date - a.date);
-	});
 
 
 
