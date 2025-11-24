@@ -1,40 +1,33 @@
 // OAuth callback handler for Decap CMS
 module.exports = async (req, res) => {
   const { code, state } = req.query;
-
   if (!code) {
     return res.status(400).send('Missing authorization code');
   }
-
-  // Build the callback HTML that will communicate with the CMS
-  const html = `
-<!DOCTYPE html>
+  const html = `<!DOCTYPE html>
 <html>
 <head>
   <title>Authorizing...</title>
+  <meta charset="utf-8" />
   <script>
     (function() {
-      function receiveMessage(e) {
-        console.log("Received message:", e);
-        window.opener.postMessage(
-          'authorization:github:success:${JSON.stringify({ code, state })}',
-          e.origin
-        );
-        window.removeEventListener("message", receiveMessage, false);
+      try {
+        // Immediately post success message expected by Decap CMS
+        var payload = 'authorization:github:success:' + JSON.stringify({ code: '${code}', state: '${state}' });
+        // Use * to avoid origin mismatch between www/non-www
+        window.opener && window.opener.postMessage(payload, '*');
+      } catch (e) {
+        console.error('Callback postMessage failed', e);
       }
-      window.addEventListener("message", receiveMessage, false);
-
-      console.log("Sending message to opener");
-      window.opener.postMessage("authorizing:github", "*");
+      // Optional: close popup after short delay
+      setTimeout(function(){ window.close(); }, 500);
     })();
   </script>
 </head>
 <body>
-  <p>Authorizing... You can close this window.</p>
+  <p>Authorizing… You can close this window.</p>
 </body>
-</html>
-  `;
-
+</html>`;
   res.setHeader('Content-Type', 'text/html');
   res.status(200).send(html);
 };
