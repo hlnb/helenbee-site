@@ -28,42 +28,43 @@ draft: true
 ---
 
 <div class="content">
-  <p class="is-size-5 has-text-weight-medium">Opening paragraph — anchor the piece in a single moment, feeling, or question. This should draw the reader in with a strong, evocative start.</p>
 
-  <p>Continue with your introduction, setting context and tone for what follows.</p>
+Opening paragraph — anchor the piece in a single moment, feeling, or question. This should draw the reader in with a strong, evocative start.
 
-  <p>Add more paragraphs as needed to develop your opening thoughts.</p>
+Continue with your introduction, setting context and tone for what follows.
 
-  <p><em>Use italics to emphasize key quotes or pivotal thoughts that deserve special attention.</em></p>
+Add more paragraphs as needed to develop your opening thoughts.
 
-  <h2 class="title is-3 mt-6">First Main Section</h2>
+_Use italics to emphasize key quotes or pivotal thoughts that deserve special attention._
 
-  <p>Explore the theme or insight behind your opening moment. This is where you dive deeper into what the story is about.</p>
+## First Main Section
 
-  <p>Continue developing your main points with additional paragraphs.</p>
+Explore the theme or insight behind your opening moment. This is where you dive deeper into what the story is about.
 
-  <h3 class="subtitle is-5 mt-6">Subsection (Optional)</h3>
+Continue developing your main points with additional paragraphs.
 
-  <p>Break down complex ideas into smaller subsections if needed. Each subsection can focus on a specific aspect.</p>
+### Subsection (Optional)
 
-  <h3 class="subtitle is-5 mt-6">Another Subsection (Optional)</h3>
+Break down complex ideas into smaller subsections if needed. Each subsection can focus on a specific aspect.
 
-  <p>Add more subsections as your content requires.</p>
+### Another Subsection (Optional)
 
-  <h2 class="title is-3 mt-6">What I Learned (or Am Learning)</h2>
+Add more subsections as your content requires.
 
-  <p>Pull out key reflections or mindset shifts. Share the insights you gained from this experience.</p>
+## What I Learned (or Am Learning)
 
-  <p>Continue with additional reflections and learning points.</p>
+Pull out key reflections or mindset shifts. Share the insights you gained from this experience.
 
-  <h2 class="title is-3 mt-6">A Gentle Takeaway</h2>
+Continue with additional reflections and learning points.
 
-  <p>Offer a final reflection or invitation for the reader.</p>
+## A Gentle Takeaway
 
-  <p>Wrap up your thoughts with a sense of closure or gentle invitation forward.</p>
+Offer a final reflection or invitation for the reader.
 
-  <div class="notification is-info is-light">
-    <p class="has-text-weight-bold">📝 Journal Prompt:</p>
-    <p>Offer a question or small practice for the reader to explore on their own.</p>
-  </div>
+Wrap up your thoughts with a sense of closure or gentle invitation forward.
+
+---
+
+**📝 Journal Prompt:** Offer a question or small practice for the reader to explore on their own.
+
 </div>
