@@ -18,12 +18,10 @@ collections:
     label_singular: "Writing"
     create: true
     folder: "src/writings"
-    # Glob pattern to find all markdown files in nested year/month folders
     extension: "md"
     format: "frontmatter"
-    # This will scan all nested folders and find all .md files
-    path: "{{year}}/{{month}}/{{slug}}"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    path: "{{year}}/{{month}}/{{slug}}"
 
     fields:
       - label: "Title"
