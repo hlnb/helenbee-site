@@ -17,20 +17,13 @@ collections:
     label: "Writings"
     label_singular: "Writing"
     create: true
-
-    # Root folder that contains the year folders: 2018, 2019, 2024, 2025, etc.
     folder: "src/writings"
-
-    # Year / month nested directories
-    nested:
-      depth: 2
-      summary: "{{title}} — {{year}}/{{month}}"
-
-    # New files go to: src/writings/YYYY/MM/YYYY-MM-DD-slug.md
-    path: "{{year}}/{{month}}/{{year}}-{{month}}-{{day}}-{{slug}}"
-
+    # Glob pattern to find all markdown files in nested year/month folders
     extension: "md"
     format: "frontmatter"
+    # This will scan all nested folders and find all .md files
+    path: "{{year}}/{{month}}/{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
 
     fields:
       - label: "Title"
