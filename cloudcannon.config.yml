@@ -100,7 +100,7 @@ _inputs:
   image:
     type: image
     label: Featured Image
-    comment: Main image for this writing
+    comment: Main image for this writing - displays as hero image at the top of the post
   layout:
     type: text
     label: Layout
@@ -120,3 +120,50 @@ _inputs:
     type: array
     label: Keywords
     comment: SEO keywords
+  subtitle:
+    type: text
+    label: Subtitle
+    comment: Optional subtitle for your writing
+  type:
+    type: select
+    label: Content Type
+    comment: Type of content
+    options:
+      values:
+        - article
+        - essay
+        - reflection
+        - story
+  image_alt:
+    type: text
+    label: Image Alt Text
+    comment: Descriptive alt text for the featured image (important for accessibility)
+  author:
+    type: object
+    label: Author Information
+    comment: Information about the post author
+  siteUrl:
+    type: url
+    label: Site URL
+    comment: The main site URL
+  bluesky_description:
+    type: textarea
+    label: Bluesky Description
+    comment: Custom description for sharing on Bluesky (keep it concise and engaging)
+  mastodon_description:
+    type: textarea
+    label: Mastodon Description
+    comment: Custom description for sharing on Mastodon
+  facebook_description:
+    type: textarea
+    label: Facebook Description
+    comment: Custom description for sharing on Facebook
+  newsletter:
+    type: switch
+    label: Include in Newsletter
+    comment: Toggle whether this post should be included in the newsletter
+  draft:
+    type: switch
+    label: Draft
+    comment: Set to true to keep this post unpublished
+
