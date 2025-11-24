@@ -31,7 +31,7 @@ collections_config:
     singular_key: writing
     output: true
     # Disable visual editor for headless mode
-    disable_add_folder: true
+    disable_add_folder: false
     disable_file_actions: false
     _enabled_editors:
       - content
