@@ -1,0 +1,8 @@
+paths:
+  static: ''
+  uploads: assets/images/uploads
+timezone: Australia/Perth
+markdown:
+  engine: commonmark
+  options:
+    html: true
