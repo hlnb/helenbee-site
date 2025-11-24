@@ -6,3 +6,16 @@ markdown:
   engine: commonmark
   options:
     html: true
+collections_config:
+  pages:
+    path: ''
+    icon: wysiwyg
+  docs:
+    path: docs
+    icon: docs
+  src:
+    path: src
+    icon: abc
+  src_writings:
+    path: src/writings
+    icon: hr_resting
