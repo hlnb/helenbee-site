@@ -19,10 +19,7 @@ tags:
   - personal journey
 category: lived-experience
 image: /assets/images/uploads/prophsee-journals-bx-n-0sz8gg-unsplash.jpg
-image_alt: >-
-  Journal Prompt: What is one small daily practice that helps you return to
-  yourself? Name it, describe how it feels in your body, and choose one gentle
-  way to make space for it this month.
+image_alt: desk with journal and cup ready for a new entry in it
 author:
   name: Helen Burgess
 socials:
