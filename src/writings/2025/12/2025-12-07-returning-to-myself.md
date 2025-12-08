@@ -31,7 +31,7 @@ socials:
   facebook: https://www.facebook.com/
 siteUrl: https://helenburgess.id.au
 newsletter: true
-draft: true
+draft: false
 ---
 December always feels like a threshold — part closing chapter, part quiet reckoning. Not the shiny "new year, new me" kind. More the gentle sorting of what stayed true, what slipped away, and what I'm finally ready to release.
 
