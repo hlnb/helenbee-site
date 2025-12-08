@@ -30,6 +30,46 @@ socials:
   mastodon: https://mastodon.social/@helenbee
   facebook: https://www.facebook.com/
 siteUrl: https://helenburgess.id.au
+bluesky_description: >-
+  December feels like a threshold.
+
+  Healing, for me, has looked like the small things: soft mornings, warm mugs,
+  five quiet minutes to breathe. Identity isn’t a reinvention — it’s a
+  returning.
+
+
+  A gentle prompt:
+
+  What’s one small practice that helps you come home to yourself?
+mastodon_description: >-
+  December feels like a threshold.
+
+  Healing, for me, has looked like the small things: soft mornings, warm mugs,
+  five quiet minutes to breathe. Identity isn’t a reinvention — it’s a
+  returning.
+
+
+  A gentle prompt:
+
+  What’s one small practice that helps you come home to yourself?
+facebook_description: >-
+  December is a natural pause point — a soft closing chapter.
+
+  This year, my healing hasn’t been dramatic. It’s been the small, grounding
+  things: spring rain, a warm mug between my hands, five minutes of sitting
+  still before the day begins.
+
+
+  I’m realising that identity isn’t something I reinvent at the start of each
+  year. It’s something I return to — layer by layer — as life settles and I
+  learn to trust my own rhythm again.
+
+
+  If you’re in this season of quiet rebuilding too, here’s a gentle prompt:
+
+  What is one small practice that helps you feel like yourself again?
+
+  I’d love to hear your reflections.
 newsletter: true
 draft: false
 ---
