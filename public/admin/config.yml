@@ -6,6 +6,8 @@ backend:
   name: github
   repo: hlnb/helenbee-site
   branch: main
+  base_url: https://sveltia-cms-auth.vercel.app
+  auth_endpoint: auth
 
 # Media uploads - new images go to uploads folder
 media_folder: assets/images/uploads
