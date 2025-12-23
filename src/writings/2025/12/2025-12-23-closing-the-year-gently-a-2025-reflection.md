@@ -16,6 +16,10 @@ tags:
 category: reflection
 image: /assets/images/uploads/prophsee-journals-bx-n-0sz8gg-unsplash.jpg
 image_alt: ''
+image_credit:
+  photographer: Aaron Burden
+  username: '@aaronburden'
+  photo_url: pen-on-white-lined-paper-selective-focus-photography-CKlHKtCJZKk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 author:
   name: Helen Burgess
 socials:
