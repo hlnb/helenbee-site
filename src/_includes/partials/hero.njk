@@ -51,5 +51,18 @@
         {% endfor %}
       {% endif %}
     </div>
+
+    {# Image attribution for Unsplash photos #}
+    {% if image and image_credit and (image_credit.photographer or image_credit.username) %}
+      <div class="image-credit" style="margin-top:1rem; font-size:0.8rem; color:rgba(255,255,255,0.75); text-shadow: 0 1px 3px rgba(0,0,0,0.45);">
+        Photo by
+        {% if image_credit.photo_url %}
+          <a href="{{ image_credit.photo_url }}?utm_source=helenburgess&utm_medium=referral" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.9); text-decoration:underline;">{{ image_credit.photographer or image_credit.username }}</a>
+        {% else %}
+          {{ image_credit.photographer or image_credit.username }}
+        {% endif %}
+        on <a href="https://unsplash.com?utm_source=helenburgess&utm_medium=referral" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.9); text-decoration:underline;">Unsplash</a>
+      </div>
+    {% endif %}
   </div>
 </div>

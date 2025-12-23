@@ -93,6 +93,15 @@ collections:
         widget: "string"
         required: false
         hint: "Descriptive alt text for accessibility"
+      - label: "Image Credit (Unsplash)"
+        name: "image_credit"
+        widget: "object"
+        required: false
+        hint: "Attribution for Unsplash images"
+        fields:
+          - { label: "Photographer Name", name: "photographer", widget: "string", required: false }
+          - { label: "Photographer Username", name: "username", widget: "string", required: false, hint: "Unsplash username" }
+          - { label: "Unsplash Photo URL", name: "photo_url", widget: "string", required: false, hint: "Link to the photo on Unsplash" }
       - label: "Author"
         name: "author"
         widget: "object"
