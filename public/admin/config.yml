@@ -7,9 +7,15 @@ backend:
   repo: hlnb/helenbee-site
   branch: main
 
-# Media uploads
+# Media uploads - new images go to uploads folder
 media_folder: assets/images/uploads
 public_folder: /assets/images/uploads
+
+# Additional media folders accessible in the CMS
+media_library:
+  name: uploadcare
+  config:
+    multiple: true
 
 # Site configuration
 site_url: https://helenburgess.id.au
