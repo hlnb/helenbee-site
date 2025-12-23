@@ -70,4 +70,4 @@ Wishing you softness, wherever you are.
 
 — Helen
 
-<img src="/assets/images/other/initials.svg" alt="Helen Burgess signature" style="width: 250px; height: 250px; display: block; margin: 1rem 0;">
+<img src="/assets/images/other/initials.svg" alt="Helen Burgess signature" style="width: 150px;  display: block; margin: 1rem 0;">
