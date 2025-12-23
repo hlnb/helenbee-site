@@ -69,3 +69,5 @@ You're allowed to receive kindness today, even if it's only from yourself.
 Wishing you softness, wherever you are.
 
 — Helen
+
+![Helen Burgess signature](/assets/images/other/initials.svg)
