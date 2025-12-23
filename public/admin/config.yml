@@ -6,11 +6,6 @@ backend:
   name: github
   repo: hlnb/helenbee-site
   branch: main
-  base_url: https://helenburgess.id.au
-  auth_endpoint: /api/auth
-
-# Local development
-local_backend: true
 
 # Media uploads
 media_folder: assets/images/uploads
@@ -19,7 +14,6 @@ public_folder: /assets/images/uploads
 # Site configuration
 site_url: https://helenburgess.id.au
 display_url: https://helenburgess.id.au
-logo_url: /assets/images/logo.png
 
 # Collections
 collections:

@@ -7,11 +7,13 @@ Your site now uses **Sveltia CMS** - a modern, free, open-source content managem
 ## Accessing the CMS
 
 ### Production
+
 - **URL:** https://helenburgess.id.au/admin/
 - **Login:** Use your GitHub account
 - **First time:** Authorize the app to access your repository
 
 ### Local Development
+
 - **URL:** http://localhost:8080/admin/
 - **Backend:** Local backend enabled for testing
 - **No auth needed:** Works directly with local files
@@ -19,15 +21,18 @@ Your site now uses **Sveltia CMS** - a modern, free, open-source content managem
 ## Creating a New Post
 
 1. **Access the CMS:**
+
    - Go to https://helenburgess.id.au/admin/
    - Click "Login with GitHub"
 
 2. **Create New Writing:**
+
    - Click "Writings" in the left sidebar
    - Click "New Writing" button
    - Fill in the form fields
 
 3. **Required Fields:**
+
    - **Title** - Post title
    - **Description** - SEO description/excerpt
    - **Publish Date** - When to publish
@@ -36,6 +41,7 @@ Your site now uses **Sveltia CMS** - a modern, free, open-source content managem
    - **Content** - Your markdown content
 
 4. **Optional Fields:**
+
    - Subtitle
    - Published Date (if different from publish date)
    - Theme
@@ -86,24 +92,27 @@ facebook_description: "Custom Facebook share text"
 newsletter: true
 draft: false
 ---
-
 Your content here...
 ```
 
 ## File Naming & Organization
 
 ### Automatic Structure
+
 Sveltia CMS automatically creates:
+
 ```
 src/writings/YYYY/MM/YYYY-MM-DD-slug.md
 ```
 
 Example:
+
 ```
 src/writings/2025/12/2025-12-23-my-new-post.md
 ```
 
 ### Folder Structure
+
 - **Year folders:** Automatically created (e.g., `2025/`)
 - **Month folders:** Automatically created (e.g., `12/`)
 - **Filename:** Generated from date and title slug
@@ -111,13 +120,16 @@ src/writings/2025/12/2025-12-23-my-new-post.md
 ## Content Writing Tips
 
 ### Markdown Basics
+
 ```markdown
 # Heading 1
+
 ## Heading 2
+
 ### Heading 3
 
 **Bold text**
-*Italic text*
+_Italic text_
 
 [Link text](https://example.com)
 
@@ -131,6 +143,7 @@ src/writings/2025/12/2025-12-23-my-new-post.md
 ```
 
 ### Content Wrapper
+
 Always wrap your content in a div for proper styling:
 
 ```markdown
@@ -152,12 +165,14 @@ Content continues...
 ## Image Management
 
 ### Uploading Images
+
 1. In the CMS, click the **Featured Image** field
 2. Click "Upload" or drag-and-drop
 3. Images save to: `assets/images/uploads/`
 4. Automatically gets correct path in front matter
 
 ### Image Guidelines
+
 - **Recommended size:** 1200x600px minimum
 - **Format:** JPG or WebP preferred
 - **Alt text:** Always provide for accessibility
@@ -166,6 +181,7 @@ Content continues...
 ## Workflow
 
 ### Standard Publishing Flow
+
 1. **Draft in CMS** → Write and save as draft
 2. **Preview locally** → Test with `npm start`
 3. **Publish** → Uncheck "Draft" and save
@@ -173,6 +189,7 @@ Content continues...
 5. **Vercel deploys** → Live in 2-3 minutes
 
 ### Editing Existing Posts
+
 1. Go to https://helenburgess.id.au/admin/
 2. Click "Writings" in sidebar
 3. Find and click the post to edit
@@ -182,27 +199,32 @@ Content continues...
 ## Troubleshooting
 
 ### "Login Failed"
+
 - Check GitHub authorization settings
 - Revoke and re-authorize the app
 - Clear browser cache
 
 ### "Cannot Save"
+
 - Check internet connection
 - Ensure you have write access to repository
 - Check GitHub status page
 
 ### "Images Not Loading"
+
 - Verify image uploaded to correct folder
 - Check path starts with `/assets/images/uploads/`
 - Ensure Eleventy passthrough copy is configured
 
 ### "Post Not Appearing"
+
 - Check `draft: false` in front matter
 - Verify date is not in future
 - Check tags include "writings"
 - Clear browser cache
 
 ### Local Backend Not Working
+
 1. Stop the development server
 2. Run: `npm start` again
 3. Access http://localhost:8080/admin/
@@ -211,16 +233,20 @@ Content continues...
 ## Configuration
 
 ### CMS Config Location
+
 `public/admin/config.yml`
 
 ### Key Settings
+
 - **Backend:** GitHub (hlnb/helenbee-site)
 - **Branch:** main
 - **Media folder:** assets/images/uploads
 - **Collections:** writings
 
 ### Customization
+
 To modify CMS configuration:
+
 1. Edit `public/admin/config.yml`
 2. Commit and push changes
 3. Reload CMS interface
@@ -228,6 +254,7 @@ To modify CMS configuration:
 ## Features
 
 ### What Sveltia Offers
+
 ✅ **Git-based** - All content in your repository
 ✅ **Free & open source** - No subscription fees
 ✅ **Real-time preview** - See changes as you type
@@ -238,6 +265,7 @@ To modify CMS configuration:
 ✅ **Mobile friendly** - Edit on any device
 
 ### What Changed from CloudCannon
+
 - Now uses GitHub directly (no CloudCannon proxy)
 - Simpler authentication (GitHub OAuth)
 - Same content structure (no migration needed)
@@ -247,13 +275,17 @@ To modify CMS configuration:
 ## Advanced Usage
 
 ### Custom Slugs
+
 Edit the slug pattern in `config.yml`:
+
 ```yaml
 slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
 ```
 
 ### Additional Collections
+
 Add more collections in `config.yml`:
+
 ```yaml
 collections:
   - name: pages
@@ -263,7 +295,9 @@ collections:
 ```
 
 ### Workflow Status
+
 Enable editorial workflow for drafts/review:
+
 ```yaml
 publish_mode: editorial_workflow
 ```
@@ -277,14 +311,14 @@ publish_mode: editorial_workflow
 
 ## Quick Reference
 
-| Action | Location | URL |
-|--------|----------|-----|
-| Edit content | CMS | https://helenburgess.id.au/admin/ |
-| View site | Browser | https://helenburgess.id.au |
-| Local dev | Terminal | `npm start` |
-| Local CMS | Browser | http://localhost:8080/admin/ |
-| Deploy logs | Vercel | Check dashboard |
-| Repo | GitHub | https://github.com/hlnb/helenbee-site |
+| Action       | Location | URL                                   |
+| ------------ | -------- | ------------------------------------- |
+| Edit content | CMS      | https://helenburgess.id.au/admin/     |
+| View site    | Browser  | https://helenburgess.id.au            |
+| Local dev    | Terminal | `npm start`                           |
+| Local CMS    | Browser  | http://localhost:8080/admin/          |
+| Deploy logs  | Vercel   | Check dashboard                       |
+| Repo         | GitHub   | https://github.com/hlnb/helenbee-site |
 
 ---
 
