@@ -14,7 +14,7 @@ tags:
   - creativity
   - personal journey
 category: reflection
-image: /assets/images/uploads/aaron-burden-unsplash.jpg
+image: /assets/images/other/aaron-burden-unsplash.jpg
 image_alt: ""
 image_credit:
   photographer: Aaron Burden
