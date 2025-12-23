@@ -12,12 +12,11 @@ type: article
 tags:
   - lived-experience
 category: reflection
-image:
-  - mel-poole-LUPXhXj2ip0-unsplash.jpg
-image_alt: ''
+image: /assets/images/other/mel-poole-LUPXhXj2ip0-unsplash.jpg
+image_alt: ""
 image_credit:
   photographer: Mel Poole
-  username: '@melpoole'
+  username: "@melpoole"
   photo_url: https://unsplash.com/photos/gift-boxes-with-red-baubles-on-top-LUPXhXj2ip0
 author:
   name: Helen Burgess
@@ -26,12 +25,13 @@ socials:
   mastodon: https://mastodon.social/@helenbee
   facebook: https://www.facebook.com/
 siteUrl: https://helenburgess.id.au
-bluesky_description: ''
-mastodon_description: ''
-facebook_description: ''
+bluesky_description: ""
+mastodon_description: ""
+facebook_description: ""
 newsletter: true
 draft: false
 ---
+
 I hope today finds you gently—whatever shape your day is taking.
 
 Christmas can hold so many things at once: warmth and weariness, connection and solitude, joy and grief. Sometimes all of them in the same afternoon.
