@@ -53,7 +53,7 @@ module.exports = function (eleventyConfig)
 			.sort((a, b) => b.date - a.date);
 	});
 
-	// Dedicated writings collection for CloudCannon
+	// Dedicated writings collection
 	eleventyConfig.addCollection("writings", function (collectionApi) {
 		return collectionApi
 			.getFilteredByGlob("src/writings/**/*.md")

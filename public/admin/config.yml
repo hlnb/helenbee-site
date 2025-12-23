@@ -1,0 +1,122 @@
+# Sveltia CMS Configuration
+# Based on your CloudCannon setup, converted for Sveltia CMS
+
+# Backend configuration - connects to GitHub
+backend:
+  name: github
+  repo: hlnb/helenbee-site
+  branch: main
+  base_url: https://helenburgess.id.au
+  auth_endpoint: /api/auth
+
+# Local development
+local_backend: true
+
+# Media uploads
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
+
+# Site configuration
+site_url: https://helenburgess.id.au
+display_url: https://helenburgess.id.au
+logo_url: /assets/images/logo.png
+
+# Collections
+collections:
+  - name: writings
+    label: Writings
+    label_singular: Writing
+    folder: src/writings
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    path: "{{year}}/{{month}}/{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "writings/{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/writing.njk" }
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "text", required: true, hint: "SEO description and excerpt" }
+      - { label: "Publish Date", name: "date", widget: "datetime", required: true }
+      - { label: "Published Date", name: "publishedDate", widget: "datetime", required: false, hint: "Original publication date if different" }
+      - { label: "Theme", name: "theme", widget: "string", required: false, hint: "Thematic category" }
+      - label: "Keywords"
+        name: "keywords"
+        widget: "list"
+        required: false
+        hint: "SEO keywords"
+      - label: "Content Type"
+        name: "type"
+        widget: "select"
+        required: false
+        default: "article"
+        options:
+          - { label: "Article", value: "article" }
+          - { label: "Essay", value: "essay" }
+          - { label: "Reflection", value: "reflection" }
+          - { label: "Story", value: "story" }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        required: true
+        options:
+          - lived-experience
+          - veterans
+          - mental-health
+          - ptsd
+          - technology
+          - web development
+          - 11ty
+          - personal journey
+          - healing
+          - creativity
+          - digital art
+          - AI
+          - knitting
+          - meditation
+          - stoicism
+          - freemasonry
+          - writings
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        required: false
+        options:
+          - { label: "Lived Experience", value: "lived-experience" }
+          - { label: "Technology", value: "technology" }
+          - { label: "Reflection", value: "reflection" }
+          - { label: "Creative", value: "creative" }
+      - label: "Featured Image"
+        name: "image"
+        widget: "image"
+        required: true
+        hint: "Main image - displays as hero image at the top of the post"
+        default: "/assets/images/placeholder_n9qtza.png"
+      - label: "Image Alt Text"
+        name: "image_alt"
+        widget: "string"
+        required: false
+        hint: "Descriptive alt text for accessibility"
+      - label: "Author"
+        name: "author"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Name", name: "name", widget: "string", default: "Helen Burgess" }
+      - label: "Social Links"
+        name: "socials"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Bluesky", name: "bluesky", widget: "string", default: "https://bsky.app/profile/@hlnbee.bsky.social" }
+          - { label: "Mastodon", name: "mastodon", widget: "string", default: "https://mastodon.social/@helenbee" }
+          - { label: "Facebook", name: "facebook", widget: "string", default: "https://www.facebook.com/" }
+      - { label: "Site URL", name: "siteUrl", widget: "string", default: "https://helenburgess.id.au", required: false }
+      - { label: "Bluesky Description", name: "bluesky_description", widget: "text", required: false, hint: "Custom description for Bluesky sharing" }
+      - { label: "Mastodon Description", name: "mastodon_description", widget: "text", required: false, hint: "Custom description for Mastodon sharing" }
+      - { label: "Facebook Description", name: "facebook_description", widget: "text", required: false, hint: "Custom description for Facebook sharing" }
+      - { label: "Include in Newsletter", name: "newsletter", widget: "boolean", default: true, required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true, required: false, hint: "Set to true to keep unpublished" }
+      - { label: "Content", name: "body", widget: "markdown", required: true }
