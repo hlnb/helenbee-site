@@ -1,7 +1,7 @@
 ---
 layout: layouts/writing.njk
-title: 'Closing the Year Gently: A 2025 Reflection'
-subtitle: ''
+title: "Closing the Year Gently: A 2025 Reflection"
+subtitle: ""
 description: A quiet 2025 reflection on healing, guilt, creativity, and uncertainty. No achievements list—just honest thoughts on working at a human pace and closing the year gently.
 date: 2025-12-30T10:26:00
 publishedDate: 2025-12-30T10:26:00
@@ -15,7 +15,7 @@ tags:
   - personal journey
 category: reflection
 image: /assets/images/uploads/prophsee-journals-bx-n-0sz8gg-unsplash.jpg
-image_alt: ''
+image_alt: ""
 author:
   name: Helen Burgess
 socials:
@@ -51,6 +51,7 @@ facebook_description: |-
 newsletter: true
 draft: false
 ---
+
 I'm not ending this year with a list of achievements, milestones, or bold declarations for what comes next.
 
 This final post is quieter than that.
