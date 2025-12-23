@@ -6,8 +6,8 @@ backend:
   name: github
   repo: hlnb/helenbee-site
   branch: main
-  base_url: https://sveltia-cms-auth.vercel.app
-  auth_endpoint: auth
+  # For production use, you need to set up GitHub OAuth
+  # Until then, use http://localhost:8080/admin/ for CMS access
 
 # Media uploads - new images go to uploads folder
 media_folder: assets/images/uploads
