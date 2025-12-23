@@ -16,6 +16,10 @@ tags:
 layout: layouts/writing.njk
 category: lived-experience
 image: /assets/images/other/davide-pietralunga-unsplash.jpg
+image_credit:
+  photographer: Davide Pietralunga
+  username: "@davide_pietralunga"
+  photo_url: https://unsplash.com/photos/gYH3_KnEpK4
 author:
   name: "Helen Burgess"
   twitter: "https://x.com/helenbee"

@@ -10,6 +10,10 @@ tags: [therapy, lived-experience, veterans, PTSD, healing]
 layout: layouts/writing.njk
 category: lived-experience
 image: /assets/images/other/marina-ermakova-NVB16ic4tec-unsplash.jpg
+image_credit:
+  photographer: Marina Ermakova
+  username: "@marrrrrr1n"
+  photo_url: https://unsplash.com/photos/NVB16ic4tec
 author:
   name: "Helen Bee"
 socials:

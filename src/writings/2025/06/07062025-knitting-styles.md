@@ -20,6 +20,10 @@ tags:
 layout: layouts/writing.njk
 category: Craft
 image: /assets/images/other/rebecca-grant-unsplash.jpg
+image_credit:
+  photographer: Rebecca Grant
+  username: "@oddityandgrace"
+  photo_url: https://unsplash.com/photos/OlTjeydUpQw
 author:
   name: "Helen Burgess"
 socials:

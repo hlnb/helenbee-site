@@ -10,6 +10,10 @@ tags: [knitting therapy, PTSD management, craft therapy]
 layout: layouts/writing.njk
 category: lived-experience
 image: /assets/images/other/ursula-castillo-aLfHUE8o5Xc-unsplash.jpg
+image_credit:
+  photographer: Ursula Castillo
+  username: "@ursulacastillo"
+  photo_url: https://unsplash.com/photos/aLfHUE8o5Xc
 author:
   name: "Helen Burgess"
 socials:
@@ -21,7 +25,8 @@ bluesky_description: "🧶 Discovering peace through knitting: How this craft be
 mastodon_description: "How knitting became my anchor in PTSD recovery. A deep dive into the science of therapeutic crafting, mindfulness through stitches, and finding community in yarn. 🧶 #TherapeuticKnitting #MentalHealth #PTSD"
 facebook_description: "Did you know knitting can be a powerful form of therapy? In this personal piece, I explore how the simple act of knitting helps manage PTSD symptoms, backed by research and filled with practical resources for getting started. 🧶"
 ---
-<div class="content"> 
+
+<div class="content">
 <p class="is-size-5 has-text-weight-medium">Knitting saved me in ways I didn't expect.</p>
 
 <p>In the stillness of yarn passing through my fingers, I found a kind of calm—one that meds and mindfulness apps alone couldn't offer.</p>
@@ -99,6 +104,7 @@ facebook_description: "Did you know knitting can be a powerful form of therapy? 
       <li>Many libraries host knitting groups</li>
       <li>Community centers often have craft therapy programs</li>
     </ul>
+
   </div>
 
   <div class="column is-half">

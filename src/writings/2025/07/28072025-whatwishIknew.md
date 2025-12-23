@@ -11,6 +11,10 @@ tags: [personal, growth, mindfulness, knitting, writing, trauma, healing]
 layout: layouts/writing.njk
 category: Reflection
 image: /assets/images/other/aaron-burden-peaceful-unsplash.jpg
+image_credit:
+  photographer: Aaron Burden
+  username: "@aaronburden"
+  photo_url: https://unsplash.com/photos/xG8IQMqMITM
 author:
   name: "Helen Burgess"
 socials:

@@ -4,12 +4,17 @@ date: "2025-04-21"
 description: "A veteran's journey from military service to finding peace in nature, exploring the science and personal experience of nature's healing power."
 publishedDate: "2025-04-21"
 theme: "Wellness"
-keywords: [nature, healing, veterans, lived-experience, outdoor activities, well-being]
+keywords:
+  [nature, healing, veterans, lived-experience, outdoor activities, well-being]
 type: "article"
 tags: [nature, healing, veterans, lived-experience, wellness]
 layout: layouts/writing.njk
 category: lived-experience
 image: /assets/images/other/elena-mozhvilo-7l6inLyD2NQ-unsplash.jpg
+image_credit:
+  photographer: Elena Mozhvilo
+  username: "@miracleday"
+  photo_url: https://unsplash.com/photos/7l6inLyD2NQ
 author:
   name: "Helen Bee"
 socials:
@@ -122,4 +127,4 @@ facebook_description: "A veteran's journey from military service to finding peac
     <p>Subscribe to my newsletter for weekly insights and practical tips.</p>
     <a class="button is-primary" href="/subscribe">Subscribe Now</a>
   </div>
-</div> 
+</div>

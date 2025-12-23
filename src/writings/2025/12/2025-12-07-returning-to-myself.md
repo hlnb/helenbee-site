@@ -19,7 +19,11 @@ tags:
   - personal journey
 category: lived-experience
 image: /assets/images/uploads/prophsee-journals-bx-n-0sz8gg-unsplash.jpg
-image_alt: desk with journal and cup ready for a new entry in it
+image_alt: ""
+image_credit:
+  photographer: Prophsee Journals
+  username: "@prophsee"
+  photo_url: https://unsplash.com/photos/bx-n-0sz8gg desk with journal and cup ready for a new entry in it
 author:
   name: Helen Burgess
 socials:
@@ -70,6 +74,7 @@ facebook_description: >-
 newsletter: true
 draft: false
 ---
+
 December always feels like a threshold — part closing chapter, part quiet reckoning. Not the shiny "new year, new me" kind. More the gentle sorting of what stayed true, what slipped away, and what I'm finally ready to release.
 
 This year, healing has been less about breakthroughs and more about returning to my own rhythm. I'm realising that identity isn't something I rebuild once; it's something I keep meeting, layer by layer, as the noise settles.

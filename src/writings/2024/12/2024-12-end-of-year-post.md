@@ -9,6 +9,11 @@ keywords: [year, review, reflection]
 type: "article"
 category: Reflection
 image: /assets/images/other/ian-schneider-PAykYb-8Er8-unsplash.jpg
+image_alt: ""
+image_credit:
+  photographer: Ian Schneider
+  username: "@goian"
+  photo_url: https://unsplash.com/photos/PAykYb-8Er8
 ---
 
 **End-of-Year Reflections: Growth, Gratitude, and New Horizons**

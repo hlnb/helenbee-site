@@ -10,6 +10,10 @@ tags: [Stoic philosophy, everyday resilience, mental health]
 layout: layouts/writing.njk
 category: lived-experience
 image: /assets/images/other/elena-mozhvilo-7l6inLyD2NQ-unsplash.jpg
+image_credit:
+  photographer: Elena Mozhvilo
+  username: "@miracleday"
+  photo_url: https://unsplash.com/photos/7l6inLyD2NQ
 author:
   name: "Helen Burgess"
 socials:

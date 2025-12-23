@@ -14,6 +14,10 @@ tags:
   - web development
   - 11ty
 image: /assets/images/other/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg
+image_credit:
+  photographer: Hal Gatewood
+  username: "@halacious"
+  photo_url: https://unsplash.com/photos/tZc3vjPCk-Q
 ---
 
 ## Project Overview
