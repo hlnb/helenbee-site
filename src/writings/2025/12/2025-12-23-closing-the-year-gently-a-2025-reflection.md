@@ -14,7 +14,7 @@ tags:
   - creativity
   - personal journey
 category: reflection
-image: /assets/images/uploads/prophsee-journals-bx-n-0sz8gg-unsplash.jpg
+image: /assets/images/uploads/aaron-burden-unsplash.jpg
 image_alt: ""
 image_credit:
   photographer: Aaron Burden
