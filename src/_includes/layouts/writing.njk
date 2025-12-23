@@ -5,6 +5,17 @@ layout: layouts/base.njk
 
 {% include "partials/hero.njk" %}
 
+{% if publishedDate %}
+  {% set formattedPublishDate = publishedDate | formatDate %}
+  {% if formattedPublishDate > currentDate %}
+    <div class="container">
+      <div class="notification is-info mt-5">
+        <p><strong>Note:</strong> This article is scheduled to be published on <strong>{{ publishedDate | readableDate }}</strong>. Please check back after this date to read the full content.</p>
+      </div>
+    </div>
+  {% endif %}
+{% endif %}
+
 <article class="writing-single">
   {{ content | safe }}
 
