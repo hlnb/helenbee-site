@@ -3,15 +3,15 @@ layout: layouts/writing.njk
 title: A Quiet Christmas
 subtitle: Christmas Greetings for 2025
 description: A gentle Christmas message for those holding the day quietly. Permission to rest, feel whatever comes, and acknowledge what's true rather than perform what's expected.
-date: 2025-12-23T14:00:00
-publishedDate: 2025-12-23T14:00:00
+date: 2025-12-23
+publishedDate: 2025-12-23
 theme: Christmas Greetings
 keywords:
   - christmas greetings,
 type: article
 tags:
   - lived-experience
-category: reflection
+category: Reflection
 image: /assets/images/other/mel-poole-LUPXhXj2ip0-unsplash.jpg
 image_alt: ""
 image_credit:

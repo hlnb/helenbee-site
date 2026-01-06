@@ -78,6 +78,37 @@ module.exports = async function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
 	});
 
+	// Format date for comparison - returns YYYY-MM-DD string
+	eleventyConfig.addFilter("formatDate", function (date) {
+		if (!date) return "";
+
+		try {
+			// Handle string dates
+			const cleanDate = typeof date === "string" ? date.trim() : date;
+			const parsedDate = new Date(cleanDate);
+
+			// Check if date is valid
+			if (isNaN(parsedDate.getTime())) {
+				console.log("Invalid date:", date);
+				return "";
+			}
+
+			// Return ISO date string (YYYY-MM-DD) for reliable string comparison
+			return parsedDate.toISOString().slice(0, 10);
+		} catch (e) {
+			console.log("Error parsing date:", date, e);
+			return "";
+		}
+	});
+
+	// Current date global - returns YYYY-MM-DD string for comparison
+	eleventyConfig.addGlobalData("currentDate", () => {
+		const today = new Date();
+		// Set to current date at midnight UTC for consistent comparison
+		today.setUTCHours(0, 0, 0, 0);
+		return today.toISOString().slice(0, 10);
+	});
+
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {
 		if (!Array.isArray(array) || array.length === 0) {
@@ -174,14 +205,14 @@ module.exports = async function (eleventyConfig) {
 		// Get all markdown files
 		const allFiles = collectionApi.getAll();
 		console.log("Total files found:", allFiles.length);
-		
+
 		// Filter for markdown files in the writings directory
 		const posts = allFiles.filter(item => {
 			const isInWritings = item.inputPath.includes("/writings/");
 			const isMarkdown = item.inputPath.endsWith(".md");
 			return isInWritings && isMarkdown;
 		});
-		
+
 		console.log("Found posts:", posts.length);
 		console.log("Posts collection details:");
 		posts.forEach(post => {

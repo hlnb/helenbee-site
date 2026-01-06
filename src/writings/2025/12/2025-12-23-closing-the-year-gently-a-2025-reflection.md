@@ -3,8 +3,8 @@ layout: layouts/writing.njk
 title: "Closing the Year Gently: A 2025 Reflection"
 subtitle: ""
 description: A quiet 2025 reflection on healing, guilt, creativity, and uncertainty. No achievements list—just honest thoughts on working at a human pace and closing the year gently.
-date: 2025-12-30T10:26:00
-publishedDate: 2025-12-30T10:26:00
+date: 2025-12-30
+publishedDate: 2025-12-30
 theme: End of Year Review
 keywords: []
 type: reflection
@@ -13,7 +13,7 @@ tags:
   - mental-health
   - creativity
   - personal journey
-category: reflection
+category: Reflection
 image: /assets/images/other/aaron-burden-unsplash.jpg
 image_alt: ""
 image_credit:
