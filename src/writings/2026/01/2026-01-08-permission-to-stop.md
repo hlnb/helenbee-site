@@ -1,10 +1,10 @@
 ---
 layout: layouts/writing.njk
-title: "Permission to Stop: The Quiet Relief of Letting Go"
-subtitle: ""
+title: 'Permission to Stop: The Quiet Relief of Letting Go'
+subtitle: ''
 description: A quiet reflection on the exhaustion of carrying unchosen obligations—and the relief that comes from letting go with intention.
 date: 2026-01-14T00:00:00
-publishedDate: "2026-01-14"
+publishedDate: 2026-01-14
 theme: Release, Boundaries, Quiet Rebellion
 keywords:
   - permission to stop,
@@ -22,7 +22,7 @@ tags:
 category: lived-experience
 image:
   - permission to stop.png
-image_alt: "Theme: release, boundaries, quiet rebellion Mood: spacious, restrained, slightly defiant calm"
+image_alt: 'Theme: release, boundaries, quiet rebellion Mood: spacious, restrained, slightly defiant calm'
 image_credit: null
 author:
   name: Helen Burgess
@@ -31,13 +31,12 @@ socials:
   mastodon: https://mastodon.social/@helenbee
   facebook: https://www.facebook.com/
 siteUrl: https://helenburgess.id.au
-bluesky_description: ""
-mastodon_description: ""
-facebook_description: ""
+bluesky_description: ''
+mastodon_description: ''
+facebook_description: ''
 newsletter: true
-draft: true
+draft: false
 ---
-
 There’s a particular kind of exhaustion that comes from carrying things you never agreed to hold.
 
 Permission to stop isn’t about quitting. It’s about noticing what you never chose—and setting it down long enough to see what returns when you do.
