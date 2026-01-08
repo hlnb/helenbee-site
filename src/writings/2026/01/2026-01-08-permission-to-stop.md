@@ -1,6 +1,6 @@
 ---
 layout: layouts/writing.njk
-title: 'Permission to Stop Doing Things: The Quiet Relief of Letting Go'
+title: 'Permission to Stop: The Quiet Relief of Letting Go'
 subtitle: ''
 description: A quiet reflection on the exhaustion of carrying unchosen obligations—and the relief that comes from letting go with intention.
 date: 2026-01-14T00:00:00
@@ -49,14 +49,12 @@ Obligation can bind communities and relationships together. That’s part of why
 Some of this weight comes from old identities:
 
 - the one who always says yes
-
 - the reliable one
-
 - the strong one who doesn’t need help
 
 These roles once served a purpose. They may have been survival strategies—ways of being valued, needed, or safe. Yet identities calcify. What was adaptive becomes automatic. We keep performing long after the original reason has dissolved.
 
-Many therapists use the shorthand FOG—fear, obligation, and guilt. The term was popularised by Susan Forward in Emotional Blackmail ([https://en.wikipedia.org/wiki/Emotional\_blackmail](https://en.wikipedia.org/wiki/Emotional_blackmail)). These forces can keep us compliant even when compliance costs us. The tyranny of _should_ sounds responsible; in practice, it’s often fear wearing the mask of obligation. Unexamined “shoulds” often drive that compliance—and research links them to emotional exhaustion and reduced wellbeing.
+Many therapists use the shorthand FOG—fear, obligation, and guilt. The term was popularised by Susan Forward in Emotional Blackmail ([https://en.wikipedia.org/wiki/Emotional_blackmail](https://en.wikipedia.org/wiki/Emotional_blackmail)). These forces can keep us compliant even when compliance costs us. The tyranny of _should_ sounds responsible; in practice, it’s often fear wearing the mask of obligation. Unexamined “shoulds” often drive that compliance—and research links them to emotional exhaustion and reduced wellbeing.
 
 ## \*\*What I’ve stopped doing\*\*
 
@@ -127,9 +125,7 @@ You don’t have to wait for comfort to act; clarity can lead.
 When I notice myself doing something out of obligation rather than intention, I pause and ask:
 
 - Whose voice is this—mine now, or someone else’s expectation?
-
 - What would actually happen if I stopped? Not the catastrophic version—the likely one.
-
 - Am I doing this because it matters, or because I’m afraid of what it means if I don’t?
 
 Not everything survives these questions.
