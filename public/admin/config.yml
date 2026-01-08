@@ -33,6 +33,8 @@ collections:
     slug: "{{slug}}"
     path: "{{year}}/{{month}}/{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: "writings/{{year}}/{{month}}/{{year}}-{{month}}-{{day}}-{{slug}}"
+    media_folder: "/assets/images/other"
+    public_folder: "/assets/images/other"
     editor:
       preview: false
     fields:

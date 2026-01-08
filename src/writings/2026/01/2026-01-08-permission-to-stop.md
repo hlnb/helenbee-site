@@ -3,8 +3,8 @@ layout: layouts/writing.njk
 title: "Permission to Stop: The Quiet Relief of Letting Go"
 subtitle: ""
 description: A quiet reflection on the exhaustion of carrying unchosen obligations—and the relief that comes from letting go with intention.
-date: 2026-01-14T00:00:00
-publishedDate: "2026-01-14"
+date: 2026-01-14
+publishedDate: 2026-01-14
 theme: Release, Boundaries, Quiet Rebellion
 keywords:
   - permission to stop,
@@ -20,8 +20,7 @@ tags:
   - lived-experience
   - mental-health
 category: lived-experience
-image:
-  - permission to stop.png
+image: /assets/images/other/permission-to-stop.png
 image_alt: "Theme: release, boundaries, quiet rebellion Mood: spacious, restrained, slightly defiant calm"
 image_credit: null
 author:
