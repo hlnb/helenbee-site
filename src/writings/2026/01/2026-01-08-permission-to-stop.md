@@ -34,7 +34,7 @@ bluesky_description: ""
 mastodon_description: ""
 facebook_description: ""
 newsletter: true
-draft: true
+draft: false
 ---
 
 There’s a particular kind of exhaustion that comes from carrying things you never agreed to hold.
