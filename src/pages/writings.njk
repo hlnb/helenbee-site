@@ -35,7 +35,7 @@ eleventyNavigation:
             {% set is_lived = (category | lower | replace(' ', '-')) == 'lived-experience' %}
             <wa-card class="book-card wa-post-card{% if is_lived %} paginated-item{% endif %}" data-index="{{ loop.index0 }}" appearance="outlined" with-header with-media with-footer>
               {% if article.data.image %}
-                <img slot="media" src="{{ article.data.image }}" alt="{{ article.data.title }}" loading="lazy" style="object-fit: cover; height: 200px; width:100%;">
+                <img slot="media" src="{{ article.data.image }}" alt="{{ article.data.title }}" loading="lazy">
               {% endif %}
 
               <div slot="header">

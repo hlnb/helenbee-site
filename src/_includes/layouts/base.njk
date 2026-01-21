@@ -64,7 +64,6 @@
  document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".navbar-burger");
   const menu = document.querySelector("#navbarMenu");
-  const MAX_IMAGE_HEIGHT = 250;
 
   if (burger && menu) {
     burger.addEventListener("click", () => {
@@ -73,27 +72,29 @@
     });
   }
 
-  const applyImageConstraint = (img) => {
-    if (img.dataset.fit === "natural") {
-      return;
-    }
-
-    const resizeIfNeeded = () => {
-      if ((img.naturalHeight || img.height) > MAX_IMAGE_HEIGHT) {
-        img.classList.add("is-constrained");
+  const constrainImages = (selector, className, maxHeight) => {
+    document.querySelectorAll(selector).forEach((img) => {
+      if (img.dataset.fit === "natural") {
+        return;
       }
-    };
 
-    if (img.complete) {
-      resizeIfNeeded();
-    } else {
-      img.addEventListener("load", resizeIfNeeded, { once: true });
-    }
+      const clampIfNeeded = () => {
+        if ((img.naturalHeight || img.height || 0) > maxHeight) {
+          img.classList.add(className);
+        }
+      };
+
+      if (img.complete && img.naturalHeight) {
+        clampIfNeeded();
+      } else {
+        img.addEventListener("load", clampIfNeeded, { once: true });
+      }
+    });
   };
 
-  document
-    .querySelectorAll(".writing-body img")
-    .forEach((img) => applyImageConstraint(img));
+  constrainImages(".writing-body img", "is-constrained", 250);
+  constrainImages(".wa-post-card img[slot='media']", "is-card-constrained", 350);
+  constrainImages(".latest-posts .card .card-image img", "is-card-constrained", 350);
 });
 
 function copyToClipboard(text) {
