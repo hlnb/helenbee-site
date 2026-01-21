@@ -26,7 +26,7 @@ tags:
   - creativity
   - healing
   - mental-health
-category: creative
+category: craft
 image:
   - /assets/images/other/heirloom-shawl-knit-2014.png
 image_alt: Knitted round shawl in lace. Heirloom
