@@ -64,6 +64,7 @@
  document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".navbar-burger");
   const menu = document.querySelector("#navbarMenu");
+  const MAX_IMAGE_HEIGHT = 250;
 
   if (burger && menu) {
     burger.addEventListener("click", () => {
@@ -71,6 +72,28 @@
       menu.classList.toggle("is-active");
     });
   }
+
+  const applyImageConstraint = (img) => {
+    if (img.dataset.fit === "natural") {
+      return;
+    }
+
+    const resizeIfNeeded = () => {
+      if ((img.naturalHeight || img.height) > MAX_IMAGE_HEIGHT) {
+        img.classList.add("is-constrained");
+      }
+    };
+
+    if (img.complete) {
+      resizeIfNeeded();
+    } else {
+      img.addEventListener("load", resizeIfNeeded, { once: true });
+    }
+  };
+
+  document
+    .querySelectorAll(".writing-body img")
+    .forEach((img) => applyImageConstraint(img));
 });
 
 function copyToClipboard(text) {

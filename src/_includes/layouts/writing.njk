@@ -15,7 +15,9 @@ layout: layouts/base.njk
     </div>
   {% else %}
     <article class="writing-single">
-      {{ content | safe }}
+      <div class="writing-body">
+        {{ content | safe }}
+      </div>
 
       {% include "partials/newsletter-cta.njk" %}
 
@@ -86,7 +88,9 @@ layout: layouts/base.njk
   {% endif %}
 {% else %}
   <article class="writing-single">
-    {{ content | safe }}
+    <div class="writing-body">
+      {{ content | safe }}
+    </div>
 
     {% include "partials/newsletter-cta.njk" %}
 

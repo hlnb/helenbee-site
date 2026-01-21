@@ -5,6 +5,39 @@
     padding: 2rem 1rem;
 }
 
+/* Scoped wrapper for markdown output */
+.writing-body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.writing-body img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 12px;
+}
+
+.writing-body img.is-constrained {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.writing-body img[data-fit="natural"] {
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+}
+
+@media (max-width: 600px) {
+    .writing-body img.is-constrained {
+        height: 200px;
+    }
+}
+
 /* Make the hero partial full-bleed when used on post pages */
 .wa-hero {
     width: 100vw;

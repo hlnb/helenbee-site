@@ -1,7 +1,7 @@
 ---
 layout: layouts/writing.njk
 title: Knitting as Cognitive Anchor
-subtitle: ''
+subtitle: ""
 description: Knitting can be a steadying ritual—rhythm for the hands, calm for the body. Here’s how repetitive, bilateral motion becomes an anchor for attention, healing, and everyday life.
 date: 2026-01-28T09:56:00
 publishedDate: 2026-01-28T09:56:00
@@ -28,7 +28,7 @@ tags:
   - mental-health
 category: creative
 image:
-  - /assets/images/other/canva-photo-editor.png
+  - /assets/images/other/heirloom-shawl-knit-2014.png
 image_alt: Knitted round shawl in lace. Heirloom
 image_credit: null
 author:
