@@ -62,27 +62,14 @@ collections:
           - { label: "Story", value: "story" }
       - label: "Tags"
         name: "tags"
-        widget: "select"
-        multiple: true
-        required: true
-        options:
-          - lived-experience
-          - veterans
-          - mental-health
-          - ptsd
-          - technology
-          - web development
-          - 11ty
-          - personal journey
-          - healing
-          - creativity
-          - digital art
-          - AI
-          - knitting
-          - meditation
-          - stoicism
-          - freemasonry
-          - writings
+        widget: "list"
+        label_singular: "Tag"
+        required: false
+        hint: "Add as many tags as you need; they’ll be saved exactly as typed."
+        field:
+          label: "Tag"
+          name: "tag"
+          widget: "string"
       - label: "Category"
         name: "category"
         widget: "select"
