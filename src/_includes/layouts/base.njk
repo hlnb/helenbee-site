@@ -49,9 +49,6 @@
     <!-- Font Awesome - moved to end of head -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- WebAwesome kit (project-specific) -->
-  <script src="https://kit.webawesome.com/051539821f5a4054.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
 
@@ -93,8 +90,7 @@
   };
 
   constrainImages(".writing-body img", "is-constrained", 250);
-  constrainImages(".wa-post-card img[slot='media']", "is-card-constrained", 350);
-  constrainImages(".latest-posts .card .card-image img", "is-card-constrained", 350);
+  constrainImages(".post-card .card-media-img", "is-card-constrained", 350);
 });
 
 function copyToClipboard(text) {

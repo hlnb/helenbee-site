@@ -25,9 +25,9 @@ layout: layouts/base.njk
 
   {# Styles moved to /assets/css/grid.css to centralize styles #}
 
-  <wa-grid class="books-grid">
+  <div class="books-grid">
     {% for book in collections.books | sort(attribute="data.author") %}
-      <wa-card class="book-card">
+      <article class="book-card">
         <div class="book-cover-wrapper">
           {% if book.data.coverImage %}
             <img
@@ -59,8 +59,8 @@ layout: layouts/base.njk
             </div>
           {% endif %}
         </div>
-      </wa-card>
+      </article>
     {% endfor %}
-  </wa-grid>
+  </div>
   {% include "partials/newsletter-cta.njk" %}
 </main>

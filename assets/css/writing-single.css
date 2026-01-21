@@ -43,7 +43,11 @@
     width: 100vw;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-    padding: 8rem var(--wa-space-4xl);
+    padding: clamp(4rem, 10vw, 8rem) var(--wa-space-4xl, clamp(1.5rem, 5vw, 3.5rem));
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 /* Hero Image Styles */
@@ -256,7 +260,8 @@
 
     /* Reduce hero vertical padding on small screens */
     .wa-hero {
-        padding: 4rem var(--wa-space-3xl);
+        padding: clamp(3rem, 8vw, 4rem) var(--wa-space-3xl, clamp(1rem, 6vw, 2.25rem));
+        min-height: 360px;
     }
 
     .hero-content h1 {

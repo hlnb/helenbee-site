@@ -28,26 +28,28 @@ eleventyNavigation:
   {% set articles = collections.writingsByCategory[category] %}
     <section class="section">
       <h2 class="title is-4">{{ category | capitalize }}</h2>
-      <wa-grid class="books-grid" data-category="{{ category | lower | replace(' ', '-') }}">
+      <div class="books-grid" data-category="{{ category | lower | replace(' ', '-') }}">
         {% for article in articles %}
           {% set formattedPublishDate = article.data.publishedDate | formatDate %}
           {% if (not article.data.publishedDate) or (formattedPublishDate <= currentDate) %}
             {% set is_lived = (category | lower | replace(' ', '-')) == 'lived-experience' %}
-            <wa-card class="book-card wa-post-card{% if is_lived %} paginated-item{% endif %}" data-index="{{ loop.index0 }}" appearance="outlined" with-header with-media with-footer>
+            <article class="book-card post-card{% if is_lived %} paginated-item{% endif %}" data-index="{{ loop.index0 }}">
               {% if article.data.image %}
-                <img slot="media" src="{{ article.data.image }}" alt="{{ article.data.title }}" loading="lazy">
+                <div class="card-media">
+                  <img class="card-media-img" src="{{ article.data.image }}" alt="{{ article.data.title }}" loading="lazy">
+                </div>
               {% endif %}
 
-              <div slot="header">
+              <header class="card-header">
                 <p class="title is-5"><a href="{{ article.url }}">{{ article.data.title }}</a></p>
                 <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> {{ article.date | dateDisplay }}</p>
-              </div>
+              </header>
 
-              <div>
+              <div class="card-body">
                 <p class="content-preview">{{ article.data.description }}</p>
               </div>
 
-              <div slot="footer">
+              <footer class="card-footer">
                 {% if article.data.tags %}
                   <div class="tags mt-auto">
                     {% for tag in article.data.tags %}
@@ -56,11 +58,11 @@ eleventyNavigation:
                   </div>
                 {% endif %}
                 <a class="button is-link mt-2" href="{{ article.url }}">Read More</a>
-              </div>
-            </wa-card>
+              </footer>
+            </article>
           {% endif %}
         {% endfor %}
-        </wa-grid>
+        </div>
         {% if (category | lower) == 'lived-experience' %}
           <div class="pagination-controls" aria-label="Lived experience pagination" data-category="lived-experience"></div>
         {% endif %}
@@ -70,24 +72,12 @@ eleventyNavigation:
 {% include "partials/newsletter-cta.njk" %}
 
 <style>
-  .card {
-    height: 100%;
+  .post-card {
     transition: transform 0.2s ease;
   }
 
-  .card:hover {
+  .post-card:hover {
     transform: translateY(-5px);
-  }
-
-  .card-image figure {
-    margin: 0;
-    overflow: hidden;
-  }
-
-  .card-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
   }
 
   .content-preview {
@@ -118,11 +108,6 @@ eleventyNavigation:
     margin-bottom: 0.25rem;
   }
 
-  @media screen and (max-width: 768px) {
-    .column.is-one-quarter {
-      width: 100%;
-    }
-  }
 </style>
 
 <script>
@@ -184,21 +169,4 @@ document.addEventListener('DOMContentLoaded', function () {
   .pagination-button.is-active { background:var(--primary,#332E63); color:#fff; border-color:transparent; }
 </style>
 
-<style>
-/* Ensure wa-card acts like a full-height grid card in writings grids */
-.books-grid {
-  align-items: stretch;
-}
-.books-grid > wa-card.book-card {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
-  height: 100%;
-}
-wa-card.book-card::part(body) {
-  flex: 1 1 auto;
-}
-wa-card.book-card::part(footer) {
-  margin-top: auto;
-}
-</style>
+

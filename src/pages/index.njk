@@ -64,29 +64,31 @@ eleventyNavigation:
 
 <section class="section latest-posts">
   <h2 class="title is-3"><i class="fa-solid fa-clock"></i> Latest Writings</h2>
-  <wa-grid class="books-grid">
+  <div class="books-grid latest-grid">
     {% for post in collections.latestPosts %}
-      <wa-card class="book-card wa-post-card" appearance="outlined" with-header with-media with-footer>
+      <article class="book-card post-card">
         {% if post.data.image %}
-          <img slot="media" src="{{ post.data.image }}" alt="{{ post.data.title }}">
+          <div class="card-media">
+            <img class="card-media-img" src="{{ post.data.image }}" alt="{{ post.data.title }}" loading="lazy">
+          </div>
         {% endif %}
 
-        <div slot="header">
+        <header class="card-header">
           <h3 class="book-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-          <div class="book-author">{{ post.date | readableDate }}</div>
-        </div>
+          <p class="book-author">{{ post.date | readableDate }}</p>
+        </header>
 
-        <div>
+        <div class="card-body">
           {% if post.data.description %}
             <p>{{ post.data.description }}</p>
           {% endif %}
         </div>
 
-        <div slot="footer">
-          <a class="wa-button" href="{{ post.url }}">Read More</a>
-        </div>
-      </wa-card>
+        <footer class="card-footer">
+          <a class="button is-link is-light" href="{{ post.url }}">Read More</a>
+        </footer>
+      </article>
     {% endfor %}
-  </wa-grid>
+  </div>
 </section>
   {% include "partials/newsletter-cta.njk" %}

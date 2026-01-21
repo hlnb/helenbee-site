@@ -398,78 +398,83 @@ main a:hover {
 .about-intro-content {
 	grid-column: 4 / span 5;
 	padding-left: 2rem;
+}
 
-/* Equal-height cards for latest posts (keep scoped to homepage section) */
-.latest-posts .columns {
-	align-items: stretch;
+/* Card grids */
+.books-grid,
+.latest-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 2rem;
 }
-.latest-posts .columns .column {
-	display: flex;
+
+@media (max-width: 900px) {
+	.books-grid,
+	.latest-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
 }
-.latest-posts .columns .column > .card,
-.latest-posts .columns .column > wa-card {
+
+@media (max-width: 640px) {
+	.books-grid,
+	.latest-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.post-card {
 	display: flex;
 	flex-direction: column;
-	flex: 1 1 auto;
-	height: 100%;
-}
-wa-card.wa-post-card img[slot="media"],
-.latest-posts .card .card-image img {
-	display: block;
-	width: 100%;
+	background: var(--background-light);
+	border: 1px solid var(--support-1);
 	border-radius: 12px;
+	height: 100%;
+	overflow: hidden;
 }
 
-.wa-post-card img.is-card-constrained,
-.latest-posts .card .card-image img.is-card-constrained {
+.post-card .card-media {
+	position: relative;
+}
+
+.post-card .card-media-img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 12px 12px 0 0;
+}
+
+.post-card .card-media-img.is-card-constrained {
 	height: 350px;
 	object-fit: cover;
 	object-position: center;
 }
-.latest-posts .columns .column > .card .card-content {
+
+.post-card .card-header,
+.post-card .card-body,
+.post-card .card-footer {
+	padding: 1.25rem 1.5rem;
+}
+
+.post-card .card-header {
+	border-bottom: 1px solid var(--support-1);
+}
+
+.post-card .card-body {
+	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
-	flex: 1 1 auto;
 }
-/* WebAwesome card parts: make body grow and footer stick to bottom */
-wa-card.wa-post-card {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-}
-wa-card.wa-post-card::part(body) {
-	flex: 1 1 auto;
-}
-wa-card.wa-post-card::part(footer) {
+
+.post-card .card-footer {
+	border-top: 1px solid var(--support-1);
 	margin-top: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
 }
 
-/* Remove dividing lines and borders on cards (wa-card and Bulma .card) */
-wa-card.wa-post-card,
-wa-card.wa-post-card::part(header),
-wa-card.wa-post-card::part(body),
-wa-card.wa-post-card::part(footer),
-.wa-post-card,
-.wa-post-card::part(header),
-.wa-post-card::part(body),
-.wa-post-card::part(footer) {
-	border: none !important;
-	box-shadow: none !important;
-	background: transparent !important;
-}
-
-wa-card.wa-post-card::part(header),
-wa-card.wa-post-card::part(footer) {
-	border-top: none !important;
-	border-bottom: none !important;
-}
-
-/* hide any <hr> inside cards */
-wa-card.wa-post-card hr,
-.wa-post-card hr,
-.card hr {
-	display: none !important;
-}
+.post-card .card-footer .tags {
+	margin-top: 0;
 }
 
 .military-career-grid {
@@ -1551,14 +1556,14 @@ li code {
 	font-style: italic;
 }
 
-.books-grid {
+.reading .books-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 2rem;
 	margin-top: 2rem;
 }
 
-.book-card {
+.reading .book-card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1567,7 +1572,7 @@ li code {
 	border-radius: 4px;
 }
 
-.book-cover {
+.reading .book-cover {
 	width: 200px;
 	height: 300px;
 	object-fit: cover;
