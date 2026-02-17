@@ -10,16 +10,16 @@ keywords:
   - usefulness
   - self-worth
   - identity
-  - productivity,
-  - rest,
-  - boundaries,
-  - veterans,
-  - teaching,
-  - reflection,
-  - resilience,
-  - worthiness,
-  - quiet,
-  - knitting,
+  - productivity
+  - rest
+  - boundaries
+  - veterans
+  - teaching
+  - reflection
+  - resilience
+  - worthiness
+  - quiet
+  - knitting
   - recovery
 type: reflection
 tags:
@@ -34,7 +34,7 @@ tags:
   - Creativity
   - Knitting
 category: lived-experience
-image_alt: ''
+image_alt: ""
 image_credit: null
 author:
   name: Helen Burgess
@@ -44,7 +44,7 @@ socials:
   facebook: https://www.facebook.com/
 siteUrl: https://helenburgess.id.au
 bluesky_description: Who am I when no one needs me? On loosening the grip of usefulness and learning to be enough in the quiet.
-mastodon_description: 'On loosening the grip of usefulness—and staying anyway. Finding identity beyond being needed, in the quiet between tasks. #Reflection #Resilience #MentalHealth'
+mastodon_description: "On loosening the grip of usefulness—and staying anyway. Finding identity beyond being needed, in the quiet between tasks. #Reflection #Resilience #MentalHealth"
 facebook_description: When the to-do list goes quiet, who are we without being useful? This essay sits with that unease—then looks for a gentler footing. On finding worth beyond output, and learning to be enough in the quiet.
 newsletter: true
 draft: true
