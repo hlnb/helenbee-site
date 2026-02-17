@@ -30,8 +30,8 @@ image: /assets/images/other/rebecca-grant-unsplash.jpg
 image_alt: Close-up of hands knitting soft neutral yarn in morning light, symbolising steady rhythm and nervous system regulation.
 image_credit:
   photographer: Rebecca Grant
-  username: '@luandesign'
-  photo_url: 'https://unsplash.com/photos/person-knitting-beige-garment-cqIygVsfrgM'
+  username: "@luandesign"
+  photo_url: "https://unsplash.com/photos/person-knitting-beige-garment-cqIygVsfrgM"
 author:
   name: Helen Burgess
 socials:
@@ -39,9 +39,18 @@ socials:
   mastodon: https://mastodon.social/@helenbee
   facebook: https://www.facebook.com/profile.php?id=61572267654772
 siteUrl: https://helenburgess.id.au
-bluesky_description: Containment isn’t about forcing motivation. I’m exploring how steady rituals—knitting, walking, closing tiny loops—help regulate the nervous system when discipline falls flat.
-mastodon_description: Motivation disappears when the nervous system is flooded or shut down. This piece looks at containment as gentle structure: repetitive practices, safe cues, and rituals that let us return without force.
-facebook_description: When motivation fails, it’s often because the body doesn’t feel safe enough to choose. I’m sharing how containment—small, predictable rituals like knitting, walking, and closing loops—can hold us steady until we can move again.
+bluesky_description: >-
+  Containment isn’t about forcing motivation. I’m exploring how steady
+  rituals—knitting, walking, closing tiny loops—help regulate the nervous
+  system when discipline falls flat.
+mastodon_description: >-
+  Motivation disappears when the nervous system is flooded or shut down. This
+  piece looks at containment as gentle structure: repetitive practices, safe
+  cues, and rituals that let us return without force.
+facebook_description: >-
+  When motivation fails, it’s often because the body doesn’t feel safe enough to
+  choose. I’m sharing how containment—small, predictable rituals like knitting,
+  walking, and closing loops—can hold us steady until we can move again.
 newsletter: true
 draft: false
 ---

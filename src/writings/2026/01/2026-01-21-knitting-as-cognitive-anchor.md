@@ -27,8 +27,7 @@ tags:
   - healing
   - mental-health
 category: Craft
-image:
-  - /assets/images/other/heirloom-shawl-knit-2014.png
+image: /assets/images/other/heirloom-shawl-knit-2014.png
 image_alt: Knitted round shawl in lace. Heirloom
 image_credit: null
 author:
