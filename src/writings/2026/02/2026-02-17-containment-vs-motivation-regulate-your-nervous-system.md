@@ -27,7 +27,7 @@ tags:
 category: lived-experience
 image:
   - /assets/images/other/rebecca-grant-unsplash.jpg
-image_alt: hands knitting
+image_alt: Close-up of hands knitting soft neutral yarn in morning light, symbolising steady rhythm and nervous system regulation.
 image_credit: null
 author:
   name: Helen Burgess
