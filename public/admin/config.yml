@@ -42,6 +42,7 @@ collections:
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
       - { label: "Description", name: "description", widget: "text", required: true, hint: "SEO description and excerpt" }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false, hint: "Optional summary for feeds and previews" }
       - { label: "Publish Date", name: "date", widget: "datetime", required: true }
       - { label: "Published Date", name: "publishedDate", widget: "datetime", required: false, hint: "Original publication date if different" }
       - { label: "Theme", name: "theme", widget: "string", required: false, hint: "Thematic category" }
