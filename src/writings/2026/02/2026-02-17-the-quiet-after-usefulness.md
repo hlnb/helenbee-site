@@ -33,15 +33,19 @@ tags:
   - Rest
   - Creativity
   - Knitting
-category: ''
+category: lived-experience
 image_alt: ''
 image_credit: null
-author: null
-socials: null
+author:
+  name: Helen Burgess
+socials:
+  bluesky: https://bsky.app/profile/@hlnbee.bsky.social
+  mastodon: https://mastodon.social/@helenbee
+  facebook: https://www.facebook.com/
 siteUrl: https://helenburgess.id.au
-bluesky_description: ''
-mastodon_description: ''
-facebook_description: ''
+bluesky_description: Who am I when no one needs me? On loosening the grip of usefulness and learning to be enough in the quiet.
+mastodon_description: 'On loosening the grip of usefulness—and staying anyway. Finding identity beyond being needed, in the quiet between tasks. #Reflection #Resilience #MentalHealth'
+facebook_description: When the to-do list goes quiet, who are we without being useful? This essay sits with that unease—then looks for a gentler footing. On finding worth beyond output, and learning to be enough in the quiet.
 newsletter: true
 draft: true
 ---
