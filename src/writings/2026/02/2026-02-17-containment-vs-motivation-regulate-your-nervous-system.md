@@ -26,8 +26,7 @@ tags:
   - veteran healing
   - mindful living
 category: lived-experience
-image:
-  - /assets/images/other/rebecca-grant-unsplash.jpg
+image: /assets/images/other/rebecca-grant-unsplash.jpg
 image_alt: Close-up of hands knitting soft neutral yarn in morning light, symbolising steady rhythm and nervous system regulation.
 image_credit:
   photographer: Rebecca Grant

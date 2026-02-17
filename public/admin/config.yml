@@ -113,7 +113,7 @@ collections:
         fields:
           - { label: "Bluesky", name: "bluesky", widget: "string", default: "https://bsky.app/profile/@hlnbee.bsky.social" }
           - { label: "Mastodon", name: "mastodon", widget: "string", default: "https://mastodon.social/@helenbee" }
-          - { label: "Facebook", name: "facebook", widget: "string", default: "https://www.facebook.com/" }
+          - { label: "Facebook", name: "facebook", widget: "string", default: "https://www.facebook.com/profile.php?id=61572267654772" }
       - { label: "Site URL", name: "siteUrl", widget: "string", default: "https://helenburgess.id.au", required: false }
       - { label: "Bluesky Description", name: "bluesky_description", widget: "text", required: false, hint: "Custom description for Bluesky sharing" }
       - { label: "Mastodon Description", name: "mastodon_description", widget: "text", required: false, hint: "Custom description for Mastodon sharing" }

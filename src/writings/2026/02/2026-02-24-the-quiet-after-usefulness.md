@@ -34,11 +34,12 @@ tags:
   - Creativity
   - Knitting
 category: lived-experience
-image_alt: "Cozy Chair in the Corner of a Waterfront Home"
+image: /assets/images/other/tina-witherspoon-unsplash.jpg
+image_alt: "Cozy chair in the corner of a waterfront home"
 image_credit:
-photographer: Tina Witherspoon
-  username: '@tspoonphoto'
-  photo_url:'https://unsplash.com/photos/white-round-table-with-2-chairs-fpKrFJUiPA8'
+  photographer: Tina Witherspoon
+  username: "@tspoonphoto"
+  photo_url: "https://unsplash.com/photos/white-round-table-with-2-chairs-fpKrFJUiPA8"
 author:
   name: Helen Burgess
 socials:
