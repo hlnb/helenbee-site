@@ -93,6 +93,8 @@ excerpt: Brief excerpt for listings and social sharing
 - `image`: Featured image path
 - `excerpt`: Custom excerpt (defaults to first paragraph if not provided)
 
+> Tip: The CMS now includes an **Excerpt** field—fill it in so feeds, listings, and social previews use your curated summary instead of the opening paragraph.
+
 ## Content Types
 
 ### Blog Posts (`/writings/`)
@@ -180,19 +182,16 @@ code goes here
 ## Image Guidelines
 
 1. File format:
-
    - Use .jpg for photographs
    - Use .png for screenshots/graphics
    - Use .svg for icons/logos
 
 2. Image sizes:
-
    - Featured images: 1200x630px
    - In-content images: max-width 800px
    - Thumbnails: 300x300px
 
 3. Optimization:
-
    - Compress all images before upload
 
 4. Accessibility:
@@ -246,7 +245,6 @@ Main categories:
 - be descriptive and engaging
 
 2. Meta descriptions
-
    - 150 - 160 characters
    - include target keyword
    - Compelling call to action
@@ -259,14 +257,12 @@ Main categories:
 ## Publishing Workflow
 
 1. **Content Creation**
-
    - Create new markdown file in `/writings/`
    - Add front matter
    - Write content
    - Add images
 
 2. **Review Process**
-
    - Spell check
    - Grammar check
    - Link verification
@@ -280,13 +276,11 @@ Main categories:
 ## Content Maintenance
 
 1. Regular Tasks
-
    - Update outdated content
    - Fix broken links
    - Optimize images
 
 2. Review Analytics
-
    - Google Analytics
    - Track page views
    - Monitor user behavior
@@ -301,7 +295,6 @@ Main categories:
 ## Analytics and Monitoring
 
 1. Google Analytics
-
    - Track page views
    - Monitor user behavior
    - Analyze popular content
@@ -316,7 +309,6 @@ Main categories:
 ## Accessibility Guidelines
 
 1. Text Content
-
    - Use clear headings
    - Write descriptive links
    - Maintain good contrast
@@ -331,7 +323,6 @@ Main categories:
 ## Emergency Updates
 
 1. Content Corrections
-
    - Update content directly
    - Add correction notice
    - Update timestamp
