@@ -1,29 +1,30 @@
 ---
 layout: layouts/writing.njk
-title: 'Containment vs Motivation: Regulate Your Nervous System'
-subtitle: ''
+title: "Containment vs Motivation: Regulate Your Nervous System"
+subtitle: ""
 description: When motivation fails, it may not be discipline you’re missing. A reflection on containment, nervous system safety, and gentle structure.
+excerpt: Containment isn’t about powering through — it’s the gentle structure that steadies a dysregulated nervous system. This piece unpacks why motivation fails when you’re flooded or shut down and offers small, repeatable rituals (knitting, walking, closing tiny loops) as compassionate containers that help you return to yourself.
 date: 2026-02-17T10:32:00
 publishedDate: 2026-02-17T10:32:00
 theme: Nervous System Regulation & Gentle Structure
 keywords:
-  - nervous,
-  - system,
-  - regulation,
-  - containment vs motivation,
-  - trauma recovery routines,
-  - window of tolerance,
-  - polyvagal theory,
-  - knitting and mental health,
+  - nervous
+  - system
+  - regulation
+  - containment vs motivation
+  - trauma recovery routines
+  - window of tolerance
+  - polyvagal theory
+  - knitting and mental health
   - gentle structure
 type: article
 tags:
-  - Knitting
-  - Creative Regulation
-  - Ritual
-  - Self-Trust
-  - Veteran Healing
-  - Mindful Living
+  - knitting
+  - creative Regulation
+  - ritual
+  - self-trust
+  - veteran healing
+  - mindful living
 category: lived-experience
 image:
   - /assets/images/other/rebecca-grant-unsplash.jpg
@@ -34,13 +35,13 @@ author:
 socials:
   bluesky: https://bsky.app/profile/@hlnbee.bsky.social
   mastodon: https://mastodon.social/@helenbee
-  facebook: https://www.facebook.com/
+  facebook: https://www.facebook.com/profile.php?id=61572267654772
 siteUrl: https://helenburgess.id.au
-bluesky_description: ''
-mastodon_description: ''
-facebook_description: ''
+bluesky_description: Containment isn’t about forcing motivation. I’m exploring how steady rituals—knitting, walking, closing tiny loops—help regulate the nervous system when discipline falls flat.
+mastodon_description: Motivation disappears when the nervous system is flooded or shut down. This piece looks at containment as gentle structure: repetitive practices, safe cues, and rituals that let us return without force.
+facebook_description: When motivation fails, it’s often because the body doesn’t feel safe enough to choose. I’m sharing how containment—small, predictable rituals like knitting, walking, and closing loops—can hold us steady until we can move again.
 newsletter: true
-draft: true
+draft: false
 ---
 
 ## Why Motivation Falls Short
@@ -65,11 +66,11 @@ Consistent daily routines provide predictability. Spaces that feel physically co
 
 For me, it started with my hands. Knitting became a place I could go when everything else felt too open, too uncertain, too full of choices I didn't have the energy to make. The pattern held me. The rhythm didn't require motivation. I didn't have to want to knit—I just had to start the next stitch, and then the one after that, and the repetition itself became the container.
 
-Research suggests repetitive, bilateral movements and predictable patterns can support emotional regulation for many people\[1\]\[2\]\[8\]. Participants in craft-based programs often describe trusting the process itself—“almost as though it was a person.”\[1\]
+Research suggests repetitive, bilateral movements and predictable patterns can support emotional regulation for many people[1][2][8]. Participants in craft-based programs often describe trusting the process itself—“almost as though it was a person.”[1]
 
 It didn't matter if I was doing it well. It mattered that I was doing something my body could follow without thinking.
 
-Containment can look like a lot of things. It's the same walk at the same time each day, not because it's optimal, but because it's known. The rhythmic left-right of walking can help some people feel more present and steady—enough to make the next choice without forcing it.\[3\]\[4\]
+Containment can look like a lot of things. It's the same walk at the same time each day, not because it's optimal, but because it's known. The rhythmic left-right of walking can help some people feel more present and steady—enough to make the next choice without forcing it.[3][4]
 
 Containment is making the bed in the morning, not as a productivity hack, but as a small act of closing a loop. It's the ritual of tea before writing, or five minutes of stretching before sleep, or always putting your keys in the same spot. These aren't achievements. They're anchor points. They're places your nervous system can recognise and relax into, even when the rest of life feels chaotic.
 
@@ -89,48 +90,48 @@ I'm not saying motivation is bad. I'm saying it's not the only way forward, and 
 
 Containment doesn't ask you to be more. It just asks you to be here, in this moment, doing this one small thing. And then, if you can, the next one. Not because you're building toward something. Just because you're here, and that's enough.
 
-\* \* \*
+---
 
 ## Research References
 
 The concepts explored in this article are supported by neuroscience and trauma recovery research:
 
-\*\*Nervous System Dysregulation After Trauma\*\*
+**Nervous System Dysregulation After Trauma**
 
-- After trauma, the nervous system can become stuck in states of hyperarousal (heightened anxiety, constant alertness) or hypoarousal (numbness, disconnection). Returning to baseline often requires safety cues and regulation supports rather than sheer willpower. \[5\]
+- After trauma, the nervous system can become stuck in states of hyperarousal (heightened anxiety, constant alertness) or hypoarousal (numbness, disconnection). Returning to baseline often requires safety cues and regulation supports rather than sheer willpower. [5]
 
-\*\*Window of Tolerance\*\*
+**Window of Tolerance**
 
-- A regulated nervous system experiences stress and then returns to equilibrium when the threat passes—the “window of tolerance.” Trauma and chronic stress may narrow this window. \[6\]
+- A regulated nervous system experiences stress and then returns to equilibrium when the threat passes—the “window of tolerance.” Trauma and chronic stress may narrow this window. [6]
 
-\*\*Polyvagal Theory & Safety-Based Interventions\*\*
+**Polyvagal Theory & Safety-Based Interventions**
 
-- Polyvagal-informed approaches emphasise rhythm, predictability, and relational safety. Practical tools like rhythmic pacing and consistent routines may help steady autonomic states. \[7\]
-- Consistent routines, physically comfortable spaces, and predictable environments can signal safety to the nervous system. \[7\]
+- Polyvagal-informed approaches emphasise rhythm, predictability, and relational safety. Practical tools like rhythmic pacing and consistent routines may help steady autonomic states. [7]
+- Consistent routines, physically comfortable spaces, and predictable environments can signal safety to the nervous system. [7]
 
-\*\*Bilateral Stimulation & Repetitive Movement\*\*
+**Bilateral Stimulation & Repetitive Movement**
 
-- Repetitive, rhythmic sensory input (including left-right movements) is used in some therapies and may facilitate emotional processing and present-moment anchoring. \[8\]
-- Walking’s rhythmic movement can support mood and regulation for many people. \[3\]\[4\]
+- Repetitive, rhythmic sensory input (including left-right movements) is used in some therapies and may facilitate emotional processing and present-moment anchoring. [8]
+- Walking’s rhythmic movement can support mood and regulation for many people. [3][4]
 
-\*\*Knitting as Therapeutic Intervention\*\*
+**Knitting as Therapeutic Intervention**
 
-- Knitting’s bilateral, repetitive movements may engage both hemispheres and support regulation. \[1\]\[3\]
-- Predictable, repetitive stitches are reported to promote relaxation and a sense of safety. \[1\]\[2\]
-- Some studies report people using knitting/crochet as coping strategies, describing trust in the process “almost as though it was a person.” \[1\]\[2\]
-- In some programs, veterans report knitting groups as a helpful coping activity. (seek veteran‑specific source)
+- Knitting’s bilateral, repetitive movements may engage both hemispheres and support regulation. [1]
+- Predictable, repetitive stitches are reported to promote relaxation and a sense of safety. [1][2]
+- Some studies report people using knitting/crochet as coping strategies, describing trust in the process “almost as though it was a person.” [1][2]
+- In creative arts programs, some veterans report craft-based groups as a helpful coping activity. [9]
 
-\*\*Key Researchers & Theories\*\*
+**Key Researchers & Theories**
 
-- \*\*Stephen Porges\*\* – Polyvagal Theory \[7\]
-- \*\*Dan Siegel\*\* – Window of Tolerance model \[6\]
-- \*\*Francine Shapiro / EMDR\*\* – Bilateral stimulation in trauma therapy \[8\]
+- **Stephen Porges** – Polyvagal Theory [7]
+- **Dan Siegel** – Window of Tolerance model [6]
+- **Francine Shapiro / EMDR** – Bilateral stimulation in trauma therapy [8]
 
 ### References
 
 Further reading for those who like to understand the science behind the experience:
 
-1. Corkhill, B., Hemmings, J., Maddock, A., & Riley, J. (2014). \*Knitting and wellbeing\*. British Journal of Occupational Therapy, 77(2), 50–57. https://doi.org/10.4276/030802214X13990455093489
+1. Corkhill, B., Hemmings, J., Maddock, A., & Riley, J. (2014). _Knitting and wellbeing_. British Journal of Occupational Therapy, 77(2), 50–57. https://doi.org/10.4276/030802214X13990455093489
 
 2. Leckey, J. (2011). The therapeutic effectiveness of creative activities on mental well-being: A systematic review of the literature. Journal of Psychiatric and Mental Health Nursing, 18(6), 501–509. https://doi.org/10.1111/j.1365-2850.2010.01693.x
 
@@ -138,10 +139,15 @@ Further reading for those who like to understand the science behind the experien
 
 4. Schuch, F. B., Vancampfort, D., Richards, J., Rosenbaum, S., Ward, P. B., & Stubbs, B. (2016). Exercise as a treatment for depression: A meta-analysis adjusting for publication bias. Journal of Psychiatric Research, 77, 42–51. https://doi.org/10.1016/j.jpsychires.2016.02.023
 
-5. van der Kolk, B. A. (2014). \*The body keeps the score: Brain, mind, and body in the healing of trauma\*. Viking.
+5. van der Kolk, B. A. (2014). _The body keeps the score: Brain, mind, and body in the healing of trauma_. Viking.
 
-6. Siegel, D. J. (1999). \*The developing mind: How relationships and the brain interact to shape who we are\*. Guilford Press.
+6. Siegel, D. J. (1999). _The developing mind: How relationships and the brain interact to shape who we are_. Guilford Press.
 
 7. Porges, S. W. (2001). The polyvagal theory: Phylogenetic substrates of a social nervous system. International Journal of Psychophysiology, 42(2), 123–146. https://doi.org/10.1016/S0167-8760(01)00162-3
 
 8. Shapiro, F. (1989). Eye movement desensitization: A new treatment for post-traumatic stress disorder. Journal of Consulting and Clinical Psychology, 57(1), 35–41. https://doi.org/10.1037/0022-006X.57.1.35
+
+9. Collie, K., Backos, A., Malchiodi, C., & Spiegel, D. (2006).
+   Art therapy for combat-related PTSD: Recommendations for research and practice.
+   Art Therapy, 23(4), 157–164.
+   https://doi.org/10.1080/07421656.2006.10129643
