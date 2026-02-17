@@ -5,10 +5,34 @@ subtitle: On Not Being Needed—and Staying Anyway
 description: A reflective essay on loosening the grip of usefulness—finding self-worth in quiet moments, beyond productivity, obligation, and being needed.
 date: 2026-02-24T12:09:00
 publishedDate: 2026-02-24T12:10:00
-theme: ''
-keywords: []
-type: article
-tags: []
+theme: Identity & Belonging
+keywords:
+  - usefulness
+  - self-worth
+  - identity
+  - productivity,
+  - rest,
+  - boundaries,
+  - veterans,
+  - teaching,
+  - reflection,
+  - resilience,
+  - worthiness,
+  - quiet,
+  - knitting,
+  - recovery
+type: reflection
+tags:
+  - Lived Experience
+  - Reflection
+  - Resilience
+  - Mental Health
+  - Veterans
+  - Teaching
+  - Work Culture
+  - Rest
+  - Creativity
+  - Knitting
 category: ''
 image_alt: ''
 image_credit: null
