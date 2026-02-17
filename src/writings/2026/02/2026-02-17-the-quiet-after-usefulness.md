@@ -36,8 +36,11 @@ tags:
 category: lived-experience
 image:
   - /assets/images/other/tina-witherspoon-fpKrFJUiPA8-unsplash.jpg
-image_alt: ''
-image_credit: null
+image_alt: Cozy Chair in the Corner of a Waterfront Home
+image_credit:
+  photographer: Tina Witherspoon
+  username: '@tspoonphoto?'
+  photo_url: https://unsplash.com/photos/white-round-table-with-2-chairs-fpKrFJUiPA8
 author:
   name: Helen Burgess
 socials:
