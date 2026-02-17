@@ -34,6 +34,8 @@ tags:
   - Creativity
   - Knitting
 category: lived-experience
+image:
+  - /assets/images/other/tina-witherspoon-fpKrFJUiPA8-unsplash.jpg
 image_alt: ''
 image_credit: null
 author:
