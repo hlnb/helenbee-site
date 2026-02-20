@@ -3,6 +3,7 @@ layout: layouts/writing.njk
 title: The Quiet After Usefulness
 subtitle: On Not Being Needed—and Staying Anyway
 description: A reflective essay on loosening the grip of usefulness—finding self-worth in quiet moments, beyond productivity, obligation, and being needed.
+excerpt: ''
 date: 2026-02-24T12:09:00
 publishedDate: 2026-02-24T12:10:00
 theme: Identity & Belonging
@@ -34,12 +35,13 @@ tags:
   - Creativity
   - Knitting
 category: lived-experience
-image: /assets/images/other/tina-witherspoon-unsplash.jpg
-image_alt: "Cozy chair in the corner of a waterfront home"
+image:
+  - /assets/images/other/tina-witherspoon-unsplash.jpg
+image_alt: Cozy chair in the corner of a waterfront home
 image_credit:
   photographer: Tina Witherspoon
-  username: "@tspoonphoto"
-  photo_url: "https://unsplash.com/photos/white-round-table-with-2-chairs-fpKrFJUiPA8"
+  username: '@tspoonphoto'
+  photo_url: https://unsplash.com/photos/white-round-table-with-2-chairs-fpKrFJUiPA8
 author:
   name: Helen Burgess
 socials:
@@ -48,10 +50,10 @@ socials:
   facebook: https://www.facebook.com/
 siteUrl: https://helenburgess.id.au
 bluesky_description: Who am I when no one needs me? On loosening the grip of usefulness and learning to be enough in the quiet.
-mastodon_description: "On loosening the grip of usefulness—and staying anyway. Finding identity beyond being needed, in the quiet between tasks. #Reflection #Resilience #MentalHealth"
+mastodon_description: 'On loosening the grip of usefulness—and staying anyway. Finding identity beyond being needed, in the quiet between tasks. #Reflection #Resilience #MentalHealth'
 facebook_description: When the to-do list goes quiet, who are we without being useful? This essay sits with that unease—then looks for a gentler footing. On finding worth beyond output, and learning to be enough in the quiet.
 newsletter: true
-draft: true
+draft: false
 ---
 
 There's a specific kind of quiet that settles in when no one needs you urgently. It's not peaceful. Not at first. It sits in your chest like a question you can't articulate, a low hum of unease that follows you from room to room.
