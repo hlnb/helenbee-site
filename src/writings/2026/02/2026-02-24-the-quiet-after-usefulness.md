@@ -36,7 +36,7 @@ tags:
   - Knitting
 category: lived-experience
 image:
-  - /assets/images/other/tina-witherspoon-unsplash.jpg
+  - /assets/images/other/tina-witherspoon-fpKrFJUiPA8-unsplash.jpg
 image_alt: Cozy chair in the corner of a waterfront home
 image_credit:
   photographer: Tina Witherspoon
