@@ -3,7 +3,7 @@ layout: layouts/writing.njk
 title: The Quiet After Usefulness
 subtitle: On Not Being Needed—and Staying Anyway
 description: A reflective essay on loosening the grip of usefulness—finding self-worth in quiet moments, beyond productivity, obligation, and being needed.
-excerpt: ''
+excerpt: A reflective essay on loosening the grip of usefulness—finding self-worth in quiet moments, beyond productivity, obligation, and being needed.
 date: 2026-02-24T12:09:00
 publishedDate: 2026-02-24T12:10:00
 theme: Identity & Belonging
