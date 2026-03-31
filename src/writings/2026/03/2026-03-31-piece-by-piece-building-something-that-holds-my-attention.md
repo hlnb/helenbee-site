@@ -25,7 +25,13 @@ keywords:
   - quiet activities for an anxious mind,
   - craft as grounding practice,
 type: reflection
-tags: []
+tags:
+  - Mindful Making
+  - Mental Health
+  - Creativity & Healing
+  - Quiet Mind
+  - healing through Creativity
+  - Grounding Practices
 category: creative
 image:
   - /assets/images/other/wooden-kit-assembly.jpg
