@@ -116,7 +116,7 @@ eleventyNavigation:
 // Client-side pagination for key writing categories
 document.addEventListener('DOMContentLoaded', function () {
   try {
-  const paginatedCategories = {{ paginatedCategories | json | safe }};
+  const paginatedCategories = {{ paginatedCategories | dump | safe }};
     const perPage = 6;
 
     paginatedCategories.forEach((categoryKey) => {

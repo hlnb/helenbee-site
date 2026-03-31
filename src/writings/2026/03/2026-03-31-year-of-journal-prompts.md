@@ -1,9 +1,9 @@
 ---
 _schema: default
 layout: layouts/writing.njk
-title: A Year of Gentle Journal Prompts
-subtitle: Monthly themes and daily reflections inspired by the cozy ritual I first saw in the Coffeemonterzco journal prompt series.
-description: A full-year journaling guide with month-by-month themes and daily prompts designed to anchor self-reflection, creativity, and nervous system care.
+title: 365 Days of Turning Inward — Daily Journal Prompts
+subtitle: A rolling yearly resource inspired by the cozy ritual I first saw in the Coffeemonterzco journal prompt series.
+description: A running yearly journaling guide with month-by-month themes and daily prompts designed to anchor self-reflection, creativity, and nervous system care.
 date: 2026-03-31T09:00:00+08:00
 publishedDate: 2026-03-31T09:00:00+08:00
 theme: reflection
@@ -40,7 +40,7 @@ newsletter: true
 draft: false
 ---
 
-## 365 Days of Turning Inward — Your 2026 Daily Journal Prompts
+<link rel="stylesheet" href="/css/journal-accordion.css">
 
 _A rolling resource for anyone who wants to think more clearly, feel more honestly, and live more intentionally — one prompt at a time._
 
@@ -58,248 +58,510 @@ Use them however works for you. Daily, if that's your practice. Weekly, if that'
 
 I have loved the cozy prompt calendars that Coffeemonterzco shares each season. They feel like a handwritten note reminding me to pause and check in. This post borrows that same energy: twelve themes, one for each month, with daily prompts that match the rhythm of the calendar. You can follow along in order, pick the days that resonate, or mix and match when you need a nudge.
 
----
-
-How to use this guide:
+**How to use this guide:**
 
 - Read the monthly focus and jot down a grounding intention.
 - Use the daily prompt as a starting sentence, list, or sketch. Stop as soon as you feel done.
 - Circle the questions that land and revisit them later in the year to notice what has shifted.
-
-## January 2026
-
-### _Theme: Turning toward the year with honesty, not pressure_
-
-January is often framed as a time for transformation. I'd rather frame it as a time for noticing. Before you set a single goal, before you make a single plan — what's actually true? These prompts begin there.
-
-**January 1** — What feels true about you right now?
-
-**January 2** — What's one small thing you did recently that you're quietly proud of?
-
-**January 3** — What do you want more space for this month?
-
-**January 4** — What do you want less noise from this month?
-
-**January 5** — What's a "boring" habit that makes your life noticeably better?
-
-**January 6** — What's a rule you've made for yourself that you're ready to retire?
-
-**January 7** — What do you tend to over-explain? When do you feel the need to?
-
-**January 8** — What's a purchase under $50 that improved your day-to-day life?
-
-**January 9** — What's a smell that instantly takes you somewhere else?
-
-**January 10** — If you could add a "reset button" to one part of your life, where would it go?
-
-**January 11** — What's a strong opinion you have about something trivial?
-
-**January 12** — What's something you're currently avoiding? What would "starting tiny" look like?
-
-**January 13** — What do you wish people understood about you without you having to say it?
-
-**January 14** — What's the best use of 30 minutes in your world right now?
-
-**January 15** — What's a compliment you still remember? Why did it land?
-
-**January 16** — What do you do when you're running low on energy?
-
-**January 17** — What's a social habit you love in others? What's one you struggle with?
-
-**January 18** — Describe your ideal ordinary day. Not a holiday, not a fantasy — just a great "normal."
-
-**January 19** — What's a "small joy" you want to notice more often?
-
-**January 20** — If someone shadowed you for a day, what would surprise them?
-
-**January 21** — What's something you're better at than you give yourself credit for?
-
-**January 22** — What's a boundary you want to hold more calmly this year?
-
-**January 23** — What's a conversation you've been rehearsing in your head?
-
-**January 24** — What's a skill you'd like to get 10% better at by the end of 2026?
-
-**January 25** — What do you miss that you didn't expect to miss?
-
-**January 26** — What's one thing you want Future You to thank you for?
-
-**January 27** — What's a belief you've outgrown — even if it once helped you survive?
-
-**January 28** — What's your relationship with "rest" at the moment?
-
-**January 29** — What's something you want to keep private and sacred this year?
-
-**January 30** — If you had an extra two hours today, what would you genuinely choose?
-
-**January 31** — What will you carry into February — and what stays in January?
+- Click any month below to expand its prompts.
 
 ---
 
-## February 2026
-
-### _Theme: Steadiness, self-knowledge, and the quiet work of becoming_
-
-February is a month that doesn't announce itself. It's the time when the novelty of January has settled and the real texture of the year begins to show. These prompts slow down. They ask you to look more carefully — not at what you're doing, but at how you're being.
-
-**February 1** — What feels steadier in me now than it did a month ago?
-_(No need for big wins — small shifts count.)_
-
-**February 2** — Where am I still rushing myself internally, even if my outer pace looks calm?
-
-**February 3** — What does "enough" look like for me on an ordinary day right now?
-
-**February 4** — When do I feel most like myself during the day — and what's present in that moment?
-
-**February 5** — What emotion have I been trying to manage instead of listening to?
-
-**February 6** — What's something I'm allowing myself to do imperfectly — and how does that feel?
-
-**February 7** — Where am I practising restraint, not avoidance?
-_(This one's subtle. Take your time.)_
-
-**February 8** — What kind of reassurance do I keep seeking — and what might it sound like if it came from me instead?
-
-**February 9** — What has surprised me about my capacity recently?
-
-**February 10** — What am I learning about my nervous system from my daily rhythms?
-
-**February 11** — Where does confidence show up quietly in my life, without performance?
-
-**February 12** — What am I saying "yes" to that supports who I'm becoming — not who I used to be?
-
-**February 13** — What's one thing I no longer need to explain or justify?
-
-**February 14** — How do I know when I'm pushing versus when I'm choosing?
-
-**February 15** — What part of my life is asking for maintenance, not improvement?
-
-**February 16** — When I imagine being seen more clearly, what's the fear — and what's the hope?
-
-**February 17** — What does consistency actually mean for me, given my energy and limits?
-
-**February 18** — Where have I already been practising courage in small, repeatable ways?
-
-**February 19** — What am I protecting my peace from — and what am I protecting it for?
-
-**February 20** — What would it feel like to trust my pace for the next month only?
-_(No long-range thinking.)_
-
-**February 21** — What feels unfinished — and does it truly need finishing right now?
-
-**February 22** — How am I different from the person I was this time last year, even if it's invisible to others?
-
-**February 23** — What kind of support am I better at giving than receiving? What happens when I reverse that?
-
-**February 24** — Where do I feel most embodied lately — hands, breath, movement, craft, routine?
-
-**February 25** — What belief about myself feels ready to soften?
-
-**February 26** — What would "showing up" look like if it didn't require proving anything?
-
-**February 27** — What am I practising staying with instead of fixing?
-
-**February 28** — As February closes, what do I want to carry forward — and what can stay here?
-
----
-
-## March 2026
-
-### _Theme: Awareness, pattern, agency, and connection_
-
-March moves differently. The light is shifting. There's often a quiet restlessness — or a quiet settling — depending on where you are in your own cycle. I've given this month a four-week structure, because sometimes a little scaffolding helps.
-
----
-
-### Week 1 — Noticing & Awareness
-
-_Paying attention without judgement_
-
-**March 1** — What feels different in me lately, even if I can't fully explain it yet?
-
-**March 2** — Where in my day do I feel most settled?
-
-**March 3** — What have I been carrying quietly that deserves more attention?
-
-**March 4** — What is something small that brought me a sense of ease today?
-
-**March 5** — Where do I notice tension in my body, and what might it be asking for?
-
-**March 6** — What am I learning to accept, rather than fight?
-
-**March 7** — When did I last feel like I could just be myself without effort?
-
----
-
-### Week 2 — Patterns & Insight
-
-_Understanding how you respond to life_
-
-**March 8** — What situations tend to make me overthink or second-guess myself?
-
-**March 9** — How do I usually respond when I feel uncertain?
-
-**March 10** — What is something I've been doing out of habit rather than intention?
-
-**March 11** — Where in my life am I trying to control things that aren't mine to control?
-
-**March 12** — What helps me feel grounded when things feel unsettled?
-
-**March 13** — What is one pattern I'm starting to see more clearly in myself?
-
-**March 14** — Where am I being harder on myself than I would be on someone else?
-
----
-
-### Week 3 — Choice & Agency
-
-_Reclaiming direction, gently_
-
-**March 15** — What would it look like to respond differently in a situation that usually unsettles me?
-
-**March 16** — What is one small choice I made recently that I feel good about?
-
-**March 17** — Where can I give myself permission to slow down?
-
-**March 18** — What does "enough" look like for me right now?
-
-**March 19** — What am I building or working toward, even in small ways?
-
-**March 20** — Where am I choosing growth, even if it feels uncomfortable?
-
-**March 21** — What would it mean to trust myself a little more today?
-
----
-
-### Week 4 — Connection & Meaning
-
-_Relationships, belonging, and presence_
-
-**March 22** — When do I feel most connected to others?
-
-**March 23** — What does quiet companionship look like in my life?
-
-**March 24** — Where do I feel seen or understood, even in small ways?
-
-**March 25** — Today I noticed I felt most like myself when…
-
-**March 26** — What kind of conversations leave me feeling energised rather than drained?
-
-**March 27** — What is something that used to feel difficult that now feels more manageable?
-
-**March 28** — Where in my life am I showing up more authentically than I used to?
-
----
-
-### Final Days — Integration & Reflection
-
-_Pulling meaning from the month_
-
-**March 29** — What has this month shown me about myself?
-
-**March 30** — What am I learning to be more patient with?
-
-**March 31** — What do I want to carry forward into next month — and what can I leave behind?
+<div class="journal-accordion">
+
+<h2 class="year-heading">2026</h2>
+
+<!-- ========== JANUARY 2026 ========== -->
+<details>
+<summary>January 2026</summary>
+<span class="month-theme">Theme: Turning toward the year with honesty, not pressure</span>
+<p class="month-intro">January is often framed as a time for transformation. I'd rather frame it as a time for noticing. Before you set a single goal, before you make a single plan — what's actually true? These prompts begin there.</p>
+<ul class="prompt-list">
+  <li><span class="day">1</span> What feels true about you right now?</li>
+  <li><span class="day">2</span> What's one small thing you did recently that you're quietly proud of?</li>
+  <li><span class="day">3</span> What do you want more space for this month?</li>
+  <li><span class="day">4</span> What do you want less noise from this month?</li>
+  <li><span class="day">5</span> What's a "boring" habit that makes your life noticeably better?</li>
+  <li><span class="day">6</span> What's a rule you've made for yourself that you're ready to retire?</li>
+  <li><span class="day">7</span> What do you tend to over-explain? When do you feel the need to?</li>
+  <li><span class="day">8</span> What's a purchase under $50 that improved your day-to-day life?</li>
+  <li><span class="day">9</span> What's a smell that instantly takes you somewhere else?</li>
+  <li><span class="day">10</span> If you could add a "reset button" to one part of your life, where would it go?</li>
+  <li><span class="day">11</span> What's a strong opinion you have about something trivial?</li>
+  <li><span class="day">12</span> What's something you're currently avoiding? What would "starting tiny" look like?</li>
+  <li><span class="day">13</span> What do you wish people understood about you without you having to say it?</li>
+  <li><span class="day">14</span> What's the best use of 30 minutes in your world right now?</li>
+  <li><span class="day">15</span> What's a compliment you still remember? Why did it land?</li>
+  <li><span class="day">16</span> What do you do when you're running low on energy?</li>
+  <li><span class="day">17</span> What's a social habit you love in others? What's one you struggle with?</li>
+  <li><span class="day">18</span> Describe your ideal ordinary day. Not a holiday, not a fantasy — just a great "normal."</li>
+  <li><span class="day">19</span> What's a "small joy" you want to notice more often?</li>
+  <li><span class="day">20</span> If someone shadowed you for a day, what would surprise them?</li>
+  <li><span class="day">21</span> What's something you're better at than you give yourself credit for?</li>
+  <li><span class="day">22</span> What's a boundary you want to hold more calmly this year?</li>
+  <li><span class="day">23</span> What's a conversation you've been rehearsing in your head?</li>
+  <li><span class="day">24</span> What's a skill you'd like to get 10% better at by the end of 2026?</li>
+  <li><span class="day">25</span> What do you miss that you didn't expect to miss?</li>
+  <li><span class="day">26</span> What's one thing you want Future You to thank you for?</li>
+  <li><span class="day">27</span> What's a belief you've outgrown — even if it once helped you survive?</li>
+  <li><span class="day">28</span> What's your relationship with "rest" at the moment?</li>
+  <li><span class="day">29</span> What's something you want to keep private and sacred this year?</li>
+  <li><span class="day">30</span> If you had an extra two hours today, what would you genuinely choose?</li>
+  <li><span class="day">31</span> What will you carry into February — and what stays in January?</li>
+</ul>
+</details>
+
+<!-- ========== FEBRUARY 2026 ========== -->
+<details>
+<summary>February 2026</summary>
+<span class="month-theme">Theme: Steadiness, self-knowledge, and the quiet work of becoming</span>
+<p class="month-intro">February is a month that doesn't announce itself. It's the time when the novelty of January has settled and the real texture of the year begins to show. These prompts slow down. They ask you to look more carefully — not at what you're doing, but at how you're being.</p>
+<ul class="prompt-list">
+  <li><span class="day">1</span> What feels steadier in me now than it did a month ago? <em>No need for big wins — small shifts count.</em></li>
+  <li><span class="day">2</span> Where am I still rushing myself internally, even if my outer pace looks calm?</li>
+  <li><span class="day">3</span> What does "enough" look like for me on an ordinary day right now?</li>
+  <li><span class="day">4</span> When do I feel most like myself during the day — and what's present in that moment?</li>
+  <li><span class="day">5</span> What emotion have I been trying to manage instead of listening to?</li>
+  <li><span class="day">6</span> What's something I'm allowing myself to do imperfectly — and how does that feel?</li>
+  <li><span class="day">7</span> Where am I practising restraint, not avoidance? <em>This one's subtle. Take your time.</em></li>
+  <li><span class="day">8</span> What kind of reassurance do I keep seeking — and what might it sound like if it came from me instead?</li>
+  <li><span class="day">9</span> What has surprised me about my capacity recently?</li>
+  <li><span class="day">10</span> What am I learning about my nervous system from my daily rhythms?</li>
+  <li><span class="day">11</span> Where does confidence show up quietly in my life, without performance?</li>
+  <li><span class="day">12</span> What am I saying "yes" to that supports who I'm becoming — not who I used to be?</li>
+  <li><span class="day">13</span> What's one thing I no longer need to explain or justify?</li>
+  <li><span class="day">14</span> How do I know when I'm pushing versus when I'm choosing?</li>
+  <li><span class="day">15</span> What part of my life is asking for maintenance, not improvement?</li>
+  <li><span class="day">16</span> When I imagine being seen more clearly, what's the fear — and what's the hope?</li>
+  <li><span class="day">17</span> What does consistency actually mean for me, given my energy and limits?</li>
+  <li><span class="day">18</span> Where have I already been practising courage in small, repeatable ways?</li>
+  <li><span class="day">19</span> What am I protecting my peace from — and what am I protecting it for?</li>
+  <li><span class="day">20</span> What would it feel like to trust my pace for the next month only? <em>No long-range thinking.</em></li>
+  <li><span class="day">21</span> What feels unfinished — and does it truly need finishing right now?</li>
+  <li><span class="day">22</span> How am I different from the person I was this time last year, even if it's invisible to others?</li>
+  <li><span class="day">23</span> What kind of support am I better at giving than receiving? What happens when I reverse that?</li>
+  <li><span class="day">24</span> Where do I feel most embodied lately — hands, breath, movement, craft, routine?</li>
+  <li><span class="day">25</span> What belief about myself feels ready to soften?</li>
+  <li><span class="day">26</span> What would "showing up" look like if it didn't require proving anything?</li>
+  <li><span class="day">27</span> What am I practising staying with instead of fixing?</li>
+  <li><span class="day">28</span> As February closes, what do I want to carry forward — and what can stay here?</li>
+</ul>
+</details>
+
+<!-- ========== MARCH 2026 ========== -->
+<details>
+<summary>March 2026</summary>
+<span class="month-theme">Theme: Awareness, pattern, agency, and connection</span>
+<p class="month-intro">March moves differently. The light is shifting. There's often a quiet restlessness — or a quiet settling — depending on where you are in your own cycle. I've given this month a four-week structure, because sometimes a little scaffolding helps.</p>
+
+<h4 class="week-heading">Week 1 — Noticing &amp; Awareness</h4>
+<span class="week-subtitle">Paying attention without judgement</span>
+<ul class="prompt-list">
+  <li><span class="day">1</span> What feels different in me lately, even if I can't fully explain it yet?</li>
+  <li><span class="day">2</span> Where in my day do I feel most settled?</li>
+  <li><span class="day">3</span> What have I been carrying quietly that deserves more attention?</li>
+  <li><span class="day">4</span> What is something small that brought me a sense of ease today?</li>
+  <li><span class="day">5</span> Where do I notice tension in my body, and what might it be asking for?</li>
+  <li><span class="day">6</span> What am I learning to accept, rather than fight?</li>
+  <li><span class="day">7</span> When did I last feel like I could just be myself without effort?</li>
+</ul>
+
+<h4 class="week-heading">Week 2 — Patterns &amp; Insight</h4>
+<span class="week-subtitle">Understanding how you respond to life</span>
+<ul class="prompt-list">
+  <li><span class="day">8</span> What situations tend to make me overthink or second-guess myself?</li>
+  <li><span class="day">9</span> How do I usually respond when I feel uncertain?</li>
+  <li><span class="day">10</span> What is something I've been doing out of habit rather than intention?</li>
+  <li><span class="day">11</span> Where in my life am I trying to control things that aren't mine to control?</li>
+  <li><span class="day">12</span> What helps me feel grounded when things feel unsettled?</li>
+  <li><span class="day">13</span> What is one pattern I'm starting to see more clearly in myself?</li>
+  <li><span class="day">14</span> Where am I being harder on myself than I would be on someone else?</li>
+</ul>
+
+<h4 class="week-heading">Week 3 — Choice &amp; Agency</h4>
+<span class="week-subtitle">Reclaiming direction, gently</span>
+<ul class="prompt-list">
+  <li><span class="day">15</span> What would it look like to respond differently in a situation that usually unsettles me?</li>
+  <li><span class="day">16</span> What is one small choice I made recently that I feel good about?</li>
+  <li><span class="day">17</span> Where can I give myself permission to slow down?</li>
+  <li><span class="day">18</span> What does "enough" look like for me right now?</li>
+  <li><span class="day">19</span> What am I building or working toward, even in small ways?</li>
+  <li><span class="day">20</span> Where am I choosing growth, even if it feels uncomfortable?</li>
+  <li><span class="day">21</span> What would it mean to trust myself a little more today?</li>
+</ul>
+
+<h4 class="week-heading">Week 4 — Connection &amp; Meaning</h4>
+<span class="week-subtitle">Relationships, belonging, and presence</span>
+<ul class="prompt-list">
+  <li><span class="day">22</span> When do I feel most connected to others?</li>
+  <li><span class="day">23</span> What does quiet companionship look like in my life?</li>
+  <li><span class="day">24</span> Where do I feel seen or understood, even in small ways?</li>
+  <li><span class="day">25</span> Today I noticed I felt most like myself when…</li>
+  <li><span class="day">26</span> What kind of conversations leave me feeling energised rather than drained?</li>
+  <li><span class="day">27</span> What is something that used to feel difficult that now feels more manageable?</li>
+  <li><span class="day">28</span> Where in my life am I showing up more authentically than I used to?</li>
+</ul>
+
+<h4 class="week-heading">Final Days — Integration &amp; Reflection</h4>
+<span class="week-subtitle">Pulling meaning from the month</span>
+<ul class="prompt-list">
+  <li><span class="day">29</span> What has this month shown me about myself?</li>
+  <li><span class="day">30</span> What am I learning to be more patient with?</li>
+  <li><span class="day">31</span> What do I want to carry forward into next month — and what can I leave behind?</li>
+</ul>
+</details>
+
+<!-- ========== APRIL 2026 ========== -->
+<details>
+<summary>April 2026 — Creative Rewilding</summary>
+<ul class="prompt-list">
+  <li><span class="day">1</span> What creative practice feels wild and alive right now?</li>
+  <li><span class="day">2</span> Where can I swap screen time for tactile play?</li>
+  <li><span class="day">3</span> Describe a colour palette that excites me today.</li>
+  <li><span class="day">4</span> What rule about creativity am I willing to break?</li>
+  <li><span class="day">5</span> How does nature influence my ideas?</li>
+  <li><span class="day">6</span> Which unfinished project deserves a playful revisit?</li>
+  <li><span class="day">7</span> What is my relationship with boredom lately?</li>
+  <li><span class="day">8</span> Write about a time curiosity led to delight.</li>
+  <li><span class="day">9</span> Where can I invite collaborators into my process?</li>
+  <li><span class="day">10</span> What medium is calling to me, even if I feel clumsy?</li>
+  <li><span class="day">11</span> How do I make space for mistakes when creating?</li>
+  <li><span class="day">12</span> What soundtrack or soundscape unlocks flow?</li>
+  <li><span class="day">13</span> Describe the first step toward a dream experiment.</li>
+  <li><span class="day">14</span> Which creative muscle needs rest instead of forcing?</li>
+  <li><span class="day">15</span> How can I capture ideas before they float away?</li>
+  <li><span class="day">16</span> What creative boundary actually sparks innovation?</li>
+  <li><span class="day">17</span> Where have I grown since last April?</li>
+  <li><span class="day">18</span> What object around me deserves a sketch or description?</li>
+  <li><span class="day">19</span> How can I make my workspace feel more alive?</li>
+  <li><span class="day">20</span> Which rituals mark the shift into creative mode?</li>
+  <li><span class="day">21</span> What am I ready to share, even if it feels rough?</li>
+  <li><span class="day">22</span> How can I honour the seasons in my making?</li>
+  <li><span class="day">23</span> Where does comparison steal my joy, and how will I respond?</li>
+  <li><span class="day">24</span> What story about my creativity do I want to retire?</li>
+  <li><span class="day">25</span> How can I bring more play into routine tasks?</li>
+  <li><span class="day">26</span> Describe a sensory detail from today that deserves a poem.</li>
+  <li><span class="day">27</span> What helps me return when I feel blocked?</li>
+  <li><span class="day">28</span> Which dream from childhood still whispers to me?</li>
+  <li><span class="day">29</span> How will I protect white space on my calendar?</li>
+  <li><span class="day">30</span> What did creative rewilding teach me this month?</li>
+</ul>
+</details>
+
+<!-- ========== MAY 2026 ========== -->
+<details>
+<summary>May 2026 — Body Listening</summary>
+<ul class="prompt-list">
+  <li><span class="day">1</span> What is my body asking for first thing in the morning?</li>
+  <li><span class="day">2</span> Describe how stress feels physically right now.</li>
+  <li><span class="day">3</span> Where can I soften muscle tension today?</li>
+  <li><span class="day">4</span> What movement brings joy without tracking it?</li>
+  <li><span class="day">5</span> How do I nourish myself when appetite dips?</li>
+  <li><span class="day">6</span> Which health story am I rewriting?</li>
+  <li><span class="day">7</span> What does rested feel like versus tired-but-pushing?</li>
+  <li><span class="day">8</span> How can I make medication or treatment more compassionate?</li>
+  <li><span class="day">9</span> What clothing feels most like care on my skin?</li>
+  <li><span class="day">10</span> When did I last say no to protect my energy?</li>
+  <li><span class="day">11</span> Where do I need professional support or checkups?</li>
+  <li><span class="day">12</span> How do I celebrate sensory pleasures guilt-free?</li>
+  <li><span class="day">13</span> What role does hydration play in my mood?</li>
+  <li><span class="day">14</span> Which food feels like comfort without apology?</li>
+  <li><span class="day">15</span> How can I track symptoms without obsessing?</li>
+  <li><span class="day">16</span> What does strength mean beyond appearance?</li>
+  <li><span class="day">17</span> Where am I overriding alarms my body sends?</li>
+  <li><span class="day">18</span> Describe a ritual that grounds me before sleep.</li>
+  <li><span class="day">19</span> What pace of life best supports healing?</li>
+  <li><span class="day">20</span> How will I thank my body for resilience today?</li>
+  <li><span class="day">21</span> Where can I practise befriending pain or discomfort?</li>
+  <li><span class="day">22</span> Which practices regulate my nervous system quickly?</li>
+  <li><span class="day">23</span> What messages about bodies do I want to unlearn?</li>
+  <li><span class="day">24</span> How do I create medical notes or trackers that feel manageable?</li>
+  <li><span class="day">25</span> What scents or textures feel safe when I am overwhelmed?</li>
+  <li><span class="day">26</span> How can I ask for accommodations without shame?</li>
+  <li><span class="day">27</span> What does a kinder relationship with mirrors look like?</li>
+  <li><span class="day">28</span> Where did my body surprise me this month?</li>
+  <li><span class="day">29</span> What boundaries protect rest on busy days?</li>
+  <li><span class="day">30</span> How has body listening changed my decisions?</li>
+  <li><span class="day">31</span> What joyful movement will I bring into June?</li>
+</ul>
+</details>
+
+<!-- ========== JUNE 2026 ========== -->
+<details>
+<summary>June 2026 — Midyear Inventory</summary>
+<ul class="prompt-list">
+  <li><span class="day">1</span> What word describes the first half of my year?</li>
+  <li><span class="day">2</span> Which goals still feel alive, and which need retiring?</li>
+  <li><span class="day">3</span> Where have I grown quietly without fanfare?</li>
+  <li><span class="day">4</span> What support systems worked well so far?</li>
+  <li><span class="day">5</span> How do I want to feel on 31 December?</li>
+  <li><span class="day">6</span> Which commitments need renegotiation?</li>
+  <li><span class="day">7</span> What metrics for success can I release?</li>
+  <li><span class="day">8</span> Where do I need to double down with focus?</li>
+  <li><span class="day">9</span> Which relationships need tending this winter?</li>
+  <li><span class="day">10</span> What am I celebrating from the past six months?</li>
+  <li><span class="day">11</span> How does my calendar reflect my priorities (or not)?</li>
+  <li><span class="day">12</span> What money story am I re-evaluating midyear?</li>
+  <li><span class="day">13</span> Where am I craving mentorship or community?</li>
+  <li><span class="day">14</span> What does sustainable productivity look like for me?</li>
+  <li><span class="day">15</span> Which habit deserves more structure?</li>
+  <li><span class="day">16</span> How can I build more margin into July and August?</li>
+  <li><span class="day">17</span> What surprised me about myself recently?</li>
+  <li><span class="day">18</span> Where do I need to rest before re-entering?</li>
+  <li><span class="day">19</span> What am I grateful for that I did not plan?</li>
+  <li><span class="day">20</span> Which experiments flopped, and what did I learn?</li>
+  <li><span class="day">21</span> How can I bring delight into the next quarter?</li>
+  <li><span class="day">22</span> Where am I still hiding a dream?</li>
+  <li><span class="day">23</span> What boundary needs refreshing midyear?</li>
+  <li><span class="day">24</span> How will I document progress before moving on?</li>
+  <li><span class="day">25</span> Which skills am I excited to sharpen?</li>
+  <li><span class="day">26</span> What feels unfinished and worth recommitting to?</li>
+  <li><span class="day">27</span> How can I make the next six months gentler?</li>
+  <li><span class="day">28</span> What would future me thank me for starting now?</li>
+  <li><span class="day">29</span> Where do I need to ask different questions?</li>
+  <li><span class="day">30</span> What does a midyear pause look like in practice?</li>
+</ul>
+</details>
+
+<!-- ========== JULY 2026 ========== -->
+<details>
+<summary>July 2026 — Community and Connection</summary>
+<ul class="prompt-list">
+  <li><span class="day">1</span> Who feels like a safe harbour right now?</li>
+  <li><span class="day">2</span> Where can I let someone in a little more?</li>
+  <li><span class="day">3</span> How do I show up for my local community?</li>
+  <li><span class="day">4</span> Which conversation energised me recently?</li>
+  <li><span class="day">5</span> What do I need from my support network this month?</li>
+  <li><span class="day">6</span> How can I practise being a better listener?</li>
+  <li><span class="day">7</span> Where can I set social media boundaries?</li>
+  <li><span class="day">8</span> Which tradition or ritual connects me to others?</li>
+  <li><span class="day">9</span> How do I handle loneliness when it appears?</li>
+  <li><span class="day">10</span> What tiny kindness can I offer anonymously?</li>
+  <li><span class="day">11</span> Where have I grown braver in sharing my truth?</li>
+  <li><span class="day">12</span> Who deserves a thank-you note today?</li>
+  <li><span class="day">13</span> What community spaces feel welcoming, and why?</li>
+  <li><span class="day">14</span> How do I replenish after social time?</li>
+  <li><span class="day">15</span> Which collaboration idea excites me?</li>
+  <li><span class="day">16</span> Where can I be more honest about my capacity?</li>
+  <li><span class="day">17</span> What does mutual aid mean to me this month?</li>
+  <li><span class="day">18</span> Which online connection feels surprisingly real?</li>
+  <li><span class="day">19</span> What assumptions about people can I challenge?</li>
+  <li><span class="day">20</span> How do I celebrate others without shrinking myself?</li>
+  <li><span class="day">21</span> Where do I need to repair or clarify something?</li>
+  <li><span class="day">22</span> What would a community sabbatical look like?</li>
+  <li><span class="day">23</span> Who can I learn from right now?</li>
+  <li><span class="day">24</span> How do I maintain connection during transition seasons?</li>
+  <li><span class="day">25</span> What role models remind me to lead with care?</li>
+  <li><span class="day">26</span> Where can I say yes even if it feels vulnerable?</li>
+  <li><span class="day">27</span> What practice keeps resentment from building?</li>
+  <li><span class="day">28</span> How can I leave a space better than I found it?</li>
+  <li><span class="day">29</span> Who do I want to invite over, and what would we do?</li>
+  <li><span class="day">30</span> What does belonging mean for me at this age?</li>
+  <li><span class="day">31</span> How will I celebrate my people at month end?</li>
+</ul>
+</details>
+
+<!-- ========== AUGUST 2026 ========== -->
+<details>
+<summary>August 2026 — Learning and Curiosity</summary>
+<ul class="prompt-list">
+  <li><span class="day">1</span> What am I curious about before checking my phone?</li>
+  <li><span class="day">2</span> Which subject lights up my brain lately?</li>
+  <li><span class="day">3</span> How can I make learning more embodied?</li>
+  <li><span class="day">4</span> What book or podcast is reshaping my thinking?</li>
+  <li><span class="day">5</span> Where am I afraid to be a beginner?</li>
+  <li><span class="day">6</span> How do I document insights so they stick?</li>
+  <li><span class="day">7</span> Which teacher or guide am I grateful for?</li>
+  <li><span class="day">8</span> What experiment can I run this week?</li>
+  <li><span class="day">9</span> How can I turn mistakes into data, not drama?</li>
+  <li><span class="day">10</span> Where can I blend creativity and learning?</li>
+  <li><span class="day">11</span> What questions am I avoiding because they feel big?</li>
+  <li><span class="day">12</span> How do I recharge after deep study?</li>
+  <li><span class="day">13</span> Which skills need more repetition, not intensity?</li>
+  <li><span class="day">14</span> What does playful research look like?</li>
+  <li><span class="day">15</span> Where have I outgrown an old viewpoint?</li>
+  <li><span class="day">16</span> What analogue tools help me learn best?</li>
+  <li><span class="day">17</span> How do I share knowledge without gatekeeping?</li>
+  <li><span class="day">18</span> Which curiosity project deserves a deadline?</li>
+  <li><span class="day">19</span> How can I protect white space for reading?</li>
+  <li><span class="day">20</span> What am I ready to unlearn?</li>
+  <li><span class="day">21</span> Where can I ask for feedback with an open heart?</li>
+  <li><span class="day">22</span> Which mentors would I love to thank?</li>
+  <li><span class="day">23</span> How do I stay gentle with myself during complex topics?</li>
+  <li><span class="day">24</span> What cross-disciplinary idea intrigues me?</li>
+  <li><span class="day">25</span> Where does curiosity intersect with justice for me?</li>
+  <li><span class="day">26</span> What am I willing to learn out loud?</li>
+  <li><span class="day">27</span> How can I gamify progress to keep it fun?</li>
+  <li><span class="day">28</span> What learning milestone will I celebrate soon?</li>
+  <li><span class="day">29</span> Where do I need to step back and let curiosity breathe?</li>
+  <li><span class="day">30</span> How will I carry this month's insights into September?</li>
+</ul>
+</details>
+
+<!-- ========== SEPTEMBER 2026 ========== -->
+<details>
+<summary>September 2026 — Harvest What Matters</summary>
+<ul class="prompt-list">
+  <li><span class="day">1</span> What am I harvesting emotionally this season?</li>
+  <li><span class="day">2</span> Which projects are ready for completion?</li>
+  <li><span class="day">3</span> Where do I need to prune distractions?</li>
+  <li><span class="day">4</span> How do I store inspiration for leaner months?</li>
+  <li><span class="day">5</span> What relationships are flourishing, and why?</li>
+  <li><span class="day">6</span> Where am I overproducing at the expense of joy?</li>
+  <li><span class="day">7</span> What does enough look like in my finances this month?</li>
+  <li><span class="day">8</span> How can I honour the labour that brought me here?</li>
+  <li><span class="day">9</span> What seeds am I planting for next year?</li>
+  <li><span class="day">10</span> Where can I slow down to notice progress?</li>
+  <li><span class="day">11</span> What am I grateful for that was once uncertain?</li>
+  <li><span class="day">12</span> How do I practise discernment when opportunities arise?</li>
+  <li><span class="day">13</span> Which routines are ripe for change?</li>
+  <li><span class="day">14</span> How can I share the abundance I am experiencing?</li>
+  <li><span class="day">15</span> Where am I still waiting for permission?</li>
+  <li><span class="day">16</span> What symbols of harvest resonate with me?</li>
+  <li><span class="day">17</span> How do I archive memories or lessons effectively?</li>
+  <li><span class="day">18</span> Which habit needs a celebratory marker when completed?</li>
+  <li><span class="day">19</span> What am I clutching that I could release?</li>
+  <li><span class="day">20</span> How do I care for my body during busy harvest seasons?</li>
+  <li><span class="day">21</span> Where can I invite help to finish strong?</li>
+  <li><span class="day">22</span> What creative project wants to be wrapped up?</li>
+  <li><span class="day">23</span> How do I honour rest after periods of output?</li>
+  <li><span class="day">24</span> What did this month teach me about priorities?</li>
+  <li><span class="day">25</span> Where can I resist the urge to start something new?</li>
+  <li><span class="day">26</span> How am I tending to friendships amid busyness?</li>
+  <li><span class="day">27</span> What legacy am I quietly building?</li>
+  <li><span class="day">28</span> How will I share the harvest story with others?</li>
+  <li><span class="day">29</span> Where do I need to forgive myself for unfinished work?</li>
+  <li><span class="day">30</span> What am I proud to have gathered this month?</li>
+</ul>
+</details>
+
+<!-- ========== OCTOBER 2026 ========== -->
+<details>
+<summary>October 2026 — Shadow Work and Bravery</summary>
+<ul class="prompt-list">
+  <li><span class="day">1</span> What emotion am I resisting, and why?</li>
+  <li><span class="day">2</span> How does fear manifest in my routines?</li>
+  <li><span class="day">3</span> Which story from my past needs re-examining?</li>
+  <li><span class="day">4</span> Where am I dimming my voice to stay safe?</li>
+  <li><span class="day">5</span> What patterns keep repeating, and what are they teaching?</li>
+  <li><span class="day">6</span> How can I feel anger without burning everything down?</li>
+  <li><span class="day">7</span> Where do I confuse comfort with safety?</li>
+  <li><span class="day">8</span> What secret dream am I afraid to admit?</li>
+  <li><span class="day">9</span> How do I extend compassion to younger versions of me?</li>
+  <li><span class="day">10</span> Which coping strategy needs updating?</li>
+  <li><span class="day">11</span> What would radical honesty look like this week?</li>
+  <li><span class="day">12</span> Where am I brave without noticing?</li>
+  <li><span class="day">13</span> How do I respond when shame shows up?</li>
+  <li><span class="day">14</span> What boundaries are rooted in fear rather than wisdom?</li>
+  <li><span class="day">15</span> Where can I invite a therapist, coach, or trusted friend into the process?</li>
+  <li><span class="day">16</span> How does courage feel in my body today?</li>
+  <li><span class="day">17</span> What masks do I wear in different spaces?</li>
+  <li><span class="day">18</span> When have I done something scared and survived?</li>
+  <li><span class="day">19</span> What is the cost of staying small?</li>
+  <li><span class="day">20</span> How do I ground myself after shadow work?</li>
+  <li><span class="day">21</span> What legacy of resilience runs through my family line?</li>
+  <li><span class="day">22</span> Where can I practise micro-bravery daily?</li>
+  <li><span class="day">23</span> How do I reclaim joy even while doing deep work?</li>
+  <li><span class="day">24</span> What does forgiveness look like when I am not ready to forget?</li>
+  <li><span class="day">25</span> Which fears turned out to be fog once faced?</li>
+  <li><span class="day">26</span> Where am I proud of the boundaries I enforce?</li>
+  <li><span class="day">27</span> How can I celebrate someone else's bravery today?</li>
+  <li><span class="day">28</span> What mantra or phrase helps me keep going?</li>
+  <li><span class="day">29</span> Where do I need ritual to mark a transition?</li>
+  <li><span class="day">30</span> How will I remind myself that healing is nonlinear?</li>
+  <li><span class="day">31</span> What truth am I carrying into November?</li>
+</ul>
+</details>
+
+<!-- ========== NOVEMBER 2026 ========== -->
+<details>
+<summary>November 2026 — Gratitude With Grit</summary>
+<ul class="prompt-list">
+  <li><span class="day">1</span> What simple thing saved me this week?</li>
+  <li><span class="day">2</span> How can I thank the people who hold me steady?</li>
+  <li><span class="day">3</span> Where am I grateful for my own perseverance?</li>
+  <li><span class="day">4</span> Which everyday objects deserve a gratitude entry?</li>
+  <li><span class="day">5</span> How do I balance thankfulness with honest grief?</li>
+  <li><span class="day">6</span> What tradition am I grateful to have created?</li>
+  <li><span class="day">7</span> Where has patience paid off this year?</li>
+  <li><span class="day">8</span> What comforts have I built for myself?</li>
+  <li><span class="day">9</span> How do I practise gratitude when energy is low?</li>
+  <li><span class="day">10</span> Which setback led to an unexpected gift?</li>
+  <li><span class="day">11</span> Where can I express appreciation publicly?</li>
+  <li><span class="day">12</span> What part of my body deserves thanks today?</li>
+  <li><span class="day">13</span> Who needs to hear a kind word right now?</li>
+  <li><span class="day">14</span> How do I track micro-joys on hard days?</li>
+  <li><span class="day">15</span> What opportunities am I thankful for, even if they were scary?</li>
+  <li><span class="day">16</span> Where can I reduce consumption as an act of gratitude?</li>
+  <li><span class="day">17</span> What am I learning about contentment?</li>
+  <li><span class="day">18</span> How do I model gratitude for younger people in my life?</li>
+  <li><span class="day">19</span> What lesson from an elder or ancestor guides me?</li>
+  <li><span class="day">20</span> How can I give back without burning out?</li>
+  <li><span class="day">21</span> Where am I proud of my resourcefulness?</li>
+  <li><span class="day">22</span> What soundtrack pairs with gratitude for me?</li>
+  <li><span class="day">23</span> How do I honour land, culture, or community this month?</li>
+  <li><span class="day">24</span> What old version of me deserves a thank you?</li>
+  <li><span class="day">25</span> Where can I replace obligation with appreciation?</li>
+  <li><span class="day">26</span> What am I grateful for that money cannot buy?</li>
+  <li><span class="day">27</span> How will I mark Gratitude Day, even if informal?</li>
+  <li><span class="day">28</span> What does generous rest look like now?</li>
+  <li><span class="day">29</span> How can I express gratitude through action tomorrow?</li>
+  <li><span class="day">30</span> What am I carrying forward into December as a blessing?</li>
+</ul>
+</details>
+
+<!-- ========== DECEMBER 2026 ========== -->
+<details>
+<summary>December 2026 — Reflection and Release</summary>
+<ul class="prompt-list">
+  <li><span class="day">1</span> What is the headline of my year?</li>
+  <li><span class="day">2</span> Where did I surprise myself with courage?</li>
+  <li><span class="day">3</span> Which intentions stayed steady, and why?</li>
+  <li><span class="day">4</span> What am I proud to have let go of?</li>
+  <li><span class="day">5</span> How do I feel about endings right now?</li>
+  <li><span class="day">6</span> What rituals mark the shift into rest for me?</li>
+  <li><span class="day">7</span> How did I nourish my relationships this year?</li>
+  <li><span class="day">8</span> Where do I still need closure?</li>
+  <li><span class="day">9</span> What memories will I re-read like a favourite book?</li>
+  <li><span class="day">10</span> Which lessons need documenting before January?</li>
+  <li><span class="day">11</span> How did my values guide my decisions?</li>
+  <li><span class="day">12</span> What would younger me say about this year?</li>
+  <li><span class="day">13</span> Where am I still healing, and what support do I need?</li>
+  <li><span class="day">14</span> What am I ready to forgive myself for?</li>
+  <li><span class="day">15</span> How will I honour my grief during festive seasons?</li>
+  <li><span class="day">16</span> What traditions do I want to continue or retire?</li>
+  <li><span class="day">17</span> How has my definition of success evolved?</li>
+  <li><span class="day">18</span> What part of my identity feels more anchored now?</li>
+  <li><span class="day">19</span> Where can I create closure rituals for unfinished projects?</li>
+  <li><span class="day">20</span> What am I grateful to have survived?</li>
+  <li><span class="day">21</span> How do I capture delight before it fades?</li>
+  <li><span class="day">22</span> Which relationships need year-end care packages?</li>
+  <li><span class="day">23</span> What stories am I telling about next year already?</li>
+  <li><span class="day">24</span> How can I rest before deciding on resolutions?</li>
+  <li><span class="day">25</span> What is one word I want to embody next year?</li>
+  <li><span class="day">26</span> How did I practise courage in ordinary moments?</li>
+  <li><span class="day">27</span> Where do I need to say no to protect rest?</li>
+  <li><span class="day">28</span> What will I release at midnight, symbolically or literally?</li>
+  <li><span class="day">29</span> How can I celebrate the person I became this year?</li>
+  <li><span class="day">30</span> What advice would I give someone entering a similar season?</li>
+  <li><span class="day">31</span> How will I re-enter the new year with softness and intent?</li>
+</ul>
+</details>
+
+<!-- ========== 2027 placeholder ========== -->
+<!-- To add 2027 prompts, copy the pattern below:
+<h2 class="year-heading">2027</h2>
+<details>
+<summary>January 2027</summary>
+<span class="month-theme">Theme: ...</span>
+<p class="month-intro">...</p>
+<ul class="prompt-list">
+  <li><span class="day">1</span> ...</li>
+</ul>
+</details>
+-->
+
+</div>
 
 ---
 
@@ -311,309 +573,6 @@ Some prompts will land immediately. Others will sit awkwardly on the page for a 
 
 If you find yourself resistant to a prompt — that's often the most interesting place to begin. _Why don't I want to answer this?_ is sometimes the best question of all.
 
-I'll continue adding prompts through the year. If you're working through these alongside a healing journey, a life transition, or simply a commitment to knowing yourself better — I'd love to hear what's landing for you.
+Journal prompts are not homework; they are invitations. Take what resonates, skip what does not, and add your own questions whenever you feel sparks of curiosity. I hope these notes bring the same gentle accountability that Coffeemonterzco's monthly lists have given me — proof that reflection can be both structured and deeply kind.
 
-_More prompts continue below for April through December. [Subscribe / follow along] to receive each new monthly set (and refinements) as they go live._
-
-## April — Creative Rewilding
-
-1. What creative practice feels wild and alive right now?
-2. Where can I swap screen time for tactile play?
-3. Describe a color palette that excites me today.
-4. What rule about creativity am I willing to break?
-5. How does nature influence my ideas?
-6. Which unfinished project deserves a playful revisit?
-7. What is my relationship with boredom lately?
-8. Write about a time curiosity led to delight.
-9. Where can I invite collaborators into my process?
-10. What medium is calling to me, even if I feel clumsy?
-11. How do I make space for mistakes when creating?
-12. What soundtrack or soundscape unlocks flow?
-13. Describe the first step toward a dream experiment.
-14. Which creative muscle needs rest instead of forcing?
-15. How can I capture ideas before they float away?
-16. What creative boundary actually sparks innovation?
-17. Where have I grown since last April?
-18. What object around me deserves a sketch or description?
-19. How can I make my workspace feel more alive?
-20. Which rituals mark the shift into creative mode?
-21. What am I ready to share, even if it feels rough?
-22. How can I honor the seasons in my making?
-23. Where does comparison steal my joy, and how will I respond?
-24. What story about my creativity do I want to retire?
-25. How can I bring more play into routine tasks?
-26. Describe a sensory detail from today that deserves a poem.
-27. What helps me return when I feel blocked?
-28. Which dream from childhood still whispers to me?
-29. How will I protect white space on my calendar?
-30. What did creative rewilding teach me this month?
-
-## May — Body Listening
-
-1. What is my body asking for first thing in the morning?
-2. Describe how stress feels physically right now.
-3. Where can I soften muscle tension today?
-4. What movement brings joy without tracking it?
-5. How do I nourish myself when appetite dips?
-6. Which health story am I rewriting?
-7. What does rested feel like versus tired-but-pushing?
-8. How can I make medication or treatment more compassionate?
-9. What clothing feels most like care on my skin?
-10. When did I last say no to protect my energy?
-11. Where do I need professional support or checkups?
-12. How do I celebrate sensory pleasures guilt-free?
-13. What role does hydration play in my mood?
-14. Which food feels like comfort without apology?
-15. How can I track symptoms without obsessing?
-16. What does strength mean beyond appearance?
-17. Where am I overriding alarms my body sends?
-18. Describe a ritual that grounds me before sleep.
-19. What pace of life best supports healing?
-20. How will I thank my body for resilience today?
-21. Where can I practice beingfriend pain or discomfort?
-22. Which practices regulate my nervous system quickly?
-23. What messages about bodies do I want to unlearn?
-24. How do I create medical notes or trackers that feel manageable?
-25. What scents or textures feel safe when I am overwhelmed?
-26. How can I ask for accommodations without shame?
-27. What does a kinder relationship with mirrors look like?
-28. Where did my body surprise me this month?
-29. What boundaries protect rest on busy days?
-30. How has body listening changed my decisions?
-31. What joyful movement will I bring into June?
-
-## June — Midyear Inventory
-
-1. What word describes the first half of my year?
-2. Which goals still feel alive, and which need retiring?
-3. Where have I grown quietly without fanfare?
-4. What support systems worked well so far?
-5. How do I want to feel on 31 December?
-6. Which commitments need renegotiation?
-7. What metrics for success can I release?
-8. Where do I need to double down with focus?
-9. Which relationships need tending this winter?
-10. What am I celebrating from the past six months?
-11. How does my calendar reflect my priorities (or not)?
-12. What money story am I re-evaluating midyear?
-13. Where am I craving mentorship or community?
-14. What does sustainable productivity look like for me?
-15. Which habit deserves more structure?
-16. How can I build more margin into July and August?
-17. What surprised me about myself recently?
-18. Where do I need to rest before re-entering?
-19. What am I grateful for that I did not plan?
-20. Which experiments flopped, and what did I learn?
-21. How can I bring delight into the next quarter?
-22. Where am I still hiding a dream?
-23. What boundary needs refreshing midyear?
-24. How will I document progress before moving on?
-25. Which skills am I excited to sharpen?
-26. What feels unfinished and worth recommitting to?
-27. How can I make the next six months gentler?
-28. What would future me thank me for starting now?
-29. Where do I need to ask different questions?
-30. What does a midyear pause look like in practice?
-
-## July — Community and Connection
-
-1. Who feels like a safe harbor right now?
-2. Where can I let someone in a little more?
-3. How do I show up for my local community?
-4. Which conversation energized me recently?
-5. What do I need from my support network this month?
-6. How can I practice being a better listener?
-7. Where can I set social media boundaries?
-8. Which tradition or ritual connects me to others?
-9. How do I handle loneliness when it appears?
-10. What tiny kindness can I offer anonymously?
-11. Where have I grown braver in sharing my truth?
-12. Who deserves a thank-you note today?
-13. What community spaces feel welcoming, and why?
-14. How do I replenish after social time?
-15. Which collaboration idea excites me?
-16. Where can I be more honest about my capacity?
-17. What does mutual aid mean to me this month?
-18. Which online connection feels surprisingly real?
-19. What assumptions about people can I challenge?
-20. How do I celebrate others without shrinking myself?
-21. Where do I need to repair or clarify something?
-22. What would a community sabbatical look like?
-23. Who can I learn from right now?
-24. How do I maintain connection during trans seasons?
-25. What role models remind me to lead with care?
-26. Where can I say yes even if it feels vulnerable?
-27. What practice keeps resentment from building?
-28. How can I leave a space better than I found it?
-29. Who do I want to invite over, and what would we do?
-30. What does belonging mean for me at this age?
-31. How will I celebrate my people at month end?
-
-## August — Learning and Curiosity
-
-1. What am I curious about before checking my phone?
-2. Which subject lights up my brain lately?
-3. How can I make learning more embodied?
-4. What book or podcast is reshaping my thinking?
-5. Where am I afraid to be a beginner?
-6. How do I document insights so they stick?
-7. Which teacher or guide am I grateful for?
-8. What experiment can I run this week?
-9. How can I turn mistakes into data, not drama?
-10. Where can I blend creativity and learning?
-11. What questions am I avoiding because they feel big?
-12. How do I recharge after deep study?
-13. Which skills need more repetition, not intensity?
-14. What does playful research look like?
-15. Where have I outgrown an old viewpoint?
-16. What analog tools help me learn best?
-17. How do I share knowledge without gatekeeping?
-18. Which curiosity project deserves a deadline?
-19. How can I protect white space for reading?
-20. What am I ready to unlearn?
-21. Where can I ask for feedback with an open heart?
-22. Which mentors would I love to thank?
-23. How do I stay gentle with myself during complex topics?
-24. What cross-disciplinary idea intrigues me?
-25. Where does curiosity intersect with justice for me?
-26. What am I willing to learn out loud?
-27. How can I gamify progress to keep it fun?
-28. What learning milestone will I celebrate soon?
-29. Where do I need to step back and let curiosity breathe?
-30. How will I carry this month's insights into September?
-
-## September — Harvest What Matters
-
-1. What am I harvesting emotionally this season?
-2. Which projects are ready for completion?
-3. Where do I need to prune distractions?
-4. How do I store inspiration for leaner months?
-5. What relationships are flourishing, and why?
-6. Where am I overproducing at the expense of joy?
-7. What does enough look like in my finances this month?
-8. How can I honor the labor that brought me here?
-9. What seeds am I planting for next year?
-10. Where can I slow down to notice progress?
-11. What am I grateful for that was once uncertain?
-12. How do I practice discernment when opportunities arise?
-13. Which routines are ripe for change?
-14. How can I share the abundance I am experiencing?
-15. Where am I still waiting for permission?
-16. What symbols of harvest resonate with me?
-17. How do I archive memories or lessons effectively?
-18. Which habit needs a celebratory marker when completed?
-19. What am I clutching that I could release?
-20. How do I care for my body during busy harvest seasons?
-21. Where can I invite help to finish strong?
-22. What creative project wants to be wrapped up?
-23. How do I honour rest after periods of output?
-24. What did this month teach me about priorities?
-25. Where can I resist the urge to start something new?
-26. How am I tending to friendships amid busyness?
-27. What legacy am I quietly building?
-28. How will I share the harvest story with others?
-29. Where do I need to forgive myself for unfinished work?
-30. What am I proud to have gathered this month?
-
-## October — Shadow Work and Bravery
-
-1. What emotion am I resisting, and why?
-2. How does fear manifest in my routines?
-3. Which story from my past needs re-examining?
-4. Where am I dimming my voice to stay safe?
-5. What patterns keep repeating, and what are they teaching?
-6. How can I feel anger without burning everything down?
-7. Where do I confuse comfort with safety?
-8. What secret dream am I afraid to admit?
-9. How do I extend compassion to younger versions of me?
-10. Which coping strategy needs updating?
-11. What would radical honesty look like this week?
-12. Where am I brave without noticing?
-13. How do I respond when shame shows up?
-14. What boundaries are rooted in fear rather than wisdom?
-15. Where can I invite a therapist, coach, or trusted friend into the process?
-16. How does courage feel in my body today?
-17. What masks do I wear in different spaces?
-18. When have I done something scared and survived?
-19. What is the cost of staying small?
-20. How do I ground myself after shadow work?
-21. What legacy of resilience runs through my family line?
-22. Where can I practice micro-bravery daily?
-23. How do I reclaim joy even while doing deep work?
-24. What does forgiveness look like when I am not ready to forget?
-25. Which fears turned out to be fog once faced?
-26. Where am I proud of the boundaries I enforce?
-27. How can I celebrate someone else's bravery today?
-28. What mantra or phrase helps me keep going?
-29. Where do I need ritual to mark a transition?
-30. How will I remind myself that healing is nonlinear?
-31. What truth am I carrying into November?
-
-## November — Gratitude With Grit
-
-1. What simple thing saved me this week?
-2. How can I thank the people who hold me steady?
-3. Where am I grateful for my own perseverance?
-4. Which everyday objects deserve a gratitude entry?
-5. How do I balance thankfulness with honest grief?
-6. What tradition am I grateful to have created?
-7. Where has patience paid off this year?
-8. What comforts have I built for myself?
-9. How do I practice gratitude when energy is low?
-10. Which setback led to an unexpected gift?
-11. Where can I express appreciation publicly?
-12. What part of my body deserves thanks today?
-13. Who needs to hear a kind word right now?
-14. How do I track micro-joys on hard days?
-15. What opportunities am I thankful for, even if they were scary?
-16. Where can I reduce consumption as an act of gratitude?
-17. What am I learning about contentment?
-18. How do I model gratitude for younger people in my life?
-19. What lesson from an elder or ancestor guides me?
-20. How can I give back without burning out?
-21. Where am I proud of my resourcefulness?
-22. What soundtrack pairs with gratitude for me?
-23. How do I honor land, culture, or community this month?
-24. What old version of me deserves a thank you?
-25. Where can I replace obligation with appreciation?
-26. What am I grateful for that money cannot buy?
-27. How will I mark Gratitude Day, even if informal?
-28. What does generous rest look like now?
-29. How can I express gratitude through action tomorrow?
-30. What am I carrying forward into December as a blessing?
-
-## December — Reflection and Release
-
-1. What is the headline of my year?
-2. Where did I surprise myself with courage?
-3. Which intentions stayed steady, and why?
-4. What am I proud to have let go of?
-5. How do I feel about endings right now?
-6. What rituals mark the shift into rest for me?
-7. How did I nourish my relationships this year?
-8. Where do I still need closure?
-9. What memories will I re-read like a favourite book?
-10. Which lessons need documenting before January?
-11. How did my values guide my decisions?
-12. What would younger me say about this year?
-13. Where am I still healing, and what support do I need?
-14. What am I ready to forgive myself for?
-15. How will I honour my grief during festive seasons?
-16. What traditions do I want to continue or retire?
-17. How has my definition of success evolved?
-18. What part of my identity feels more anchored now?
-19. Where can I create closure rituals for unfinished projects?
-20. What am I grateful to have survived?
-21. How do I capture delight before it fades?
-22. Which relationships need year-end care packages?
-23. What stories am I telling about next year already?
-24. How can I rest before deciding on resolutions?
-25. What is one word I want to embody next year?
-26. How did I practice courage in ordinary moments?
-27. Where do I need to say no to protect rest?
-28. What will I release at midnight, symbolically or literally?
-29. How can I celebrate the person I became this year?
-30. What advice would I give someone entering a similar season?
-31. How will I re-enter the new year with softness and intent?
-
-Journal prompts are not homework; they are invitations. Take what resonates, skip what does not, and add your own questions whenever you feel sparks of curiosity. I hope these notes bring the same gentle accountability that Coffeemonterzco's monthly lists have given me—proof that reflection can be both structured and deeply kind.
+I'll continue adding prompts through the year (and into 2027 and beyond). If you're working through these alongside a healing journey, a life transition, or simply a commitment to knowing yourself better — I'd love to hear what's landing for you.
