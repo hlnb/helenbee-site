@@ -141,6 +141,15 @@ module.exports = async function (eleventyConfig) {
 		);
 	});
 
+	eleventyConfig.addFilter("json", function json(value, spacing = 0) {
+		try {
+			return JSON.stringify(value, null, spacing);
+		} catch (error) {
+			console.error("Error stringifying JSON filter input:", error);
+			return "null";
+		}
+	});
+
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", (mdLib) => {
 		mdLib.use(markdownItAnchor, {
