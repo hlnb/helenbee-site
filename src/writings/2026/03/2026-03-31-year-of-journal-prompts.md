@@ -73,7 +73,7 @@ I have loved the cozy prompt calendars that Coffeemonterzco shares each season. 
 
 <!-- ========== JANUARY 2026 ========== -->
 <details>
-<summary>January 2026</summary>
+<summary>January 2026 — Turning toward the year with honesty, not pressure</summary>
 <span class="month-theme">Theme: Turning toward the year with honesty, not pressure</span>
 <p class="month-intro">January is often framed as a time for transformation. I'd rather frame it as a time for noticing. Before you set a single goal, before you make a single plan — what's actually true? These prompts begin there.</p>
 <ul class="prompt-list">
@@ -113,7 +113,7 @@ I have loved the cozy prompt calendars that Coffeemonterzco shares each season. 
 
 <!-- ========== FEBRUARY 2026 ========== -->
 <details>
-<summary>February 2026</summary>
+<summary>February 2026 — Steadiness, self-knowledge, and the quiet work of becoming</summary>
 <span class="month-theme">Theme: Steadiness, self-knowledge, and the quiet work of becoming</span>
 <p class="month-intro">February is a month that doesn't announce itself. It's the time when the novelty of January has settled and the real texture of the year begins to show. These prompts slow down. They ask you to look more carefully — not at what you're doing, but at how you're being.</p>
 <ul class="prompt-list">
@@ -150,7 +150,7 @@ I have loved the cozy prompt calendars that Coffeemonterzco shares each season. 
 
 <!-- ========== MARCH 2026 ========== -->
 <details>
-<summary>March 2026</summary>
+<summary>March 2026 — Awareness, pattern, agency, and connection</summary>
 <span class="month-theme">Theme: Awareness, pattern, agency, and connection</span>
 <p class="month-intro">March moves differently. The light is shifting. There's often a quiet restlessness — or a quiet settling — depending on where you are in your own cycle. I've given this month a four-week structure, because sometimes a little scaffolding helps.</p>
 
