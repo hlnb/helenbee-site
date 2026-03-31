@@ -55,7 +55,7 @@ facebook_description: |-
   The tablecloth was pressed and white. Someone was making a toast. I was smiling in the right places — and somewhere underneath all of it, quietly calculating.
   That pattern has followed me for years. This is what happened when I stopped trying to manage the room — and what I learned about a quieter kind of progress.
 newsletter: true
-draft: true
+draft: false
 ---
 
 The tablecloth was pressed and white. Someone was making a toast. I was smiling in the right places — and somewhere underneath all of it, quietly calculating.
