@@ -23,17 +23,19 @@ eleventyNavigation:
 
 
   <!-- Content Section -->
+{% set paginatedCategories = ['lived-experience', 'reflection', 'technology'] %}
 {% set categories = collections.writingsByCategory | keys | sort %}
 {% for category in categories %}
+  {% set categorySlug = category | lower | replace(' ', '-') %}
+  {% set shouldPaginate = paginatedCategories.indexOf(categorySlug) > -1 %}
   {% set articles = collections.writingsByCategory[category] %}
     <section class="section">
       <h2 class="title is-4">{{ category | capitalize }}</h2>
-      <div class="books-grid" data-category="{{ category | lower | replace(' ', '-') }}">
+      <div class="books-grid" data-category="{{ categorySlug }}">
         {% for article in articles %}
           {% set formattedPublishDate = article.data.publishedDate | formatDate %}
           {% if (not article.data.publishedDate) or (formattedPublishDate <= currentDate) %}
-            {% set is_lived = (category | lower | replace(' ', '-')) == 'lived-experience' %}
-            <article class="book-card post-card{% if is_lived %} paginated-item{% endif %}" data-index="{{ loop.index0 }}">
+            <article class="book-card post-card{% if shouldPaginate %} paginated-item{% endif %}" data-index="{{ loop.index0 }}">
               {% if article.data.image %}
                 <div class="card-media">
                   <img class="card-media-img" src="{{ article.data.image }}" alt="{{ article.data.title }}" loading="lazy">
@@ -63,8 +65,8 @@ eleventyNavigation:
           {% endif %}
         {% endfor %}
         </div>
-        {% if (category | lower) == 'lived-experience' %}
-          <div class="pagination-controls" aria-label="Lived experience pagination" data-category="lived-experience"></div>
+        {% if shouldPaginate %}
+          <div class="pagination-controls" aria-label="{{ category }} pagination" data-category="{{ categorySlug }}"></div>
         {% endif %}
     </section>
   {% endfor %}
@@ -111,52 +113,52 @@ eleventyNavigation:
 </style>
 
 <script>
-// Client-side pagination for Lived Experience category
+// Client-side pagination for key writing categories
 document.addEventListener('DOMContentLoaded', function () {
   try {
-    const categoryKey = 'lived-experience';
+    const paginatedCategories = {{ paginatedCategories | json }};
     const perPage = 6;
-    const grid = document.querySelector(`.books-grid[data-category="${categoryKey}"]`);
-    if (!grid) return;
-    const items = Array.from(grid.querySelectorAll('.paginated-item'));
-    if (items.length <= perPage) return; // no pagination needed
 
-    const totalPages = Math.ceil(items.length / perPage);
-    const controls = document.querySelector(`.pagination-controls[data-category="${categoryKey}"]`);
+    paginatedCategories.forEach((categoryKey) => {
+      const grid = document.querySelector(`.books-grid[data-category="${categoryKey}"]`);
+      if (!grid) return;
 
-    function showPage(page) {
-      const start = (page - 1) * perPage;
-      const end = start + perPage;
-      items.forEach((item, i) => {
-        if (i >= start && i < end) {
-          item.style.display = '';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-      // update controls active state
-      if (controls) {
-        const buttons = controls.querySelectorAll('button[data-page]');
-        buttons.forEach(btn => btn.classList.toggle('is-active', Number(btn.dataset.page) === page));
+      const items = Array.from(grid.querySelectorAll('.paginated-item'));
+      const controls = document.querySelector(`.pagination-controls[data-category="${categoryKey}"]`);
+
+      if (items.length <= perPage) {
+        if (controls) controls.style.display = 'none';
+        return;
       }
-    }
 
-    // Build controls
-    if (controls) {
+      if (!controls) return;
+
+      const totalPages = Math.ceil(items.length / perPage);
+
+      function showPage(page) {
+        const start = (page - 1) * perPage;
+        const end = start + perPage;
+        items.forEach((item, i) => {
+          item.style.display = i >= start && i < end ? '' : 'none';
+        });
+        const buttons = controls.querySelectorAll('button[data-page]');
+        buttons.forEach((btn) => btn.classList.toggle('is-active', Number(btn.dataset.page) === page));
+      }
+
+      controls.innerHTML = '';
       for (let p = 1; p <= totalPages; p++) {
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'pagination-button';
         btn.dataset.page = p;
-        btn.setAttribute('aria-label', `Go to page ${p}`);
+        btn.setAttribute('aria-label', `Go to page ${p} in ${categoryKey.replace('-', ' ')}`);
         btn.textContent = p;
         btn.addEventListener('click', () => showPage(p));
         controls.appendChild(btn);
       }
-    }
 
-    // Initially show first page
-    showPage(1);
+      showPage(1);
+    });
   } catch (e) {
     console.error('Pagination error:', e);
   }
