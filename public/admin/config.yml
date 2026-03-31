@@ -80,6 +80,15 @@ collections:
           - { label: "Technology", value: "technology" }
           - { label: "Reflection", value: "reflection" }
           - { label: "Creative", value: "creative" }
+          - { label: "Craft", value: "craft" }
+      - label: "Series"
+        name: "series"
+        widget: "select"
+        required: false
+        options:
+					- { label: "None", value: "" }
+					- { label: "Mental Health", value: "mental-health" }
+					- { label: "Technology", value: "technology" }
       - label: "Featured Image"
         name: "image"
         widget: "image"
