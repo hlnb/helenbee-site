@@ -9,7 +9,22 @@ excerpt: |-
 date: 2026-03-12T10:30:00
 publishedDate: 2026-03-12T10:30:00
 theme: ''
-keywords: []
+keywords:
+  - emotional regulation in social situations,
+  - staying present in social situations,
+  - social anxiety coping strategies,
+  - overthinking in conversations,
+  - staying calm in social settings,
+  - social interaction fatigue,
+  - feeling overwhelmed in social situations,
+  - quiet confidence in social situations,
+  - how to be yourself around others,
+  - healing through self-awareness,
+  - trauma and social interaction,
+  - mindfulness in everyday life,
+  - regulating the nervous system,
+  - resilience in daily life,
+  - personal growth through lived experience,
 type: reflection
 tags:
   - Veteran-life
@@ -20,6 +35,8 @@ tags:
   - trauma-recovery
   - belonging
 category: lived-experience
+image:
+  - /assets/images/other/tacile-and-calm.jpg
 image_alt: A pressed linen tablecloth. A hand resting on a table. A folded napkin. Something that echoes the opening scene without being literal about it.
 image_credit: null
 author: null
