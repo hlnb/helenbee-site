@@ -35,8 +35,7 @@ tags:
   - trauma-recovery
   - belonging
 category: lived-experience
-image:
-  - /assets/images/other/tacile-and-calm.jpg
+image: /assets/images/other/tacile-and-calm.jpg
 image_alt: A pressed linen tablecloth. A hand resting on a table. A folded napkin. Something that echoes the opening scene without being literal about it.
 image_credit: null
 author: null

@@ -33,8 +33,7 @@ tags:
   - healing through Creativity
   - Grounding Practices
 category: creative
-image:
-  - /assets/images/other/wooden-kit-assembly.jpg
+image: /assets/images/other/wooden-kit-assembly.jpg
 image_alt: wooden model kit, laid out with a person assembling it.
 image_credit: null
 author: null

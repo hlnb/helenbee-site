@@ -27,6 +27,7 @@ collections:
     slug: "{{slug}}"
     path: "{{year}}/{{month}}/{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: "writings/{{year}}/{{month}}/{{year}}-{{month}}-{{day}}-{{slug}}"
+    thumbnail: image
     media_folder: "assets/images/other"
     public_folder: "/assets/images/other"
     editor:
@@ -86,6 +87,7 @@ collections:
       - label: "Featured Image"
         name: "image"
         widget: "image"
+        multiple: false
         required: true
         hint: "Main image - displays as hero image at the top of the post"
         default: "/assets/images/other/placeholder_n9qtza.png"
