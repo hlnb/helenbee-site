@@ -3,7 +3,7 @@ layout: layouts/writing.njk
 title: "What I Finally Have Words For: Understanding Myself Through an AuDHD Lens"
 subtitle: ""
 description: A personal reflection on late-identified AuDHD — what it explains about a lifetime of feeling "Other," and how understanding your neurology can quietly reframe everything.
-excerpt: A personal reflection on late-identified AuDHD — what it explains about a lifetime of feeling "Other," and how understanding your neurology can quietly reframe everything.
+excerpt: Some things are carried for decades before they have a name. Understanding my neurology has felt like standing in a room I've lived in my whole life and finally noticing where the light comes from.
 date: 2026-04-12T11:25:00
 publishedDate: 2026-04-12T11:25:00
 theme: ""
