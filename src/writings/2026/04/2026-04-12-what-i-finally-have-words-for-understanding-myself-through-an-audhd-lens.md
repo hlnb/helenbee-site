@@ -25,7 +25,7 @@ tags:
   - RAAF veteran
 category: lived-experience
 series: mental-health
-image: assets/images/other/harmandeep-singh-3_Mogjm96GE-unsplash.jpg
+image: /assets/images/other/harmandeep-singh-3_Mogjm96GE-unsplash.jpg
 image_alt: ''
 image_credit:
   photographer: Harmandeep Singh
