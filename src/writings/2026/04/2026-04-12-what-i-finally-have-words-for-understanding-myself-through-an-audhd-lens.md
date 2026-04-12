@@ -25,18 +25,22 @@ tags:
   - RAAF veteran
 category: lived-experience
 series: mental-health
-image: /assets/images/other/placeholder_n9qtza.png
+image: assets/images/other/harmandeep-singh-3_Mogjm96GE-unsplash.jpg
 image_alt: ''
-image_credit: null
-author: null
+image_credit:
+  photographer: Harmandeep Singh
+  profile_url: https://unsplash.com/@1harman1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+  photo_url: https://unsplash.com/photos/a-person-writing-on-a-notebook-with-a-pen-3_Mogjm96GE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+author:
+  name: Helen Burgess
 socials:
   bluesky: https://bsky.app/profile/@hlnbee.bsky.social
   mastodon: https://mastodon.social/@helenbee
   facebook: https://www.facebook.com/profile.php?id=61572267654772
 siteUrl: https://helenburgess.id.au
-bluesky_description: ''
-mastodon_description: ''
-facebook_description: ''
+bluesky_description: 'I’ve been writing about healing for years without fully having the words for why some things were harder for me than they seemed to be for others. That’s changed. New piece on what late AuDHD identification means when you look back at a life through a clearer lens. [link] #AuDHD #neurodivergent #veteranmentalhealth #livedeexperience'
+mastodon_description: 'I’ve been writing about healing for years without fully having the words for why some things were harder for me than they seemed to be for others. That’s changed. New piece on what late AuDHD identification means when you look back at a life through a clearer lens. [link] #AuDHD #neurodivergent #veteranmentalhealth #livedeexperience'
+facebook_description: Standing in a room you’ve lived in your whole life and finally noticing where the light comes from. That’s what understanding my neurology has felt like. New essay on AuDHD, identity, and what I finally have words for
 newsletter: true
 draft: false
 ---
