@@ -13,12 +13,6 @@ backend:
 media_folder: assets/images/uploads
 public_folder: /assets/images/uploads
 
-# Additional media folders accessible in the CMS
-media_library:
-  name: uploadcare
-  config:
-    multiple: true
-
 # Site configuration
 site_url: https://helenburgess.id.au
 display_url: https://helenburgess.id.au
@@ -33,7 +27,7 @@ collections:
     slug: "{{slug}}"
     path: "{{year}}/{{month}}/{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: "writings/{{year}}/{{month}}/{{year}}-{{month}}-{{day}}-{{slug}}"
-    media_folder: "/assets/images/other"
+    media_folder: "assets/images/other"
     public_folder: "/assets/images/other"
     editor:
       preview: false
@@ -86,15 +80,15 @@ collections:
         widget: "select"
         required: false
         options:
-					- { label: "None", value: "" }
-					- { label: "Mental Health", value: "mental-health" }
-					- { label: "Technology", value: "technology" }
+          - { label: "None", value: "" }
+          - { label: "Mental Health", value: "mental-health" }
+          - { label: "Technology", value: "technology" }
       - label: "Featured Image"
         name: "image"
         widget: "image"
         required: true
         hint: "Main image - displays as hero image at the top of the post"
-        default: "/assets/images/placeholder_n9qtza.png"
+        default: "/assets/images/other/placeholder_n9qtza.png"
       - label: "Image Alt Text"
         name: "image_alt"
         widget: "string"
@@ -104,11 +98,11 @@ collections:
         name: "image_credit"
         widget: "object"
         required: false
-        hint: "Attribution for Unsplash images"
+        hint: "Use the links from Unsplash's credit snippet: the photographer profile link and the photo link."
         fields:
           - { label: "Photographer Name", name: "photographer", widget: "string", required: false }
-          - { label: "Photographer Username", name: "username", widget: "string", required: false, hint: "Unsplash username" }
-          - { label: "Unsplash Photo URL", name: "photo_url", widget: "string", required: false, hint: "Link to the photo on Unsplash" }
+          - { label: "Photographer Profile URL", name: "profile_url", widget: "string", required: false, hint: "The first Unsplash link, for example https://unsplash.com/@1harman1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" }
+          - { label: "Unsplash Photo URL", name: "photo_url", widget: "string", required: false, hint: "The second Unsplash link, for example https://unsplash.com/photos/a-person-writing-on-a-notebook-with-a-pen-3_Mogjm96GE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" }
       - label: "Author"
         name: "author"
         widget: "object"

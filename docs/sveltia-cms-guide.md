@@ -79,6 +79,10 @@ tags:
 category: lived-experience
 image: /assets/images/uploads/your-image.jpg
 image_alt: "Description for accessibility"
+image_credit:
+  photographer: "Harmandeep Singh"
+  profile_url: "https://unsplash.com/@1harman1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+  photo_url: "https://unsplash.com/photos/a-person-writing-on-a-notebook-with-a-pen-3_Mogjm96GE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 author:
   name: "Helen Burgess"
 socials:
