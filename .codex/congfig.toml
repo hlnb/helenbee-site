@@ -1,0 +1,18 @@
+model = "gpt-5"
+model_reasoning_effort = "medium"
+approval_policy = "untrusted"
+
+project_root_markers = [".git"]
+
+[tools]
+web_search = true
+
+[profiles.deep-editorial]
+model = "gpt-5"
+model_reasoning_effort = "high"
+approval_policy = "untrusted"
+
+[profiles.light-edit]
+model = "gpt-5"
+model_reasoning_effort = "low"
+approval_policy = "untrusted"
