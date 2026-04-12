@@ -1,12 +1,12 @@
 ---
 layout: layouts/writing.njk
-title: 'What I Finally Have Words For: Understanding Myself Through an AuDHD Lens'
-subtitle: ''
+title: "What I Finally Have Words For: Understanding Myself Through an AuDHD Lens"
+subtitle: ""
 description: A personal reflection on late-identified AuDHD — what it explains about a lifetime of feeling "Other," and how understanding your neurology can quietly reframe everything.
 excerpt: A personal reflection on late-identified AuDHD — what it explains about a lifetime of feeling "Other," and how understanding your neurology can quietly reframe everything.
 date: 2026-04-12T11:25:00
 publishedDate: 2026-04-12T11:25:00
-theme: ''
+theme: ""
 keywords:
   - AuDHD, late identification, lived experience,
 type: article
@@ -26,7 +26,7 @@ tags:
 category: lived-experience
 series: mental-health
 image: /assets/images/other/harmandeep-singh-3_Mogjm96GE-unsplash.jpg
-image_alt: ''
+image_alt: ""
 image_credit:
   photographer: Harmandeep Singh
   profile_url: https://unsplash.com/@1harman1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
@@ -38,14 +38,12 @@ socials:
   mastodon: https://mastodon.social/@helenbee
   facebook: https://www.facebook.com/profile.php?id=61572267654772
 siteUrl: https://helenburgess.id.au
-bluesky_description: 'I’ve been writing about healing for years without fully having the words for why some things were harder for me than they seemed to be for others. That’s changed. New piece on what late AuDHD identification means when you look back at a life through a clearer lens. [link] #AuDHD #neurodivergent #veteranmentalhealth #livedeexperience'
-mastodon_description: 'I’ve been writing about healing for years without fully having the words for why some things were harder for me than they seemed to be for others. That’s changed. New piece on what late AuDHD identification means when you look back at a life through a clearer lens. [link] #AuDHD #neurodivergent #veteranmentalhealth #livedeexperience'
+bluesky_description: "I’ve been writing about healing for years without fully having the words for why some things were harder for me than they seemed to be for others. That’s changed. New piece on what late AuDHD identification means when you look back at a life through a clearer lens. [link] #AuDHD #neurodivergent #veteranmentalhealth #livedeexperience"
+mastodon_description: "I’ve been writing about healing for years without fully having the words for why some things were harder for me than they seemed to be for others. That’s changed. New piece on what late AuDHD identification means when you look back at a life through a clearer lens. [link] #AuDHD #neurodivergent #veteranmentalhealth #livedeexperience"
 facebook_description: Standing in a room you’ve lived in your whole life and finally noticing where the light comes from. That’s what understanding my neurology has felt like. New essay on AuDHD, identity, and what I finally have words for
 newsletter: true
 draft: false
 ---
-
-# What I Finally Have Words For
 
 There's a particular feeling that comes when something you've carried for decades is finally given a name.
 
@@ -71,7 +69,7 @@ What I didn't know — couldn't know, without the language — was that I wasn't
 
 ## Why I joined the RAAF — and what I was actually looking for
 
- I joined the RAAF at twenty — on my second application. I'd wanted to fly military aircraft. That ambition didn't come through, but what I was accepted for turned out to suit me in ways I wouldn't have been able to articulate at the time.
+I joined the RAAF at twenty — on my second application. I'd wanted to fly military aircraft. That ambition didn't come through, but what I was accepted for turned out to suit me in ways I wouldn't have been able to articulate at the time.
 
 I became a Communications Operator. And what I found there was something my nervous system had been quietly looking for: work with a natural rhythm. Busy periods that demanded full attention, then quieter stretches to catch up, reset, just be. The ebb and flow of it felt right in a way I didn't question — I simply knew I'd found my niche.
 
@@ -132,6 +130,6 @@ But I have words now that I didn't have before.
 
 And that, quietly, changes everything.
 
-***
+---
 
 _This is the first in a series of reflections on AuDHD, identity, and lived experience through service and beyond. The next piece explores structure, the RAAF, and what happens when the institution that regulated mealso couldn't hold me._

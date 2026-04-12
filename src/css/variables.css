@@ -1,9 +1,9 @@
 /* Font Face Declarations */
 @font-face {
 	font-family: "Stackyard";
-	src: url("/assets/fonts/stackyard/stackyard.woff2") format("woff2"),
-		url("/assets/fonts/stackyard/stackyard.woff") format("woff"),
-		url("/assets/fonts/stackyard/stackyard.ttf") format("truetype");
+	src: url("/assets/fonts/stackyard/Stackyard.woff2") format("woff2"),
+		url("/assets/fonts/stackyard/Stackyard.woff") format("woff"),
+		url("/assets/fonts/stackyard/Stackyard.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
