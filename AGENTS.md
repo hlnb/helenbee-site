@@ -98,9 +98,73 @@ Avoid:
 
 ---
 
+## Build and dev commands
+
+```bash
+npm install          # install dependencies
+npm run start        # dev server at http://localhost:8080 (live reload)
+npm run build        # production build → _site/
+npm run debug        # verbose build output
+npm run content:plan # content planning CLI
+npm run content:status # content status CLI
+```
+
+Output directory: `_site/`. Deployed to Vercel; build on push to `main`.
+
+See [docs/development.md](docs/development.md) for full workflow.
+
+---
+
+## Post file conventions
+
+**Location:** `src/writings/YYYY/MM/YYYY-MM-DD-slug.md`
+
+**Layout:** always `layouts/writing.njk`
+
+**Front matter fields** (match these exactly):
+
+```yaml
+layout: layouts/writing.njk
+title: ""
+subtitle: "" # optional
+description: "" # required; used for SEO and excerpt
+excerpt: "" # optional; feed/preview summary
+date: YYYY-MM-DDTHH:MM:SS
+publishedDate: YYYY-MM-DDTHH:MM:SS
+theme: "" # optional
+keywords: [] # list of SEO keywords
+type: article # article | essay | reflection | story
+tags: [] # free-form list
+category: "" # lived-experience | technology | reflection | creative | craft
+series: "" # mental-health | technology | (empty)
+image: /assets/images/other/filename.jpg # required; hero image
+image_alt: ""
+image_credit:
+  photographer: ""
+  profile_url: ""
+  photo_url: ""
+author:
+  name: Helen Burgess
+socials:
+  bluesky: https://bsky.app/profile/@hlnbee.bsky.social
+  mastodon: https://mastodon.social/@helenbee
+  facebook: https://www.facebook.com/profile.php?id=61572267654772
+siteUrl: https://helenburgess.id.au
+bluesky_description: ""
+mastodon_description: ""
+facebook_description: ""
+newsletter: true
+draft: false # set true to keep unpublished
+```
+
+See [docs/content-management.md](docs/content-management.md) for full detail.
+
+---
+
 ## Technical expectations
 
-- Respect the current Eleventy setup and template conventions
+- Respect the current Eleventy (v3) setup and template conventions
+- Templates use Nunjucks (`.njk`); CSS is vanilla/modular — no framework
 - Keep changes compatible with the existing markdown + layout workflow
 - Do not present older or legacy patterns as current if the repo has moved on
 - Avoid broad refactors unless explicitly requested

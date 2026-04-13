@@ -8,7 +8,11 @@ date: 2026-04-12T11:25:00
 publishedDate: 2026-04-12T11:25:00
 theme: ""
 keywords:
-  - AuDHD, late identification, lived experience,
+  - AuDHD
+  - late identification
+  - lived experience
+  - neurodivergent
+  - veteran mental health
 type: article
 tags:
   - AuDHD
@@ -26,7 +30,7 @@ tags:
 category: lived-experience
 series: mental-health
 image: /assets/images/other/harmandeep-singh-3_Mogjm96GE-unsplash.jpg
-image_alt: ""
+image_alt: "A person writing in a notebook with a pen, close-up view"
 image_credit:
   photographer: Harmandeep Singh
   profile_url: https://unsplash.com/@1harman1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
@@ -38,8 +42,8 @@ socials:
   mastodon: https://mastodon.social/@helenbee
   facebook: https://www.facebook.com/profile.php?id=61572267654772
 siteUrl: https://helenburgess.id.au
-bluesky_description: "I’ve been writing about healing for years without fully having the words for why some things were harder for me than they seemed to be for others. That’s changed. New piece on what late AuDHD identification means when you look back at a life through a clearer lens. [link] #AuDHD #neurodivergent #veteranmentalhealth #livedeexperience"
-mastodon_description: "I’ve been writing about healing for years without fully having the words for why some things were harder for me than they seemed to be for others. That’s changed. New piece on what late AuDHD identification means when you look back at a life through a clearer lens. [link] #AuDHD #neurodivergent #veteranmentalhealth #livedeexperience"
+bluesky_description: "I've been writing about healing for years without fully having the words for why some things were harder for me than they seemed to be for others. That's changed. New piece on what late AuDHD identification means when you look back at a life through a clearer lens. [link] #AuDHD #neurodivergent #veteranmentalhealth #livedexperience"
+mastodon_description: "I've been writing about healing for years without fully having the words for why some things were harder for me than they seemed to be for others. That's changed. New piece on what late AuDHD identification means when you look back at a life through a clearer lens. [link] #AuDHD #neurodivergent #veteranmentalhealth #livedexperience"
 facebook_description: Standing in a room you’ve lived in your whole life and finally noticing where the light comes from. That’s what understanding my neurology has felt like. New essay on AuDHD, identity, and what I finally have words for
 newsletter: true
 draft: false
@@ -112,7 +116,8 @@ But I've also come to believe that the understanding I have now — arrived at t
 I'm not starting over. I'm re-reading a book I've already lived with the correct translation in hand.
 
 The story hasn't changed. But I understand it better now.
-Why I'm writing about this
+
+## Why I'm writing about this
 
 I'm not writing this as a declaration, or a diagnosis post, or a pivot to a new kind of content.
 
