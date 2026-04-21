@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% set homepageTitle = "Helen Burgess — Veteran, Writer & Maker | Healing, Creativity & PTSD Recovery" %}
+    {% set fallbackDescription = "Helen Burgess writes about veteran life, therapeutic creativity, PTSD recovery, and living with meaning. Perth, Australia." %}
+    {% set seoTitle = homepageTitle if not title or title == "Home" else title + " | Helen Burgess" %}
+    {% set seoDescription = description or og_description or ogDescription or fallbackDescription %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>{{ seoTitle }}</title>
+    <meta name="description" content="{{ seoDescription }}">
     <link rel="stylesheet" href="/assets/css/bulma.min.css">
     <link rel="stylesheet" href="/assets/css/variables.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
@@ -27,8 +32,8 @@
     <meta name="theme-color" content="#332E63">
 
     <!-- Open Graph tags (used by Facebook, Mastodon, and others) -->
-    <meta property="og:title" content="{{ title }}">
-    <meta property="og:description" content="{{ description }}">
+    <meta property="og:title" content="{{ seoTitle }}">
+    <meta property="og:description" content="{{ seoDescription }}">
     <meta property="og:image" content="{{ image }}">
     <meta property="og:url" content="{{ siteUrl }}{{ page.url }}">
     <meta property="og:type" content="article">
