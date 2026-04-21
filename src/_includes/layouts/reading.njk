@@ -24,6 +24,38 @@ layout: layouts/base.njk
     <p>No books found in collection</p>
   {% endif %}
 
+  {% set topicNames = collections.booksByCategory | keys | sort %}
+  <section class="reading-intro">
+    <h2>Browse by Topic</h2>
+    {% if topicNames.length %}
+      <div class="tags">
+        {% for topic in topicNames %}
+          {% set topicSlug = topic | lower | replace(' ', '-') %}
+          <a class="tag is-light" href="#topic-{{ topicSlug }}">{{ topic }}</a>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>Topics will appear here once books have been categorised.</p>
+    {% endif %}
+  </section>
+
+  {% if topicNames.length %}
+    <section class="reading-intro">
+      <h2>Topics</h2>
+      {% for topic in topicNames %}
+        {% set topicSlug = topic | lower | replace(' ', '-') %}
+        <section id="topic-{{ topicSlug }}" class="mb-5">
+          <h3>{{ topic }}</h3>
+          <div class="tags">
+            {% for book in collections.booksByCategory[topic] %}
+              <a class="tag is-link is-light" href="{{ book.url }}">{{ book.data.title }}</a>
+            {% endfor %}
+          </div>
+        </section>
+      {% endfor %}
+    </section>
+  {% endif %}
+
   {# Styles moved to /assets/css/grid.css to centralize styles #}
 
   <div class="books-grid">
@@ -53,12 +85,25 @@ layout: layouts/base.njk
             <p class="book-review">{{ book.data.review }}</p>
           {% endif %}
 
+          {% if book.data.bookCategory and book.data.bookCategory.length %}
+            <div class="tags mt-3">
+              {% for category in book.data.bookCategory %}
+                {% set categorySlug = category | lower | replace(' ', '-') %}
+                <a class="tag is-light" href="#topic-{{ categorySlug }}">{{ category }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+
           {% if book.data.comments %}
             <div class="book-comments">
               <h4>My Notes</h4>
               <p>{{ book.data.comments }}</p>
             </div>
           {% endif %}
+
+          <p class="mt-4">
+            <a href="{{ book.url }}">Open book page</a>
+          </p>
         </div>
       </article>
     {% endfor %}

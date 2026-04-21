@@ -28,6 +28,14 @@ layout: layouts/base.njk
           {% if rating %}
             <p><strong>Rating:</strong> {% for star in range(0, rating) %}★{% endfor %}</p>
           {% endif %}
+          {% if bookCategory and bookCategory.length %}
+            <p><strong>Topics:</strong></p>
+            <div class="tags mt-2">
+              {% for category in bookCategory %}
+                <span class="tag is-light">{{ category }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
           {% if tags %}
             <div class="tags mt-4">
               {% for tag in tags %}

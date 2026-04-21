@@ -566,9 +566,49 @@ eleventyConfig.addCollection("newsletterPosts", function (collectionApi) {
 		return Math.ceil(words / wordsPerMinute);
 	});
 
-	// Update the books collection name if you want
+	const normalizeList = (value) => {
+		if (Array.isArray(value)) {
+			return value.filter(Boolean);
+		}
+
+		if (typeof value === "string" && value.trim()) {
+			return [value.trim()];
+		}
+
+		return [];
+	};
+
+	eleventyConfig.addCollection("books", function (collectionApi) {
+		return collectionApi
+			.getFilteredByGlob("src/books/**/*.md")
+			.sort((a, b) => a.data.title.localeCompare(b.data.title));
+	});
+
 	eleventyConfig.addCollection("reading", function (collectionApi) {
-		return collectionApi.getFilteredByGlob("src/books/**/*.md");
+		return collectionApi
+			.getFilteredByGlob("src/books/**/*.md")
+			.sort((a, b) => a.data.title.localeCompare(b.data.title));
+	});
+
+	eleventyConfig.addCollection("booksByCategory", function (collectionApi) {
+		const books = collectionApi
+			.getFilteredByGlob("src/books/**/*.md")
+			.sort((a, b) => a.data.title.localeCompare(b.data.title));
+		const categorizedBooks = {};
+
+		for (const book of books) {
+			const categories = normalizeList(book.data.bookCategory);
+
+			for (const category of categories) {
+				if (!categorizedBooks[category]) {
+					categorizedBooks[category] = [];
+				}
+
+				categorizedBooks[category].push(book);
+			}
+		}
+
+		return categorizedBooks;
 	});
 
 	// Be explicit about CSS files
