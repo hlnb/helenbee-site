@@ -519,16 +519,40 @@ eleventyConfig.addCollection("newsletterPosts", function (collectionApi) {
 		return today.toISOString().slice(0, 10);
 	});
 
-	// Readable date filter (e.g., "13 December 2023")
+	const normalizeDate = (value) => {
+		if (!value) {
+			return null;
+		}
+
+		if (value instanceof Date) {
+			const dateTime = DateTime.fromJSDate(value, { zone: "utc" });
+			return dateTime.isValid ? dateTime : null;
+		}
+
+		if (typeof value === "string") {
+			const isoDateTime = DateTime.fromISO(value, { zone: "utc" });
+			if (isoDateTime.isValid) {
+				return isoDateTime;
+			}
+
+			const jsDate = new Date(value);
+			if (!Number.isNaN(jsDate.getTime())) {
+				const dateTime = DateTime.fromJSDate(jsDate, { zone: "utc" });
+				return dateTime.isValid ? dateTime : null;
+			}
+		}
+
+		return null;
+	};
+
 	eleventyConfig.addFilter("readableDate", (dateObj) => {
-		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-			"dd LLLL yyyy"
-		);
+		const normalizedDate = normalizeDate(dateObj);
+		return normalizedDate ? normalizedDate.toFormat("dd-MM-yyyy") : "";
 	});
 
-	// HTML date string filter (e.g., "2023-12-13")
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+		const normalizedDate = normalizeDate(dateObj);
+		return normalizedDate ? normalizedDate.toFormat("yyyy-LL-dd") : "";
 	});
 
 	eleventyConfig.addFilter("readingTime", (text) => {

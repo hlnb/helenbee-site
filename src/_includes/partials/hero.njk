@@ -24,6 +24,7 @@
       </div>
     {% endif %}
 
+  {% if not hero_hide_date %}
   <div class="writing-meta" style="color:rgba(255,255,255,0.85); font-size:0.95rem; margin-top:0.5rem; text-shadow: 0 1px 3px rgba(0,0,0,0.45);">
       {% if date %}
         <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
@@ -51,6 +52,7 @@
         {% endfor %}
       {% endif %}
     </div>
+    {% endif %}
 
     {# Image attribution for Unsplash photos #}
     {% if image and image_credit and (image_credit.photographer or image_credit.username) %}
