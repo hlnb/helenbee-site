@@ -15,7 +15,7 @@
     {% endif %}
 
     {% if subtitle %}
-      <p class="subtitle" style="color:rgba(255,255,255,0.92); margin-top:0.25rem; text-shadow: 0 1px 4px rgba(0,0,0,0.55);">{{ subtitle }}</p>
+      <{{ hero_subtitle_tag or "p" }} class="{{ hero_subtitle_class or "subtitle" }}" style="{{ hero_subtitle_style or "color:rgba(255,255,255,0.92); margin-top:0.25rem; text-shadow: 0 1px 4px rgba(0,0,0,0.55);" }}">{{ subtitle }}</{{ hero_subtitle_tag or "p" }}>
     {% endif %}
 
     {% if hero_extra %}
