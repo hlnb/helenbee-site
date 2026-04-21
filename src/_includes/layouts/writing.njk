@@ -2,6 +2,30 @@
 layout: layouts/base.njk
 ---
 
+{% block head %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ title | dump | safe }},
+  "description": {{ (description or excerpt or '') | dump | safe }},
+  "datePublished": {{ (date or page.date) | isoDate | dump | safe }},
+  "dateModified": {{ (date or page.date) | isoDate | dump | safe }},
+  "author": {
+    "@type": "Person",
+    "name": "Helen Burgess",
+    "url": "https://helenburgess.id.au/about/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Helen Burgess",
+    "url": "https://helenburgess.id.au"
+  },
+  "url": {{ ("https://helenburgess.id.au" + page.url) | dump | safe }}
+}
+</script>
+{% endblock %}
+
 
 {% include "partials/hero.njk" %}
 

@@ -555,6 +555,11 @@ eleventyConfig.addCollection("newsletterPosts", function (collectionApi) {
 		return normalizedDate ? normalizedDate.toFormat("yyyy-LL-dd") : "";
 	});
 
+	eleventyConfig.addFilter("isoDate", (dateObj) => {
+		const normalizedDate = normalizeDate(dateObj);
+		return normalizedDate ? normalizedDate.toISO() : "";
+	});
+
 	eleventyConfig.addFilter("readingTime", (text) => {
 		const wordsPerMinute = 200;
 		const words = text.split(" ").length;

@@ -10,6 +10,43 @@
     <title>{{ seoTitle }}</title>
     <link rel="canonical" href="{{ page.url | absoluteUrl('https://helenburgess.id.au') }}">
     <meta name="description" content="{{ seoDescription }}">
+    {% if page.url == '/' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://helenburgess.id.au/#person",
+          "name": "Helen Burgess",
+          "url": "https://helenburgess.id.au",
+          "description": "RAAF veteran, web educator, reflective writer, and maker based in Perth, Australia. Writes about veteran life, PTSD recovery, therapeutic creativity, and living with meaning.",
+          "jobTitle": "Web Educator & Writer",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Perth",
+            "addressRegion": "Western Australia",
+            "addressCountry": "AU"
+          },
+          "sameAs": [
+            "https://mastodon.au/@hlnbee",
+            "https://graphitedge.com.au"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://helenburgess.id.au/#website",
+          "url": "https://helenburgess.id.au",
+          "name": "Helen Burgess",
+          "description": "Personal writing site — veteran life, therapeutic creativity, PTSD recovery, stoic philosophy, and making.",
+          "author": {
+            "@id": "https://helenburgess.id.au/#person"
+          }
+        }
+      ]
+    }
+    </script>
+    {% endif %}
     <link rel="stylesheet" href="/assets/css/bulma.min.css">
     <link rel="stylesheet" href="/assets/css/variables.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
