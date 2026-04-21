@@ -5,10 +5,15 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {%- for page in collections.all %}
+  {% if not (page.url | startsWith('/debug/'))
+    and not (page.url | startsWith('/pages/'))
+    and not (page.url | startsWith('/_examples/'))
+    and not (page.url | startsWith('/books/')) %}
   {% set absoluteUrl %}{{ page.url | absoluteUrl(metadata.url) }}{% endset %}
   <url>
     <loc>{{ absoluteUrl }}</loc>
     <lastmod>{{ page.date | dateToISO }}</lastmod>
   </url>
+  {% endif %}
 {%- endfor %}
 </urlset>
