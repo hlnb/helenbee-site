@@ -10,6 +10,9 @@
     <title>{{ seoTitle }}</title>
     <link rel="canonical" href="{{ page.url | absoluteUrl('https://helenburgess.id.au') }}">
     <meta name="description" content="{{ seoDescription }}">
+    {% if page.url | startsWith('/books/') %}
+    <meta name="robots" content="noindex">
+    {% endif %}
     {% if page.url == '/' %}
     <script type="application/ld+json">
     {
