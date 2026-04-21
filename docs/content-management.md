@@ -273,6 +273,55 @@ Main categories:
    - Push to main branch
    - Netlify automatically deploys
 
+## Books Workflow
+
+Book pages live in `src/books/` and now use the dedicated `layouts/book.njk` layout.
+
+### Book Front Matter
+
+Each book can include:
+
+```yaml
+layout: layouts/book.njk
+title: "The Body Keeps the Score"
+author: "Bessel van der Kolk"
+dateRead: 2024-03-10
+rating: 5
+review: "Short summary of why the book mattered."
+coverImage: "/assets/images/books/body-keeps-score.jpg"
+tags: ["books"]
+bookCategory:
+  - trauma
+  - ptsd-recovery
+comments: "Optional shorter note shown as My Notes."
+```
+
+### Adding Reflections
+
+- Add your longer reflections directly in the Markdown body below the front matter.
+- The book layout renders that body under the heading `What I Found Helpful`.
+- If the body is empty, the page shows a placeholder prompt instead.
+
+### Book Categories
+
+- Use `bookCategory` to group books by topic for future browsing and filtering.
+- `bookCategory` accepts either a single string or a list, but a list is preferred.
+- Example:
+
+```yaml
+bookCategory:
+  - stoicism
+  - mindfulness
+  - habits
+```
+
+### How Categories Are Used
+
+- `collections.books` is the main Eleventy collection for all book pages.
+- `collections.booksByCategory` groups books by `bookCategory`.
+- The `/reading/` page automatically shows topic links once books have been categorised.
+- Individual book pages display their assigned topics in the summary panel.
+
 ## Content Maintenance
 
 1. Regular Tasks
