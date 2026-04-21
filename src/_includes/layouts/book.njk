@@ -1,0 +1,67 @@
+---
+layout: layouts/base.njk
+---
+
+{% set hero_hide_date = true %}
+{% set hero_overlay = 'dark' %}
+{% set image = coverImage %}
+{% set subtitle %}{% if author %}by {{ author }}{% endif %}{% if dateRead %}{% if author %} · {% endif %}Read {{ dateRead | readableDate }}{% endif %}{% endset %}
+{% include "partials/hero.njk" %}
+
+<article class="page book-page">
+  <div class="container" style="max-width: 72rem; padding-top: 2rem; padding-bottom: 3rem;">
+    <div class="columns is-variable is-6 is-desktop">
+      <div class="column is-4-desktop is-5-tablet">
+        {% if coverImage %}
+          <figure class="image" style="margin: 0 auto 1.5rem; max-width: 22rem;">
+            <img src="{{ coverImage }}" alt="Cover of {{ title }}" loading="lazy" style="border-radius: 0.75rem; box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);">
+          </figure>
+        {% endif %}
+
+        <aside class="book-summary box" style="background: #fbfaf7; border: 1px solid rgba(51, 46, 99, 0.12); box-shadow: none;">
+          {% if author %}
+            <p><strong>Author:</strong> {{ author }}</p>
+          {% endif %}
+          {% if dateRead %}
+            <p><strong>Date read:</strong> {{ dateRead | readableDate }}</p>
+          {% endif %}
+          {% if rating %}
+            <p><strong>Rating:</strong> {% for star in range(0, rating) %}★{% endfor %}</p>
+          {% endif %}
+          {% if tags %}
+            <div class="tags mt-4">
+              {% for tag in tags %}
+                <span class="tag is-light">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </aside>
+      </div>
+
+      <div class="column is-8-desktop is-7-tablet">
+        {% if review %}
+          <section class="content mb-5">
+            <h2 class="title is-4">Why It Stayed With Me</h2>
+            <p>{{ review }}</p>
+          </section>
+        {% endif %}
+
+        {% if comments %}
+          <section class="content mb-5">
+            <h2 class="title is-4">My Notes</h2>
+            <p>{{ comments }}</p>
+          </section>
+        {% endif %}
+
+        <section class="content">
+          <h2 class="title is-4">What I Found Helpful</h2>
+          {% if content | trim %}
+            {{ content | safe }}
+          {% else %}
+            <p>This is ready for your reflections, favourite ideas, quotes, and notes on what made this book helpful.</p>
+          {% endif %}
+        </section>
+      </div>
+    </div>
+  </div>
+</article>

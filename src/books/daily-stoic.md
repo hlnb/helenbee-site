@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: The Daily Stoic
 author: Ryan Holiday
 dateRead: 2024-01-15

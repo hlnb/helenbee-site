@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "The Light We Carry"
 author: "Michelle Obama"
 dateRead: 2024-01-25

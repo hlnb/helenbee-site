@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Don't Believe Everything You Think"
 author: "Joseph Nguyen"
 dateRead: 2023-12-25

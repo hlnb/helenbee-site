@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Daring Greatly"
 author: "Brené Brown"
 dateRead: 2023-12-05

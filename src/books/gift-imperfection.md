@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "The Gift of Imperfection"
 author: "Brené Brown"
 dateRead: 2023-11-30

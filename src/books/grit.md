@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Grit"
 author: "Angela Duckworth"
 dateRead: 2023-11-20

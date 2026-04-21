@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Come As You Are"
 author: "Emily Nagoski"
 dateRead: 2023-12-30

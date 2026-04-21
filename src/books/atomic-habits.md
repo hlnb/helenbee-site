@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Atomic Habits"
 author: "James Clear"
 dateRead: 2023-12-20

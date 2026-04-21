@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "The Secrets of the Stoics"
 author: "Ryan Holiday"
 dateRead: 2023-11-10

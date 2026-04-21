@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "The Obstacle is the Way"
 author: "Ryan Holiday"
 dateRead: 2024-02-10

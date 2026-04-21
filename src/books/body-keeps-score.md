@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "The Body Keeps the Score"
 author: "Bessel van der Kolk"
 dateRead: 2024-03-10

@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "A New Earth"
 author: "Eckhart Tolle"
 dateRead: 2023-11-15

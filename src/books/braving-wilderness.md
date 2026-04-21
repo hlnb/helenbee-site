@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Braving the Wilderness"
 author: "Brené Brown"
 dateRead: 2024-03-05

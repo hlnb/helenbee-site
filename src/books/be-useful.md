@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Be Useful"
 author: "Arnold Schwarzenegger"
 dateRead: 2024-03-15

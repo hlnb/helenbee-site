@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "The Resilience Project"
 author: "Hugh van Cuylenburg"
 dateRead: 2023-12-15

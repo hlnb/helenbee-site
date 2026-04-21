@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Slow Productivity"
 author: "Cal Newport"
 dateRead: 2024-01-10

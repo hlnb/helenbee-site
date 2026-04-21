@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "The Courage to be Disliked"
 author: "Ichiro Kishimi and Fumitake Koga (translated by Timothy D. Williams)"
 dateRead: 2024-01-15

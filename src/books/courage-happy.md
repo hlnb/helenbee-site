@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "The Courage to be Happy"
 author: "Ichiro Kishimi and Fumitake Koga"
 dateRead: 2023-11-05

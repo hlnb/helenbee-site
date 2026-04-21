@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Digital Minimalism"
 author: "Cal Newport"
 dateRead: 2024-02-05

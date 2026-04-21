@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "The Resilience Shield"
 author: "Dr Dan Pronk, Ben Pronk CSC and Tim Curtis"
 dateRead: 2023-12-10

@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Nobody Told Me This Before"
 author: "Julie Smith"
 dateRead: 2024-01-05

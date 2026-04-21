@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Rising Strong"
 author: "Brené Brown"
 dateRead: 2023-11-25

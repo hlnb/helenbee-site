@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Ikigai"
 author: "Héctor García"
 dateRead: 2024-01-15

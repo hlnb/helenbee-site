@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "Traumatized"
 author: "Kati Morton"
 dateRead: 2024-01-30

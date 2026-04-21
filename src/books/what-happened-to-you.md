@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/book.njk
 title: "What Happened to You?"
 author: "Bruce Perry"
 dateRead: 2024-01-20
