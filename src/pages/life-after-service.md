@@ -4,14 +4,35 @@ title: "Life After Service: Rebuilding Identity as a Veteran"
 description: "Leaving the military doesn't just change your job. It changes who you are. This guide explores the real grief of identity loss after service — and how community helps you rebuild."
 date: 2026-04-23
 tags: [veteran, identity, transition, community, resilience]
+image: /assets/images/other/defence-medals-jacket.jpeg
+image_alt: "Australian Defence Medal and Defence Long Service Medal worn on a jacket."
 permalink: /life-after-service/
 ---
+
+<style>
+  .wa-hero {
+    position: relative;
+    background-position: center 15% !important;
+  }
+
+  .wa-hero > div[aria-hidden="true"] {
+    display: none;
+  }
+
+  .wa-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(38, 33, 90, 0.5);
+    z-index: 0;
+  }
+</style>
 
 # Life After Service: Rebuilding Identity as a Veteran
 
 There's a moment — it comes at different times for different people — when it hits you that you don't know how to introduce yourself anymore.
 
-Not the resume version. That part you've practised. You can say *I served for X years* or *I was a [rank, trade, role]* with the same steadiness you learned to brief a room. What catches you off guard is the quieter question underneath: *Without the uniform, who am I?*
+Not the resume version. That part you've practised. You can say _I served for X years_ or _I was a [rank, trade, role]_ with the same steadiness you learned to brief a room. What catches you off guard is the quieter question underneath: _Without the uniform, who am I?_
 
 This page is for anyone sitting with that question. Whether you separated last month or a decade ago, whether you feel quietly adrift or loudly lost, whether you're the veteran yourself or someone trying to understand the person beside you — you're in the right place.
 
@@ -35,11 +56,11 @@ This is worth saying plainly because it's often sidestepped in transition conver
 
 Leaving service is a loss. Not just of a role, but of a self.
 
-The civilian world tends not to recognise this. There's an assumption — sometimes stated, more often implied — that leaving the military is a relief. An upgrade. *Freedom.* And for some veterans, parts of that are true. But freedom from a structure that gave you meaning isn't automatically welcome. It's often disorienting, even terrifying, even when it was chosen.
+The civilian world tends not to recognise this. There's an assumption — sometimes stated, more often implied — that leaving the military is a relief. An upgrade. _Freedom._ And for some veterans, parts of that are true. But freedom from a structure that gave you meaning isn't automatically welcome. It's often disorienting, even terrifying, even when it was chosen.
 
 What veterans describe — the flatness, the restlessness, the feeling of being invisible in a crowd, the strange grief at things that shouldn't matter, the loss of rank and belonging and shared language — is real grief. It has a shape. It has stages. It deserves to be taken seriously.
 
-The danger is that this grief often goes unnamed, because naming it feels like weakness, ingratitude, or failure to adapt. *I should be over this by now. Other people have it harder. I chose to leave.* None of those things make the grief smaller. They just make it lonelier.
+The danger is that this grief often goes unnamed, because naming it feels like weakness, ingratitude, or failure to adapt. _I should be over this by now. Other people have it harder. I chose to leave._ None of those things make the grief smaller. They just make it lonelier.
 
 Veteran identity loss is real. Acknowledging it isn't indulgent. It's the first honest step.
 
@@ -103,4 +124,4 @@ You don't have to have it sorted to be here. Most of us don't.
 
 ---
 
-*If you're in crisis, please reach out to [Open Arms – Veterans & Families Counselling](https://www.openarms.gov.au/) (1800 011 046, available 24/7). You don't need to be at rock bottom to call.*
+_If you're in crisis, please reach out to [Open Arms – Veterans & Families Counselling](https://www.openarms.gov.au/) (1800 011 046, available 24/7). You don't need to be at rock bottom to call._
