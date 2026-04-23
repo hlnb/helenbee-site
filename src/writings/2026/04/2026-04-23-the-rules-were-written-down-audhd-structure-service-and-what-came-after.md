@@ -32,7 +32,7 @@ tags:
   - mental health
 category: lived-experience
 series: mental-health
-image: assets/images/other/alan-pope-rP-kqmI-oS0-unsplash.jpg
+image: /assets/images/other/alan-pope-rP-kqmI-oS0-unsplash.jpg
 image_alt: An empty institutional hallway with natural light — suggesting order, distance, and the weight of structured environments
 image_credit:
   photographer: Alan Pope

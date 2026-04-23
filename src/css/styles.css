@@ -77,6 +77,20 @@ h6,
 	margin: 0 auto;
 }
 
+.wa-hero {
+	position: relative;
+	overflow: hidden;
+	color: var(--wa-color-surface-foreground);
+}
+
+.wa-hero--with-image::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background-color: color-mix(in srgb, var(--primary) 50%, transparent);
+}
+
 .content-wrapper {
 	width: 95vw;
 	margin: 0 auto;
