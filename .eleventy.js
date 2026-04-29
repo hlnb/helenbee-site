@@ -2,6 +2,7 @@ const svgContents = require("eleventy-plugin-svg-contents");
 const { DateTime } = require("luxon");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRSS = require("@11ty/eleventy-plugin-rss");
+const SITE_TIME_ZONE = "Australia/Perth";
 
 module.exports = function (eleventyConfig)
 {
@@ -519,35 +520,44 @@ eleventyConfig.addCollection("newsletterPosts", function (collectionApi) {
 		return today.toISOString().slice(0, 10);
 	});
 
-	const normalizeDate = (value) => {
-		if (!value) {
-			return null;
-		}
-
-		if (value instanceof Date) {
-			const dateTime = DateTime.fromJSDate(value, { zone: "utc" });
-			return dateTime.isValid ? dateTime : null;
-		}
-
-		if (typeof value === "string") {
-			const isoDateTime = DateTime.fromISO(value, { zone: "utc" });
-			if (isoDateTime.isValid) {
-				return isoDateTime;
+		const normalizeDate = (value) => {
+			if (!value) {
+				return null;
 			}
 
-			const jsDate = new Date(value);
-			if (!Number.isNaN(jsDate.getTime())) {
-				const dateTime = DateTime.fromJSDate(jsDate, { zone: "utc" });
+			if (value instanceof Date) {
+				const dateTime = DateTime.fromJSDate(value, { zone: SITE_TIME_ZONE });
 				return dateTime.isValid ? dateTime : null;
 			}
-		}
 
-		return null;
-	};
+			if (typeof value === "string") {
+				const isoDateTime = DateTime.fromISO(value, { zone: SITE_TIME_ZONE });
+				if (isoDateTime.isValid) {
+					return isoDateTime;
+				}
 
-	eleventyConfig.addFilter("readableDate", (dateObj) => {
-		const normalizedDate = normalizeDate(dateObj);
-		return normalizedDate ? normalizedDate.toFormat("dd-MM-yyyy") : "";
+				const jsDate = new Date(value);
+				if (!Number.isNaN(jsDate.getTime())) {
+					const dateTime = DateTime.fromJSDate(jsDate, { zone: SITE_TIME_ZONE });
+					return dateTime.isValid ? dateTime : null;
+				}
+			}
+
+			return null;
+		};
+
+		eleventyConfig.addFilter("isPublished", (value) => {
+			const normalizedDate = normalizeDate(value);
+			if (!normalizedDate) {
+				return true;
+			}
+
+			return normalizedDate <= DateTime.now().setZone(SITE_TIME_ZONE);
+		});
+
+		eleventyConfig.addFilter("readableDate", (dateObj) => {
+			const normalizedDate = normalizeDate(dateObj);
+			return normalizedDate ? normalizedDate.toFormat("dd-MM-yyyy") : "";
 	});
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {

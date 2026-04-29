@@ -34,8 +34,7 @@ eleventyNavigation:
       <h2 class="title is-4">{{ category | capitalize }}</h2>
       <div class="books-grid" data-category="{{ categorySlug }}">
         {% for article in articles %}
-          {% set formattedPublishDate = article.data.publishedDate | formatDate %}
-          {% if (not article.data.publishedDate) or (formattedPublishDate <= currentDate) %}
+          {% if article.data.publishedDate | isPublished %}
             <article class="book-card post-card{% if shouldPaginate %} paginated-item{% endif %}" data-index="{{ loop.index0 }}">
               {% if article.data.image %}
                 <div class="card-media">

@@ -4,8 +4,8 @@ title: 'The Rules Were Written Down: AuDHD, Structure, Service, and What Came Af
 subtitle: ''
 description: On AuDHD, military service, and what it means when the structure that first regulated you is also the place that caused the most harm.
 excerpt: There's a particular cruelty in being harmed by the thing that first made you feel safe. The RAAF gave me structure my AuDHD brain had spent two decades searching for. It also failed me in ways I'm still working through. This is the second in a series on neurodivergence, service, and what comes after.
-date: 2026-04-28T09:00:00
-publishedDate: 2026-04-28T09:00:00
+date: 2026-04-28T09:00:00+08:00
+publishedDate: 2026-04-28T09:00:00+08:00
 theme: Neurodivergence, military service, and the cost of institutional failure
 keywords:
   - AuDHD veterans
