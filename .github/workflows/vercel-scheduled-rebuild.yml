@@ -1,0 +1,33 @@
+name: Scheduled Vercel Rebuild
+
+on:
+  schedule:
+    # 09:05 AWST daily
+    - cron: "5 1 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: scheduled-vercel-rebuild
+  cancel-in-progress: false
+
+jobs:
+  trigger-deploy-hook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate deploy hook secret
+        env:
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$VERCEL_DEPLOY_HOOK_URL" ]; then
+            echo "Missing VERCEL_DEPLOY_HOOK_URL secret."
+            echo "Add the Vercel Deploy Hook URL in GitHub repository secrets before relying on this workflow."
+            exit 1
+          fi
+
+      - name: Trigger Vercel rebuild
+        env:
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          curl --fail --silent --show-error \
+            -X POST \
+            "$VERCEL_DEPLOY_HOOK_URL"

@@ -197,6 +197,15 @@ function functionName(param) {
    - Include ticket references
    - Be descriptive but concise
 
+## Scheduled Publishing
+
+- Scheduled writing releases on this site depend on a fresh Vercel build after the publish time.
+- GitHub Actions triggers a daily rebuild at `09:05 AWST` using `.github/workflows/vercel-scheduled-rebuild.yml`.
+- GitHub Actions cron uses UTC, so the workflow is scheduled as `5 1 * * *`.
+- Add the Vercel Deploy Hook URL as a repository secret named `VERCEL_DEPLOY_HOOK_URL`.
+- In Vercel, create a Deploy Hook for the `main` branch and store that URL in the GitHub secret.
+- Use timezone-aware front matter for scheduled posts, for example `2026-04-28T09:00:00+08:00`.
+
 ## Performance Guidelines
 
 1. **Asset Optimization**
