@@ -4,7 +4,7 @@
     {% include "partials/hero.njk" with { title: "Writings", subtitle: "A collection..." } %}
     {% include "partials/hero.njk" with { title: title, image: image, date: page.date, category: category, tags: tags } %}
 #}
-<div class="wa-hero{% if image %} wa-hero--with-image{% endif %}" style="color: var(--wa-color-surface-foreground); position: relative; overflow: hidden; {% if image %}background-image: url('{{ image }}'); background-size: cover; background-position: center;{% else %}background: radial-gradient(circle at center, var(--wa-color-brand-fill-quiet), var(--wa-color-brand-fill-normal));{% endif %}">
+<div class="wa-hero{% if image %} wa-hero--with-image{% endif %}" style="--hero-overlay-opacity: {{ hero_overlay_opacity or '0.5' }}; color: var(--wa-color-surface-foreground); position: relative; overflow: hidden; {% if image %}background-image: url('{{ image }}'); background-size: cover; background-position: center;{% else %}background: radial-gradient(circle at center, var(--wa-color-brand-fill-quiet), var(--wa-color-brand-fill-normal));{% endif %}">
 
   <div style="position:relative; z-index:1; text-align:left; max-width:var(--container-width, 70ch); margin:0 auto; color: #ffffff;">
     {% if not hero_hide_title %}
