@@ -7,7 +7,9 @@
 
 <style>
   .contact-hero {
-          background-image: url("/assets/images/other/patrick-fore-unsplash.jpg");
+    position: relative;
+    isolation: isolate;
+    background-image: url("/assets/images/other/patrick-fore-unsplash.jpg");
     /* Photo by Patrick Fore (@patrickian4) on Unsplash: https://unsplash.com/photos/0gkw_9fy0eQ */
     background-size: cover;
     background-position: center;
@@ -18,7 +20,18 @@
     width: 100%;
   }
 
+  .contact-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(38, 33, 90, 0.5);
+    pointer-events: none;
+    z-index: 1;
+  }
+
   .contact-hero__content {
+    position: relative;
+    z-index: 2;
     max-width: 800px;
     margin: 0 auto;
   }

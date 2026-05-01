@@ -4,6 +4,20 @@
 }
 
 /* Hero Image Styles */
+.wa-hero {
+	position: relative;
+	isolation: isolate;
+}
+
+.wa-hero--with-image::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(38, 33, 90, 0.5);
+	pointer-events: none;
+	z-index: 0;
+}
+
 .writing-hero {
 	position: relative;
 	width: 100%;

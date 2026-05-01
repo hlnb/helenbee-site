@@ -40,6 +40,8 @@
 
 /* Make the hero partial full-bleed when used on post pages */
 .wa-hero {
+    position: relative;
+    isolation: isolate;
     width: 100vw;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
@@ -48,6 +50,15 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
+}
+
+.wa-hero--with-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(38, 33, 90, 0.5);
+    pointer-events: none;
+    z-index: 0;
 }
 
 /* Hero Image Styles */

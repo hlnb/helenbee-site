@@ -88,7 +88,8 @@ h6,
 	position: absolute;
 	inset: 0;
 	pointer-events: none;
-	background-color: color-mix(in srgb, var(--primary) 50%, transparent);
+	background-color: rgba(38, 33, 90, 0.5);
+	z-index: 0;
 }
 
 .content-wrapper {
@@ -231,18 +232,62 @@ main a:hover {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-	.site-header {
-		flex-direction: column;
-		gap: 1rem;
-		text-align: center;
+	.navbar {
+		flex-wrap: wrap;
+		padding: 0.5rem;
 	}
 
-	.main-nav {
-		margin-left: 0;
+	.navbar-brand {
+		width: 100%;
+		justify-content: space-between;
+		padding: 0 0.5rem;
 	}
 
-	.main-nav ul {
+	.navbar-burger {
+		display: flex;
+		align-items: center;
 		justify-content: center;
+		width: 3.25rem;
+		height: 3.25rem;
+		margin-left: auto;
+		color: var(--primary);
+	}
+
+	.navbar-menu {
+		display: none;
+		width: 100%;
+		padding: 0.75rem 0.5rem 1rem;
+	}
+
+	.navbar-menu.is-active {
+		display: block;
+	}
+
+	.navbar-end {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 1rem;
+	}
+
+	.navbar-end nav {
+		width: 100%;
+	}
+
+	.navbar-end nav ul {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0.5rem;
+		width: 100%;
+	}
+
+	.navbar-end nav ul li {
+		width: 100%;
+	}
+
+	.navbar-end nav ul li a {
+		display: block;
+		width: 100%;
+		padding: 0.75rem 1rem;
 	}
 }
 
@@ -329,8 +374,6 @@ main a:hover {
 	background-image: url("/assets/images/aaron-burden-unsplash.jpg");
 	background-size: cover;
 	background-position: center;
-	background-color: rgba(var(--primary-rgb), 0.5);
-	background-blend-mode: overlay;
 	height: 60vh;
 	display: flex;
 	align-items: center;
@@ -829,6 +872,7 @@ main a:hover {
 /* Unified Hero Styles */
 .hero {
 	position: relative;
+	isolation: isolate;
 	background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 	color: var(--text-light);
 	padding: 4rem 2rem;
@@ -842,10 +886,10 @@ main a:hover {
 /* Hero with background image (Home and About pages) */
 .home-hero,
 .about-hero.hero {
+	position: relative;
+	isolation: isolate;
 	background-size: cover;
 	background-position: center;
-	background-color: rgba(var(--primary-rgb), 0.5);
-	background-blend-mode: overlay;
 	height: 60vh;
 }
 
@@ -856,6 +900,17 @@ main a:hover {
 
 .about-hero.hero {
 	background-image: url("/assets/images/aaron-burden-unsplash.jpg");
+}
+
+.home-hero::before,
+.about-hero.hero::before,
+.reading-hero::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(38, 33, 90, 0.5);
+	pointer-events: none;
+	z-index: 1;
 }
 
 /* Writings Collection Hero */
