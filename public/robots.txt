@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /debug/
 Disallow: /pages/login/
 Disallow: /_examples/
+Disallow: /*?et_core_page_resource*
 
 # As a condition of accessing this website, you agree to abide by the following
 # content signals:
