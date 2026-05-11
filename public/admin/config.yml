@@ -10,7 +10,7 @@ backend:
   # Until then, use http://localhost:8080/admin/ for CMS access
 
 # Media uploads - new images go to uploads folder
-media_folder: assets/images/uploads
+media_folder: /assets/images/uploads
 public_folder: /assets/images/uploads
 
 # Site configuration
@@ -28,7 +28,7 @@ collections:
     path: "{{year}}/{{month}}/{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: "writings/{{year}}/{{month}}/{{year}}-{{month}}-{{day}}-{{slug}}"
     thumbnail: image
-    media_folder: "assets/images/other"
+    media_folder: "/assets/images/other"
     public_folder: "/assets/images/other"
     editor:
       preview: false
@@ -38,8 +38,19 @@ collections:
       - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
       - { label: "Description", name: "description", widget: "text", required: true, hint: "SEO description and excerpt" }
       - { label: "Excerpt", name: "excerpt", widget: "text", required: false, hint: "Optional summary for feeds and previews" }
-      - { label: "Publish Date", name: "date", widget: "datetime", required: true }
-      - { label: "Published Date", name: "publishedDate", widget: "datetime", required: false, hint: "Original publication date if different" }
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        required: true
+        picker_utc: false
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+      - label: "Published Date"
+        name: "publishedDate"
+        widget: "datetime"
+        required: false
+        hint: "Original publication date if different"
+        picker_utc: false
+        format: "YYYY-MM-DDTHH:mm:ssZ"
       - { label: "Theme", name: "theme", widget: "string", required: false, hint: "Thematic category" }
       - label: "Keywords"
         name: "keywords"
