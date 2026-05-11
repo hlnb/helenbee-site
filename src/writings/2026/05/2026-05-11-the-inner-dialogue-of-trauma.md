@@ -4,8 +4,8 @@ title: The Inner Dialogue of Trauma
 subtitle: ""
 description: A personal, veteran perspective on trauma and PTSD—the quiet, persistent thoughts underneath daily life—and the long work of learning to live alongside them.
 excerpt: PTSD doesn’t always arrive as flashbacks. Sometimes it’s a low, relentless inner dialogue—questioning your value, your safety, and what you “deserve.”
-date: 2026-05-11T11:02:00
-publishedDate: 2026-05-11T11:02:00
+date: "2026-05-11T11:02:00+08:00"
+publishedDate: "2026-05-11T11:02:00+08:00"
 theme: recognising trauma's inner voice
 keywords:
   - PTSD in veterans,
