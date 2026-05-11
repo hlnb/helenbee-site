@@ -36,7 +36,7 @@ tags:
   - Moral injury
 category: lived-experience
 series: mental-health
-image: assets/images/other/aimee-giles-u1QfqxhsrXQ-unsplash.jpg
+image: /assets/images/other/aimee-giles-u1QfqxhsrXQ-unsplash.jpg
 image_alt: tea cup near window morning light
 image_credit:
   photographer: Aimee Giles
