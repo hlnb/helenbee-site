@@ -36,9 +36,12 @@ tags:
   - mental health
 category: lived-experience
 series: ''
-image: /assets/images/other/placeholder_n9qtza.png
-image_alt: ''
-image_credit: null
+image: /assets/images/other/alexander-lunyov-TNaA3xGBzNk-unsplash.jpg
+image_alt: Two cups of coffee on a small marble table, suggesting quiet conversation and everyday connection.
+image_credit:
+  photographer: Alexander Lunyov
+  profile_url: https://unsplash.com/@sunify?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+  photo_url: https://unsplash.com/photos/two-cups-of-coffee-on-a-small-marble-table-TNaA3xGBzNk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 author:
   name: Helen Burgess
 socials:
@@ -75,7 +78,7 @@ It felt too light. Too easy. Like a substitute for the real thing, which I imagi
 
 I’ve changed my mind about that.
 
----
+***
 
 When I left the RAAF, I lost something I didn’t have a name for at the time.
 
@@ -99,7 +102,7 @@ Because there is some relief in discovering that something you thought was a per
 
 For a long time, I lived somewhere inside those numbers.
 
----
+***
 
 During the years when I was most isolated, I think I was looking for civilian connection that felt equivalent to what service had provided.
 
@@ -135,7 +138,7 @@ The coffee table is Vitamin S.
 
 I just did not know that was what it was.
 
----
+***
 
 I should be clear about what it isn’t.
 
@@ -163,7 +166,7 @@ That is not nothing.
 
 For some of us, it is a beginning.
 
----
+***
 
 There is something I have noticed about what belonging does to the internal voice I wrote about recently.
 
@@ -187,20 +190,16 @@ Enough to remind me I am still connected to the world.
 
 And some weeks, that is no small thing.
 
----
+***
 
 \*If you have rebuilt connection after service — or you are still trying to — I would like to hear what that has looked like. Not the version where it worked out cleanly. The actual version.\*
 
----
+***
 
 \*\*Sources\*\*
 
 - Australian Institute of Health and Welfare. (2023). \*Veteran social connectedness: Social isolation and loneliness\*. AIHW.    https://www.aihw.gov.au/reports/veterans/veteran-social-connectedness/contents/social-isolation-and-loneliness
-
 - Williamson, V., Stevelink, S. A. M., & Greenberg, N. (2022). Exploring the role of social connection in interventions with military veterans diagnosed with post-traumatic stress disorder: Systematic narrative review. \*Frontiers in Psychology, 13\*, 873885.    https://pmc.ncbi.nlm.nih.gov/articles/PMC9305387/
-
 - Sandstrom, G. M., & Dunn, E. W. (2014). Social interactions and well-being: The surprising power of weak ties. \*Personality and Social Psychology Bulletin, 40\*(7), 910–922.    https://journals.sagepub.com/doi/abs/10.1177/0146167214529799
-
 - Fingerman, K. L., Birditt, K. S., Fiori, K. L., Hall, J., Huxhold, O., Rauer, A., Sandstrom, G. M., & Sprecher, S. (2025). More than an acquaintance less than a friend: Fringeships in everyday life. \*Review of General Psychology\*.   https://journals.sagepub.com/doi/10.1177/10892680251357549
-
 - Alvarez, K., & Van Bavel, J. J. (2021). Vitamin S: Why is social contact, even with strangers, so good for us? \*Current Directions in Psychological Science, 30\*(4), 307–314.    https://journals.sagepub.com/doi/pdf/10.1177/09637214211002538
