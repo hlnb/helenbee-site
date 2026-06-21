@@ -40,16 +40,18 @@ socials:
   mastodon: https://mastodon.social/@helenbee
   facebook: https://www.facebook.com/profile.php?id=61572267654772
 siteUrl: https://helenburgess.id.au
-bluesky_description: Becoming an accredited Resilience Shield Mentor made me reflect on the 10-year path from my PTSD diagnosis to guiding others. It wasn't a straight line—it took a community retreat, targeted mind/body work, and even stand-up comedy to realize that resilience isn't about pushing through. It's an empirical, daily practice. 🧵👇
+bluesky_description: |-
+  Becoming an accredited Resilience Shield Mentor made me reflect on the 10-year path from my PTSD diagnosis to guiding others. It wasn't a straight line—it took a community retreat, targeted mind/body work, and even stand-up comedy to realize that resilience isn't about pushing through. It's an empirical, daily practice. 🧵👇
+  https://helenburgess.id.au/writings/2026/06/2026-06-21-resilience-is-a-practice/
 mastodon_description: |-
   True resilience isn't a personality trait; it’s a skill backed by empirical research. It’s also a capacity built over time through ordinary, daily choices.
   As a veteran moving from a 2015 diagnosis to becoming an accredited mentor, I’ve learned that recovery requires patience, adaptation, and giving yourself grace. Here is why resilience is a practice, not an achievement: 
-
+  https://helenburgess.id.au/writings/2026/06/2026-06-21-resilience-is-a-practice/
   #LivedExperience #VeteranSupport #MentalHealth #Resilience
 facebook_description: |-
   "Every role matters. Every person serves differently, and every person leaves service carrying different experiences."
   Recently, I became an accredited Resilience Shield Mentor—a milestone that caused me to look back at where this journey began with a PTSD diagnosis in 2015. The path between those two points involved deep reflection, wrestling with what "counting as a veteran" really means, and discovering that resilience is an empirically backed, daily practice of capacity and recovery.
-  Read the full reflection on moving from survival to mentorship:
+  Read the full reflection on moving from survival to mentorship: https://helenburgess.id.au/writings/2026/06/2026-06-21-resilience-is-a-practice/
 newsletter: true
 draft: false
 ---
