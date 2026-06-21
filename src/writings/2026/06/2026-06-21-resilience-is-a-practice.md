@@ -68,7 +68,7 @@ Looking back now, I don’t think I would have been ready for the book immediate
 
 **The Part I Struggled With**
 
-Even so, my first reaction to the text wasn’t an immediate connection. Many of the stories shared by the authors came from former SAS soldiers and were grounded in combat and special operations experiences. They were compelling stories, but they felt worlds away from my own military career. I joined the Air Force as a teenager and spent my career as a Communications Operator before retraining as a CISCON when the mustering evolved, eventually leaving the service as a Sergeant. Because my role was to support operations rather than participate in combat directly, I found myself creating an invisible line between their experiences and mine as I read. Part of me wondered whether these lessons were really intended for someone like me.
+Even so, my first reaction to the text wasn’t an immediate connection. Many of the stories shared by the authors who are former SAS soldiers and were grounded in combat and special operations experiences. They were compelling stories, but they felt worlds away from my own military career. I joined the Air Force as a teenager and spent my career as a Communications Operator before retraining as a CISCON when the mustering evolved, eventually leaving the service as a Sergeant. Because my role was to support operations rather than participate in combat directly, I found myself creating an invisible line between their experiences and mine as I read. Part of me wondered whether these lessons were really intended for someone like me.
 
 Looking back, I realise that reaction had very little to do with the book itself. It was about identity.
 
