@@ -40,3 +40,35 @@
 	transform: translateY(-2px);
 	transition: all 0.2s ease;
 }
+
+.resilience-accreditation {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 1.25rem;
+}
+
+.resilience-accreditation img {
+	flex: 0 0 96px;
+	width: 96px;
+	height: 96px;
+	object-fit: contain;
+}
+
+.resilience-accreditation p {
+	margin: 0;
+	font-size: 0.9rem;
+	line-height: 1.55;
+}
+
+@media (max-width: 480px) {
+	.resilience-accreditation {
+		align-items: flex-start;
+	}
+
+	.resilience-accreditation img {
+		flex-basis: 80px;
+		width: 80px;
+		height: 80px;
+	}
+}
