@@ -66,7 +66,7 @@ _The Resilience Shield_ was published in 2021, and I first read it in early 2022
 
 Looking back now, I don’t think I would have been ready for the book immediately after my diagnosis. At that stage, much of my energy was focused on understanding what had happened, finding appropriate support, and learning how to navigate daily life again; recovery felt less like personal growth and more like pure survival. By 2022, however, I was in a different place. Years of therapy, mindfulness practice, Stoic reflection, journalling, and self-examination had given me enough stability to begin exploring a different question. I was no longer asking, _What happened to me?_ Instead, I was asking, _How do I build a meaningful life from here?_ The book arrived at exactly the right time.
 
-**The Part I Struggled With**
+## **The Part I Struggled With**
 
 Even so, my first reaction to the text wasn’t an immediate connection. Many of the stories shared by the authors who are former SAS soldiers and were grounded in combat and special operations experiences. They were compelling stories, but they felt worlds away from my own military career. I joined the Air Force as a teenager and spent my career as a Communications Operator before retraining as a CISCON when the mustering evolved, eventually leaving the service as a Sergeant. Because my role was to support operations rather than participate in combat directly, I found myself creating an invisible line between their experiences and mine as I read. Part of me wondered whether these lessons were really intended for someone like me.
 
@@ -86,7 +86,7 @@ These days, I think of resilience as capacity—the capacity to adapt, to recove
 
 What appealed to me about the Resilience Shield framework was that it treated resilience as something practical rather than an innate trait people either possessed or lacked. It was not a personality trait; it was a skill, and skills can be developed. Furthermore, it wasn’t just a collection of good ideas; the model is deeply rooted in research, backed by empirical evidence that proves its methodology. It gave me immense confidence to know that the tools I was engaging with were scientifically validated.
 
-**The Domains That Challenged Me**
+## **The Domains That Challenged Me**
 
 As I worked through the framework, three specific areas stood out and challenged me in different ways: physical resilience, social resilience, and purpose.
 
@@ -96,7 +96,7 @@ Social resilience was another area that forced me to rethink old assumptions. Wh
 
 Purpose was perhaps the most significant challenge of all. Leaving military service often means leaving behind an identity that has shaped your life for years, leading to the questions that many veterans eventually encounter: _What matters now? What am I contributing? How do I want to spend the years ahead?_ For me, purpose gradually became less about rank, position, or achievement and more about values. What kind of person do I want to be? What do I want to give back? How can I use my experiences to help others? Those questions continue to evolve, but they remain central to how I think about resilience.
 
-**Knowing Isn’t the Same as Practising**
+## **Knowing Isn’t the Same as Practising**
 
 Reading the book gave me a framework, but what changed my life was putting those ideas into active practice. Over the past several years, I have become far more intentional about my own recovery than I was previously.
 
