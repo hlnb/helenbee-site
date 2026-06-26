@@ -38,7 +38,8 @@
 		"markdown-it-anchor": "^8.6.7"
 	},
 	"dependencies": {
-		"@vercel/analytics": "^1.5.0",
+		"@vercel/analytics": "^1.6.1",
+		"@vercel/speed-insights": "^2.0.0",
 		"bulma": "^1.0.3",
 		"eleventy-plugin-svg-contents": "^0.7.0"
 	}
