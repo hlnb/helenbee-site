@@ -8,7 +8,7 @@ date: 2026-07-20T00:08:00+08:00
 publishedDate: 2026-07-20T01:08:00+08:00
 theme: ''
 keywords: []
-type: article
+type: reflection
 tags:
   - mid-year reset
   - planning systems
@@ -18,7 +18,7 @@ tags:
   - rest
   - productivity guilt
   - neurodivergence
-category: ''
+category: lived-experience
 series: ''
 image: /assets/images/other/richard-stachmann-J7vp4RK-FPY-unsplash.jpg
 image_alt: Afternoon light cutting across a cluttered desk — an open laptop, handwritten sticky notes on the wall, a paper calendar, and a jar of pens.
