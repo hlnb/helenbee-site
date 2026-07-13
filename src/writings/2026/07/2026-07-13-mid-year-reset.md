@@ -34,7 +34,7 @@ socials:
   facebook: https://www.facebook.com/profile.php?id=61572267654772
 siteUrl: https://helenburgess.id.au
 bluesky_description: |-
-  July doesn't have January's shine. My mid-year reset wasn't about fixing what slipped — it was renaming my work "studio time," dropping one of two sleep trackers, and asking what's actually helping me live steadily. New post: 🔗 [URL]
+  July doesn't have January's shine. My mid-year reset wasn't about fixing what slipped — it was renaming my work "studio time," dropping one of two sleep trackers, and asking what's actually helping me live steadily. New post: 🔗 https://helenburgess.id.au/writings/2026/07/2026-07-13-mid-year-reset/
 
   #Wellbeing #Neurodivergent #Stoicism
 mastodon_description: |-
@@ -44,8 +44,7 @@ mastodon_description: |-
 
   It's about renaming my work "studio time." Protecting four actual hours of focus instead of four hours labelled as such. Simplifying my sleep tracking down to one device instead of two. And the difference between a reset that's gentle and one that's just self-criticism wearing softer language.
 
-  Link: [URL]
-
+  Link: https://helenburgess.id.au/writings/2026/07/2026-07-13-mid-year-reset/
   #MidYearReset #Neurodivergent #Stoicism #SelfCompassion #Wellbeing #Veterans
 facebook_description: |-
   New post is up — my mid-year reset, and it's not the quarterly-review-in-a-cardigan kind.
@@ -56,7 +55,7 @@ facebook_description: |-
 
   There's a bit in there about productivity guilt too, and why a reset can sound gentle while still functioning as self-criticism. If you've ever mid-year-audited your own systems and come away feeling worse instead of steadier, this one's for you.
 
-  [Link below]
+  https://helenburgess.id.au/writings/2026/07/2026-07-13-mid-year-reset/
 
   #MidYearReset #Wellbeing #Neurodivergent #SelfCompassion #Veterans
 newsletter: true
