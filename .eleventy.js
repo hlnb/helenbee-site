@@ -77,7 +77,13 @@ eleventyConfig.addCollection("latestPosts", function (collectionApi) {
 });
 	// newletter posts collection
 eleventyConfig.addCollection("newsletterPosts", function (collectionApi) {
-  return collectionApi.getFilteredByTag("allPosts").filter(post => post.data.newsletter === true);
+  return collectionApi
+    .getFilteredByGlob([
+      "src/writings/**/**/*.md",
+      "src/content/posts/**/**/*.md",
+    ])
+    .filter(post => post.data.newsletter === true)
+    .sort((a, b) => b.date - a.date);
 });
 	// Consolidated Date Filters
 	eleventyConfig.addFilter("dateToISO", (date) => {
@@ -145,15 +151,6 @@ eleventyConfig.addCollection("newsletterPosts", function (collectionApi) {
 		return array.slice(0, limit);
 	});
 
-	// Add htmlBaseUrl filter for sitemap
-	eleventyConfig.addFilter("htmlBaseUrl", function (url) {
-		try {
-			return new URL(url).pathname;
-		} catch (e) {
-			return url;
-		}
-	});
-
 	// Add absolute URL filter (might be needed for sitemap)
 	eleventyConfig.addFilter("absoluteUrl", function (url, base) {
 		try {
@@ -163,18 +160,18 @@ eleventyConfig.addCollection("newsletterPosts", function (collectionApi) {
 		}
 	});
 
-	// Define the filter
-	eleventyConfig.addFilter("addPathPrefixToFullUrl", function (url, prefix) {
-		// Example implementation: prepend the prefix to the URL
-		return prefix + url;
-	});
-
 	// Make sure your site URL is defined
 	eleventyConfig.addGlobalData("metadata", {
 		url: "https://helenburgess.id.au", // Replace with your site URL
 		title: "Helen Burgess",
+		language: "en",
 		description:
 			"Explore Helen Bee's digital garden at helenburgess.id.au, where personal experiences, web technologies, the timeless wisdom of Adler and Stoic philosophy converge. Join a journey of self-discovery and innovation, uncovering insights off the beaten path.",
+		author: {
+			name: "Helen Burgess",
+			email: "helen@helenburgess.id.au",
+			url: "https://helenburgess.id.au/about/",
+		},
 	});
 	// Define the getNewestCollectionItemDate filter with null check
 	eleventyConfig.addFilter(

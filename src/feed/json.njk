@@ -6,21 +6,21 @@ permalink: /feed/feed.json
 	"version": "https://jsonfeed.org/version/1.1",
 	"title": "{{ metadata.title }}",
 	"language": "{{ metadata.language }}",
-	"home_page_url": "{{ metadata.url | addPathPrefixToFullUrl }}",
-	"feed_url": "{{ permalink | htmlBaseUrl(metadata.url) }}",
+	"home_page_url": "{{ metadata.url }}",
+	"feed_url": "{{ permalink | absoluteUrl(metadata.url) }}",
 	"description": "{{ metadata.description }}",
 	"author": {
 		"name": "{{ metadata.author.name }}",
 		"url": "{{ metadata.author.url }}"
 	},
 	"items": [
-		{%- for post in collections.posts | reverse %}
-		{%- set absolutePostUrl = post.url | htmlBaseUrl(metadata.url) %}
+		{%- for post in collections.allPosts %}
+		{%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
 		{
 			"id": "{{ absolutePostUrl }}",
 			"url": "{{ absolutePostUrl }}",
 			"title": "{{ post.data.title }}",
-			"content_html": {{ post.templateContent | transformWithHtmlBase(metadata.url) | dump | safe }},
+			"content_html": {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }},
 			"date_published": "{{ post.date | dateToRfc3339 }}"
 		}
 		{% if not loop.last %},{% endif %}
