@@ -16,7 +16,14 @@ keywords:
   - Commemoration
   - Perth
 type: reflection
-tags: []
+tags:
+  - Women Veterans
+  - Women in Defence
+  - Australian Veterans
+  - Australian Military History
+  - RAAF Veteran
+  - Commemoration
+  - Perth
 category: reflection
 series: ''
 image: /assets/images/other/womens-service-memorial-AWM.jpeg
