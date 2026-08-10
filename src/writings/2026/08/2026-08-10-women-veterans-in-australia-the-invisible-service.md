@@ -76,6 +76,8 @@ The Australian Women's Army Service was the only non-medical women's service to 
 
 They were not standing at the edge of military history. They were helping to make it.
 
+![Hall of Memory mosaic representing Australia’s women’s services, showing a uniformed servicewoman beneath winged light, falling bombs and waves symbolising the sinking of the hospital ship Centaur.](/assets/images/other/womens-service-AWM.jpeg "Napier Waller, Hall of Memory mosaic pendentive: Women’s services, 1955–1958. The figure represents all women’s services; the surrounding imagery recalls their wartime dangers and sacrifices. Australian War Memorial, ART90409.003.")
+
 ## Invisible does not mean absent
 
 The word _invisible_ matters here.
