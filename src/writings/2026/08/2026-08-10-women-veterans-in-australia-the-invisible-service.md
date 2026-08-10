@@ -194,3 +194,5 @@ Their service was never absent.
 It is time for it to be fully seen.
 
 > **Reflection prompt:** When you picture an Australian veteran, whose face appears first - and whose service might still be missing from that picture?
+
+> **Header image:** Anne Ferguson, Australian servicewomen’s memorial, 1999, granite mosaic. Australian War Memorial, ART90968. © Australian War Memorial, licensed CC BY-NC.
