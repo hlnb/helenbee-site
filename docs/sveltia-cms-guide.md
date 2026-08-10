@@ -82,6 +82,8 @@ image_alt: "Description for accessibility"
 image_credit:
   photographer: "Harmandeep Singh"
   profile_url: "https://unsplash.com/@1harman1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+  copyright_notice: "Used under the Unsplash License"
+  source_name: "Unsplash"
   photo_url: "https://unsplash.com/photos/a-person-writing-on-a-notebook-with-a-pen-3_Mogjm96GE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 author:
   name: "Helen Burgess"
@@ -174,6 +176,18 @@ Content continues...
 2. Click "Upload" or drag-and-drop
 3. Images save to: `assets/images/uploads/`
 4. Automatically gets correct path in front matter
+
+### Crediting Images
+
+The **Image Credit** section supports images from any source, not only Unsplash:
+
+- **Creator or Copyright Owner** identifies the photographer, artist, organisation, archive, or rights holder.
+- **Creator or Owner URL** optionally links their name to a profile or website.
+- **Copyright / Rights Notice** contains any wording that must be displayed, such as `© 2026 Jane Smith. Used with permission.`
+- **Image Source** names the platform, archive, publication, or collection.
+- **Image Source URL** links to the original image page or catalogue record.
+
+Only fill in the fields that apply. Existing Unsplash credits using `photographer`, `profile_url`, and `photo_url` remain supported.
 
 ### Image Guidelines
 

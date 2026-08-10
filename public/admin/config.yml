@@ -107,15 +107,17 @@ collections:
         widget: "string"
         required: false
         hint: "Descriptive alt text for accessibility"
-      - label: "Image Credit (Unsplash)"
+      - label: "Image Credit"
         name: "image_credit"
         widget: "object"
         required: false
-        hint: "Use the links from Unsplash's credit snippet: the photographer profile link and the photo link."
+        hint: "Credit the image creator or copyright owner. Add the source and any copyright, licence, or permission wording the image requires."
         fields:
-          - { label: "Photographer Name", name: "photographer", widget: "string", required: false }
-          - { label: "Photographer Profile URL", name: "profile_url", widget: "string", required: false, hint: "The first Unsplash link, for example https://unsplash.com/@1harman1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" }
-          - { label: "Unsplash Photo URL", name: "photo_url", widget: "string", required: false, hint: "The second Unsplash link, for example https://unsplash.com/photos/a-person-writing-on-a-notebook-with-a-pen-3_Mogjm96GE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" }
+          - { label: "Creator or Copyright Owner", name: "photographer", widget: "string", required: false, hint: "A photographer, artist, organisation, archive, or other rights holder." }
+          - { label: "Creator or Owner URL", name: "profile_url", widget: "string", required: false, hint: "Optional link to the creator, owner, or rights holder." }
+          - { label: "Copyright / Rights Notice", name: "copyright_notice", widget: "string", required: false, hint: "Enter the wording that must appear, for example: © 2026 Jane Smith. Used with permission." }
+          - { label: "Image Source", name: "source_name", widget: "string", required: false, hint: "Where the image came from, for example Unsplash, Australian War Memorial, or the owner's collection." }
+          - { label: "Image Source URL", name: "photo_url", widget: "string", required: false, hint: "Optional link to the image's original page or catalogue record." }
       - label: "Author"
         name: "author"
         widget: "object"

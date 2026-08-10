@@ -51,25 +51,38 @@
     </div>
     {% endif %}
 
-    {# Image attribution for Unsplash photos #}
-    {% if image and image_credit and (image_credit.photographer or image_credit.username) %}
-      {% set photographerName = image_credit.photographer or image_credit.username %}
-      {% set photographerUrl = image_credit.profile_url %}
-      {% if not photographerUrl and image_credit.username %}
-        {% set photographerUrl = "https://unsplash.com/" + image_credit.username | replace("@", "") + "?utm_source=helenburgess&utm_medium=referral" %}
+    {# Provider-neutral image attribution. Legacy Unsplash fields remain supported. #}
+    {% if image and image_credit and (image_credit.photographer or image_credit.username or image_credit.copyright_notice or image_credit.source_name or image_credit.photo_url) %}
+      {% set creditName = image_credit.photographer or image_credit.username %}
+      {% set creditUrl = image_credit.profile_url %}
+      {% set sourceName = image_credit.source_name %}
+      {% if not creditUrl and image_credit.username %}
+        {% set creditUrl = "https://unsplash.com/" + image_credit.username | replace("@", "") + "?utm_source=helenburgess&utm_medium=referral" %}
+      {% endif %}
+      {% if not sourceName and ((image_credit.photo_url and "unsplash.com" in image_credit.photo_url) or image_credit.username) %}
+        {% set sourceName = "Unsplash" %}
       {% endif %}
       <div class="image-credit" style="margin-top:1rem; font-size:0.8rem; color:rgba(255,255,255,0.75); text-shadow: 0 1px 3px rgba(0,0,0,0.45);">
-        Photo by
-        {% if photographerUrl %}
-          <a href="{{ photographerUrl }}" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.9); text-decoration:underline;">{{ photographerName }}</a>
-        {% else %}
-          {{ photographerName }}
+        Image credit:
+        {% if creditName %}
+          {% if creditUrl %}
+            <a href="{{ creditUrl }}" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.9); text-decoration:underline;">{{ creditName }}</a>
+          {% else %}
+            {{ creditName }}
+          {% endif %}
         {% endif %}
-        on
-        {% if image_credit.photo_url %}
-          <a href="{{ image_credit.photo_url }}" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.9); text-decoration:underline;">Unsplash</a>
-        {% else %}
-          <a href="https://unsplash.com?utm_source=helenburgess&utm_medium=referral" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.9); text-decoration:underline;">Unsplash</a>
+        {% if image_credit.copyright_notice %}
+          {% if creditName %}<span aria-hidden="true"> · </span>{% endif %}{{ image_credit.copyright_notice }}
+        {% endif %}
+        {% if sourceName %}
+          {% if creditName or image_credit.copyright_notice %}<span aria-hidden="true"> · </span>{% endif %}Source:
+          {% if image_credit.photo_url %}
+            <a href="{{ image_credit.photo_url }}" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.9); text-decoration:underline;">{{ sourceName }}</a>
+          {% else %}
+            {{ sourceName }}
+          {% endif %}
+        {% elif image_credit.photo_url %}
+          {% if creditName or image_credit.copyright_notice %}<span aria-hidden="true"> · </span>{% endif %}<a href="{{ image_credit.photo_url }}" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.9); text-decoration:underline;">View image source</a>
         {% endif %}
       </div>
     {% endif %}
