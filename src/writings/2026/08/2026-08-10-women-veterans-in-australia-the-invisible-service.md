@@ -19,8 +19,8 @@ type: reflection
 tags: []
 category: reflection
 series: ''
-image: /assets/images/other/placeholder_n9qtza.png
-image_alt: Service banners beside the State War Memorial at Kings Park under a rain-filled sky during the Commemoration of Women in the Armed Forces of Australia.
+image: /assets/images/other/womens-service-memorial-AWM.jpeg
+image_alt: Australian Servicewomen’s Memorial, a low rectangular granite mosaic set within a lawn, divided by a curved black channel and bordered by women’s service insignia.
 image_credit: null
 author:
   name: Helen Burgess
