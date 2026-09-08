@@ -70,7 +70,7 @@ Two days before a two-week break I desperately needed, I was told that the Diplo
 
 Until then, we had been using what TAFE called a practice firm, giving students a simulated workplace where they could develop their skills while completing the requirements of the Diploma. Now I was expected to find another way. The Executive Director wanted the small group of students who had applied — about six of them — to work with real web agencies while still completing the knowledge, assessment and evidence requirements for their qualification.
 
-On paper, perhaps, it sounded straightforward: put the students into industry and let them learn on the job.
+On paper, it sounded straightforward enough: put the students into industry and let them learn on the job.
 
 Vocational education doesn't work quite like that.
 
@@ -80,7 +80,7 @@ And I had two days before my break.
 
 I cried.
 
-I remember feeling overwhelmed by the sheer size of what was being asked of me, but there was something else underneath it. I was angry that the break I needed to recover was about to be absorbed by another institutional problem that somehow had to be solved.
+I remember feeling overwhelmed by the sheer size of what was being asked of me. But underneath that was anger. The break I desperately needed was about to be swallowed by yet another institutional problem that somehow had become mine to solve.
 
 Then I redesigned the course anyway.
 
@@ -88,13 +88,13 @@ Then I redesigned the course anyway.
 
 I reached out to friends and contacts in the web industry and began finding businesses willing to work with the students. I interviewed potential placement partners and worked out how the relationship between TAFE, the student and the business could operate.
 
-The students would complete some of their learning online, while lecturers allocated to them provided scheduled office hours — initially around four hours — rather than having everyone sitting in a traditional classroom for the entire week. We incorporated placement reviews and worked with industry contacts so the projects students were undertaking could be considered against the standard expected of someone completing a Diploma.
+The students would complete some of their learning online. Their lecturers would offer scheduled office hours — initially around four hours — instead of keeping everyone in a traditional classroom all week. We added placement reviews and worked with our industry contacts to make sure the students' projects gave them a genuine opportunity to meet Diploma-level standards.
 
 Then there were schedules, assessment evidence, placement requirements and paperwork. Lots of paperwork.
 
 I managed to protect the first week of my two-week break. During the second week, I began putting the administrative structure together.
 
-Looking back, I am sort of proud of the solution. It connected students with people actually working in the web industry and gave them experience with real projects and workplaces while still providing access to lecturers and the educational structure needed to complete their qualification.
+Looking back, I am proud of the solution. It connected students with people actually working in the web industry and gave them experience with real projects and workplaces, while still giving them access to lecturers and the structure they needed to complete their qualification.
 
 There was something genuinely worthwhile in what we created.
 
@@ -110,7 +110,7 @@ Those weren't bad lessons. They made me capable, dependable and comfortable work
 
 I left the RAAF in 2000. It took considerably longer to recognise some of the habits I had carried out with me.
 
-One was the belief that if something mattered and I could do something about it, I probably should. Another was that being part of a team meant not letting that team down, particularly when there were consequences for everyone if the job wasn't done properly.
+One was the belief that if something mattered and I could do something about it, then I probably should. Another was that being part of a team meant not letting people down, especially when everyone would face the consequences if the job wasn't done properly.
 
 At TAFE, those beliefs repeatedly found somewhere to go.
 
@@ -118,13 +118,13 @@ Before becoming permanent staff, while I was still working as a contractor, I wa
 
 I understood what was at stake.
 
-What made the process particularly stressful was dealing with some difficult personalities who seemed to believe that certain rules didn't apply to them. I became angry because I couldn't understand why they didn't seem to grasp the consequences. This wasn't just about satisfying an auditor. In my mind, people's jobs could potentially be affected by the outcome.
+What made the process especially stressful was dealing with difficult personalities who seemed to believe certain rules didn't apply to them. I became angry because I couldn't understand why they couldn't see the consequences. This wasn't just about keeping an auditor happy. As I saw it, people's jobs could be affected by the outcome.
 
 This was everyone's responsibility.
 
 Yet when I felt other people weren't taking enough responsibility, I didn't respond by taking less. I took more. I put in 110 per cent because we needed to pass the audit and I was going to do whatever I could to make sure we did.
 
-At the time I would probably have called that commitment. Looking back, I can also recognise a pattern: when other people appeared to be underfunctioning, I compensated by overfunctioning.
+At the time, I would have called that commitment. Looking back, I can see the pattern more clearly: when other people did less, I compensated by doing more.
 
 And every time that worked, the behaviour reinforced itself.
 
@@ -138,7 +138,7 @@ That frustrated me because an empty room isn't necessarily an available room. Sy
 
 Perhaps that's the former communications and IT person in me. Perhaps some of it came from the military. Either way, I was comfortable with systems and regulation when I could see what they were protecting.
 
-What became harder was being expected to deliver outcomes while having less influence over the conditions in which those outcomes had to be achieved.
+What became harder was being held responsible for results while having less and less say over the conditions in which I was expected to produce them.
 
 Years later, I discovered that workplace-health research has language for some of this.
 
@@ -146,9 +146,9 @@ Years later, I discovered that workplace-health research has language for some o
 
 The [World Health Organization's guidance on mental health at work](https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work) takes a similarly broad view. Poor working environments can include excessive workloads, understaffing, lack of control over workload or job design, limited support, authoritarian supervision and job insecurity. Work itself can be good for mental health by providing purpose, confidence, achievement and connection, while the conditions surrounding that work can simultaneously undermine wellbeing.
 
-Reading those descriptions now is uncomfortable because I recognise pieces of my experience in them.
+Reading those descriptions now is uncomfortable. I recognise too much of my own experience in them.
 
-They don't provide a retrospective diagnosis of my workplace, and they don't tell the whole story. What they give me is another way of looking at something I once interpreted almost entirely as my personal failure to cope.
+They don't provide a retrospective diagnosis of my workplace, nor do they tell the whole story. But they give me another way to understand something I once saw almost entirely as my own failure to cope.
 
 Sometimes the question isn't simply whether a person is resilient enough.
 
@@ -158,13 +158,13 @@ Sometimes we need to look at the conditions in which we are asking them to be re
 
 By the time of the Diploma incident, my relationship with TAFE had changed considerably. I was becoming disillusioned with an institution and hierarchy in which I had invested a great deal of myself.
 
-The Information Technology learning area had spent years building something. There was knowledge there, along with experience, courses, systems, industry relationships and staff who understood both their subject areas and the students they taught.
+The Information Technology learning area had spent years building something worthwhile. We had knowledge, experience, courses, systems and industry relationships. We had staff who understood both their subject areas and the students they taught.
 
 Then came reorganisations.
 
 The learning area was broken up. Staff numbers were deliberately reduced, and those who remained were expected to carry more. From where I stood, saving money increasingly seemed to mean having fewer people and expecting those people to absorb the work that remained.
 
-There were also decisions from higher in the hierarchy about what should matter and what shouldn't. I didn't always agree with those decisions. Sometimes I felt bullied by the process and by the way authority was being exercised. I use that word carefully because I'm describing how I experienced it, not making a formal finding about anybody else's behaviour.
+People higher in the hierarchy were also deciding what should matter and what shouldn't. I didn't always agree with them. At times, I felt bullied by the process and by the way authority was exercised. I use that word carefully. I am describing how it felt to me, not making a formal finding about anyone else's behaviour.
 
 What I remember most clearly is the growing feeling that we were pawns. People higher in the organisation could reorganise us, reduce us, move responsibilities around and decide which priorities mattered.
 
@@ -194,7 +194,7 @@ There was another complication, and this is where my understanding of being “t
 
 I was living with a mental illness that wasn't immediately visible to the people around me.
 
-I could still turn up, teach, solve problems, work with students and deal with compliance requirements, schedules, assessment evidence and administration. If your measure of whether I was coping was simply _Can Helen still do her job?_, then for quite a long time the answer was yes.
+I could still turn up, teach, solve problems, work with students and handle the compliance requirements, schedules, assessment evidence and administration. If the only measure of whether I was coping was _Can Helen still do her job?_, then for quite a long time the answer was yes.
 
 But the rest of my life was becoming smaller.
 
@@ -204,7 +204,7 @@ There was less and less Helen left for anything else.
 
 Occupational-health researchers use the term _sickness presenteeism_ to describe going to work despite being ill. A [systematic review of longitudinal research into sickness presenteeism](https://pubmed.ncbi.nlm.nih.gov/27310723/) found associations particularly with later sickness absence and poorer self-rated health, while noting that evidence about some longer-term health outcomes remained mixed.
 
-The term matters to me not because I need another label for what happened, but because it exposes the flaw in the measurement I had been using.
+The term matters to me not because I need another label, but because it exposes the flaw in the way I had been measuring whether I was okay.
 
 I thought my ability to continue working was evidence that I was coping.
 
@@ -232,7 +232,7 @@ Today I understand the break itself differently.
 
 Research into psychological detachment describes the ability to mentally disengage from work during non-work time as an important part of recovery. A [2023 systematic review of psychological detachment from work](https://pubmed.ncbi.nlm.nih.gov/37141024/) brought together 159 empirical studies and found that detachment is an important recovery experience connected with employee health, wellbeing and performance.
 
-Being physically absent from the workplace isn't necessarily the same thing as recovering from it.
+Being away from work isn't the same as recovering from it.
 
 I wasn't sitting at my desk at the college during that second week, but TAFE was still occupying the mental space that was supposed to help restore me. I was thinking about students, placements, schedules, evidence requirements and how to make the whole thing work.
 
@@ -250,7 +250,7 @@ They weren't accepted.
 
 Instead, I felt pushed aside while a relatively new, part-time lecturer from the UK, whose ideas seemed more closely aligned with those of the Executive Director, was given the lead.
 
-I don't need to argue now about whose ideas were objectively better. That's not why the incident matters to me.
+I don't need to argue now about whose ideas were better. That isn't why the incident still matters to me.
 
 What mattered was what it exposed.
 
@@ -266,7 +266,7 @@ By then, I had already become deeply disillusioned with the hierarchy within my 
 
 Safe Work Australia's psychosocial-hazard framework includes [inadequate reward and recognition](https://www.safeworkaustralia.gov.au/safety-topic/managing-health-and-safety/mental-health/psychosocial-hazards/inadequate-reward-and-recognition) and poor organisational justice alongside workload and job control. Organisational justice isn't simply about getting your preferred outcome; it concerns whether decision-making processes are fair, people are appropriately informed and workers are treated with dignity and respect.
 
-Again, I'm cautious about taking contemporary terminology and declaring that it settles what happened years ago.
+Again, I don't want to take today's language and pretend it settles what happened years ago.
 
 What interests me is that modern workplace-health thinking recognises something I struggled to articulate at the time: being heard, respected and fairly treated isn't some optional extra sitting outside employee wellbeing.
 
@@ -304,7 +304,7 @@ Most difficult of all, I could care deeply about the Information Technology lear
 
 There is a significant difference between understanding the Stoic idea of control intellectually and remembering it when you're angry, frightened or watching something you care about being dismantled.
 
-I didn't read a passage from Epictetus one evening and arrive at work the next morning serenely detached from institutional bureaucracy.
+I didn't read a passage from Epictetus one evening and stroll into work the next morning serenely detached from institutional bureaucracy. If only it were that easy.
 
 I had to practise it.
 
@@ -320,7 +320,7 @@ I didn't have the Resilience Shield framework while I was at TAFE. I encountered
 
 But it has given me useful language for looking backwards.
 
-The [Resilience Shield model](https://resilienceshield.com/understand-your-resilience/) treats resilience as multifactorial rather than as a single reserve of toughness. Its framework considers interconnected areas including the Mind, Body, Social and Professional layers, alongside the things we bring with us and our capacity to adapt.
+The [Resilience Shield model](https://resilienceshield.com/understand-your-resilience/) doesn't treat resilience as a single reserve of toughness. It looks at several connected areas — including the Mind, Body, Social and Professional layers — as well as what we bring with us and our ability to adapt.
 
 An [empirical evaluation of the Resilience Shield model](https://resilienceshield.com/resource-hub/article/an-empirical-evaluation-of-the-resilience-shield-model/) conducted with researchers from the University of Western Australia found that its modifiable Mind, Body, Social and Professional components each contributed independently to measures of resilience or vulnerability.
 
@@ -346,7 +346,7 @@ I wasn't becoming less resilient because I lacked determination.
 
 I had determination in abundance.
 
-The systems that helped replenish resilience were gradually being stripped away while I continued drawing from them.
+The things that replenished my resilience were gradually disappearing, even as I kept drawing on them.
 
 ## Resilience cannot mean learning to tolerate everything
 
@@ -362,7 +362,7 @@ But individual resilience doesn't remove organisational responsibility.
 
 [Safe Work Australia's approach to psychosocial hazards](https://www.safeworkaustralia.gov.au/safety-topic/managing-health-and-safety/mental-health) emphasises identifying and controlling hazards arising from the design and management of work itself. The [World Health Organization](https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work) similarly recommends organisational interventions addressing working conditions and involving workers in decisions affecting their jobs, alongside support for people experiencing mental-health difficulties.
 
-Sometimes the person does need support in carrying the load.
+Sometimes a person needs support to carry the load.
 
 Sometimes somebody also needs to ask why that load became so heavy in the first place.
 
@@ -384,7 +384,7 @@ I don't understand resilience that way anymore.
 
 Keeping going is sometimes necessary, but it can also hide the fact that you're consuming the very resources that allow you to keep going. Sleep matters. Movement matters. Connection matters. Purpose matters. Recovery matters. Having people to talk to matters.
 
-Professional psychological support mattered enormously to me.
+The support of my psychologist mattered enormously to me.
 
 So did gradually learning the difference between something I could influence and something I could control.
 
@@ -410,7 +410,7 @@ Even then, when I finally cried because another demand felt impossible, I dried 
 
 That's the part I look at most differently now.
 
-The breakdown wasn't evidence that I had suddenly become weak. It was evidence that I had been trying to be strong for too long using a definition of strength that left very little room for being human.
+That moment wasn't evidence that I had suddenly become weak. It was evidence that I had been trying to be strong for too long, using a definition of strength that left very little room for being human.
 
 ## A different kind of strength
 
