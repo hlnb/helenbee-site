@@ -170,5 +170,8 @@ function copyToClipboard(text) {
 }
 </script>
   {% include "partials/cookie-notice.njk" %}
+  {% if page.url | startsWith('/writings/') %}
+    {% include "partials/metricool.njk" %}
+  {% endif %}
 </body>
 </html>

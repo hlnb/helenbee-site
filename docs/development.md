@@ -171,6 +171,13 @@ function functionName(param) {
 
 ## Testing
 
+Metricool tracking is included on `/writings/` and its article pages through
+`src/_includes/partials/metricool.njk`. It loads after the visitor accepts analytics
+in the cookie notice, including a saved acceptance on later visits. Run
+`node --test tests/metricool.test.cjs` to check consent and tracker initialisation.
+After deployment, visit a writing page, accept cookies, and verify receipt in
+Metricool; a local build does not confirm the external connection.
+
 1. **Local Testing**
 
    - Cross-browser testing
