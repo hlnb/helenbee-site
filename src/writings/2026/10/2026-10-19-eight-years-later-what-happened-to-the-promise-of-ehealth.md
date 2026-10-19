@@ -7,7 +7,16 @@ excerpt: In 2018, I wrote about eHealth, M2M communication and the possibility o
 date: 2026-10-26T00:33:00+08:00
 publishedDate: 2026-10-26T00:33:00+08:00
 theme: ''
-keywords: []
+keywords:
+  - eHealth
+  - connected health
+  - digital health in Australia
+  - machine-to-machine communication
+  - health data interoperability
+  - remote patient monitoring
+  - ageing at home
+  - health data privacy
+  - patient autonomy
 type: reflection
 tags:
   - eHealth
@@ -59,7 +68,10 @@ The language has changed. We are more likely to talk about the Internet of Thing
 
 That is essentially the architecture I was studying years ago.
 
-![Diagram comparing a 2016 M2M health system using a body sensor, home gateway and remote monitoring centre with a modern connected-health system using a wearable, phone, cloud platform and healthcare system.](/assets/images/other/m2m-then-and-now.webp "Then and now: The basic idea behind M2M health monitoring has remained remarkably similar, even as phones, cloud services, apps and health platforms have replaced or expanded the gateways I was studying in 2016.")
+<figure class="writing-image-figure writing-image-figure--bordered">
+  <img src="/assets/images/other/m2m-then-and-now.webp" alt="Diagram comparing a 2016 M2M health system using a body sensor, home gateway and remote monitoring centre with a modern connected-health system using a wearable, phone, cloud platform and healthcare system." data-fit="natural">
+  <figcaption>Then and now: The basic idea behind M2M health monitoring has remained remarkably similar, even as phones, cloud services, apps and health platforms have replaced or expanded the gateways I was studying in 2016.</figcaption>
+</figure>
 
 Remote patient monitoring is probably one of the clearest examples. Information can now be collected while someone is at home rather than only when they are sitting in a clinic and, depending on the system, that information can become available to healthcare providers.
 
@@ -79,7 +91,10 @@ That issue has not gone away; it has simply become more complicated. Today we ta
 
 A blood-pressure reading is a simple example. Sending `120/80` from one machine to another is not particularly useful unless the receiving system also knows whose reading it is, when it was taken, what the numbers represent and what units are being used.
 
-![Diagram showing the difference between simply transmitting health data between devices and interoperable exchange where patient identity, measurement, units, time and context travel with the data.](/assets/images/other/connectivity-vs-interoperability.webp "Connection is only part of the problem. Interoperability means preserving enough context and meaning for another system to understand and use the information.")
+<figure class="writing-image-figure writing-image-figure--bordered">
+  <img src="/assets/images/other/connectivity-vs-interoperability.webp" alt="Diagram showing the difference between simply transmitting health data between devices and interoperable exchange where patient identity, measurement, units, time and context travel with the data." data-fit="natural">
+  <figcaption>Connection is only part of the problem. Interoperability means preserving enough context and meaning for another system to understand and use the information.</figcaption>
+</figure>
 
 That is one reason standards such as FHIR have become important in healthcare. They provide agreed ways of structuring and exchanging health information so that different systems have a better chance of understanding each other.
 
@@ -93,7 +108,10 @@ My Garmin watch records things such as activity, heart rate, exercise, stress an
 
 In some respects, this is exactly the kind of M2M environment I was studying. A device gathers information, one system passes it onwards and another system can then use it. I don't need to manually type every measurement into every app.
 
-![Diagram showing health data moving from a Garmin watch through Garmin Connect and Health Connect, with connected applications such as Garmin and Withings presenting the information in different ways.](/assets/images/other/connected-health-data-flow.webp "My own connected-health example: supported data from Garmin can move through Health Connect and become available to other connected applications such as Withings. The information can travel between systems, but each application still decides how to present and interpret what it receives.")
+<figure class="writing-image-figure writing-image-figure--bordered">
+  <img src="/assets/images/other/connected-health-data-flow.webp" alt="Diagram showing health data moving from a Garmin watch through Garmin Connect and Health Connect, with connected applications such as Garmin and Withings presenting the information in different ways." data-fit="natural">
+  <figcaption>My own connected-health example: supported data from Garmin can move through Health Connect and become available to other connected applications such as Withings. The information can travel between systems, but each application still decides how to present and interpret what it receives.</figcaption>
+</figure>
 
 The gateway I once imagined as a separate piece of equipment may now effectively be my phone, an operating-system service or something happening online. The details have changed, but the idea has not changed nearly as much.
 
@@ -203,7 +221,10 @@ I also want the technology to be usable by the person whose independence it is s
 
 When I wrote about M2M communication, I thought I was mainly exploring a networking, security and technology problem. Looking back, I can see that I was also asking about autonomy, dignity and connection: about what independence actually means, how much convenience we are willing to exchange for privacy, and whether technology genuinely supports a person's choices or simply creates a more efficient way of watching them.
 
-![Diagram showing the progression from connectivity through interoperability, interpretation and trust to autonomy.](/assets/images/other/connectivity-to-autonomy.webp "What began for me as a question about connectivity has become a much broader question about whether connected health technology remains understandable, trustworthy and under the control of the person using it.")
+<figure class="writing-image-figure writing-image-figure--bordered">
+  <img src="/assets/images/other/connectivity-to-autonomy.webp" alt="Diagram showing the progression from connectivity through interoperability, interpretation and trust to autonomy." data-fit="natural">
+  <figcaption>What began for me as a question about connectivity has become a much broader question about whether connected health technology remains understandable, trustworthy and under the control of the person using it.</figcaption>
+</figure>
 
 The M2M future I was studying did arrive, although its name and technology changed along the way. I don't think that means the problem has been solved. If anything, the technology becoming ordinary has made the human questions easier to see.
 

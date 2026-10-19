@@ -36,6 +36,13 @@
     margin: 2rem auto;
 }
 
+.writing-image-figure--bordered {
+    box-sizing: border-box;
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
 .writing-image-figure img {
     width: 100%;
     margin: 0 auto;
