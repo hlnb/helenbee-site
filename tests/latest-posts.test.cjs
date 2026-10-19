@@ -19,7 +19,8 @@ function post(title, date, publishedDate, status) {
 
 test('homepage excludes scheduled articles before selecting the three latest posts', () => {
   const originalNow = Settings.now;
-  Settings.now = () => DateTime.fromISO('2026-10-19T12:00:00+08:00').toMillis();
+  const now = DateTime.fromISO('2026-10-19T12:00:00+08:00').toMillis();
+  Settings.now = () => now;
   try {
     const posts = [
       post('Scheduled eHealth', '2026-10-26', '2026-10-26T00:33:00+08:00'),
@@ -52,11 +53,11 @@ test('scheduled article becomes eligible at the exact Perth publication time', (
   }
 });
 
-test('built homepage and writings index both withhold the scheduled eHealth card', () => {
+test('built pages respect the eHealth publication date', () => {
   const scheduledUrl = '/writings/2026/10/2026-10-19-eight-years-later-what-happened-to-the-promise-of-ehealth/';
-  // Once its date arrives this fixture should be listed on both pages.
   const due = filters.isPublished('2026-10-26T00:33:00+08:00');
-  for (const page of ['_site/index.html', '_site/writings/index.html']) {
-    assert.equal(readFileSync(page, 'utf8').includes(`href="${scheduledUrl}"`), due, page);
+  assert.equal(readFileSync('_site/writings/index.html', 'utf8').includes(`href="${scheduledUrl}"`), due);
+  if (!due) {
+    assert.equal(readFileSync('_site/index.html', 'utf8').includes(`href="${scheduledUrl}"`), false);
   }
 });

@@ -230,6 +230,13 @@ JavaScript, all published articles remain visible and the jump links still
 work. To verify category navigation and pagination after changes, run
 `npm run build` followed by `node --test tests/*.test.cjs`.
 
+Home page Latest Writings and the Writings index both check `publishedDate`
+using Australia/Perth time. A future date keeps a card out of both listings
+until a build runs on or after that time. The daily rebuild workflow in
+`.github/workflows/vercel-scheduled-rebuild.yml` is scheduled for 09:05 AWST
+and requires the `VERCEL_DEPLOY_HOOK_URL` repository secret. Its presence
+and successful runs must be verified before relying on automatic publication.
+
 ## Tag Guidelines
 
 - Use lowercase
