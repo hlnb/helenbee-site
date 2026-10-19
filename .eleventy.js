@@ -72,6 +72,7 @@ eleventyConfig.addCollection("latestPosts", function (collectionApi) {
       "src/content/posts/**/**/*.md",
     ])
     .filter(post => post.data.status === "published" || !post.data.status) // Only published or no status
+    .filter(post => isPublished(post.data.publishedDate))
     .sort((a, b) => b.date - a.date)
     .slice(0, 3);
 });
@@ -543,14 +544,15 @@ eleventyConfig.addCollection("newsletterPosts", function (collectionApi) {
 			return null;
 		};
 
-		eleventyConfig.addFilter("isPublished", (value) => {
+		const isPublished = (value) => {
 			const normalizedDate = normalizeDate(value);
 			if (!normalizedDate) {
 				return true;
 			}
 
 			return normalizedDate <= DateTime.now().setZone(SITE_TIME_ZONE);
-		});
+		};
+		eleventyConfig.addFilter("isPublished", isPublished);
 
 		eleventyConfig.addFilter("readableDate", (dateObj) => {
 			const normalizedDate = normalizeDate(dateObj);
