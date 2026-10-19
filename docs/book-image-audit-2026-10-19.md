@@ -30,6 +30,9 @@ and byte-identical passthrough copies in the production build.
 - `node --test tests/book-images.test.cjs`: 2 passed, 0 failed.
 - `node --test tests/*.test.cjs`: 21 passed, 0 failed.
 - `git diff --check`: passed.
+- Chrome smoke check: restored covers render on the reading shelf and the
+  individual Be Useful page. No layout or interaction changes were made;
+  keyboard and accessibility automation were not required for this asset repair.
 
 This is a local repair. No commit, push or production deployment was performed.
 The restored URLs still require a deployment before they can be verified live.
