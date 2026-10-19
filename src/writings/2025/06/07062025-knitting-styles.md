@@ -18,7 +18,7 @@ tags:
     combination,
   ]
 layout: layouts/writing.njk
-category: Craft
+category: creative
 image: /assets/images/other/rebecca-grant-unsplash.jpg
 image_credit:
   photographer: Rebecca Grant

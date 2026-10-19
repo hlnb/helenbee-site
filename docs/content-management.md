@@ -200,15 +200,24 @@ code goes here
 
 ## Categories and Tags
 
-Main categories:
+Use these primary categories in front matter and the local Sveltia editor:
 
-- technology
-- web development
-- personal
-- projects
-- design
-- writing
-- lived experience
+| Stored value | Display label | Use for |
+| --- | --- | --- |
+| `lived-experience` | Lived experience | Personal accounts of service, recovery, identity and resilience |
+| `reflection` | Reflection | Reflective essays, philosophy, journalling and seasonal reflections |
+| `technology` | Technology | Web development, digital tools and connected health |
+| `creative` | Creative & craft | Knitting, making and creative practice |
+
+Use lowercase stored values. Craft and Creative share `creative`; Philosophy
+belongs under `reflection`. The former `Reflection` spelling is also
+`reflection`. Keep specific subjects such as knitting and Stoicism in tags.
+An article can cross themes; choose its main intent rather than moving all
+mentions of craft or technology out of lived experience.
+
+Display labels are defined in `src/_data/writingCategories.json`; keep the
+category choices in `public/admin/config.yml` aligned with them. Category
+changes do not change article filenames or URLs.
 
 ## Tag Guidelines
 

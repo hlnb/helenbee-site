@@ -7,7 +7,7 @@ publishedDate: "2024-12-30"
 theme: "Year in Review"
 keywords: [year, review, reflection]
 type: "article"
-category: Reflection
+category: reflection
 image: /assets/images/other/ian-schneider-PAykYb-8Er8-unsplash.jpg
 image_alt: ""
 image_credit:

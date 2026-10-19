@@ -13,7 +13,7 @@ tags:
   - mental-health
   - creativity
   - personal journey
-category: Reflection
+category: reflection
 image: /assets/images/other/aaron-burden-unsplash.jpg
 image_alt: ""
 image_credit:

@@ -9,7 +9,7 @@ keywords:
 type: "article"
 tags: [personal, growth, mindfulness, knitting, writing, trauma, healing]
 layout: layouts/writing.njk
-category: Reflection
+category: reflection
 image: /assets/images/other/aaron-burden-peaceful-unsplash.jpg
 image_credit:
   photographer: Aaron Burden

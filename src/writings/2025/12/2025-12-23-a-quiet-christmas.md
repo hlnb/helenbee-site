@@ -11,7 +11,7 @@ keywords:
 type: article
 tags:
   - lived-experience
-category: Reflection
+category: reflection
 image: /assets/images/other/mel-poole-LUPXhXj2ip0-unsplash.jpg
 image_alt: ""
 image_credit:

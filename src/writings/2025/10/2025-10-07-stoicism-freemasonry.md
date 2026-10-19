@@ -10,7 +10,7 @@ type: "article"
 tags:
   [freemasonry, stoicism, philosophy, resilience, trauma, healing, character]
 layout: layouts/writing.njk
-category: philosophy
+category: reflection
 image: /assets/images/other/stocism-freemasonry.jpg
 
 author:

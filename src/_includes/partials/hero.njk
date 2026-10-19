@@ -30,9 +30,9 @@
       {% endif %}
 
       {% if category %}
-        <span class="category tag" style="margin-left:0.75rem;">{{ category }}</span>
+        <span class="category tag" style="margin-left:0.75rem;">{{ writingCategories[category] or category }}</span>
       {% elif page.data and page.data.category %}
-        <span class="category tag" style="margin-left:0.75rem;">{{ page.data.category }}</span>
+        <span class="category tag" style="margin-left:0.75rem;">{{ writingCategories[page.data.category] or page.data.category }}</span>
       {% endif %}
 
       {% if tags %}

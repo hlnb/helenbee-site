@@ -32,7 +32,7 @@ eleventyNavigation:
   {% set shouldPaginate = paginatedCategories.indexOf(categorySlug) > -1 %}
   {% set articles = collections.writingsByCategory[category] %}
     <section class="section">
-      <h2 class="title is-4">{{ category | capitalize }}</h2>
+      <h2 class="title is-4">{{ writingCategories[category] or category | capitalize }}</h2>
       <div class="books-grid" data-category="{{ categorySlug }}">
         {% for article in articles %}
           {% if article.data.publishedDate | isPublished %}
