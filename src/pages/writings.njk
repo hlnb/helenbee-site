@@ -25,18 +25,24 @@ eleventyNavigation:
 
 
   <!-- Content Section -->
-{% set paginatedCategories = ['lived-experience', 'reflection', 'technology'] %}
 {% set categories = collections.writingsByCategory | keys | sort %}
+<nav class="category-jumps" aria-label="Writing categories">
+  <p>Jump to a category:</p>
+  <ul>
+    {% for category in categories %}
+      <li><a href="#category-{{ category }}">{{ writingCategories[category] or category | capitalize }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
 {% for category in categories %}
   {% set categorySlug = category | lower | replace(' ', '-') %}
-  {% set shouldPaginate = paginatedCategories.indexOf(categorySlug) > -1 %}
   {% set articles = collections.writingsByCategory[category] %}
-    <section class="section">
-      <h2 class="title is-4">{{ writingCategories[category] or category | capitalize }}</h2>
+    <section class="section writing-category" aria-labelledby="category-{{ categorySlug }}">
+      <h2 class="title is-4" id="category-{{ categorySlug }}" tabindex="-1">{{ writingCategories[category] or category | capitalize }}</h2>
       <div class="books-grid" data-category="{{ categorySlug }}">
         {% for article in articles %}
           {% if article.data.publishedDate | isPublished %}
-            <article class="book-card post-card{% if shouldPaginate %} paginated-item{% endif %}" data-index="{{ loop.index0 }}">
+            <article class="book-card post-card paginated-item" data-index="{{ loop.index0 }}">
               {% if article.data.image %}
                 <div class="card-media">
                   <img class="card-media-img" src="{{ article.data.image }}" alt="{{ article.data.title }}" loading="lazy">
@@ -45,7 +51,7 @@ eleventyNavigation:
 
               <header class="card-header">
                 <p class="title is-5"><a href="{{ article.url }}">{{ article.data.title }}</a></p>
-                <p class="subtitle is-6"><span class="icon is-small is-primary"><i class="fas fa-calendar"></i></span> {{ article.date | dateDisplay }}</p>
+                <p class="card-published-date"><span class="icon is-small is-primary" aria-hidden="true"><i class="fas fa-calendar"></i></span> <time datetime="{{ article.data.publishedDate | htmlDateString }}">{{ article.data.publishedDate | dateDisplay }}</time></p>
               </header>
 
               <div class="card-body">
@@ -66,9 +72,8 @@ eleventyNavigation:
           {% endif %}
         {% endfor %}
         </div>
-        {% if shouldPaginate %}
-          <div class="pagination-controls" aria-label="{{ category }} pagination" data-category="{{ categorySlug }}"></div>
-        {% endif %}
+        <nav class="pagination-controls" aria-label="{{ writingCategories[category] or category }} pages" data-category="{{ categorySlug }}" hidden></nav>
+        <p class="pagination-status" data-category="{{ categorySlug }}" aria-live="polite" aria-atomic="true"></p>
     </section>
   {% endfor %}
 </div>
@@ -111,63 +116,21 @@ eleventyNavigation:
     margin-bottom: 0.25rem;
   }
 
+  .category-jumps ul { display:flex; flex-wrap:wrap; gap:0.75rem; list-style:none; padding:0; }
+  .category-jumps a { display:inline-block; padding:0.5rem 0.75rem; border:1px solid currentColor; border-radius:4px; }
+  .writing-category h2 { scroll-margin-top:6rem; }
+  .category-jumps a:focus-visible, .pagination-button:focus-visible, .writing-category h2:focus-visible { outline:3px solid #332E63; outline-offset:4px; }
+  .pagination-status { text-align:center; margin-top:0.5rem; }
+  @media (prefers-reduced-motion: reduce) {
+    .post-card { transition:none; }
+    .post-card:hover { transform:none; }
+  }
 </style>
 
-<script>
-// Client-side pagination for key writing categories
-document.addEventListener('DOMContentLoaded', function () {
-  try {
-  const paginatedCategories = {{ paginatedCategories | dump | safe }};
-    const perPage = 6;
-
-    paginatedCategories.forEach((categoryKey) => {
-      const grid = document.querySelector(`.books-grid[data-category="${categoryKey}"]`);
-      if (!grid) return;
-
-      const items = Array.from(grid.querySelectorAll('.paginated-item'));
-      const controls = document.querySelector(`.pagination-controls[data-category="${categoryKey}"]`);
-
-      if (items.length <= perPage) {
-        if (controls) controls.style.display = 'none';
-        return;
-      }
-
-      if (!controls) return;
-
-      const totalPages = Math.ceil(items.length / perPage);
-
-      function showPage(page) {
-        const start = (page - 1) * perPage;
-        const end = start + perPage;
-        items.forEach((item, i) => {
-          item.style.display = i >= start && i < end ? '' : 'none';
-        });
-        const buttons = controls.querySelectorAll('button[data-page]');
-        buttons.forEach((btn) => btn.classList.toggle('is-active', Number(btn.dataset.page) === page));
-      }
-
-      controls.innerHTML = '';
-      for (let p = 1; p <= totalPages; p++) {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'pagination-button';
-        btn.dataset.page = p;
-        btn.setAttribute('aria-label', `Go to page ${p} in ${categoryKey.replace('-', ' ')}`);
-        btn.textContent = p;
-        btn.addEventListener('click', () => showPage(p));
-        controls.appendChild(btn);
-      }
-
-      showPage(1);
-    });
-  } catch (e) {
-    console.error('Pagination error:', e);
-  }
-});
-</script>
+<script src="/assets/js/writings-pagination.js" defer></script>
 
 <style>
-  .pagination-controls { display:flex; gap:0.5rem; margin-top:1rem; justify-content:center; }
-  .pagination-button { background:#fff; border:1px solid #ddd; padding:0.4rem 0.6rem; border-radius:4px; cursor:pointer; }
+  .pagination-controls:not([hidden]) { display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1rem; justify-content:center; }
+  .pagination-button { background:#fff; border:1px solid #ddd; min-width:2.75rem; min-height:2.75rem; padding:0.4rem 0.6rem; border-radius:4px; cursor:pointer; }
   .pagination-button.is-active { background:var(--primary,#332E63); color:#fff; border-color:transparent; }
 </style>

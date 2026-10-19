@@ -36,13 +36,30 @@ test('built writings index has one grid per category and one card per listed art
   const grids = [...html.matchAll(/class="books-grid" data-category="([^"]+)"/g)].map(match => match[1]);
   assert.deepEqual(grids.sort(), Object.keys(categories).sort());
   for (const label of Object.values(categories)) {
-    assert.ok(html.includes(`<h2 class="title is-4">${label}</h2>`) ||
-      html.includes(`<h2 class="title is-4">${label.replace('&', '&amp;')}</h2>`), label);
+    assert.ok(html.includes(`tabindex="-1">${label}</h2>`) ||
+      html.includes(`tabindex="-1">${label.replace('&', '&amp;')}</h2>`), label);
   }
   const urls = [...html.matchAll(/<p class="title is-5"><a href="([^"]+)"/g)].map(match => match[1]);
   assert.ok(urls.length > 0);
   assert.equal(new Set(urls).size, urls.length, 'No duplicated article cards');
   const controls = [...html.matchAll(/class="pagination-controls"[^>]+data-category="([^"]+)"/g)]
     .map(match => match[1]);
-  assert.equal(controls.filter(category => category === 'reflection').length, 1);
+  assert.deepEqual(controls.sort(), Object.keys(categories).sort());
+  for (const category of Object.keys(categories)) {
+    assert.ok(html.includes(`href="#category-${category}"`));
+    assert.ok(html.includes(`id="category-${category}" tabindex="-1"`));
+  }
+});
+
+test('article cards put a semantic publication date after the title', () => {
+  const html = readFileSync('_site/writings/index.html', 'utf8');
+  const headers = [...html.matchAll(/<header class="card-header">([\s\S]*?)<\/header>/g)];
+  assert.ok(headers.length > 0);
+  for (const [, header] of headers) {
+    assert.match(header, /<p class="title is-5">[\s\S]*?<\/p>\s*<p class="card-published-date">/);
+    assert.match(header, /<time datetime="\d{4}-\d{2}-\d{2}">[^<]+<\/time>/);
+  }
+  const permissionToStop = headers.find(([, header]) => header.includes('2026-01-08-permission-to-stop/'));
+  assert.ok(permissionToStop, 'Publication-date regression example is present');
+  assert.match(permissionToStop[1], /<time datetime="2026-01-14">January 14, 2026<\/time>/);
 });

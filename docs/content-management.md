@@ -219,6 +219,17 @@ Display labels are defined in `src/_data/writingCategories.json`; keep the
 category choices in `public/admin/config.yml` aligned with them. Category
 changes do not change article filenames or URLs.
 
+The Writings index provides jump links to each category and shows up to six
+articles per category page. Every category uses the same pagination; page
+buttons appear only when there are more than six published articles. Each
+category keeps its own page selection. Changing pages announces the visible
+article range and returns keyboard focus to the category heading.
+
+Pagination is provided by `assets/js/writings-pagination.js`. Without
+JavaScript, all published articles remain visible and the jump links still
+work. To verify category navigation and pagination after changes, run
+`npm run build` followed by `node --test tests/*.test.cjs`.
+
 ## Tag Guidelines
 
 - Use lowercase

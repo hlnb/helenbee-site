@@ -454,7 +454,16 @@ main a:hover {
 }
 
 .post-card .card-header {
+	display: block;
 	border-bottom: 1px solid var(--support-1);
+}
+
+.post-card .card-header .title {
+	margin-bottom: 0.5rem;
+}
+
+.post-card .card-header .card-published-date {
+	margin: 0;
 }
 
 .post-card .card-body {
