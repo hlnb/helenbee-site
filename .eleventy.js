@@ -2,11 +2,23 @@ const svgContents = require("eleventy-plugin-svg-contents");
 const { DateTime } = require("luxon");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRSS = require("@11ty/eleventy-plugin-rss");
+const { statSync } = require("node:fs");
+const path = require("node:path");
 const SITE_TIME_ZONE = "Australia/Perth";
 
 module.exports = function (eleventyConfig)
 {
 	eleventyConfig.addPlugin(pluginRSS);
+
+	// Missing legacy book covers use real title/author text instead of a broken image.
+	// Keep file checks within assets, even when a future CMS value contains traversal.
+	eleventyConfig.addFilter("localImageExists", (url) => {
+		if (typeof url !== "string" || !url.startsWith("/assets/")) return false;
+		const root = path.resolve("assets");
+		const file = path.resolve(root, url.slice("/assets/".length));
+		if (!file.startsWith(root + path.sep)) return false;
+		try { return statSync(file).isFile(); } catch { return false; }
+	});
 
 	eleventyConfig.addPlugin(svgContents);
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);

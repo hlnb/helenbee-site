@@ -21,12 +21,13 @@ eleventyNavigation:
 {% set hero_subtitle_class = "title is-2" %}
 {% set hero_subtitle_style = "color:inherit; margin-bottom:0.4rem; text-shadow: 0 2px 6px rgba(0,0,0,0.6);" %}
  {% set hero_overlay = 'dark' %}
-{% include "partials/hero.njk" %}
+{% include "partials/home-hero.njk" %}
 
 <!-- Introduction Section -->
 <section class="section">
   <div class="container">
 
+        <figure class="garden-image"><img src="{{ image }}" alt="A road winding through the landscape" loading="lazy"></figure>
         <article class="content align-center">
           <h2 class="title">Welcome to My Digital Garden</h2>
           <p>

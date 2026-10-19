@@ -50,7 +50,7 @@ eleventyNavigation:
               {% endif %}
 
               <header class="card-header">
-                <p class="title is-5"><a href="{{ article.url }}">{{ article.data.title }}</a></p>
+                <h3 class="title is-5"><a href="{{ article.url }}">{{ article.data.title }}</a></h3>
                 <p class="card-published-date"><span class="icon is-small is-primary" aria-hidden="true"><i class="fas fa-calendar"></i></span> <time datetime="{{ article.data.publishedDate | htmlDateString }}">{{ article.data.publishedDate | dateDisplay }}</time></p>
               </header>
 

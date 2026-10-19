@@ -3,9 +3,16 @@ layout: layouts/base.njk
 title: Tags
 permalink: /tags/
 ---
-<h1>Tags</h1>
-
-{% for tag in collections.tagList %}
-  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-{% endfor %}
+<section class="page">
+  <p class="eyebrow">From the digital garden</p>
+  <h1>Tags</h1>
+  <div class="tags">
+    {% for tag in collections | keys | sort %}
+      {% set first = collections[tag][0] %}
+      {% if first.data.tags and tag in first.data.tags %}
+        <a href="/tags/{{ tag | replace("&", "&amp;") }}/" class="tag">{{ tag }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <p><a href="/writings/">Browse all writings</a></p>
+</section>

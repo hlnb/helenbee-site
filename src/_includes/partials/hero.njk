@@ -1,56 +1,23 @@
-{#
-  Reusable WebAwesome-style hero partial
-  Usage examples:
-    {% include "partials/hero.njk" with { title: "Writings", subtitle: "A collection..." } %}
-    {% include "partials/hero.njk" with { title: title, image: image, date: page.date, category: category, tags: tags } %}
-#}
-<div class="wa-hero{% if image %} wa-hero--with-image{% endif %}" style="--hero-overlay-opacity: {{ hero_overlay_opacity or '0.5' }}; color: var(--wa-color-surface-foreground); position: relative; overflow: hidden; {% if image %}background-image: url('{{ image }}'); background-size: cover; background-position: center;{% else %}background: radial-gradient(circle at center, var(--wa-color-brand-fill-quiet), var(--wa-color-brand-fill-normal));{% endif %}">
-
-  <div style="position:relative; z-index:1; text-align:left; max-width:var(--container-width, 70ch); margin:0 auto; color: #ffffff;">
-    {% if not hero_hide_title %}
-      <h1 class="title is-2" style="color:inherit; margin-bottom:0.4rem; text-shadow: 0 2px 6px rgba(0,0,0,0.6);">{{ title or page.title }}</h1>
+{# Shared masthead: paper and separate imagery keep text readable on every image. #}
+<section class="brand-hero{% if hero_article %} brand-hero--article{% elif image %} brand-hero--split{% endif %}">
+  <div class="brand-hero__copy">
+    <p class="eyebrow">{% if hero_article %}{{ writingCategories[category] or category or 'From the digital garden' }}{% else %}Receive · Read · Carry forward{% endif %}</p>
+    {% if not hero_hide_title %}<h1>{{ title or page.title }}</h1>{% endif %}
+    {% if subtitle or (hero_article and description) %}
+      <p class="lead">{{ subtitle or description }}</p>
     {% endif %}
-
-    {% if subtitle %}
-      <{{ hero_subtitle_tag or "p" }} class="{{ hero_subtitle_class or "subtitle" }}" style="{{ hero_subtitle_style or "color:rgba(255,255,255,0.92); margin-top:0.25rem; text-shadow: 0 1px 4px rgba(0,0,0,0.55);" }}">{{ subtitle }}</{{ hero_subtitle_tag or "p" }}>
-    {% endif %}
-
-    {% if hero_extra %}
-      <div class="hero-extra" style="margin-top:0.75rem; color:inherit;">
-        {{ hero_extra | safe }}
+    {% if hero_extra %}<div class="hero-extra">{{ hero_extra | safe }}</div>{% endif %}
+    {% if not hero_hide_date %}
+      <div class="writing-meta">
+        {% if date or page.date %}<time datetime="{{ (date or page.date) | htmlDateString }}">{{ (date or page.date) | readableDate }}</time>{% endif %}
+        {% if category %}<span class="tag">{{ writingCategories[category] or category }}</span>{% endif %}
+        {% for tag in tags %}{% if tag != 'post' %}<span class="tag">#{{ tag }}</span>{% endif %}{% endfor %}
       </div>
     {% endif %}
-
-  {% if not hero_hide_date %}
-  <div class="writing-meta" style="color:rgba(255,255,255,0.85); font-size:0.95rem; margin-top:0.5rem; text-shadow: 0 1px 3px rgba(0,0,0,0.45);">
-      {% if date %}
-        <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
-      {% elif page.date %}
-        <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-      {% endif %}
-
-      {% if category %}
-        <span class="category tag" style="margin-left:0.75rem;">{{ writingCategories[category] or category }}</span>
-      {% elif page.data and page.data.category %}
-        <span class="category tag" style="margin-left:0.75rem;">{{ writingCategories[page.data.category] or page.data.category }}</span>
-      {% endif %}
-
-      {% if tags %}
-        {% for tag in tags %}
-          {% if tag != "post" %}
-            <span class="tag" style="margin-left:0.5rem;">#{{ tag }}</span>
-          {% endif %}
-        {% endfor %}
-      {% elif page.tags %}
-        {% for tag in page.tags %}
-          {% if tag != "post" %}
-            <span class="tag" style="margin-left:0.5rem;">#{{ tag }}</span>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    </div>
-    {% endif %}
-
+  </div>
+  {% if image %}
+    <figure class="brand-hero__figure">
+      <img class="brand-hero-image" src="{{ image }}" alt="{{ image_alt or ('Cover of ' + title if coverImage else '') }}" fetchpriority="high">
     {# Provider-neutral image attribution. Legacy Unsplash fields remain supported. #}
     {% if image and image_credit and (image_credit.photographer or image_credit.username or image_credit.copyright_notice or image_credit.source_name or image_credit.photo_url) %}
       {% set creditName = image_credit.photographer or image_credit.username %}
@@ -62,11 +29,11 @@
       {% if not sourceName and ((image_credit.photo_url and "unsplash.com" in image_credit.photo_url) or image_credit.username) %}
         {% set sourceName = "Unsplash" %}
       {% endif %}
-      <div class="image-credit" style="margin-top:1rem; font-size:0.8rem; color:rgba(255,255,255,0.75); text-shadow: 0 1px 3px rgba(0,0,0,0.45);">
+      <div class="image-credit">
         Image credit:
         {% if creditName %}
           {% if creditUrl %}
-            <a href="{{ creditUrl }}" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.9); text-decoration:underline;">{{ creditName }}</a>
+            <a href="{{ creditUrl }}" target="_blank" rel="noopener noreferrer">{{ creditName }}</a>
           {% else %}
             {{ creditName }}
           {% endif %}
@@ -77,14 +44,15 @@
         {% if sourceName %}
           {% if creditName or image_credit.copyright_notice %}<span aria-hidden="true"> · </span>{% endif %}Source:
           {% if image_credit.photo_url %}
-            <a href="{{ image_credit.photo_url }}" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.9); text-decoration:underline;">{{ sourceName }}</a>
+            <a href="{{ image_credit.photo_url }}" target="_blank" rel="noopener noreferrer">{{ sourceName }}</a>
           {% else %}
             {{ sourceName }}
           {% endif %}
         {% elif image_credit.photo_url %}
-          {% if creditName or image_credit.copyright_notice %}<span aria-hidden="true"> · </span>{% endif %}<a href="{{ image_credit.photo_url }}" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.9); text-decoration:underline;">View image source</a>
+          {% if creditName or image_credit.copyright_notice %}<span aria-hidden="true"> · </span>{% endif %}<a href="{{ image_credit.photo_url }}" target="_blank" rel="noopener noreferrer">View image source</a>
         {% endif %}
       </div>
     {% endif %}
-  </div>
-</div>
+    </figure>
+  {% endif %}
+</section>

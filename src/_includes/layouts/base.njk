@@ -94,32 +94,50 @@
 
     <!-- Font Awesome - moved to end of head -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/brand.css">
 
+    {% if analytics != false %}
     <script>
       window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
       window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
     <script defer src="/_vercel/speed-insights/script.js"></script>
+    {% endif %}
 
 </head>
-<body>
+<body class="helen-b">
 
     {% include "partials/header.njk" %}
-    <main>
+    <main id="main-content" tabindex="-1">
         {{ content | safe }}
     </main>
     {% include "partials/footer.njk" %}
 <script>
  document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("js");
   const burger = document.querySelector(".navbar-burger");
   const menu = document.querySelector("#navbarMenu");
 
   if (burger && menu) {
+    const setOpen = (open) => {
+      burger.setAttribute("aria-expanded", String(open));
+      menu.classList.toggle("is-active", open);
+    };
     burger.addEventListener("click", () => {
-      burger.classList.toggle("is-active");
-      menu.classList.toggle("is-active");
+      setOpen(burger.getAttribute("aria-expanded") !== "true");
     });
+    document.querySelector(".site-header").addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && burger.getAttribute("aria-expanded") === "true") {
+        setOpen(false);
+        burger.focus();
+      }
+    });
+    menu.addEventListener("click", (event) => {
+      if (event.target.closest("a")) setOpen(false);
+    });
+    const desktop = window.matchMedia("(min-width: 1180px)");
+    desktop.addEventListener("change", () => setOpen(false));
   }
 
   const constrainImages = (selector, className, maxHeight) => {

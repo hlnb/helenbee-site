@@ -33,7 +33,7 @@ test('built writings index cards and article heroes resolve to copied image file
   let cardCount = 0;
   for (const page of pages) {
     const html = readFileSync(page, 'utf8');
-    const heroes = [...html.matchAll(/background-image:\s*url\('([^']+)'\)/g)];
+    const heroes = [...html.matchAll(/<img class="brand-hero-image" src="([^"]+)"/g)];
     const cards = [...html.matchAll(/<img class="card-media-img" src="([^"]+)"/g)];
     heroCount += heroes.length;
     cardCount += cards.length;

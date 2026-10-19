@@ -1,33 +1,26 @@
-<header>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="utility-bar"><span>RAAF veteran · writer · maker</span><span>Perth, Western Australia</span></div>
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
     <div class="navbar-brand">
-      <a href="/" class="navbar-item">
-        <img src="/assets/images/other/Logo.png" alt="Helen Burgess — Veteran, Writer & Maker">
+      <a href="/" class="brand" aria-label="Helen B home">
+        <span class="signoff">Helen B</span>
+        {% set tape_compact = true %}
+        {% include "partials/brand-tape.njk" %}
       </a>
-      <!-- Optional hamburger menu for mobile view -->
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+      <button type="button" class="navbar-burger" aria-label="Menu" aria-expanded="false" aria-controls="navbarMenu">
+        <span>Menu</span><span aria-hidden="true">☰</span>
+      </button>
     </div>
-
     <div id="navbarMenu" class="navbar-menu">
-      <div class="navbar-end">
-        <nav>
-          {% set navPages = collections.all | eleventyNavigation %}
-          <ul>
-          {%- for entry in navPages %}
-            <li{% if entry.url == page.url %} class="active"{% endif %}>
-              <a href="{{ entry.url }}">{{ entry.key }}</a>
-            </li>
-          {%- endfor %}
-            <li>
-              <a href="https://graphitedge.com.au" target="_blank" rel="noopener noreferrer">Graphitedge</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <ul class="navbar-end">
+        {% set navPages = collections.all | eleventyNavigation %}
+        {% for entry in navPages %}
+          <li><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.key }}</a></li>
+        {% endfor %}
+        <li><a href="/life-after-service/"{% if page.url == '/life-after-service/' %} aria-current="page"{% endif %}>Life after service</a></li>
+        <li><a href="https://graphitedge.com.au" target="_blank" rel="noopener noreferrer">Graphitedge</a></li>
+      </ul>
     </div>
   </nav>
 </header>

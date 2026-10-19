@@ -8,3 +8,20 @@ permalink: /tags/{{ tag }}/
 eleventyComputed:
   title: Tagged "{{ tag }}"
 ---
+
+<section class="page" aria-labelledby="archive-heading">
+  <p class="eyebrow">From the digital garden</p>
+  <h1 id="archive-heading">{{ title }}</h1>
+  <ul class="archive-list">
+    {% for item in collections[tag] %}
+      {% if item.url and (item.url | startsWith('/writings/')) and item.url != '/writings/' and (item.data.publishedDate | isPublished) and item.data.status != 'draft' and item.data.status != 'planned' and not item.data.draft %}
+        <li>
+          <time datetime="{{ item.date | htmlDateString }}">{{ item.date | dateDisplay }}</time>
+          <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+          {% if item.data.description %}<p>{{ item.data.description }}</p>{% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <p><a href="/writings/">Browse all writings</a> · <a href="/tags/">Browse tags</a></p>
+</section>

@@ -10,7 +10,8 @@ title: Technology Posts
   </div>
 
   <div class="writings-grid">
-    {% for post in collections.technologyPosts %}
+    {% for post in collections.writingsByCategory.technology %}
+      {% if (post.data.publishedDate | isPublished) and post.data.status != 'draft' and post.data.status != 'planned' and not post.data.draft %}
       <article class="writing-card">
         <!-- Same card structure as your writings.njk -->
         <a href="{{ post.url }}" class="writing-link">
@@ -37,6 +38,7 @@ title: Technology Posts
           </div>
         </a>
       </article>
+      {% endif %}
     {% endfor %}
   </div>
 </div>

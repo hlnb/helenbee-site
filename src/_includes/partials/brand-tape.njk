@@ -1,0 +1,12 @@
+{# HELEN B in the reference's five-level Murray code, top to bottom.
+   The smaller feed hole is a separate track between channels two and three. #}
+<div class="punch-tape{% if tape_compact %} punch-tape--compact{% endif %}" role="img" aria-label="Helen B encoded in five-level Murray code, with a separate feed track between channels two and three">
+  {% for bits, colour in [["00101", "orange"], ["10000", "blue"], ["01001", "pink"], ["10000", "blue"], ["00110", "lilac"], ["00100", "purple"], ["10011", "orange"]] %}
+    <div class="tape-character tape-character--{{ colour }}" aria-hidden="true">
+      {% for bit in bits %}
+        {% if loop.index == 3 %}<span class="feed-hole"></span>{% endif %}
+        <span class="tape-hole{% if bit == '1' %} is-punched{% endif %}"></span>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>

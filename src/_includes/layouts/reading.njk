@@ -10,7 +10,7 @@ layout: layouts/base.njk
  {% set hero_overlay = 'dark' %}
 {% include "partials/hero.njk" %}
 
-<main class="reading">
+<div class="reading">
   <section class="reading-intro">
     <h2>Why I Read These Books</h2>
     <p>Reading has always been a fundamental part of my learning journey. These books have shaped my thinking, challenged my perspectives, and helped me grow both personally and professionally. I often return to them for inspiration and new insights.</p>
@@ -61,14 +61,18 @@ layout: layouts/base.njk
   <div class="books-grid">
     {% for book in collections.books | sort(attribute="data.author") %}
       <article class="book-card">
-        <div class="book-cover-wrapper">
-          {% if book.data.coverImage %}
+        <div class="book-cover-wrapper" data-cover-src="{{ book.data.coverImage }}">
+          {% if book.data.coverImage | localImageExists %}
             <img
               src="{{ book.data.coverImage }}"
               alt="Cover of {{ book.data.title }}"
               class="book-cover"
               loading="lazy"
             >
+          {% else %}
+            {% set cover_title = book.data.title %}
+            {% set cover_author = book.data.author %}
+            {% include "partials/book-cover-fallback.njk" %}
           {% endif %}
         </div>
         <div class="book-details">
@@ -109,4 +113,4 @@ layout: layouts/base.njk
     {% endfor %}
   </div>
   {% include "partials/newsletter-cta.njk" %}
-</main>
+</div>

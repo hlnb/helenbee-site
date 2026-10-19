@@ -4,7 +4,7 @@ layout: layouts/base.njk
 
 {% set hero_hide_date = true %}
 {% set hero_overlay = 'dark' %}
-{% set image = coverImage %}
+{% set image = coverImage if (coverImage | localImageExists) else false %}
 {% set subtitle %}{% if author %}by {{ author }}{% endif %}{% if dateRead %}{% if author %} · {% endif %}Read {{ dateRead | readableDate }}{% endif %}{% endset %}
 {% include "partials/hero.njk" %}
 
@@ -12,10 +12,16 @@ layout: layouts/base.njk
   <div class="container" style="max-width: 72rem; padding-top: 2rem; padding-bottom: 3rem;">
     <div class="columns is-variable is-6 is-desktop">
       <div class="column is-4-desktop is-5-tablet">
-        {% if coverImage %}
+        {% if coverImage | localImageExists %}
           <figure class="image" style="margin: 0 auto 1.5rem; max-width: 22rem;">
             <img src="{{ coverImage }}" alt="Cover of {{ title }}" loading="lazy" style="border-radius: 0.75rem; box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);">
           </figure>
+        {% else %}
+          <div class="book-cover-wrapper" data-cover-src="{{ coverImage }}">
+            {% set cover_title = title %}
+            {% set cover_author = author %}
+            {% include "partials/book-cover-fallback.njk" %}
+          </div>
         {% endif %}
 
         <aside class="book-summary box" style="background: #fbfaf7; border: 1px solid rgba(51, 46, 99, 0.12); box-shadow: none;">
