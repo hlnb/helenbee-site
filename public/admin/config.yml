@@ -82,7 +82,7 @@ collections:
         widget: "select"
         required: false
         options:
-          - { label: "Lived Experience", value: "lived-experience" }
+          - { label: "Lived experience", value: "lived-experience" }
           - { label: "Technology", value: "technology" }
           - { label: "Reflection", value: "reflection" }
           - { label: "Creative & craft", value: "creative" }

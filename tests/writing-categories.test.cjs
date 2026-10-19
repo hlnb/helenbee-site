@@ -26,7 +26,9 @@ test('writing metadata and CMS choices use the four consolidated categories', ()
   const field = config.collections.find(collection => collection.name === 'writings')
     .fields.find(field => field.name === 'category');
   assert.deepEqual(field.options.map(option => option.value).sort(), Object.keys(categories).sort());
-  assert.equal(field.options.find(option => option.value === 'creative').label, categories.creative);
+  for (const option of field.options) {
+    assert.equal(option.label, categories[option.value]);
+  }
 });
 
 test('built writings index has one grid per category and one card per listed article', () => {
